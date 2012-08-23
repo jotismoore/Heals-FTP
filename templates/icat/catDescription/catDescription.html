@@ -1,0 +1,26 @@
+<venda_block label=sdesc1,icatsdesc=notnull>
+<div class="paraText">
+<p class="firstParagraph"><venda_icatsdesc></p>
+<venda_block label=ldesc1,icatldesc=notnull>
+<p class="secondParagraph"><venda_icatldesc></p>
+<p class="read_more">Read More</p>
+<script type="text/javascript" charset="utf-8">
+    $(".secondParagraph").css("display", "none");
+    $(".read_more").toggle(function(){
+      $(".secondParagraph").show(10);
+      $(".read_more").text("Hide This");
+    }, function(){
+      $(".secondParagraph").hide(10);
+      $(".read_more").text("Read More");
+    });
+</script>
+</venda_block label=ldesc1>
+</div>
+<style type="text/css">
+.read_more {cursor:pointer;color:black;}
+.firstParagraph {padding:0 0 10px 0;}
+.secondParagraph {padding:0 0 10px 0;}
+.paraText {clear:both;background-color:#f1f1f1;padding:10px;margin:10px 0 0 0;}
+.paraText p {margin:0;}
+</style>
+</venda_block label=sdesc1>
