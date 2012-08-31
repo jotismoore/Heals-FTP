@@ -68,6 +68,16 @@ var searchKeyWord = cj.get(CJ_COOKIE_NAME);
 <!-- End Avail Search Keyword Tracking -->
 <div itemscope itemtype="http://schema.org/Product">
 <div id="productdetail">
+<script type="text/javascript">
+function deleteVideo(){$("#VideoPlayer")[0].src='';$(".pdxtVideoPlayerContainer").hide();}
+function LoadVideo(){$("#VideoPlayer")[0].src='http://<venda_pdxtvideo>';$(".pdxtVideoPlayerContainer").show();}
+</script>
+<div class="pdxtVideoPlayerContainer" style="display:none;">
+<div class="pdxtVideoPlayer">
+<a onclick="deleteVideo()"><img class="close-button" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/wallpaper-close.jpg" alt="Close" title="Close"></a>
+<iframe id="VideoPlayer" src="" frameborder="0" width="650" height="460" style="margin:0 -20px 0 0;;" /></iframe>
+</div>
+</div>
 <div class="zoomableImages">
 <div id="productdetail-image">
 <venda_block label=10,med-medium=notnull>
