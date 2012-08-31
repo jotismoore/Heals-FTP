@@ -8,7 +8,7 @@ body {text-align: center; /* centres content in ie4/5 */}
 #col-two-three {text-align: left; /* ie4 fix needed due to float:right; */}
 #storelocatorresults h1 {margin:0 0 6px 0;}
 
-/* 2. Set the column and row dimension - Start styles_layout.css */
+/* 2. Set the column and row dimensierfgeon - Start styles_layout.css */
 /***********************************************/
 /* #wrapper = #col-one + 10px + #col-two-three */
 /***********************************************/
