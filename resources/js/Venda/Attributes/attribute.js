@@ -976,7 +976,7 @@ Venda.Attributes.StoreImageSwaps = function(obj) {
 		
 		var pdxtVideoUrl = jQuery('#pdxtVideoUrl').text();
 		var pdxtVideoPlay = jQuery('#pdxtVideo-play').text();
-		var pdxtVideo = "<a href=\"http://" + pdxtVideoUrl + "\" target=\"_blank\" style=\"position:relative;\"><img src=\"" + pdxtVideoPlay + "\" id=\"pdxtVideoPlay-button\" /><img src=\"" + obj.images.imgM[0] + "\" width=\"120px\" height=\"120px\" /></a>";
+		var pdxtVideo = "<a onclick=\"LoadVideo()\" target=\"_blank\" style=\"position:relative;\"><img src=\"" + pdxtVideoPlay + "\" id=\"pdxtVideoPlay-button\" /><img src=\"" + obj.images.imgM[0] + "\" width=\"120px\" height=\"120px\" /></a>";
 		if (pdxtVideoUrl == ""){
 		jQuery("#productdetail-altview").html(CloudHTML);
 		}
