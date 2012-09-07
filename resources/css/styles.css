@@ -470,12 +470,17 @@ ul.products .price {margin-bottom:29px;}
 .facebook-link {
 	width:60px;
 	float:left;
-	margin:2px 0 0 17px;
+	margin:2px 0 0 15px;
+}
+.pinterest-link {
+	width:40px;
+	float:left;
+	margin:2px 0 0 18px;
 }
 .bookmark-link {
 	margin-top:0px;
 	padding:4px 5px;
-	width:105px;
+	width:100px;
 	float:left;
 	border:1px solid #b4b4b4;
 	background:url(../images/gradient.gif);
@@ -489,7 +494,7 @@ font-size:11px;
 	margin-top:0px;
 	margin-left:6px;
 	padding:4px 5px;
-	width:50px;
+	width:45px;
 	float:left;
 	border:1px solid #b4b4b4;
 	background:url(../images/gradient.gif);
@@ -503,7 +508,7 @@ font-size:11px;
 	margin-top:0px;
 	margin-left:6px;
 	padding:4px 5px;
-	width:45px;
+	width:42px;
 	float:left;
 	border:1px solid #b4b4b4;
 	background-image:url(../images/gradient.gif);
@@ -515,7 +520,7 @@ font-size:11px;
 }
 
 .email-pic, .bookmark-pic, .print-pic {
-	padding-left:10px;
+	padding-left:5px;
 }
 .normal_price {color:#555555;float:right;font-size:12px;padding-top: 22px;padding-right:4px;vertical-align:text-bottom;}
 #searchResults .prods {clear: both;}
