@@ -46,12 +46,12 @@ ul#topnav li div.gifts span{border-top:5px solid #CE4479;height:36px;}
 /* Gifts END */
 
 /* Garden START */
-ul#topnav li div.garden a {width:62px;padding:4px 0px;}
-ul#topnav li div.garden span{border-top:5px solid #9EAE31;height:164px;}
-#subcat_col_one_gard {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_gard, #subcat_col_five_gard {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_gard, #subcat_col_four_gard {width:156px;height:142px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_gard {width:155px;height:142px;float:right;background:#f9f9f9;}
+ul#topnav li div.garden a {width:76px;padding:4px 0px;}
+ul#topnav li div.garden span{border-top:5px solid #9EAE31;height:314px;}
+#subcat_col_one_gard {width:156px;height:294px;float:left;border-right:1px solid #999999;}
+#subcat_col_three_gard, #subcat_col_five_gard {width:156px;height:294px;float:left;border-right:1px solid #999999;}
+#subcat_col_two_gard, #subcat_col_four_gard {width:156px;height:294px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
+#subcat_col_six_gard {width:155px;height:294px;float:right;background:#f9f9f9;}
 /* Garden END */
 
 /* Bathroom START */
@@ -118,7 +118,7 @@ ul#topnav li div.office span{border-top:5px solid #DE8A5B;height:164px;}
 /* Office END */
 
 /* Brands START */
-ul#topnav li div.brands a {width:60px;padding:4px 0px;}
+ul#topnav li div.brands a {width:54px;padding:4px 0px;}
 ul#topnav li div.brands span{border-top:5px solid #000000;height:122px;}
 #subcat_col_one_brands {width:156px;height:100px;float:left;border-right:1px solid #999999;}
 #subcat_col_three_brands, #subcat_col_five_brands {width:156px;height:100px;float:left;border-right:1px solid #999999;}
@@ -127,7 +127,7 @@ ul#topnav li div.brands span{border-top:5px solid #000000;height:122px;}
 /* Brands END */
 
 /* Offers / Sale START */
-ul#topnav li div.offers a {width:58px;padding:4px 0px;}
+ul#topnav li div.offers a {width:50px;padding:4px 0px;}
 /* Offers / Sale END */
 
 ul#topnav li span div.boxall a{display:block;width:155px;margin:2px 0 0 0;padding:3px 0 3px 10px;text-align:left;color:#000000;font-size:11px;text-transform:uppercase;}
