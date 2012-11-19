@@ -943,6 +943,7 @@ padding:5px;
 #pcat_leftnav ul ul {display:none;}
 #mainlayout-static #content-default #col-two #pagelist_static {padding:18px 0 0 18px}
 #mainlayout-static #content-default #col-two #pagelist_static li {padding-bottom:5px;}
+.hoverover a:hover{opacity:0.5;}
 
 /****  PRESS LAYOUT ONLY ***/
 .presscentreNav #catlist li {padding-left:15px;}
