@@ -1270,18 +1270,53 @@ color:#333 !important;}
 /* New Footer */
 /* ************/
 
-#footerLinks {background:#F1F1F1;float:left;width:940px;margin-top:2px;font-size:12px;color:#777;padding-bottom:5px;}
-#footerLinks .name {padding-bottom: 0;font-size:15px;color:#786470;font-weight:bold;}
-#footerLinks #bullet li {background:url(../images/footer/footer-link-right.gif) 0 3px no-repeat;padding-left:10px;margin:5px 0;}
+#footerLinks {background:#FFF;float:left;width:940px;margin-top:2px;font-size:12px;color:#777;padding-bottom:5px; border-top:1px solid #B4B4B4}
+#footerLinks .name {padding-bottom: 0;font-size:12px;color:#333333;font-weight:bold;}
+#footerLinks #bullet li {background:#ffffff;margin:3px 0;}
 .footer-grey-line {background:none;padding:0;border-bottom:1px solid #ccc;margin:0;height:1px;line-height:1px;font-size:0;}
-.footerLinksCols {margin:10px 0 10px 40px;width: 185px;}
+.footerLinksCols {margin:10px 0 15px 30px;width: 195px;}
 .footerNewsletterSignup {float:left;height:23px;width:185px;}
 .footerNewsletterSignup legend {display:none;}
 .footerNewsletterSignup fieldset {margin:0;border:0;padding:0;}
 .footerNewsletterSignup label {display: block;width:0;line-height:26px;}
-.footerNewsletterSignup #EMAIL_FIELD {float:left;border: 1px solid #786470;width: 147px;color: #666;font-size: 12px;*height: 21px;*line-height:18px;height: 21px;line-height:19px;padding:0 0 0 3px;}
+.footerNewsletterSignup #EMAIL_FIELD {float:left;border: 1px solid #7c7c7c;width: 147px;color: #666;font-size: 12px;*height: 21px;*line-height:18px;height: 21px;line-height:19px;padding:0 0 0 3px;}
+#contactnumber {background:#FFF;float:left;width:140px;margin-top:4px;font-size:12px;color:#777;padding:4px; border:1px solid #B4B4B4}
 #footerEssentials {width:940px;padding:10px 0;clear:both;}
 #footerLogos {padding:10px 0 0 0;clear:both;height: 30px;}
+#socnetlinks{position:relative;margin:6px 0 35px 2px}
+#socnetlinks li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#socnetlinks li, #socnetlinks a{height:22px;display:block;}
+
+#socnetfacebook{left:0px;width:22px;}
+#socnetfacebook{background:url(../images/footer/soc-net-links.gif) 0 0;}
+
+#socnettwitter{left:38px;width:22px;}
+#socnettwitter{background:url(../images/footer/soc-net-links.gif) -38px 0;}
+
+#socnetflickr{left:76px;width:22px;}
+#socnetflickr{background:url(../images/footer/soc-net-links.gif) -76px 0;}
+
+#socnetgoogleplus{left:114px;width:22px;}
+#socnetgoogleplus{background:url(../images/footer/soc-net-links.gif) -114px 0;}
+
+#socnetpinterest{left:152px;width:22px;}
+#socnetpinterest{background:url(../images/footer/soc-net-links.gif) -152px 0;}
+
+#footericons{position:relative;margin:6px 0 35px 2px}
+#footericons li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#footericons li, #footericons a{height:30px;display:block;}
+
+#footercards{left:0px;width:301px;}
+#footercards{background:url(../images/footer/footer-icons.gif) 0 0;}
+
+#footersecure{left:423px;width:55px;}
+#footersecure{background:url(../images/footer/footer-icons.gif) -306px 0;}
+
+#footerpci{left:608px;width:92px;}
+#footerpci{background:url(../images/footer/footer-icons.gif) -366px 0;}
+
+#footervenda{left:817px;width:118px;}
+#footervenda{background:url(../images/footer/footer-icons.gif) -463px 0;}
 
 /*********************/
 /* New Attribute css */
