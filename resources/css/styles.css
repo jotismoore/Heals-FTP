@@ -475,7 +475,7 @@ ul.products .price {margin-bottom:29px;}
 .pinterest-link {
 	width:40px;
 	float:left;
-	margin:0 0 0 18px;
+	margin:0 10px 0 18px;
 }
 .bookmark-link {
 	margin-top:0px;
@@ -522,8 +522,6 @@ height:10px;
 }
 
 .google-plus-link {
-	margin-left:321px;
-	margin-right:98px;
 }
 
 .email-pic, .bookmark-pic, .print-pic {
