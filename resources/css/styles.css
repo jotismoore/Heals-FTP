@@ -465,17 +465,17 @@ ul.products .price {margin-bottom:29px;}
 	width:50px;
 	float:left;
 	height:25px;
-	margin:2px 0 0 6px;
+	margin:0 0 0 6px;
 }
 .facebook-link {
 	width:60px;
 	float:left;
-	margin:2px 0 0 15px;
+	margin:0 0 0 15px;
 }
 .pinterest-link {
 	width:40px;
 	float:left;
-	margin:2px 0 0 18px;
+	margin:0 0 0 18px;
 }
 .bookmark-link {
 	margin-top:0px;
@@ -493,7 +493,7 @@ font-size:11px;
 .email-link {
 	margin-top:0px;
 	margin-left:6px;
-	padding:4px 5px;
+	padding:3px 1px 5px 5px;
 	width:45px;
 	float:left;
 	border:1px solid #b4b4b4;
@@ -503,11 +503,12 @@ font-size:11px;
     background-position-x: 0px;
     background-position-y: 0px;
 font-size:11px;
+height:10px;
 }
 .print-link {
 	margin-top:0px;
 	margin-left:6px;
-	padding:4px 5px;
+	padding:3px 1px 5px 5px;
 	width:42px;
 	float:left;
 	border:1px solid #b4b4b4;
@@ -517,10 +518,10 @@ font-size:11px;
     background-position-x: 0px;
     background-position-y: 0px;
 font-size:11px;
+height:10px;
 }
 
 .google-plus-link {
-	margin-top:7px;
 	margin-left:321px;
 	margin-right:98px;
 }
