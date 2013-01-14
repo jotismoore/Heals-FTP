@@ -579,7 +579,7 @@ height:10px;
 #productlist ul.products li .was {font-size:0.9em;}
 #searchResults .prods ul li .was span,
 #productlist ul.products li .was span,
-#availprodrecs .prods ul li .was span {text-decoration:line-through;font:bold 1.1em Arial;}
+#availprodrecs .prods ul li .was span {text-decoration:none;font:bold 1.1em Arial;}
 
 #searchResults .prods ul li .nowprice,
 #productlist ul.products li .nowprice,
