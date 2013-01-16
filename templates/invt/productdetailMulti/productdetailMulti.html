@@ -187,6 +187,21 @@ function LoadVideo(){$("#VideoPlayer")[0].src='http://<venda_pdxtvideo>';$(".pdx
 
 <div id="productdetail-shipping">
 <div class="prod-shipping">
+
+<venda_block label=healsexpress,pdxtexpress=1>
+<div class="express-badge-holder">
+</div>
+</venda_block label=healsexpress>
+
+<script type="text/javascript">
+var onhand="<venda_atronhand>";
+today=new Date();
+if ((onhand > 0)) {
+$("#express-badge-holder").addClass("express-badge")}
+if ((onhand = 0)) {
+$("#express-badge-holder").removeClass("express-badge")}
+</script>
+
 <div class="shipping-badge">
 <venda_block label=parcel1,invtwunits=Standard>
 <a href="http://www.heals.co.uk/page/parcel_delivery&layout=popups&layout=popups" rel="popup console 730 1000" alt="<venda_text id=site.link.title.delivery_charge_from>">
