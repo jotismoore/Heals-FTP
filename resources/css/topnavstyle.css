@@ -1,142 +1,271 @@
+/* STICKY NAV STYLES*/
+
+.scrollernav {
+height:auto;
+width: 940px;
+z-index:4000;
+}
+
+
+.fixed {
+        position:fixed;
+}
+
+/* STICKY NAV STYLES*/
+
+.Lcattree {margin-left:9px; color:#999999;}
+
+.Lcattree a {color:#999999;}
+
 .Ltopnavcats div.boxhighlight1a a, .Ltopnavcats div.boxhighlight2a a, .Ltopnavcats div.boxhighlight1b a, .Ltopnavcats div.boxhighlight2b a, .Ltopnavcats div.boxhighlight1c a, .Ltopnavcats div.boxhighlight2c a, .Ltopnavcats div.boxhighlight1d a, .Ltopnavcats div.boxhighlight2d a, .Ltopnavcats div.boxhighlight1e a, .Ltopnavcats div.boxhighlight2e a, .Ltopnavcats div.boxhighlight1f a, .Ltopnavcats div.boxhighlight2f a, .Ltopnavcats div.boxhighlight1g a, .Ltopnavcats div.boxhighlight2g a, .Ltopnavcats div.boxhighlight1h a, .Ltopnavcats div.boxhighlight2h a, .Ltopnavcats div.boxhighlight1i a, .Ltopnavcats div.boxhighlight2i a, .Ltopnavcats div.boxhighlight1j a, .Ltopnavcats div.boxhighlight2j a, .Ltopnavcats div.boxhighlight1k a, .Ltopnavcats div.boxhighlight2k a, .Ltopnavcats div.boxhighlight1l a, .Ltopnavcats div.boxhighlight2l a{display:block;  text-transform: uppercase;color: #ffffff !important;}
 .container {clear: both; width:100%; padding:3px 0 0 0; margin:0;}
-ul#topnav {margin: 0; padding: 0;float: left;width: 940px;list-style: none;position: relative;z-index:1000;}
-ul#topnav li {float: left;margin: 0; padding: 0;border-right: 1px solid #555;}
-ul#topnav li.right {float: left;margin: 0; padding: 0;border-right: none;}
-ul#topnav li a {display: block;color: #333333;text-decoration: none;text-align:center;}
-ul#topnav li div.furniture span, ul#topnav li div.accessories span, ul#topnav li div.lighting span,  ul#topnav li div.gifts span, ul#topnav li div.garden span, ul#topnav li div.bathroom span, ul#topnav li div.bedroom span, ul#topnav li div.dining span, ul#topnav li div.living span, ul#topnav li div.kitchen span, ul#topnav li div.office span, ul#topnav li div.brands span, ul#topnav li div.toiletries span {float: left;padding: 2px 0px;position: absolute;left: 0;top:20px;display: none;width: 940px;background: #f0f0f0;line-height:14px;margin:0;-moz-box-shadow:0px 0px 5px #333;-webkit-box-shadow:0px 0px 5px #333;box-shadow:0px 0px 5px #333;z-index:1000;opacity:0.99;filter:alpha(opacity=99);zoom: 1;filter: progid:DXImageTransform.Microsoft.Shadow(color='#333333', Direction=180, Strength=5);}
-ul#topnav li:hover span {display: block;line-height:14px;}
+
+/*
+.category{display: block; margin: 2px;}
+.category a{display:block; color:#fff; background:#666666;}
+.topnavsides {border:4px solid #666666;}
+.topnavsideswhite {border:4px solid #ffffff;}
+.topnav_menu {height:350px;left:0;color:#333333;top: 28px;padding-right: 1px; left:auto, right:auto; clear:both;]
+*/
+
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+#topnavbg {
+z-index:-1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+	top: 0;
+    left: 0;
+	background-color:none;
+}
+
+.menu_close {width:100%; text-align:right; display:block}
+
+ul#topnav {margin:0 0 5px; padding:0;float: left;width: 100%;list-style: none;position: relative;z-index:990; border-top: 1px solid #cccccc; border-bottom: 0px solid #cccccc; font-size:14px; color:#666; font-weight:bold; background-color:#fff;}
+ul#firstnav {margin:0; padding:5px 0;float: left;width: 100%;list-style: none;position: relative;z-index:1000; border-top: 0px solid #cccccc; border-bottom: 0px solid #999999; font-size:12px; color:#666666; font-weight:normal; background:#ffffff; display:block}
+ul#topnav li{float: left;padding: 0;border-right: 0px solid #555; text-align:center;}
+ul#firstnav li{float: left;padding: 0 ;border-right: 0px solid #555; text-align:center; padding: 0 15px 0 10px;}
+ul#firstnav li a:hover{color:#000000; text-decoration:none;}
+ul#topnav li:hover{ background:#666666;}
+ul#topnav li.left {float: left;margin: 0; padding: 0;border-right: none;}
+/*ul#firstnav li div.heritage a {display:block; padding:0 13px 0 9px;}*/
+ul#topnav li a{display: block;color: #666;text-decoration: none;text-align:left; padding-left:5px;}
+ul#topnav li a:hover{display: block;color: #000;text-decoration: none;}
+ul#topnav li a:visited {display: block;color: #666;text-decoration: none;}
+ul#topnav li div.furniture span, ul#topnav li div.accessories span, ul#topnav li div.lighting span, ul#topnav li div.gifts span, ul#topnav li div.garden span, ul#topnav li div.bathroom span, ul#topnav li div.bedroom span, ul#topnav li div.dining span, ul#topnav li div.living span, ul#topnav li div.kitchen span, ul#topnav li div.office span, ul#topnav li div.brands span, ul#topnav li div.toiletries span, ul#topnav li div.offers span {float: left;padding: 2px 0;position: absolute;left: 0;top:19px;display: none;width: 100%;background: #fff;line-height:14px;margin:0;z-index:1000; border:0px solid #666666;}
+
+ul#topnav li:hover span {display: block; line-height:14px;}
+
 ul#topnav li span a {display:inline;}
 ul#topnav li span a:hover {color:#fff;}
 
+.box a {font-size:11px; text-align:left; text-transform:none; font-weight: normal; line-height: 18px;!important}
+
+#boxmenu {height:130px;margin-bottom:20px;}
+#boxmenu_bath {height:110px;margin-bottom:10px;}
+#boxmenu_brands {height:auto;margin-bottom:10px;}
+#boxmenu_gifts {height:70px;margin-bottom:20px;margin-top:38px;}
+#menubase {width:100%;height:auto; background:#666666;display: block;
+clear: both; margin:0 0 10px; text-align:center !important; border-top:1px solid #666666; border-bottom:1px solid #666666; clear:both; color:#fff;}
+#menubase a{color:#fff!important;text-align:center!important;}
+#menubase a:hover{background:#666666!important; color:#eeeeee!important;}
+
 /* Furniture START */
-ul#topnav li div.furniture a {width:76px;padding:4px 0px;}
-ul#topnav li div.furniture span{border-top:5px solid #9D8CC9;height:314px;}
-#subcat_col_one_furn {width:156px;height:294px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_furn, #subcat_col_five_furn {width:156px;height:294px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_furn, #subcat_col_four_furn {width:156px;height:294px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_furn {width:155px;height:294px;float:right;background:#f9f9f9;}
+ul#topnav li div.furniture a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.furniture a:hover {display: block; background:#FFF;}
+ul#topnav li div.furniture span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
+#subcat_col_one_furn {width:154px;height:310px;float:right;border-right:0px solid #999999;color:#333333;margin-top: 8px;
+border-left: 5px solid #ffffff;}
+#subcat_col_one_furn div {color:#333333;}
+#subcat_col_three_furn {width:156px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_furn {width:134px;height:310px;float:right;border-right:0px solid #999999;color:#333333; border-left: 5px solid #ffffff;;margin-top: 8px;}
+#subcat_col_two_furn {width:150px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_furn {width:148px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_six_furn {width:147px;height:310px;float:right;background:#fff; font-size:12px; padding-right:8px;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Furniture END */
 
-/* Accessories START */
-ul#topnav li div.accessories a {width:88px;padding:4px 0px;}
-ul#topnav li div.accessories span{border-top:5px solid #CEBA91;height:164px;}
-#subcat_col_one_acc {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_acc, #subcat_col_five_acc {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_acc, #subcat_col_four_acc {width:156px;height:142px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_acc {width:155px;height:142px;float:right;background:#f9f9f9;}
-/* Accessories END */
+/* Decor START */
+ul#topnav li div.accessories a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.accessories a:hover {display: block; background:#FFF;}
+ul#topnav li div.accessories span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
+#subcat_col_one_acc {width:150px;height:310px;float:right;border-right:0px solid #999999;color:#333333;margin-top: 8px;
+border-left: 5px solid #ffffff;}
+#subcat_col_three_acc {width:156px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_acc {width:140px;height:310px;float:right;border-right:0px solid #999999;color:#333333; border-left: 5px solid #ffffff;;margin-top: 8px;}
+#subcat_col_two_acc {width:148px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_acc {width:148px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_six_acc {width:147px;height:310px;float:right;background:#fff; font-size:12px; padding-right:8px;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+/* Decor END */
 
 /* Lighting START */
-ul#topnav li div.lighting a {width:68px;padding:4px 0px;}
-ul#topnav li div.lighting span{border-top:5px solid #AFAAA3;height:164px;}
-#subcat_col_one_light {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_light, #subcat_col_five_light {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_light, #subcat_col_four_light {width:156px;height:142px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_light {width:155px;height:142px;float:right;background:#f9f9f9;}
+ul#topnav li div.lighting a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.lighting a:hover {display: block; background:#FFF;}
+ul#topnav li div.lighting span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
+#subcat_col_one_light {width:150px;height:310px;float:right;border-right:0px solid #999999;color:#333333;margin-top: 8px;
+border-left: 5px solid #ffffff;}
+#subcat_col_three_light, #subcat_col_five_light {width:150px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_two_light {width:144px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_light {width:147px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_six_light {width:147px;height:310px;float:right;background:#fff; font-size:12px; padding-right:8px;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Lighting END */
 
 /* Gifts START */
-ul#topnav li div.gifts a {width:46px;padding:4px 0px;}
-ul#topnav li div.gifts span{border-top:5px solid #CE4479;height:36px;}
-#subcat_col_one_gift {width:156px;height:36px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_gift, #subcat_col_five_gift {width:156px;height:36px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_gift, #subcat_col_four_gift {width:156px;height:36px;float:left;border-right:1px solid #999999;}
-#subcat_col_six_gift {width:155px;height:36px;float:right;}
+ul#topnav li div.gifts a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.gifts a:hover {display: block; background:#FFF;}
+ul#topnav li div.gifts span{height:362px;left:0;color:#333333;top: 28px; padding:6px 11px 6px 9px; width:98%;}
+#subcat_col_one_gift {width:145px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
+#subcat_col_two_gift {width:140px;height:auto;float:right; margin-left:0px;margin-bottom:10px; margin-top:0px; margin-right:0px;}
+#subcat_col_three_gift, #subcat_col_four_gift {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
+#subcat_col_five_gift {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
+#subcat_col_six_gift {width:140px;height:auto;float:left; margin:0 0 0 10px;margin-bottom:10px;}
 /* Gifts END */
 
 /* Garden START */
-ul#topnav li div.garden a {width:76px;padding:4px 0px;}
-ul#topnav li div.garden span{border-top:5px solid #5b2779;height:314px;}
-#subcat_col_one_gard {width:156px;height:294px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_gard, #subcat_col_five_gard {width:156px;height:294px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_gard, #subcat_col_four_gard {width:156px;height:294px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_gard {width:155px;height:294px;float:right;background:#f9f9f9;}
+ul#topnav li div.garden a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.garden a:hover {display: block; background:#FFF;}
+ul#topnav li div.garden span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
+#subcat_col_one_gard {width:145px;height:310px;float:right; margin-left:10px;margin-bottom:10px; margin-top:10px;}
+#subcat_col_five_gard {width:131px;height:310px;float:right; margin-left:10px;margin-bottom:10px; margin-top:10px;}
+#subcat_col_three_gard {width:132px;height:310px;float:right; margin-left:10px;margin-bottom:10px; margin-top:10px;}
+#subcat_col_two_gard{width:163px;height:300px; float:right;margin-left:10px;margin-bottom:10px; margin-top:10px;}
+#subcat_col_four_gard {width:145px;height:300px; float:right;margin-left:10px;margin-bottom:10px; margin-top:10px;}
+#subcat_col_six_gard {width:145px;height:310px;float:right; margin:10px;}
 /* Garden END */
 
-/* Bathroom START */
-ul#topnav li div.bathroom a {width:76px;padding:4px 0px;}
-ul#topnav li div.bathroom span{border-top:5px solid #A7D6C1;height:164px;}
-#subcat_col_one_bath {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_bath, #subcat_col_five_bath {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_bath, #subcat_col_four_bath {width:156px;height:142px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_bath {width:155px;height:142px;float:right;background:#f9f9f9;}
-/* Bathroom END */
+/* Spa START */
+ul#topnav li div.bathroom a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.bathroom a:hover {display: block; background:#FFF;}
+ul#topnav li div.bathroom span{height:362px;left:0;color:#333333;top: 28px; padding:6px 11px 6px 9px; width:98%;}
+#subcat_col_one_bath {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:10px;}
+#subcat_col_two_bath {width:140px;height:auto;float:right; margin-left:0px;margin-bottom:10px; margin-top:0px; margin-right:0px;}
+#subcat_col_three_bath, #subcat_col_four_bath {width:140px;height:auto;float:right; margin-left:5px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
+#subcat_col_five_bath {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:5px;}
+#subcat_col_six_bath {width:155px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:0;}
+.box_bath {display:block; margin-bottom:10px;}
+.box_bath_base {display:block; margin-bottom:5px; margin-left:5px; margin-right:5px;}
+/* Spa END */
 
 /* Toiletries START */
-ul#topnav li div.toiletries a {width:76px;padding:4px 0px;}
-ul#topnav li div.toiletries span{border-top:5px solid #A7D6C1;height:252px;}
+ul#topnav li div.toiletries a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.toiletries a:hover {display: block; background:#FFF;}
+ul#topnav li div.toiletries span{height:362px;left:0;color:#333333;top: 28px;padding-right: 1px;}
 #subcat_col_one_toil {width:156px;height:230px;float:left;border-right:1px solid #999999;}
 #subcat_col_three_toil, #subcat_col_five_toil {width:156px;height:230px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_toil, #subcat_col_four_toil {width:156px;height:230px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_toil {width:155px;height:230px;float:right;background:#f9f9f9;}
+#subcat_col_two_toil, #subcat_col_four_toil {width:156px;height:230px;float:left;background:#fff;border-right:1px solid #999999;}
+#subcat_col_six_toil {width:155px;height:230px;float:right;background:#fff;}
 /* Toiletries END */
 
 /* Bedroom START */
-ul#topnav li div.bedroom a {width:72px;padding:4px 0px;}
-ul#topnav li div.bedroom span{border-top:5px solid #93ABC2;height:164px;}
-#subcat_col_one_bed {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_bed, #subcat_col_five_bed {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_bed, #subcat_col_four_bed {width:156px;height:142px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_bed {width:155px;height:142px;float:right;background:#f9f9f9;}
+ul#topnav li div.bedroom a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.bedroom a:hover {display: block; background:#FFF;}
+ul#topnav li div.bedroom a:hover {display: block; background:#FFF;}
+ul#topnav li div.bedroom span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
+#subcat_col_one_bed {width:156px;height:310px;float:right;border-right:0px solid #999999;color:#333333;margin-top: 8px;
+border-left: 5px solid #ffffff;}
+#subcat_col_three_bed{width:156px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_bed {width:140px;height:310px;float:right;border-right:0px solid #999999;color:#333333; border-left: 5px solid #ffffff;;margin-top: 8px;}
+#subcat_col_two_bed {width:148px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_bed {width:142px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_six_bed {width:147px;height:310px;float:right;background:#fff; font-size:12px; padding-right:8px;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Bedroom END */
 
 /* Dining Room START */
-ul#topnav li div.dining a {width:50px;padding:4px 0px;}
-ul#topnav li div.dining span{border-top:5px solid #C2BB8D;height:164px;}
+ul#topnav li div.dining a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.dining a:hover {display: block; background:#FFF;}
+ul#topnav li div.dining span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
 #subcat_col_one_dining {width:156px;height:142px;float:left;border-right:1px solid #999999;}
 #subcat_col_three_dining, #subcat_col_five_dining {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_dining, #subcat_col_four_dining {width:156px;height:142px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_dining {width:155px;height:142px;float:right;background:#f9f9f9;}
+#subcat_col_two_dining, #subcat_col_four_dining {width:156px;height:142px;float:left;background:#fff;border-right:1px solid #999999;}
+#subcat_col_six_dining {width:155px;height:142px;float:right;background:#fff;}
 /* Dining Room END */
 
 /* Living Room START */
-ul#topnav li div.living a {width:83px;padding:4px 0px;}
-ul#topnav li div.living span{border-top:5px solid #9D8CC9;height:164px;}
+ul#topnav li div.living a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.living a:hover {display: block; background:#FFF;}
+ul#topnav li div.living span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
 #subcat_col_one_living {width:156px;height:142px;float:left;border-right:1px solid #999999;}
 #subcat_col_three_living, #subcat_col_five_living {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_living, #subcat_col_four_living {width:156px;height:142px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_living {width:155px;height:142px;float:right;background:#f9f9f9;}
+#subcat_col_two_living, #subcat_col_four_living {width:156px;height:142px;float:left;background:#fff;border-right:1px solid #999999;}
+#subcat_col_six_living {width:155px;height:142px;float:right;background:#fff;}
 /* Living Room END */
 
 /* Kitchen START */
-ul#topnav li div.kitchen a {width:59px;padding:4px 0px;}
-ul#topnav li div.kitchen span{border-top:5px solid #C2BB8D;height:314px;}
-#subcat_col_one_kitch {width:156px;height:294px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_kitch, #subcat_col_five_kitch {width:156px;height:294px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_kitch, #subcat_col_four_kitch {width:156px;height:294px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_kitch {width:155px;height:294px;float:right;background:#f9f9f9;}
+ul#topnav li div.kitchen a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.kitchen a:hover {display: block; background:#FFF;}
+ul#topnav li div.kitchen span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
+#subcat_col_one_kitch {width:150px;height:310px;float:right;border-right:0px solid #999999;color:#333333;margin-top: 8px;
+border-left: 5px solid #ffffff;}
+#subcat_col_three_kitch{width:177px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_two_kitch {width:140px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_kitch {width:145px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_kitch {width:130px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_six_kitch {width:147px;height:310px;float:right;background:#fff; font-size:12px; padding-right:8px;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;;}
 /* Kitchen END */
 
 /* Office START */
-ul#topnav li div.office a {width:52px;padding:4px 0px;}
-ul#topnav li div.office span{border-top:5px solid #DE8A5B;height:164px;}
+ul#topnav li div.office a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.office a:hover {display: block; background:#FFF;}
+ul#topnav li div.office span{height:370px;left:0;color:#333333;top: 28px;padding-right: 1px;}
 #subcat_col_one_office {width:156px;height:142px;float:left;border-right:1px solid #999999;}
 #subcat_col_three_office, #subcat_col_five_office {width:156px;height:142px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_office, #subcat_col_four_office {width:156px;height:142px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_office {width:155px;height:142px;float:right;background:#f9f9f9;}
+#subcat_col_two_office, #subcat_col_four_office {width:156px;height:142px;float:left;background:#fff;border-right:1px solid #999999;}
+#subcat_col_six_office {width:155px;height:142px;float:right;background:#fff;}
 /* Office END */
 
 /* Brands START */
-ul#topnav li div.brands a {width:54px;padding:4px 0px;}
-ul#topnav li div.brands span{border-top:5px solid #000000;height:122px;}
-#subcat_col_one_brands {width:156px;height:100px;float:left;border-right:1px solid #999999;}
-#subcat_col_three_brands, #subcat_col_five_brands {width:156px;height:100px;float:left;border-right:1px solid #999999;}
-#subcat_col_two_brands, #subcat_col_four_brands {width:156px;height:100px;float:left;background:#f9f9f9;border-right:1px solid #999999;}
-#subcat_col_six_brands {width:155px;height:100px;float:right;background:#f9f9f9;}
+ul#topnav li div.brands a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.brands a:hover {display: block; background:#FFF;}
+ul#topnav li div.brands span{height:362px;left:0;color:#333333;top: 28px; padding:6px 11px 6px 9px; width:98%;}
+#subcat_col_one_brands {width:140px;height:auto;float:left; margin-left:10px;margin-bottom:10px; margin-top:0px;}
+#subcat_col_two_brands {width:142px;height:auto;float:right; margin-left:0px;margin-bottom:10px; margin-top:0px; margin-right:0px;}
+#subcat_col_three_brands, #subcat_col_four_brands {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
+#subcat_col_five_brands {width:134px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
+#subcat_col_six_brands {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
 /* Brands END */
 
 /* Offers / Sale START */
-ul#topnav li div.offers a {width:50px;padding:4px 0px;}
+ul#topnav li div.offers a {display:block; padding:6px 13px 6px 9px; color: #666666;}
+ul#topnav li div.offers a:hover {display: block; background:#FFF;}
+ul#topnav li div.offers span {height:370px;left:0;color:#333333;top: 28px;padding-right: 1px; width:100%;}
+#subcat_col_one_offers {width:156px;height:100px;float:left;border-right:1px solid #999999;}
+#subcat_col_three_offers, #subcat_col_five_offers {width:156px;height:100px;float:left;border-right:1px solid #999999;}
+#subcat_col_two_offers, #subcat_col_four_offers {width:156px;height:100px;float:left;background:#fff;border-right:1px solid #999999;}
+#subcat_col_six_offers {width:155px;height:100px;float:right;background:#fff;}
 /* Offers / Sale END */
 
-ul#topnav li span div.boxall a{display:block;width:155px;margin:2px 0 0 0;padding:3px 0 3px 10px;text-align:left;color:#000000;font-size:11px;text-transform:uppercase;}
+ul#topnav li span div.boxall a{display:block;margin:0;padding: 5px 0;
+text-align: center;color:#ffffff;font-size:11px;text-transform:uppercase; background:#666666;}
 .boxall:hover {cursor:pointer;}
-ul#topnav li span div.boxall a:hover {text-decoration:underline;}
-ul#topnav li span div.boxhighlight a{display:block;width:146px;padding:3px 0 3px 10px;text-align:left;margin:0;}
-.boxhighlight {background-color:#e4e4e4;}
+ul#topnav li span div.boxall a:hover {text-decoration:none;}
+ul#topnav li span div.newitems a{display:block;width:100%;margin:5px 0 0 0;padding:3px 0 3px 0;text-align:center;color:#000000;font-size:12px;text-transform:uppercase; background:#eeeeee; left:auto; right:auto;}
+.boxall:hover {cursor:pointer;}
+ul#topnav li span div.newitems a:hover {text-decoration:underline;}
+ul#topnav li span div.boxhighlight a{display:block;width:auto;padding:7px 0 5px 2px;text-align:left;margin:0; font-size:12px; font-weight:bold;border-bottom:}
+.boxhighlight {background-color:#fff; font-size:12px; color:#333333; border-bottom: 2px solid #999999;
+margin-bottom: 5px;
+width: 90%;padding-bottom: 2px;}
+.boxhighlight_brands {background-color:#fff; font-size:12px; color:#333333; border-bottom: 0px solid #999999;
+margin-bottom: 5px;
+width: 90%;}
+.boxhighlight_gifts {background-color:#fff; font-size:12px; color:#333333; border-bottom: 0px solid #999999;
+margin-bottom: 5px;
+width: 90%;}
 .boxhighlight a{text-transform:uppercase;}
 .boxhighlight:hover, .boxhighlight2a:hover{display:block;text-align:left;cursor:pointer;text-decoration:underline;}
-.box:hover, .boxall1:hover, .boxall2:hover, .boxall3:hover, .boxall4:hover, .boxall5:hover, .boxall6:hover, .boxall7:hover, .boxall8:hover, .boxall9:hover, .boxall10:hover, .boxall11:hover, .boxall12:hover {text-decoration:underline;text-align:left;cursor:pointer;display:block;}
+.box:hover, .boxall1:hover, .boxall2:hover, .boxall3:hover, .boxall4:hover, .boxall5:hover, .boxall6:hover, .boxall7:hover, .boxall8:hover, .boxall9:hover, .boxall10:hover, .boxall11:hover, .boxall12:hover {text-decoration:underline;cursor:pointer;display:block; font-size:12px;}
 ul#topnav li span div.box a, ul#topnav li span div.boxall1 a, ul#topnav li span div.boxall2 a, ul#topnav li span div.boxall3 a, ul#topnav li span div.boxall4 a, ul#topnav li span div.boxall5 a, ul#topnav li span div.boxall6 a, ul#topnav li span div.boxall7 a, ul#topnav li span div.boxall8 a, ul#topnav li span div.boxall9 a, ul#topnav li span div.boxall10 a, ul#topnav li span div.boxall11 a, ul#topnav li span div.boxall12 a{
-display:block;width:155px;margin:2px 0 0 0;padding:2px 0 2px 10px;text-align:left;font-size:11px;text-transform:none;}
+display:block;width:90%px;margin:2px 0 0 0;padding:2px 0 2px 5px;text-align:left;font-size:11px;text-transform:none; font-weight:normal; color:#333333; line-height: 12px;}
+ul#topnav li span div.box {color:#333333;}
