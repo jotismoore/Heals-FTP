@@ -1115,7 +1115,7 @@ width:90px;
 -float:right;
 }
 #productdetail .maintab{
-height: 450px;  
+min-height: 140px;  
 -height: 140px !important;
 -float:none;
 }
