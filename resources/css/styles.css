@@ -8,12 +8,6 @@ body {text-align: center; /* centres content in ie4/5 */}
 #col-two-three {text-align: left; /* ie4 fix needed due to float:right; */}
 #storelocatorresults h1 {margin:0 0 6px 0;}
 .header-top {
-	height:4px;
-	width:100%;
-	background-color:#000;
-	top:0;
-	display:block;
-	position:absolute;
 }
 
 /* 2. Set the column and row dimensierfgeon - Start styles_layout.css */
@@ -230,7 +224,7 @@ table.wizrtable,
 table.wizrtable th {border-color:#FFF;}
 
 /* 5. This sets the default html elements -- Start styles_color.css */
-body {margin:0; padding:0;color:#666}
+body {margin:0; padding:0;color:#666; border-top: 4px solid #000;}
 h2, h3 {margin:0;padding:5px 0 5px 4px;}
 p {margin:.5em 0; padding:0;}
 img {border:none;}
