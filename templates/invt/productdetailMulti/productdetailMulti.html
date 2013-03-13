@@ -188,12 +188,6 @@ function LoadVideo(){$("#VideoPlayer")[0].src='http://<venda_pdxtvideo>';$(".pdx
 <div id="productdetail-shipping">
 <div class="prod-shipping">
 
-<venda_block label=healsexpress,pdxtexpress=1>
-<div class="express-badge-holder">
-<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/heals-express.gif" style="margin:0 0 8px 0;">
-</div>
-</venda_block label=healsexpress>
-
 <div class="shipping-badge">
 <venda_block label=parcel1,invtwunits=Standard>
 <a href="http://www.heals.co.uk/page/parcel_delivery&layout=popups&layout=popups" rel="popup console 730 1000" alt="<venda_text id=site.link.title.delivery_charge_from>">
@@ -225,6 +219,13 @@ function LoadVideo(){$("#VideoPlayer")[0].src='http://<venda_pdxtvideo>';$(".pdx
 </div>
 
 <div class="european-shipping">
+
+<venda_block label=healsexpress,pdxtexpress=1>
+<div class="express-badge-holder">
+<a href="<venda_dispview pcat=expressservice>&layout=popups&layout=popups" rel="popup console 750 1000" alt="Heal's Express"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/heals-express.gif" style="margin:0 0 8px 0;"></a>
+</div>
+</venda_block label=healsexpress>
+
 <venda_block label=notgiftvouchers,mode=value,<venda_invtcatref0>!=giftvouchers>
 <venda_block label=intshipping,invtcntrygrpref0!=300>
 <div class="european-shipping-badge">
@@ -331,7 +332,7 @@ $(window).load(function() {
 	Venda.Attributes.StoreJSON(<venda_atts>,<venda_data>);
 </script>
 <venda_mediagrid template=alternateviewGrid>
-<div id="prodMulti" class="prodMulti prodMulti<venda_atrsku>" data-atr1="<venda_atr1>" data-atr2="<venda_atr2>"  data-atr3="<venda_atr3>"  data-atr4="<venda_atr4>" style="width:438px;border:1px solid #B4B4B4;margin:5px 10px;padding:5px;background-color:#EAE4E7;height:140px;float:left;">
+<div id="prodMulti" class="prodMulti prodMulti<venda_atrsku>" data-atr1="<venda_atr1>" data-atr2="<venda_atr2>"  data-atr3="<venda_atr3>"  data-atr4="<venda_atr4>" style="width:435px;border:1px solid #B4B4B4;margin:5px 10px;padding:5px;background-color:#EAE4E7;height:140px;float:left;">
 <div class="attribute-list-details">
 <div class="attribute-list-title">
 <venda_atr1>
