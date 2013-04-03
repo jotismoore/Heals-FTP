@@ -427,12 +427,12 @@ html > body .featcats ul li { /* IE7 - Moz */
 .toptab a {display:block; padding:4px 0;text-align:center; text-decoration:none; font-size:15px;}
 .browse_option1, .browse_option2, .browse_option3, .browse_option4, .browse_option5, .browse_option6 {float:left; width: 100%; padding-top:10px; overflow: hidden; text-align:center; margin-bottom: 10px;}
 .browse_by {float:right; background:#ffffff; width:270px; margin:30px 20px 30px 650px; position: absolute; height: 230px; text-align:center;}
-.feature_left {width:48%; display:block; border-top: 1px solid #777777;; float:left; padding:10px 0;}
+.feature_left {width:48%; display:block; float:left; padding:10px 0;}
 .feature_left_text {width:55%; float:left}
 .feature_left_text h2, .feature_left_text p, .feature_right_text h2, .feature_right_text p {margin-left:5px}
 .feature_left img {float:right; height: 280px;
 margin-bottom: 10px;}
-.feature_right {width:48%; display:block; border-top: 1px solid #777777;; float:right; padding:10px 0;}
+.feature_right {width:48%; display:block; border-top: float:right; padding:10px 0;}
 .feature_right_text {width:55%; float:left}
 .feature_right img {float:right}
 .feature_cta {padding:6px 10px; background:#666666; margin-top:15px; color:#fff; font-size:14px; text-align:center;clear: both;}
