@@ -432,7 +432,7 @@ html > body .featcats ul li { /* IE7 - Moz */
 .feature_left_text h2, .feature_left_text p, .feature_right_text h2, .feature_right_text p {margin-left:5px}
 .feature_left img {float:right; height: 280px;
 margin-bottom: 10px;}
-.feature_right {width:48%; display:block; border-top: float:right; padding:10px 0;}
+.feature_right {width:48%; display:block; padding:10px 0; float:right;}
 .feature_right_text {width:55%; float:left}
 .feature_right img {float:right}
 .feature_cta {padding:6px 10px; background:#666666; margin-top:15px; color:#fff; font-size:14px; text-align:center;clear: both;}
