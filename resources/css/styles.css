@@ -433,26 +433,16 @@ html > body .featcats ul li { /* IE7 - Moz */
 .toptab a {display:block; padding:4px 0;text-align:center; text-decoration:none; font-size:14px;}
 .browse_option1, .browse_option2, .browse_option3, .browse_option4, .browse_option5, .browse_option6 {float:left; width: 100%; padding-top:10px; overflow: hidden; text-align:center; margin-bottom: 10px;}
 .browse_by {float:right; background:#ffffff; width:270px; margin:30px 20px 30px 650px; position: absolute; height: 230px; text-align:center;}
-.feature_left {width:48%; display:block; border-top: 1px solid #777777;; float:left; padding:10px 0;}
->>>>>>> c397e97942fa817b5437b00a71ee260b04504160
-.feature_left_text {width:55%; float:left}
-.feature_left_text h2, .feature_left_text p, .feature_right_text h2, .feature_right_text p {margin-left:5px}
-.feature_left img {float:right; height: 280px;
-margin-bottom: 10px;}
-<<<<<<< HEAD
-.feature_right {width:48%; display:block; padding:10px 0; float:right;}
-=======
-.feature_right {width:48%; display:block; border-top: 1px solid #777777;; float:right; padding:10px 0;}
->>>>>>> c397e97942fa817b5437b00a71ee260b04504160
+.feature_left {width:48%; display:block; border-top: 0px solid #777777;; float:left; padding:10px 0;}
+.feature_left_text {width:55%; float:left;}
+.feature_left_text h2, .feature_left_text p, .feature_right_text h2, .feature_right_text p {margin-left:5px;}
+.feature_left img {float:right; height: 280px; margin-bottom: 10px;}
+.feature_right {width:48%; display:block; border-top: 0px solid #777777;; float:right; padding:10px 0;}
 .feature_right_text {width:55%; float:left}
 .feature_right img {float:right}
 .feature_cta {padding:6px 10px; background:#666666; margin-top:15px; color:#fff; font-size:14px; text-align:center;clear: both;}
 .feature_cta:hover {background:#333333;}
-<<<<<<< HEAD
 .feature_ads {clear:both; padding-top: 10px;}
-=======
-.feature_ads {clear:both;}
->>>>>>> c397e97942fa817b5437b00a71ee260b04504160
 .feature_ads img {margin:10px;}
 .brand_header {background:#999999; padding:15px 0; text-align:center;}
 .brand_header h1 {color:#ffffff; padding:0; font-weight:normal;
@@ -1635,9 +1625,8 @@ a.cloud-zoom {padding:70px 0 0 92px;}
 -webkit-box-shadow: 5px 5px 20px 0px #999;filter:progid:DXImageTransform.Microsoft.Shadow(color='#999999', Direction=180, Strength=5);border:1px solid #cccccc;}
 .pdxtVideoPlayer img {float:right;padding:10px 10px 0 0;}
 .pdxtVideoPlayer a {cursor:pointer;}
-
 /****OUR STORES***/
-#pcat_leftnav ul ul#ulour_stores li {display: inline;font-size: 11px;text-align: center;padding: 0px 18px;border-right: 1px solid #666666;text-transform: uppercase;font-size: 11px;margin: 5px 0 20px;}
+#pcat_leftnav ul ul#ulour_stores li {display: inline;font-size: 11px;text-align: center;padding: 0px 18px;border-right: 1px solid #666666;text-transform: uppercase;font-size: 11px;margin: 5px 0 20px;float: left;}
 #pcat_leftnav ul ul#ulour_stores li a {display: inline;}
 .store-address {font-size: 16px;text-align: center;border-bottom: 1px solid #cccccc;margin-bottom:10px;}
 .store-text {width: 45%;float: left;}
@@ -1649,7 +1638,6 @@ a.cloud-zoom {padding:70px 0 0 92px;}
 .social-links {margin-top: 5px;}
 .social-icon {float: left;width: 50%;margin: 3px 0;}
 .store-details-links {float: right;width: 48%;margin-top: 20px;margin-right: 10px;}
-
 /***************************************/
 /* Venda Attribute css */
 /* *************************************/
