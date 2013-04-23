@@ -1043,7 +1043,7 @@ height: 22px;
 font-size: 14px;
 text-align: center;
 float: right;
-margin-right: 15px;
+margin-right: 16px;
 }
 
 .basketbutton {
@@ -1987,7 +1987,7 @@ a.cloud-zoom {padding:70px 0 0 92px;}
 /* Venda Attribute css */
 /* *************************************/
 
-.addproductbox .qtybox input {height:13px;width:38px;border:1px solid #b4b4b4;text-align:center;padding:5px;}
+.addproductbox .qtybox input {height:13px;width:38px;border:1px solid #b4b4b4;text-align:center;padding:5px 3px;}
 .addproductbox .qtybox {width:103px;float:left;}
 .prodMulti .productDetailGradientBox {padding:3px 3px 8px 5px;}
 .buyControls,.buyControlsMulti {text-align:left;}
