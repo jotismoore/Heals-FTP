@@ -696,6 +696,7 @@ font-size:11px;
 .onlineonly2 {position: absolute; margin-top:207px; margin-left:2px;z-index:500;}
 
 .discount50 {position: absolute; margin-top:2px; margin-left:2px;z-index:500;}
+.special_purchase {position: absolute; margin-top:2px; margin-left:2px;z-index:600;}
 
 .newproduct {position: absolute; margin-top:2px; margin-left:173px;z-index:500;}
 .heals_express {position: absolute; margin-top:2px; margin-left:173px;z-index:600;}
