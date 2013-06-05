@@ -2066,56 +2066,37 @@ span.swatchText {display:none;}
 
 .returncustbox:hover {text-decoration:none;}
 #register_header h3{color:#333333; text-transform:uppercase; border-bottom:1px solid #666666;}
+#register_header {background: #fff;padding-top: 0px;padding-bottom: 10px;display: block;border-bottom: 1px solid #666666;border-left: 0px solid #fff;text-transform: uppercase;border-right: 0px solid #fff;margin-bottom: 5px;color: #333;} 
 #register_header:hover {text-decoration:none !important;}
 #register_header h3:hover {text-decoration:none !important;}
 .f-loginiam label#lLoginRegisterPassword {margin-left:0; font-weight:bold;}
-
 select#title ,#fname.textInput , #lname.textInput, #phone.textInput, #zipc.textInput, #company.textInput, #num.textInput, #addr1.textInput, #addr2.textInput, #city.textInput, #statetext.textInput {margin-left:0px;}
-
 .box.mainAlt p {font-weight:bold;}
-.newcustbox {float:right; width:50%; margin-bottom:15px;}
-.returncustbox {float:left; width:48%; margin-bottom:15px;}
+.newcustbox {float:right; width:50%; margin:2% 0;}
+.returncustbox {float:left; width:48%; margin:2% 0;}
 .checkout.login.container.signinContent.loginType_d {display:block; clear:both;}
 .hideScreenReaderSafe {display:none;}
-
 .textInput.text {margin-left:2px;}
-.dontFloat.f-loginiam.notregister{float:right; width:95%; background:#eee; margin:10px 0;border:0px solid #333;padding-left: 15px;padding-top: 20px;
-height: 45px;}
+.dontFloat.f-loginiam.notregister{float:right; width:95%; background:#eee; margin:10px 0;border:0px solid #333;padding-left: 15px;padding-top: 20px;height: 55px;}
 .dontFloat.f-loginiam.registered {float:left; width:95%; background:#eee; margin:10px 0; border:0px solid #333; padding-left: 15px;}
 .customer {}
-.checkoutLoginAlR input.button.buttonAlt.submit:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;clear: both;}
+.checkoutLoginAlR input.button.buttonAlt.submit:hover {background: #804040;color: #fff;font-weight: bold;border: 1px solid #fff;text-transform: uppercase;padding: padding: 8px 75px;;cursor: pointer;float: left;clear: both;}
 input#passwordsent.button.buttonArrow.right:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; clear: both; margin-top:0;}
-.checkoutLoginAlR input.button.buttonAlt.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;clear: both;}
+.checkoutLoginAlR input.button.buttonAlt.submit {background: #7a1636;color: #fff;font-weight: bold;border: 1px solid #fff;text-transform: uppercase;padding: padding: 8px 75px;;cursor: pointer;float: left;clear: both;}
 input#passwordsent.button.buttonArrow.right {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; clear: both; margin-top:0;}
 input.button.buttonAlt.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;clear: both;}
 .registertxt {display:none;}
 .checkoutLoginEqH {}
 .checkoutLoginEqH label{clear:both; float:left; margin-top: 10px;}
-.checkoutLoginEqH input{clear:both;float: left; margin-top: 5px;
-margin-bottom: 5px;background-color: #FFFFFF;width: 250px;}
-.checkoutLoginEqH.input:-webkit-autofill {
-background-color: #FFFFFF;}
-.forgottenpassword {
-clear: both;
-float: left;
-padding-top: 10px;
-padding-bottom: 10px;
-font-size:12px;
-	}
-.forgottenpassword a {
-clear: both;
-float: left;
-font-weight:bold;
-width: 140px;
-line-height:0;
-	}
-.checkoutLoginAlR {
-	margin-bottom:10px;
-}
+.checkoutLoginEqH input{clear: both;float: left;margin-top: 5px;margin-bottom: 5px;background-color: #FFFFFF;width: 250px;height: 24px;padding-left: 3px;font-size: 12px;border: 1px solid #666666;}
+.checkoutLoginEqH.input:-webkit-autofill {background-color: #FFFFFF;}
+.forgottenpassword a{font-size:12px !important;}
+.forgottenpassword {clear: both;float: left;line-height: 10px !important;padding-bottom: 10px;padding-top: 10px;}
+.forgottenpassword a {clear: both;float: left;font-weight:bold;width: 140px;line-height:0;}
+.checkoutLoginAlR {margin-bottom:10px;}
 .formSeparator{clear:both; width:100%; display:block; height:10px;}
 .box.expresscheckout {display:none;}
 #reminderform fieldset {background:#eee; margin:15px 5px ; display:block; border:0px solid #333;padding: 10px 15px; width:96%; color:#333; font-weight:bold:}
 input#phone.textInput.validateError, input#usemail.textInput.validateError, input#uspswd.textInput.validateError , input#uspswd2.textInput.validateError, input#usemail.validateError, input#zipc.textInput.validateError, input#email.textInput.validateError {color:#000;}
-.validateError {color:#F00;margin-right: 5px;
-float: left; margin-bottom: 10px;}
+.validateError {color:#F00;margin-right: 5px;float: left; margin-bottom: 10px;}
 .error {color:#F00;margin-left: 2px;}
