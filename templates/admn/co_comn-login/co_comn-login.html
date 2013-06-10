@@ -1,119 +1,126 @@
-<style type="text/css">
-/* STYLE FOR SIGN IN ONLY */
-#checkout .checkoutL {float:none !important;width:938px; !inportant;}
-</style>
-<venda_category rec=elementcat,ref=signintopcontent>
+	<style type="text/css">
+	.Lcattree {display:none;}
+	.topbreak {height:50px; display:block;}
+	#footer {border-top: 0px solid #666666; margin-top:15px;}
+	.footerLinksCols.left {display:none;}
+	.mainFooter.container_24.clearfix, #footerLinks {border-top: 1px solid #666666;}
+	h3:hover, fieldset:hover {text-decoration:none;}
+	</style>
+<venda_tpcomment><!--
+Form param notes:
+- param1: used to pass email address between this step and password reminder
+- param2: used to determine if previous step was password reminder
+Known issues:
+- On error, layout is lost, unless passed through as a hidden field
+- On error co_comn-login is used directly instead of as an include
+- On error venda_wizurl tags are untranslated
+--></venda_tpcomment>
 
-<div class="checkoutL">
-<div class="container signin">
+<venda_block label=desktop,workflow!=checkoutmobile,workflow!=registermobile>
+<div class="<venda_workflow> <venda_curstep> container signinContent loginType_d">
 
-<venda_inctemplate type=admn/co_comn-login,name=heading_intro>
+<h1 class="hideScreenReaderSafe"><venda_text id=desktop.heading.log_in></h1>
+<venda_block label=errors,errors=notnull><div class="error" style="font-weight:bold; font-size:14px"><venda_errors></div></venda_block label=errors>
 
-<form name="loginform" id="loginform" method="post" action="<venda_codehttps>" onSubmit="return passEmail();">
-<venda_esat>
-<venda_block label=11,errors=notnull>
-<input type="hidden" name="param1" value="<venda_param1>">
-</venda_block label=11>
-
-<venda_tpcomment><!-- common values --></venda_tpcomment>
-<venda_block label=21,mode=value,<venda_htxt mode=get,name=group>=>
-<input type="hidden" name="log" value="1">
-</venda_block label=21>
-<input type="hidden" name="bsref" value="<venda_bsref>">
-<input type="hidden" name="trrfext" value="1">
-<input type="hidden" name="htxt" value="<venda_htxt mode=get,name=foo>"><venda_tpcomment><!-- used by sign in popup - not detrimental as part of standard sign in --></venda_tpcomment>
-
-<venda_block label=20,workflow!=shopcart,workflow!=giftcertificates,workflow!=refer>
-<venda_block label=23,workflow!=giftlist>
-<venda_tpcomment><!-- values for workflow=register, or view if you have errors --></venda_tpcomment>
-<input type="hidden" name="page" value="checkgroup">
-<input type="hidden" name="ex" value="co_disp-view">
-<input type="hidden" name="curlayout" value="checkout">
-<input type="hidden" name="layout" value="myaccount">
-<venda_block label=20,mode=value,<venda_htxt mode=get,name=group>=press>
-<input type="hidden" name="log" value="1">
-<input type="hidden" name="assignusgrref" value="press">
-</venda_block label=20>
-</venda_block label=23>
-
-<venda_block label=21,workflow=giftlist,step!=glstmang>
-<venda_tpcomment><!-- values for workflow=giftlist create --></venda_tpcomment>
-<input type="hidden" name="step" value="glstcreate">
-<input type="hidden" name="curstep" value="glstcreate">
-<input type="hidden" name="ex" value="co_wizr-giftlist">
-<input type="hidden" name="curlayout" value="default">
-<input type="hidden" name="layout" value="default">
-<input type="hidden" name="glstlogout" value="1">
-</venda_block label=21>
-
-<venda_block label=22,workflow=giftlist,step=glstmang>
-<venda_tpcomment><!-- values for workflow=giftlist mang --></venda_tpcomment>
-<input type="hidden" name="step" value="glstmang">
-<input type="hidden" name="ex" value="co_wizr-giftlist">
-<input type="hidden" name="curlayout" value="default">
-<input type="hidden" name="layout" value="default">
-</venda_block label=22>
-</venda_block label=20>
-
-<venda_block label=12,workflow=shopcart,workflow=giftcertificates,operator=or>
-<venda_tpcomment><!-- values for workflow=shopcart or giftcertificates (and co_comn-login shopcart) only --></venda_tpcomment>
-<venda_block label=13,usgrref!=instore><input type="hidden" name="step" value="confirm"></venda_block label=13>
-<venda_block label=14,usgrref=instore>
-<input type="hidden" name="step" value="searchuser">
-<input type="hidden" name="wizard" value="instore">
-<input type="hidden" name="param1" value="details">
-<input type="hidden" name="log" value="2">
-<input type="hidden" name="copysc" value="0">
-</venda_block label=14>
-<input type="hidden" name="ex" value="co_wizr-shopcart">
-<input type="hidden" name="curlayout" value="checkout">
-</venda_block label=12>
-
-<venda_block label=13,workflow=refer>
-<venda_tpcomment><!-- values for workflow=refer (and co_comn-login refer) only --></venda_tpcomment>
-<input type="hidden" name="step" value="refer">
-<input type="hidden" name="ex" value="co_wizr-refer">
-<input type="hidden" name="curlayout" value="checkout">
-<input type="hidden" name="layout" value="myaccount">
-</venda_block label=13>
-
-<venda_block label=15,usgrref!=instore><input type="hidden" name="glxt" value="<venda_glxt mode=make,addsnotdone=1>"></venda_block label=15>
-<div id="exisitinguser">
-<h1>Existing Customers</h1>
-<venda_inctemplate type=includes/admn/co_comn-login,name=email_address>
-<venda_inctemplate type=admn/co_comn-login,name=password>
-<venda_inctemplate type=admn/co_comn-login,name=js_buttons>
+<venda_block label=sent,param2=passwordsent>
+<div class="passwordsent">
+        <p><venda_text id=desktop.info.password_reminder_info1></p>
 </div>
-<div class="notregister">
-<div class="notregisterinput">
-<h1><venda_text id=site.sign_in.label.not_registered></h1></div>
-<div class="notregistertxt"><venda_text id=site.sign_in.create_password_later></div>
-<div id="buttons2">
-<venda_block label=75,workflow!=shopcart>
-<input class="right" type="image" alt="<venda_text id=site.button.register>" onclick="document.loginform.registered[0].checked=true;document.loginform.registered[1].checked=false;" src="/content/ebiz/heals/resources/images/bt_registersmall.gif"/>
-</venda_block label=75>
-<venda_block label=76,workflow=shopcart>
-<input class="right" type="image" alt="<venda_text id=site.button.registerandcheckout>" onclick="document.loginform.registered[0].checked=true;document.loginform.registered[1].checked=false;" src="/content/ebiz/heals/resources/images/bt_registerandcheckout.gif"/>
-</venda_block label=76>
+</venda_block label=sent>
+
+<venda_block label=facebookconnect,mode=value,<venda_setting type=ebiz,name=facebookappid>!=>
+<div class="facebookConnect">
+   <p><venda_text id=desktop.info.facebook_1>:</p>
+   <a href="<venda_block label=ischeckout,workflow=shopcart>/bin/venda?ex=co_wizr-shopcart&bsref=<venda_bsref>&step=confirm</venda_block label=ischeckout><venda_block label=islogin,workflow=register><venda_dispview page=myaccount></venda_block label=islogin>&log=1&auth=facebook" class="button buttonFacebook"><venda_text id=desktop.button.log_in_facebook></a>
+   <p><venda_text id=desktop.info.facebook_2>:</p>
 </div>
-<br class="clear-all">
+</venda_block label=facebookconnect>
+
+<div class="newcustbox">
+<div class="<venda_block label=50,mode=value,<venda_workflow>!=checkout>grid_12</venda_block label=50><venda_block label=60,mode=value,<venda_workflow>=checkout>grid_8</venda_block label=60> box alpha">
+        <form method="post" name="<venda_curstep>form-register" action="<venda_codehttps>" id="newcustomer">
+        <venda_esat>
+        <input type="hidden" name="ex" value="co_wizr-<venda_workflow>">
+        <input type="hidden" name="workflowid" value="<venda_workflowid>">
+        <input type="hidden" name="trrfnbr" value="<venda_userinfo><venda_sesid></venda_userinfo>">
+        <input type="hidden" name="log" value="2">
+        <input type="hidden" name="trrfext" value="1">
+        <input type="hidden" name="registered" value="0">
+        <input type="hidden" name="glxt" value="<venda_glxt mode=make,glxtusertype=>"><venda_tpcomment><!-- To reset the glxt if the user was partially registered (guest checkout) --></venda_tpcomment>
+        <input type="hidden" name="step" value="billingaddressadd">
+
+<h3 id="register_header"><venda_text id=desktop.heading.new_customer></h3>
+        <fieldset class="dontFloat f-loginiam notregister">
+                <div class="boxContent">
+                <div class="checkoutLoginEqH">
+                        <!--<p class="newcusttxt"><venda_text id=desktop.info.new_customer_1></p>-->
+                </div>
+                <div class="notregisterbtn checkoutLoginAlR"><input type="submit"<venda_block label=691,workflow=checkout> data-trackEvent="Checkout"</venda_block label=691> value="<venda_text id=desktop.button.continue>" class="button buttonAlt submit" style="font-size: 12px"></div>
+                </div>
+        </fieldset>
+        </form>
 </div>
-<venda_inctemplate type=admn/co_comn-login,name=express_checkout>
-
-
-</form>
-
 </div>
 
-<venda_category rec=elementcat,ref=signincontent>
-
+<div class="returncustbox">
+<div class="<venda_block label=70,mode=value,<venda_workflow>!=checkout>grid_12 omega</venda_block label=70><venda_block label=80,mode=value,<venda_workflow>=checkout>grid_8</venda_block label=80> box alpha">
+        <form method="post" name="<venda_curstep>form-existing" action="<venda_codehttps>" id="existingcustomer">
+        <venda_esat>
+        <input type="hidden" name="ex" value="co_wizr-<venda_workflow>">
+        <input type="hidden" name="workflowid" value="<venda_workflowid>">
+        <input type="hidden" name="trrfnbr" value="<venda_userinfo><venda_sesid></venda_userinfo>">
+        <input type="hidden" name="log" value="1">
+        <input type="hidden" name="trrfext" value="1">
+        <input type="hidden" name="registered" value="1">
+        <venda_block label=register,workflow=register><venda_tpcomment><!-- Step selection for register workflow --></venda_tpcomment>
+        <input type="hidden" name="layout" value="myaccount">
+        <input type="hidden" name="step" value="--page-myaccount">
+        <input type="hidden" name="curlayout" value="1column"><venda_tpcomment><!-- Preserve layout on error --></venda_tpcomment>
+        </venda_block label=register>
+        <venda_block label=checkout,workflow!=register><venda_tpcomment><!-- Step selection for checkout workflow --></venda_tpcomment>
+        <input type="hidden" name="layout" value="checkout2">
+        <input type="hidden" name="step" value="ordersummary">
+        <input type="hidden" name="curlayout" value="checkout2"><venda_tpcomment><!-- Preserve layout on error --></venda_tpcomment>
+        </venda_block label=checkout>
+        <input type="hidden" name="glxt" value="<venda_glxt mode=make,glxtusertype=>"><venda_tpcomment><!-- To reset the glxt if the user was partially registered (guest checkout) --></venda_tpcomment>
+                       <h3 id="register_header"><venda_text id=desktop.heading.returning_customer></h3>
+        <fieldset class="dontFloat f-loginiam registered">
+                <div class="boxContent">
+                <div class="checkoutLoginEqH">
+                        <p class="registertxt"><venda_text id=desktop.info.returning_customer_1></p>
+                        <label for="email" id="lLoginEmail" style="width:80%;"><venda_text id=desktop.form.email>:</label>
+                        <input type="text" class="textInput" name="email" id="email" value="<venda_block label=pwrm,param2=passwordsent,param2=passwordcancel,operator=or><venda_param1></venda_block label=pwrm><venda_block label=notpwrm,param2=null,ustype=R><venda_userinfo><venda_sesusemail></venda_userinfo></venda_block label=notpwrm>" size="20" maxlength="150" style="font-size:12px;">
+                        <label for="password" id="lLoginRegisterPassword" style="width:80%;"><venda_text id=desktop.form.password>:</label> <input type="password" class="textInput" name="password" id="password" size="20" maxlength="150" style="font-size:12px;">
+                        <div class="forgottenpassword" style="line-height:0; width: 300px; color: #333; font-size: 12px;"><a id="passwordreminder" href="<venda_codehttps>?ex=co_wizr-<venda_workflow>&workflowid=<venda_workflowid>&bsref=<venda_bsref>&step=passwordreminder" style="width: 300px;"><b><venda_text id=desktop.button.forgotten_password></b></a></div>
+                        <div class="formSeparator"></div>
+                <div class="checkoutLoginAlR"><input type="submit"<venda_block label=692,workflow=checkout> data-trackEvent="Checkout"</venda_block label=692> value="<venda_text id=desktop.button.log_in>" class="button buttonAlt submit" style="padding-bottom:20px; font-size: 12px;"></div>
+                </div>
+                </div>
+        </fieldset>
+        </form>
 </div>
 
-<venda_tpcomment><!-- 
-step:<venda_curstep>
-param1: <venda_param1>
-param2: <venda_param2>
-workflow: <venda_workflow>
-page: co_comn-login
- --></venda_tpcomment>
-<venda_tpxt mode=set,name=co_comn-login,value=1>
+<venda_block label=69,mode=value,<venda_workflow>=checkout>
+<div class="grid_8 alpha">
+<!--<div class="box expresscheckout">
+        <h2 class="header"><venda_text id=desktop.heading.guest_customer></h2>
+        <div class="boxContent">
+                <div class="checkoutLoginEqH">
+                        <p><venda_text id=desktop.info.checkout_without_registering_1></p>
+                        <p class="msg2"><venda_text id=desktop.info.checkout_without_registering_2></p>
+                </div>
+                <div class="checkoutLoginAlR">
+                        <a class="button buttonAlt" href="<venda_wizurl step=billingaddressadd,secure=yes>&log=2&glxt=<venda_glxt mode=make,glxtusertype=p>" data-trackEvent="Checkout"><venda_text id=desktop.button.continue_without_registering></a>
+                </div>
+      </div> --> 
+</div>
+</div>
+</venda_block label=69>
+
+</div>
+<venda_tpcomment><!-- Used for session expire message --></venda_tpcomment>
+<venda_tpxt mode=set,name=login,value=1>
+<venda_tpcomment><!-- trackingstep tpxt used in templates/tracking/shared  --></venda_tpcomment>
+<venda_tpxt mode=set,name=trackingstep,value=login>
+<venda_inctemplate name=workflowSteps,type=tracking/shared>
+</venda_block label=desktop>

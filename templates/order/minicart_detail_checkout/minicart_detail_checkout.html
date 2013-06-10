@@ -1,0 +1,81 @@
+<venda_detblock_item>
+<li class="li_<venda_invtref>" id="li_<venda_invtref>">
+<div class="minicartDetailHighlight" id="minicartDetailHighlight_<venda_invtref>"></div>
+
+<div class="minicartDetailContent">
+<venda_block label=45,invtpublish=1>
+<venda_block label=119,invtref!=giftcert>
+<venda_tpcomment><!-- product --></venda_tpcomment>
+    <div class="image">
+    <venda_block label=20,invtatt1=notnull>
+        <venda_tpcomment><!--product has attributes--></venda_tpcomment>
+                    <venda_block label=231,med-small=notnull>
+                        <venda_tpcomment><!--use key=small--></venda_tpcomment>
+                        <td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><venda_media rec=invt,type=movie-swf-pict,key=small,border=0,width=120,height=120></a></td>
+                    </venda_block label=231>
+
+                    <venda_block label=232,med-small=null>
+                        <venda_tpcomment><!--use noimage graphic if 'small' is null--></venda_tpcomment>
+                        <td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
+                    </venda_block label=232>
+    </venda_block label=20>
+    <venda_block label=30,invtatt1=null>
+            <venda_block label=31,med-small=notnull>
+                <venda_tpcomment><!--if not 'set' prefix - no alt. images functionality --></venda_tpcomment>
+                <td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><venda_media rec=invt,type=pict,key=small></a></td>
+            </venda_block label=31>
+            <venda_block label=32,med-small=null>
+                <venda_tpcomment><!--without key=xsmall--></venda_tpcomment>
+                <td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
+            </venda_block label=32>
+
+        </venda_block label=32>
+    </venda_block label=30>
+    </div>
+    <div class="details">
+        <venda_block label=80,invtatrtot&lt;1><span class="item"><venda_invtname></span></venda_block label=80>
+        <venda_block label=81,invtatrtot&gt;0><span class="item"><venda_invtname></span> <!--<span class="invtatt">(<venda_invtatt1><venda_block label=7,invtatt2=notnull>, <venda_invtatt2></venda_block label=7><venda_block label=8,invtatt3=notnull>, <venda_invtatt3></venda_block label=8><venda_block label=9,invtatt4=notnull>, <venda_invtatt4></venda_block label=9>)</span></venda_block label=81>-->
+        <br/><span class="quantity"><venda_text id=desktop.info.qty>:&nbsp;<venda_oiqty></span><br/>
+        <span class="price"><venda_currsym><venda_invtsell><venda_block label=10,oiqty&gt;1>&nbsp;<venda_text id=desktop.info.each></venda_block label=10></span>
+    </div>
+</venda_block label=119>
+
+<venda_block label=229,invtref=giftcert>
+    <venda_tpcomment><!-- giftcert --></venda_tpcomment>
+    <div class="image">
+        <venda_block label=412,med-small=notnull>
+        <venda_media rec=invt,type=movie-swf-pict,key=small>
+        </venda_block label=412>
+        <venda_block label=422,med-small=null>
+        <img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>">
+        </venda_block label=422>
+    </div>
+    <div class="details">
+        <span class="item"><venda_invtname></span>
+        <span class="quantity"><venda_text id=desktop.info.qty>:&nbsp;<venda_oiqty></span>
+        <span class="price"><venda_currsym><venda_oiextprice></span>
+    </div>
+</venda_block label=229>
+</venda_block label=45>
+<venda_block label=46,invtpublish!=1>
+<venda_tpcomment><!-- unpublished --></venda_tpcomment>
+
+    <venda_block label=43,invtref!=giftcert>
+    <div class="image">
+        <venda_block label=41,med-small=notnull>
+        <venda_media rec=invt,type=movie-swf-pict,key=small>
+        </venda_block label=41>
+        <venda_block label=42,med-small=null>
+        <img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>">
+        </venda_block label=42>
+    </div>
+    </venda_block label=43>
+    <div class="details">
+        <span class="item"><venda_invtname></span>
+        <p class="unpublished"><venda_text id=desktop.info.not_available></p>
+    </div>
+</venda_block label=46>
+</li>
+</venda_detblock_item>
+
+<ul id="minicart_products" class="prods prodsList prodsMinicartCheckout"><venda_detail_item></ul>

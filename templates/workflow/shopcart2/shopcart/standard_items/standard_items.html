@@ -1,0 +1,168 @@
+<venda_detblock5>
+<venda_block label=41,oiwizcode=null>
+	<input type="hidden" name="oiord" value="<venda_invtref>">
+	<input type="hidden" name="<venda_cartfield name=deleteline>" value="">
+
+	<venda_block label=115,oiitype=3>
+	<!-- if product is gift certificate -->
+	<input type="hidden" name="<venda_cartfield name=setqty>" id="form<venda_cartfield name=setqty>" value="<venda_oiqty>">	
+	<tr class="standarditem">
+		<td class="thumb gcimage" style="width:20%;"><a href="<venda_codehttp>?ex=co_wizr-giftcertificates&bsref=<venda_bsref>" title="Buy another <venda_invtname>">
+		<!--<venda_block label=150a,med-<venda_setting type=ebiz,name=setshoppingbasketimagekey>=notnull><venda_media rec=invt,type=pict,key=<venda_setting type=ebiz,name=setshoppingbasketimagekey>></venda_block label=150a>-->
+        		<venda_block label=150,med-small=notnull><venda_media rec=invt,type=movie-swf-pict,key=small,border=0></venda_block label=150>
+		<venda_block label=151,med-medium=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_medium.gif" alt="<venda_text id=desktop.info.no_product_image>"></venda_block label=151></a></td>
+		<td class="name"><a href="<venda_codehttp>?ex=co_wizr-giftcertificates&bsref=<venda_bsref>" title="Buy another <venda_invtname>"><venda_invtname></a>
+			<p class="gcdetails">
+				<span class="gcsentto"><venda_text id=desktop.info.giftcert_sent_to_shopcart></span><br>
+				<span class="gcmessage"><venda_text id=desktop.info.giftcert_message>: <venda_oicmt></span>
+			</p>
+		</td>
+		<td class="remove">
+
+			<a href="#" class="removeItem" data-trackEvent="Shopping" data-role="button" data-line="<venda_cartfield name=deleteline>" data-wizard="shopcart2"><b>X</b></a>
+		</td>	
+		<td class="quantity"><venda_block label=456,invtatt1=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl1>:</div> <div class="optionRight"><venda_invtatt1></div></div></venda_block label=456>
+		<venda_block label=457,invtatt2=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl2>:</div> <div class="optionRight"><venda_invtatt2></div></div></venda_block label=457>
+		<venda_block label=458,invtatt3=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl3>:</div> <div class="optionRight"><venda_invtatt3></div></div></venda_block label=458>
+		<venda_block label=459,invtatt4=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl4>:</div> <div class="optionRight"><venda_invtatt4></div></div></venda_block label=459>
+		<venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1>		
+		<div class="optionBox">
+			<div class="optionLeft"><label for="form<venda_cartfield name=setqty>"><venda_text id=desktop.info.qty></label></div> 
+			<div class="optionRight">
+
+				<input type="text" name="<venda_cartfield name=setqty>" id="form<venda_cartfield name=setqty>" size="2" maxlength="3" value="<venda_oiqty>" class="qty" onkeypress="if(event.keyCode==13){jQuery('#update<venda_cartfield name=setqty>').click(); return false;}">
+
+				<a id="update<venda_cartfield name=setqty>" href="#" onclick="if(Venda.Ebiz.validateQty()){document.<venda_curstep>form.wizard.value='<venda_workflow>';document.<venda_curstep>form.step.value='<venda_curstep>';document.<venda_curstep>form.submit()} return false;" title="<venda_text id=desktop.button.update> <venda_invtname>"><venda_text id=desktop.button.update></a>
+			</div>
+		</div></td>		
+		<td class="Availability"><!--<p class="instock"><venda_text id=desktop.info.in_stock></p>-->
+        <venda_block label=50,oiitype=3><venda_text id=desktop.info.in_stock></venda_block label=50>
+		<venda_block label=51,oiitype!=3>	
+		<!--<div id="invt<venda_oiivref>"></div>-->
+		<venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
+        <venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
+		<!-- Include Availability nonattribute from invt -->
+		<script type="text/javascript">
+			$("#invt<venda_oiivref>").load("/bin/venda?ex=co_wizr-productgrid&bsref=<venda_bsref>&step=shopcartmulti&invt=<venda_oiivref>&ordercol=alphanu&layout=contentonly p#invt<venda_oiivref>");
+		</script>	
+		</venda_block label=51>
+        </td>
+		<td class="totalprice"><venda_currsym><venda_oiextprice></td>
+	</tr>
+	</venda_block label=115>
+	
+	<venda_block label=116,oiitype!=3>
+	<!-- if product is not gift certificate -->
+	<tr class="standarditem">
+		<venda_block label=111,invtatt1=notnull>
+			<venda_tpcomment><!--product has attributes--></venda_tpcomment>
+			
+					<venda_block label=231,med-small=notnull>
+						<venda_tpcomment><!--use key=small--></venda_tpcomment>
+						<td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><venda_media rec=invt,type=movie-swf-pict,key=small,border=0,width=120,height=120></a></td>
+					</venda_block label=231>
+
+					<venda_block label=232,med-small=null>
+						<venda_tpcomment><!--use noimage graphic if 'medium' is null--></venda_tpcomment>
+						<td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_medium.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
+					</venda_block label=232>
+
+
+			<td class="name" valign="middle">
+            
+            <!-- <a href="<venda_dispview invt=<venda_invtparef>>"> -->
+            
+            <venda_block label=4562,invtatt1=null> <!-- <venda_invtname> --> </venda_block label=4562>
+            
+            <!-- </a> <span class="sku"><venda_text id=desktop.info.sku>: <venda_invtref></span>-->
+            
+               <venda_block label=456,invtatt1=notnull> 
+		<div class="optionBox"><!--<div class="optionLeft"><venda_invtatrlbl1>:</div>--> <div class="optionRight"><venda_invtatt1></div></div></venda_block label=456>
+		<venda_block label=457,invtatt2=notnull> 
+		<div class="optionBox"><!--<div class="optionLeft"><venda_invtatrlbl2>:</div>--> <div class="optionRight"><venda_invtatt2></div></div></venda_block label=457>
+		<venda_block label=458,invtatt3=notnull> 
+		<div class="optionBox"><!--<div class="optionLeft"><venda_invtatrlbl3>:</div>--> <div class="optionRight"><venda_invtatt3></div></div></venda_block label=458>
+		<venda_block label=459,invtatt4=notnull> 
+		<div class="optionBox"><!--<div class="optionLeft"><venda_invtatrlbl4>:</div>--> <div class="optionRight"><venda_invtatt4></div></div></venda_block label=459>
+		<venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1>		
+		<!--<div class="optionBox">
+			<div class="optionLeft"><label for="form<venda_cartfield name=setqty>"><venda_text id=desktop.info.qty></label></div>
+			<div class="optionRight"> -->
+
+            </td>
+		</venda_block label=111>
+		
+		<venda_block label=113,invtatt1=null>
+			<venda_tpcomment><!-- non-attributes--></venda_tpcomment>
+			<venda_block label=31,med-small=notnull>
+				<venda_tpcomment><!--if not 'set' prefix - no alt. images functionality --></venda_tpcomment>
+				<td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><venda_media rec=invt,type=pict,key=small></a></td>
+			</venda_block label=31>
+			<venda_block label=32,med-medium=null>
+				<venda_tpcomment><!--without key=xsmall--></venda_tpcomment>
+				<td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_medium.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
+			</venda_block label=32>
+			<td class="name">
+            <!--<a href="<venda_dispview invt=<venda_invtref>>"><venda_invtname></a><venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><span class="sku"><venda_text id=desktop.info.sku>: <venda_invtref></span><p class="instock"><venda_text id=desktop.info.in_stock></p>-->
+            
+            <venda_block label=456,invtatt1=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl1>:</div> <div class="optionRight"><venda_invtatt1></div></div></venda_block label=456>
+		<venda_block label=457,invtatt2=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl2>:</div> <div class="optionRight"><venda_invtatt2></div></div></venda_block label=457>
+		<venda_block label=458,invtatt3=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl3>:</div> <div class="optionRight"><venda_invtatt3></div></div></venda_block label=458>
+		<venda_block label=459,invtatt4=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl4>:</div> <div class="optionRight"><venda_invtatt4></div></div></venda_block label=459>
+		<venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1>		
+		<div class="optionBox">
+			<div class="optionLeft"><label for="form<venda_cartfield name=setqty>"><venda_text id=desktop.info.qty></label></div> 
+			<div class="optionRight">
+
+			</div>
+		</div></td>
+		</venda_block label=113>
+		<td class="priceeach" valign="middle"><venda_currsym><venda_invtsell>
+		</td>	
+		<td class="quantity" valign="middle">
+        
+        <!--<div class="basketLine">-->
+        
+        <input type="text" name="<venda_cartfield name=setqty>" id="form<venda_cartfield name=setqty>" size="2" maxlength="3" value="<venda_oiqty>" class="qty" onkeypress="if(event.keyCode==13){jQuery('#update<venda_cartfield name=setqty>').click(); return false;}">
+        
+        </td>
+		<!--td class="priceeach"><venda_currsym><venda_invtsell></td-->
+
+		<td class="availability" valign="middle">
+        <p class="instock"><venda_text id=desktop.info.in_stock></p>
+		<!--<venda_block label=456,invtatt1=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl1>:</div> <div class="optionRight"><venda_invtatt1></div></div></venda_block label=456>
+		<venda_block label=457,invtatt2=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl2>:</div> <div class="optionRight"><venda_invtatt2></div></div></venda_block label=457>
+		<venda_block label=458,invtatt3=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl3>:</div> <div class="optionRight"><venda_invtatt3></div></div></venda_block label=458>
+		<venda_block label=459,invtatt4=notnull> 
+		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl4>:</div> <div class="optionRight"><venda_invtatt4></div></div></venda_block label=459>
+		<venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1>		
+		<div class="optionBox">
+			<div class="optionLeft"><label for="form<venda_cartfield name=setqty>"><venda_text id=desktop.info.qty></label></div> 
+			<div class="optionRight">
+	
+				
+	
+
+			</div>
+		</div>-->
+		</td>
+		
+		<td class="totalprice" valign="middle"><venda_currsym><venda_oiextprice></td>
+<td valign="middle" style="color:#666666;">
+<a href="#" class="removeItem" data-trackEvent="Shopping" data-role="button" data-line="<venda_cartfield name=deleteline>" data-wizard="shopcart2"><b>X</b></a>
+</td>
+	</tr>
+	</venda_block label=116>
+</venda_block label=41>
+</venda_detblock5>

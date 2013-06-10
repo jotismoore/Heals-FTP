@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="<venda_block label=10,mode=value,<venda_sessionlanguage>=ae>en-US</venda_block label=10><venda_block label=11,mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block label=11>" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="<venda_block label=20,mode=value,<venda_sessionlanguage>=ae>en-US</venda_block label=20><venda_block label=21,mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block label=21>" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="<venda_block label=30,mode=value,<venda_sessionlanguage>=ae>en-US</venda_block label=30><venda_block label=31,mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block label=31>" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="<venda_block label=40,mode=value,<venda_sessionlanguage>=ae>en-US</venda_block label=40><venda_block label=41,mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block label=41>" class="no-js"> <!--<![endif]-->
+<venda_block label=tagmanorderconf1,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<script> 
+TMAN.doTags(TMAN.position.PRE_HEAD); 
+</script>
+</venda_block label=tagmanorderconf1> 
+<head>
+<venda_block label=tagmanorderconf2,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<script> 
+TMAN.doTags(TMAN.position.TOP_HEAD); 
+</script>
+</venda_block label=tagmanorderconf2>
+<venda_inctemplate name=metatags,type=mainIncludes>
+<venda_inctemplate name=title,type=mainIncludes>
+
+<venda_inctemplate name=jsHead,type=mainIncludes>
+
+<!--<venda_inctemplate name=css,type=mainIncludes>-->
+<link media="screen, projector" type="text/css" href="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/css/styles.css" rel="stylesheet">
+<link media="screen, projector" type="text/css" href="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/css/checkout.css" rel="stylesheet">
+
+
+<venda_inctemplate name=head,type=tracking/shared>
+<venda_block label=tagmanorderconf3,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<script> 
+TMAN.doTags(TMAN.position.BOTTOM_HEAD); 
+</script>
+</venda_block label=tagmanorderconf3>
+</head>
+<body <venda_block label=110,mode=value,<venda_setting type=ebiz,name=tracktaggoogleanalytics>=1,<venda_islive>=1,<venda_tpxt mode=get,name=track>=orderreceipt> onLoad="__utmSetTrans();"</venda_block label=110> id="<venda_workflow>">
+<venda_block label=tagmanorderconf4,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<div id="TMAN_TOP_BODY"></div>
+<script> 
+TMAN.doTags(TMAN.position.TOP_BODY); 
+</script>
+</venda_block label=tagmanorderconf4>
+<venda_inctemplate name=bodyTop,type=tracking/shared>
+<venda_inctemplate name=admin,type=mainIncludes>
+<venda_inctemplate name=nojavascript,type=mainIncludes>
+<venda_inctemplate name=demo,type=mainIncludes>
+<div id="wrapper">
+	<a href="#content" class="skipToContent"><venda_text id=desktop.button.skip_to_content></a>
+	<div class="mainHeader container_24">
+			<venda_inctemplate name=header,type=menu>
+	</div><!-- end mainHeader -->
+	<div class="container_24 clearfix">
+        <div class="content grid_24"><a name="content" id="content"></a>
+                <venda_content>
+        </div>
+    </div><!-- end content container -->
+	<div class="mainFooter container_24 clearfix">
+		<venda_inctemplate name=footerLinks,type=menu/footer>
+	</div><!-- end mainFooter -->
+</div>
+<!-- end wrapper -->
+
+<venda_tpcomment><!-- validation defs --></venda_tpcomment>
+<venda_inctemplate name=validation,type=includes>
+<venda_inctemplate name=jsCheckout,type=mainIncludes>
+<venda_inctemplate name=bodyBottom,type=tracking/shared>
+<div id="TMAN_BOTTOM_BODY"></div>
+<script>
+TMAN.doTags(TMAN.position.BOTTOM_BODY); 
+</script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  ---header---   */
+
+.wrapper {height:100%;}
+body {font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 76%; font-style: normal; font-weight: normal;margin: 0 auto;}
+a {color:#333; text-decoration:none; text-decoration:none; font-weight:bold;}
+#checkout {width:940px; align}
+.header, #register_header {background:#fff;padding-top:0px;padding-bottom:10px; display:block; border-bottom:1px solid #666666; border-left:0px solid #fff; text-transform: uppercase; border-right:0px solid #fff; margin-bottom:5px; color: #333;}
+.box mainAlt h1 {font-size:-2;}
+#input:-webkit-autofill {
+background-color: #fff;
+background-image: none;
+color: #333;
+}
+
+#pcilogo {float:right;}
+
+#pcilogo h3 {clear: right;
+margin: 0; text-align:right; line-height: 10px;}
+
+.formSeparator{clear:both; width:100%; display:block; height:10px;}
+
+.mm_ul{clear:both; display:none;}
+
+.checkoutStepIndicators{clear:both; list-style:none; list-style-type: none; padding:3px 0;float: left;width: 940px;list-style: none;position: relative;z-index:1000; border-top: 1px solid #555; border-bottom: 1px solid #555; font-size:14px; color:#333; font-weight:normal; background-color:#fff;}
+.checkoutStepIndicators li{float: left;padding:0 25px 0 15px;border-right: 0px solid #555; text-align:center;text-transform: uppercase; color:#666;}
+.checkoutStepIndicators .onStep{ font-weight:bold;float: left;padding:0 25px 0 15px;border-right: 0px solid #555; text-align:center;text-transform: uppercase; color:#333 }
+
+.grid_5 a{
+    background: url("/content/ebiz/heals/resources/images/checkout-header.gif") repeat scroll 0 0 transparent;display: block;
+	left: 0;
+    width: 215px;
+	height:70px;
+	float:left;
+}
+
+.grid_5 a img {
+display:none;
+}
+
+.grid_10.push_9 a{
+    background: url("/content/ebiz/heals/resources/images/checkout-header.gif") repeat scroll -740px -17px transparent;display: block;
+	left: 440px;
+    width: 200px;
+	height:50px;
+	float:right;
+}
+
+.grid_10.push_9 a img {
+display:none;
+}
+
+.container_24.clearfix {display:block; clear:both;}
+
+.input:-webkit-autofill {
+background-color: #FFFFFF;}
+
+.validateError {color:#F00;margin-left: 5px;
+float: left;}
+input.validateError {color:#666666; margin-bottom: 18px; margin-left: 0;}
+select.validateError {color:#333333;}
+.error {color:#F00;margin-left: 2px;}
+
+
+/*  ---register page---   */
+
+select#title ,#fname.textInput , #lname.textInput, #phone.textInput, #zipc.textInput, #company.textInput, #num.textInput, #addr1.textInput, #addr2.textInput, #city.textInput, #statetext.textInput {margin-left:0px; height: 24px; padding-left: 3px; border: 1px solid #666666; padding-top: 2px;}
+
+.box.mainAlt p {font-weight:bold;}
+.newcustbox {float:right; width:50%; margin-bottom:15px;}
+.returncustbox {float:left; width:48%; margin-bottom:15px;}
+.checkout.login.container.signinContent.loginType_d {display:block; clear:both;}
+.hideScreenReaderSafe {display:none;}
+
+.textInput.text {margin-left:2px;}
+.dontFloat.f-loginiam.notregister{float:right; width:95%; background:#eee; margin:10px 0;border:0px solid #333;padding:15px 12px;
+height: 45px;}
+.dontFloat.f-loginiam.registered {float:left; width:95%; background:#eee; margin:10px 0; border:0px solid #333; padding-left: 15px;}
+.customer {}
+.checkoutLoginAlR input.button.buttonAlt.submit:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;clear: both;}
+.checkoutLoginAlR input.button.buttonAlt.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;clear: both;}
+input.button.buttonAlt.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;}
+.registertxt {display:none;}
+.checkoutLoginEqH {width: 94%;}
+.checkoutLoginEqH label{clear:both; float:left; margin-top: 10px;}
+.checkoutLoginEqH input{clear:both;float: left; margin-top: 5px;
+margin-bottom: 5px;background-color: #FFFFFF;width: 250px;height: 24px;
+padding-left: 3px; border: 1px solid #666666;}
+.checkoutLoginEqH.input:-webkit-autofill {
+background-color: #FFFFFF;}
+.forgottenpassword {clear: both;float: left;padding-top: 10px;padding-bottom: 10px;line-height: 10px !important;}
+.box.expresscheckout {display:none;}
+#reminderform fieldset {background:#eee; margin-bottom:15px;; display:block; border:0px solid #333;padding: 10px 15px;}
+
+/*  ---billing and delivery address---   */
+.addressbook {
+float: left;
+width: 100%;
+margin-bottom: 10px;
+}
+.addresslookup .loading, .loadingImg {
+background: #eeeeee url(../images/loading.gif) no-repeat 50% 50%;
+display: block;
+height: 56px;
+margin: 0 auto;
+width: 36px;
+}
+#promotions {line-height:8px;}
+#fname {margin-left:2px;}
+.updatebutton {padding-top:10px;}
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {float:right;}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.deliveryDialog {background:#eeeeee; padding: 20px;box-shadow:1px 5px 15px 1px #999;-moz-box-shadow: 1px 5px 15px 1px #999;
+-webkit-box-shadow: 1px 5px 15px 1px #999; border:1px solid #333;}
+#dialogContent {width:90%; height:auto !important; background:#eeeeee; padding:15px;-moz-box-shadow: 1px 5px 15px 1px #999;
+-webkit-box-shadow: 1px 5px 15px 1px #999; border:1px solid #333;}
+#dialogContent p, #dialogContent a, .ui-icon.ui-icon-closethick {padding:15px;}
+#dialogContent img {padding: 5px 15px;}
+.grid_6.push_18.alpha.checkoutR {clear: right;}
+#uklist {clear: both;
+    float: left;
+    margin-top: 10px;
+    width: 100%;}
+#uklist select {height: 28px;margin: 5px 0;}
+.container.addcontactaddress.addressform, .deliveryaddressaddform, .deliveryaddress.addressform, .editcontactaddressform {width:77%;}
+#addressForm {width:77%;}
+.addressbookform {}
+.grid_6.alpha.box {float:left; border-bottom: 10px solid #EEE}
+#addressBookList {
+    float: left;
+    background: #eeeeee;
+	margin-top: 25px;
+	border-top: 10px solid #eee;
+	border-bottom: 10px solid #eee;
+	border-right: 10px solid #eee;}
+#addressList {display:block; float:left; width: 100%;}
+#addressList form {float:left;}
+.addnewaddress {margin-top: 5px; margin-left: 0px;}
+.addressbookitems {width:100%; clear: both;}
+.bottomButtons.pull_1 {float:left;}
+.addressbox {float:left; border: 10px solid #EEE; list-style:none; height: 230px; width:auto; background:#fff;}
+#address_list{-webkit-padding-start: 0px;}
+#defaultFlag {font-weight:bold; line-height:24px;}
+input#lname.textInput.validateError, input#fname.textInput.validateError, input#phone.textInput.validateError, input#usemail.textInput.validateError, input#uspswd.textInput.validateError , input#uspswd2.textInput.validateError, input#usemail.validateError, input#zipc.textInput.validateError, input#email.textInput.validateError {color:#000;}
+.checkout.billingaddressadd.grid_18.omega.pull_6.checkoutL {float:none;}
+.box.checkoutMinicart {float:right; width:20%; padding: 0 5px 15px; border:1px solid #666; clear:right; margin-left:5px;}
+.prodsList .image {
+float: left;
+margin-right: 10px;
+position: relative;}
+.prodsMinicartCheckout .details {
+text-align: left; clear: both;
+}
+.span.quantity {clear:right;}
+#checkoutMinicart_totals {border-top: 1px solid #333; border-bottom: 1px solid #333; padding:3px 0; margin: 5px 0;}
+.box.basketAlt {float:left; width:77%; margin-bottom:10px;}
+.container.addcontactaddress.addressform, .container.deliveryaddressaddform.addressform, .container.editcontactaddress.addressform, .deliveryaddressaddform , .addressform, {float:left; display: block;}
+. checkout.billingaddressadd.grid_18.omega.pull_6 checkoutL fieldset, .container.addcontactaddress.addressform fieldset, .container.deliveryaddressaddform.addressform fieldset, .deliveryaddressaddform fieldset .container.editcontactaddress.addressform fieldset, .addressform fieldset, .container_24.clearfix fieldset, .content.grid_24 fieldset{background:#eeeeee; border:0px solid #333;width:100%;display: block;padding-top: 10px;}
+#fieldsetBox {background:#eeeeee; border:0px solid #333; display: block;padding-top: 12px; padding-bottom:10px;-webkit-padding-start: 0;
+-webkit-padding-end: 0; width: 98%;float: left;}
+.fieldset_break {width: 100%;
+display: block;
+height: 10px;}
+
+.fieldlabel input, #houseNum input, #stateDiv input, #grid_11.alpha input {margin-bottom:5px;width: 230px; margin-right:5px; height:24px; padding-left: 3px; border: 1px solid #666666;}
+
+.checkout.deliveryaddressedit.grid_18.omega.pull_6.checkoutL {float:none;}
+
+.title label.select {width:160px;float:left; text-align:right;}
+
+.radioButtons {width:90%;}
+.radioButtons span.title {width:190px;float:left; text-align:right; clear:right;}
+.radioButtons span {text-align: left;
+    vertical-align: top;}
+.radioButtons label {text-align: left;}
+.radioButtons input {margin:0 5px 0 10px; vertical-align: bottom; }
+.radioButtons input.deliveryaddressadd {width:170px;}
+.usebillingaddress 
+.usebillingaddress span {float:left;}
+
+.grid_6.omega.addresslookup input, .enterManually a, #lookupBtn, .grid_6.omega.addresslookup a{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0; font-size:12px;}
+.grid_6.omega.addresslookup input:hover, .enterManually a:hover, .lookupBtn:hover, .grid_6.omega.addresslookup a:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0;font-size:12px;}
+
+/*#enterManually {clear:none; color:#333; background:none; border:none; text-transform:lowercase; font-weight:normal; padding:0; margin-left:15px;}*/
+
+.errorMsg {float: left;
+text-align: right;
+width: 275px;
+clear: left;
+margin-right: 10px;
+color: #FF0000;
+}
+
+.tickBox, .passwordinfo {clear:none; 
+float:right; 
+text-align:left; 
+width: 520px;
+padding-right: 75px;
+font-weight: bold;
+}
+
+.box.checkoutMinicart header {margin-bottom:5px;}
+#minicart_products {list-style: none;-webkit-margin-before: 0;
+-webkit-padding-start: 0; padding-left: 5px;}
+.minicart_image {float:left;}
+
+.receiveMail input {float:left; clear:left; margin: 8px 10px 0 75px; ms-transform: scale(2);
+-moz-transform: scale(2);
+-webkit-transform: scale(2);
+-o-transform: scale(2);}
+
+#ustandc {text-align:center; left:auto; right:auto; width:100%;}
+#ustandc input {display:none;}
+input.button.buttonArrow, input.button.buttonAlt {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; cursor:pointer; float:right; margin: 6px 0 35px;
+    padding: 8px 75px;}
+input.button.buttonArrow:hover, input.button.buttonAlt:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; cursor:pointer; float:right; margin: 6px 0 35px;
+    padding: 8px 75px;}
+
+.fieldlabel label, .tag-addressUrl, .tag-zccompany, .tag-zcnum, .tag-zcaddr1, .tag-zcaddr2, .tag-zccity, .tag-zcstate, .tag-zczipcLabel, .tag-zcnum, #houseNum label, #stateDiv label, .grid_11.alpha label, .uklist label {float:left; text-align:right; width:205px; clear:left;margin-right: 10px;  margin-top: 6px;}
+.fieldlabel select {float:left; text-align:left; clear:right; height: 28px !important;}
+
+.fieldlabel.select#title, .fieldlabel.input#zipc.textInput {margin-left:0;}
+
+.grid_6.omega.addresslookup {margin-top:8px; margin-left:210px; clear:both;}
+
+/*
+.radioButtons fieldset{margin-left:-8px;}
+#cntrylist option {float:left;}
+*/
+
+#cntrylist {width:235px; height: 28px; border: 1px solid #666666; padding-top: 2px;}
+.box.grid_6 fieldset{border:0px solid #fff; list-style:none;}
+.addressbookinfo {clear:both;}
+.bottomButtons.pull_1 a, .button.buttonAlt{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer;}
+.button.buttonAlt:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer; }
+
+.multipleaddressbox {float:left; clear:both;}
+
+/*  ---order summary---   */
+
+#topitems {background:#eeeeee; clear:both; height:100%;}
+.checkoutorcf h1 {display:none;}
+.confirmTop.clearfix {background:#eeeeee; padding:0; clear:both;}
+.grid_6.alpha.confirmLeft {float:left; margin-right:5px; width: 100%;background: none repeat scroll 0 0 #EEEEEE; margin-top: 10px;}
+.box.deliveryaddress, .box.grid_6, .deliverymethod {background:#fff;padding:0 10px; display:block; border:10px solid #EEE; margin-bottom:0px; float:left;border-bottom: 5px solid #EEE; list-style: none outside none;}
+.box.deliveryaddress {border-bottom: 10px solid #EEE; padding-bottom:10px; width:46%}
+.box.deliverymethod {border-bottom: 10px solid #EEE; padding-bottom:10px; width:45%}
+.deliverymethod ul {left: 0;
+    list-style: none outside none;
+    position: relative;
+    width: 100%;
+	-webkit-padding-start: 0;
+	padding-left: 0;}
+.waitMesg.loadingImg.ui-dialog-content.ui-widget-content, #tag-waitMsg {background: #eeeeee url(../images/loading.gif) no-repeat 50% 50%; box-shadow:1px 5px 15px 1px #999;-moz-box-shadow: 1px 5px 15px 1px #999;
+-webkit-box-shadow: 1px 5px 15px 1px #999; border:1px solid #333; text-align:center; vertical-align:central; padding:10px; height:30px !important; }
+.box.deliveryaddress h3, .box.grid_6 h3 {border-left: 0px solid white; margin-bottom:5px;}
+#form-changerate0 ul{list-style:none; 
+list-style-type: none;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+padding-left: 0px;}
+#form-changerate0 h2 {font-size:-2;}
+.boxContent.deliveryoptions.homeAddress ul li {margin-left:0;}
+.box.deliveryrate {margin-left:0;}
+.box.deliveryrate input {
+margin: 3px 0px 0px 0px;
+vertical-align: middle;
+}
+#boxContent.deliveryoptions.homeAddress {list-style:none;}
+.checkout.multipledeliveryaddresses.box.basketAlt {width:100%;float:left;}
+.basketR table {
+float: left;
+background: white;
+padding: 10px;
+width: 100%;
+border: 10px solid #EEE;
+margin-left: 0;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.summaryupdate {padding: 10px 0; float:left;}
+
+#orderitems {}
+.orderDetblocksTable {float:right; background:#fff;padding:10px; width: 100%; border:10px solid #EEE; margin-left:0;padding-bottom: 20px; margin-bottom: 15px;}
+.giftwrapitem {display:none;}
+.orderDetblocksTable img {width:80%; float:left; margin: 5px;}
+.orderDetblocksTable td.thumb{width:15%;}
+.orderDetblocksTable td.name{padding-right: 30px;
+padding-top: 10px;
+width: 38%;}
+.orderDetblocksTable td.quantity input {width:30px;}
+.orderDetblocksTable td.priceeach{width:10%;padding-top:10px;}
+.orderDetblocksTable td.productname{padding-top:10px; padding-right:5px;}
+.orderDetblocksTable td.quantity{width:6%;padding-top:10px;}
+.orderDetblocksTable td.Availability{width: 14%; padding-top: 10px; padding-right: 11px;}
+.orderDetblocksTable td.totalprice{width:15%;padding-top:10px;}
+.orderDetblocksTable td.removeitem{width:9%;padding-top:10px; text-align:center;}
+.orderDetblocksTable thead {text-align:left; border-bottom:1px solid #666666; padding-bottom:3px;margin-bottom:5px;}
+.orderDetblocksTable thead tr {text-align:left; border-bottom:1px solid #666666; padding-bottom:3px;margin-bottom:5px; width:100%;}
+.orderDetblocksTable thead th {text-align:left; border-bottom:1px solid #666666; padding: 12px 5px;margin-bottom:5px;padding-right: 10px;}
+
+#additionalservices {float:left;width:43%; padding-bottom: 20px;}
+.redeemPromotionCode {background:#eeeeee; padding:15px 15px 15px 20px; margin:5px;margin-left:0px; clear:left;}
+.redeemPromotionCode label{font-weight: bold; text-transform: uppercase; clear:both; display:block;}
+.redeemPromotionCode input.textInput{margin-top:5px; margin-bottom:5px; padding:3px;width: 180px; height: 24px; border: 1px solid #666666;}
+.redeemPromotionCode input.button{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; width: 180px;}
+.redeemPromotionCode input.button a:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; display: block; width: 180px;}
+.redeemgift label {clear:both; font-weight:bold; text-transform:uppercase;display: block;margin-top: -12px;}
+.redeemgift input {clear:left;width: 185px;margin-top: 5px;
+margin-bottom: 5px;}
+.redeemgift input.textInput {padding: 3px; height: 24px; border: 1px solid #666666;}
+#ordersummary {float:right; width:97.5%; background:#999999; color:#FFF; padding:10px; font-weight:bold; font-size:+2; text-transform: uppercase;clear:both; margin-top: 15px;}
+#ordersummary div {float:left; clear:none; padding:10px 5px 0;}
+#ordersummary div.orderTotal {float:right; font-size: 16px;}
+#ordersummary div.subtotal, #ordersummary div.delivery, #ordersummary div.discount  {float:right; margin-right:5px;}
+#ordersummary h2 {display:none;}
+.orderdetails {
+	padding: 10px;
+font-weight: normal;
+color: #333;
+background: white;
+width: 100%;
+margin-bottom: 5px;
+}
+.hdrSubTotal {float:left;}
+.hdrDelivery {float:left;}
+.orscTotal {float:left;}
+.orscTotalFig {float:right;}
+
+.billing.address {background:#fff;padding:0 10px; display:block; width:40%; border:10px solid #EEE; margin-bottom:0px; float:right;border-bottom: 5px solid #EEE; list-style: none outside none;  border: 1px solid #666666;}
+
+.paymentdetail.boxContent.clearfix {padding:10px;margin: 15px 0 5px 0;background:#eeeeee; }
+.paymentdetail.boxContent.clearfix form {width:50%;background:#eeeeee; }
+#paymentdetailSection header {background:#fff;padding:10px; display:block; border-bottom:1px solid#333;}
+.f-payment_details, f-paypal {line-height:18px; padding: 15px;}
+.credit{clear:none; margin-right:15px;float:left; margin-bottom:5px; margin-top: 0;}
+.credit label{float:right; font-weight:bold; clear:none; margin-top: 5px;}
+.f-paypal {margin-top:10px; padding: 15px;}
+.f-paypal label{font-weight:bold; margin-right:5px; vertical-align: middle; width:110px;}
+.f-paypal img{vertical-align:middle; margin-left: 5px;}
+.f-paypal input {
+margin: 3px 3px 0px 0px;
+vertical-align: middle;
+}
+.switchsolo {padding: 15px 0;
+text-align: center;}
+input#creditcard, input#formpaypal, input#dontsavecc {border:none;}
+#creditcard, #dontsavecc, #formpaypal {margin-top:0; margin-right: 7px;}
+.credit input{clear:none; margin-left:0;float:left;}
+.credit img{clear:none; margin-right:15px;float:left;}
+.f-payment_details select, .f-payment_details input {float:left; margin: 5px; margin-left: 0px; height: 24px; padding-left: 2px; border: 1px solid #666666;}
+.f-payment_details label{float:left; text-align:right;margin-right: 5px; width: 110px; margin-top: 2px;}
+.f-payment_details div {clear:both;}
+.redeemgift {background:#eeeeee;padding:15px 15px 15px 20px; display:block;width: 47%;float: right;margin-top: 5px;}
+.redeemgift form {paddiing-top:0;}
+.redeemgift input.button{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer;}
+.redeemgift input.button:hover, .redeemPromotionCode input.button:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer;}
+
+#paymentdetails {background:#eeeeee; padding:10px;}
+#paymentdetails h2 {display:none;}
+#paymentdetails table {background:#fff; padding: 16px 10px; width: 100%;}
+#paymentdetails th {text-align:left;}
+#paymentdetails td {text-align:right;}
+.billing.address{
+background: white;
+padding: 0 10px;
+display: block;
+width: 45%;
+border: 10px solid #EEE;
+margin-top: 5px;
+float: right;
+border-bottom: 5px solid #EEE;
+list-style: none outside none;
+}
+#paymentdetailsArea {padding: 0 5px; display:block;}
+
+#ohccnum, #ohccname {width: 220px;}
+
+#cardtype {width: 56%;  height: 28px;
+    padding-top: 2px;}
+
+.bottomButtons {margin-top:10px; float: left; width: 100%;}
+input.right.submit.button.buttonAlt.buttonArrow, .continue.button.buttonAlt.buttonArrow {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px;}
+input.right.submit.button.buttonAlt.buttonArrow:hover, .continue.button.buttonAlt.buttonArrow:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px;}
+a.button.buttonAlt2 {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; float: left;}
+a.button.buttonAlt2:hover {background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer;}
+
+/* ---receipt--- */
+.receipt_deliveryaddress {border: 10px solid #EEE; width:44%;
+padding: 0px 10px 5px;;
+background: #fff;float: left;}
+.receiptconfirm {float:left; width:99%; padding: 0 5px 10px 5px;}
+.deliveryrate.receipt {padding:0px 10px 5px; border:10px solid #eeeeee; display: block;list-style: none outside none; background:#fff; clear:both; }
+.billingreceipt {padding:0px 10px 5px; border:10px solid #eeeeee; width: 47%; display: block;list-style: none outside none;float: right;background:#fff;}
+.boxContent.deliveryoptions {padding-bottom:10px;}
+.receiptbuttonsbind {float:right; margin-top: 5px; text-align:center; width:40%;}
+.receiptbuttons {float:right; text-align:center;margin-top: 12px;}
+.receiptbuttons a {float:right; clear:both; text-align:center;}
+.receipttext {float:left; width:40%;margin-left: 5px;}
+.box.deliveryaddressreceipt {border-bottom: 10px solid #eeeeee}
+#ordersummaryreceipt {float:right; width:50%; background:#999999; color:#FFF; padding: 10px;margin-top: 10px;margin-bottom: 55px;}
+#ordersummaryreceipt h2 {display:none;}
+#ordersummaryreceipt div.orderTotal {float:right; font-size:16px; font-weight:bold; margin:5px; margin-right: 0; margin-top: 0;}
+#ordersummaryreceipt div.subtotal, #ordersummaryreceipt div.delivery, #ordersummaryreceipt div.discount  {float:right;  margin-right: 5px;}
+#ordersummaryreceipt div {
+    clear: none;
+    float: left;
+    padding-top: 5px;
+	font-weight:bold;
+}
+#paymentdetailreceipt {float:left; margin-top: 10px;
+    width: 46%;}
+#paymentdetailreceipt h2 {display:none;}
+#paymentdetails
+#paydetailsbox{float:left; width:47%;}
+
+
+/*  ---footer---   */
+.mainFooter.container_24.clearfix {display:block; clear:both; margin-top:50px; padding-top:10px; border-top:1px solid #666666;}
+.mainFooter.container_24.clearfix p, .mainFooter.container_24.clearfix a {font-weight:normal;}
+
+#footerLogos {padding:10px 0 0 0;clear:both;height: 30px;}
+#socnetlinks{position:relative;margin:6px 0 35px 2px}
+#socnetlinks li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#socnetlinks li, #socnetlinks a{height:22px;display:block;}
+
+#socnetfacebook{left:0px;width:22px;}
+#socnetfacebook{background:url(../images/footer/soc-net-links.gif) 0 0;}
+
+#socnettwitter{left:38px;width:22px;}
+#socnettwitter{background:url(../images/footer/soc-net-links.gif) -38px 0;}
+
+#socnetflickr{left:76px;width:22px;}
+#socnetflickr{background:url(../images/footer/soc-net-links.gif) -76px 0;}
+
+#socnetgoogleplus{left:114px;width:22px;}
+#socnetgoogleplus{background:url(../images/footer/soc-net-links.gif) -114px 0;}
+
+#socnetpinterest{left:152px;width:22px;}
+#socnetpinterest{background:url(../images/footer/soc-net-links.gif) -152px 0;}
+
+#footericons{position:relative;margin:6px 0 35px 2px}
+#footericons li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
+#footericons li, #footericons a{height:30px;display:block;}
+
+#footercards{left:0px;width:301px;}
+#footercards{background:url(../images/footer/footer-icons.gif) 0 0;}
+
+#footersecure{left:423px;width:55px;}
+#footersecure{background:url(../images/footer/footer-icons.gif) -306px 0;}
+
+#footerpci{left:608px;width:92px;}
+#footerpci{background:url(../images/footer/footer-icons.gif) -366px 0;}
+
+#footervenda{left:817px;width:118px;}
+#footervenda{background:url(../images/footer/footer-icons.gif) -463px 0;}

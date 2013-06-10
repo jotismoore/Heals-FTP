@@ -1,0 +1,205 @@
+	<style type="text/css">
+	.Lcattree {display:none;}
+	.topbreak {height:50px; display:block;}
+	#footer {border-top: 0px solid #666666; margin-top:15px;}
+	.footerLinksCols.left {display:none;}
+	</style>
+    
+    <script src="http://use.edgefonts.net/quicksand.js"></script>
+   
+    <venda_block label=shopcartempty,mode=value,<venda_emptytemplate>=1>
+	<venda_tpcomment><!-- Shopcart empty --></venda_tpcomment>
+	<div class="grid_24 alpha omega basketR">
+
+		<div class="box basketAlt">
+		<h1 class="header"><venda_text id=desktop.heading.shopping_cart></h1>
+		<venda_block label=1,mode=value,<venda_errors mode=boolean>=notnull><h2 class="error"><venda_errors></h2></venda_block label=1>
+			<p><venda_text id=desktop.info.shopping_cart_empty></p>
+		</div>
+		<div id="buttons" class="bottomButtons">
+			<a href="<venda_dispview page=home>" class="button buttonAlt buttonArrow right"><venda_text id=desktop.button.continue_shopping></a>
+		</div>
+	</div>
+    <div id="tag-emptytemplate" style="display:none;">1</div>
+	</venda_block label=shopcartempty>
+
+	<venda_block label=shopcart,mode=value,<venda_emptytemplate>!=1>
+	<div id="tag-qtymsg" style="display:none;"><venda_text id=desktop.validation.qty></div>
+	<div id="bottomtab" class="tabs grid_24 alpha omega">
+		<div class="boxNoBorder basketVbm">
+		<div class="tabheader">
+			<!--related products
+            <ul class="nav">
+				<li><a href="#contentTab1" title="<venda_text id=desktop.heading.related_products>"><venda_text id=desktop.heading.related_products></a></li>
+			</ul>-->
+		</div>
+		<div class="tabcontent">
+			<!-- related products -->
+			<div class="tab"><venda_invtrelated limit=3,threshold=2,template=related></div>
+		</div>
+		</div>
+	</div>
+
+
+<venda_page page=topbasket>
+<div class="grid_24 alpha basketR">
+ <div class="topbreak"></div>
+    <!-- header-->
+<div class="shopcartheader">
+<h1><venda_text id=desktop.heading.shopping_cart></h1>
+</div>
+<div class="phonenumberheader">
+<h3>tel: 08700 240 780</h3>
+</div>
+<div class="helpinfo">
+<ul>
+<li><a href="http://www.heals.co.uk/delivery-information/delivery-information/page/deliveryinformation/&layout=popups" rel="popup console 620 560" class="blacklink" title="See our delivery info - opens in a new window">Delivery Information</a></li>
+<li><a href="http://www.heals.co.uk/customer-services/contact-us/pcat/contact/"rel="popup console 620 560" class="blacklink" title="Contact us - opens in a new window">Contact Us</a></li>
+<li><a href="http://www.heals.co.uk/customer-services/faqs/pcat/faqs/" rel="popup console 620 560" class="blacklink" title="FAQs - opens in a new window">FAQs</a></li>
+<li><a href="http://www.heals.co.uk/ordering-online-at-heals/terms+conditions/pcat/terms/" class="blacklink" rel="popup console 620 560"  title="See our terms and conditions - opens in a new window">Terms and Conditions</a></li>
+<li><a href="http://www.heals.co.uk/ordering-online-at-heals/online-security/pcat/security/" class="blacklink" rel="popup console 620 560"  title="See our security info - opens in a new window">Security Information</a></li>
+<li><a href="http://www.heals.co.uk/ordering-online-at-heals/privacy-policy/pcat/privacy/" class="blacklink" rel="popup console 620 560"  class="blacklink" title="See our privacy policy - opens in a new window">Privacy & Cookies</a></li>
+
+</ul>
+</div>
+	<div id="yourbasket" class="js-shopcart">
+		<form method="post" name="<venda_curstep>form" action="<venda_codehttps>" id="shopcart">
+			<input type="hidden" name="ohrfnbr" value="<venda_ohrfnbr>">
+			<input type="hidden" name="ex" value="co_wizr-<venda_workflow>" />
+			<input type="hidden" name="workflowid" value="<venda_workflowid>" />
+			<input type="hidden" name="wizard" id="wizard" value="checkout" /><venda_tpcomment><!-- hardcoded workflow to move the user to the checkout --></venda_tpcomment>
+			<input type="hidden" name="param1" id="param1" value="" />
+			<input type="hidden" name="param2" id="param2" value="" />
+			<input type="hidden" name="param3" id="param3" value="" />
+			<input type="hidden" name="log" id="log" value="" />
+			<input type="hidden" name="mode" id="mode" value="process" />
+			<input type="hidden" name="trrfnbr" id="trrfnbr" value="<venda_userinfo><venda_sesid></venda_userinfo>" />
+			<input type="hidden" name="trrfext" id="trrfext" value="<venda_block label=15,mode=value,<venda_protocol>=https>1</venda_block label=15>" />
+			<input type="hidden" name="curstep" id="curstep" value="<venda_curstep>" />
+			<input type="hidden" name="curparam1" id="curparam1" value="<venda_curparam1>" />
+			<input type="hidden" name="curparam2" id="curparam2" value="<venda_curparam2>" />
+			<input type="hidden" name="curlayout" id="curlayout" value="<venda_curlayout>" />
+			<input type="hidden" name="bsref" id="bsref" value="<venda_bsref>" />
+			<input type="hidden" name="step" value="<venda_block label=registered,ustype=R>ordersummary</venda_block label=registered><venda_block label=notregistered,ustype!=R>login</venda_block label=notregistered>" />
+
+	<div>
+
+	<venda_block label=201,mode=value,<venda_ebxtcurrencyConvert>=1>
+		<venda_tpcomment><!-- Only shows if the currency converter is enabled --></venda_tpcomment>
+		<div class="CurrenctConverter">
+			<h2><span></span><venda_text id=desktop.info.currency_converter_info1> <venda_currencycode></h2>
+			<p><venda_text id=desktop.info.currency_converter_info2></p>
+		</div>
+	</venda_block label=201>
+
+		<div class="basketHeader">
+		<h1><venda_text id=desktop.heading.shopping_cart> (<venda_oialltotal> <venda_block label=19,oialltotal=1><venda_text id=desktop.info.item></venda_block label=19><venda_block label=20,oialltotal!=1><venda_text id=desktop.info.items></venda_block label=20>)</h1>
+		</div>	
+		<!--continue shopping<div class="basketButtons">
+				<input type="submit" class="button buttonArrow right btCheckout submit" value="<venda_text id=desktop.button.checkout_securely>">
+		</div>
+		<venda_block label=1,mode=value,<venda_errors mode=boolean>=notnull><h2 class="error"><venda_errors></h2></venda_block label=1>
+	</div>-->
+			<venda_tpcomment><!-- Paypal Express --></venda_tpcomment>
+			<venda_paymenttemplate template=paypal_express,templatetype=paytype/frontend,paymenttype=paypal>
+
+			<venda_tpcomment><!-- Start: Items Table --></venda_tpcomment>
+
+			<venda_inctemplate type=workflow/shopcart2/shopcart,name=standard_items>
+			<venda_inctemplate type=workflow/shopcart2/shopcart,name=bundle_items>
+
+			<div class="ordertable">
+				<table summary="<venda_text id=desktop.info.items_table_summary>" title="<venda_text id=desktop.info.items_table_title>" class="wizrtable" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+		<th scope="col" class="thumb"><span><venda_text id=desktop.info.item_description></span></th>
+		<th scope="col" class="name"><span>&nbsp;</span></th>
+		<th scope="col" class="priceeach"><span>Price</span></th>
+		<th scope="col" class="quantity"><span>Qty</span></th>
+		<th scope="col" class="availability"><span>Availability</span></th>
+		<th scope="col" class="totalprice"><span>Total Price</span></th>
+		<th scope="col" class="remove"><span>Remove</span></th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<venda_detail5><venda_tpcomment><!-- normal products --></venda_tpcomment>
+						<venda_detail11><venda_tpcomment><!-- bundle products --></venda_tpcomment>
+					</tbody>
+				</table>
+                <div class="shopcartdeliveryinfo">
+                <venda_block label=1000,mode=value,<venda_shopcart mode=getqty,ivtype=furniture>&gt;0,<venda_shopcart mode=getqty,ivtype=furniturerange>&gt;0,operator=or>	
+			<!-- Furniture and other types-->
+			<venda_block label=10010,mode=value,<venda_shopcart mode=getqty,ivtype=normal>&gt;0,<venda_shopcart mode=getqty,ivtype=range>&gt;0,<venda_shopcart mode=getqty,ivtype=gardenfurniture>&gt;0,<venda_shopcart mode=getqty,ivtype=gardenfurniturerange>&gt;0,operator=or>
+						<p><a href="<venda_dispview page=furnituredelivery>&layout=popups" rel="popup console 620 560" class="blacklink" title="Standard Delivery - opens in a new window">Standard Delivery <venda_currsym>50</a></p>
+			</venda_block label=10010>
+			<!-- Furniture Only-->
+			<venda_block label=10020,mode=value,<venda_shopcart mode=getqty,ivtype=normal>=0,<venda_shopcart mode=getqty,ivtype=range>=0,<venda_shopcart mode=getqty,ivtype=gardenfurniture>=0,<venda_shopcart mode=getqty,ivtype=gardenfurniturerange>=0>
+						<p><a href="<venda_dispview page=furnituredelivery>&layout=popups" rel="popup console 620 560" class="blacklink" title="Standard Furniture - opens in a new window">Standard Furniture Delivery from <venda_currsym>50</a></p>
+				</venda_block label=10020>
+			</venda_block label=1000>
+			
+			<venda_block label=1001,mode=value,<venda_shopcart mode=getqty,ivtype=furniture>=0,<venda_shopcart mode=getqty,ivtype=furniturerange>=0>
+					<p><a href="<venda_dispview page=deliveryinformation>&layout=popups" rel="popup console 620 560" alt="<venda_text id=site.link.title.delivery_charge_from>">Standard Delivery <venda_currsym>4.95</a></p>
+			</venda_block label=1001>
+</div>
+                <div class="updatebutton"><a id="update<venda_cartfield name=setqty>" href="#" class="button buttonAlt2" onclick="if(Venda.Ebiz.validateQty()){document.<venda_curstep>form.wizard.value='<venda_workflow>';document.<venda_curstep>form.step.value='<venda_curstep>';document.<venda_curstep>form.submit()} return false;" title="<venda_text id=desktop.button.update> <venda_invtname>"><venda_text id=desktop.button.update></a></div>
+            <div class="grid_11 alpha">
+               <a href="http://www.heals.co.uk/delivery/furniture-delivery/page/furnituredelivery/&layout=popups"><venda_page page=basketdeliveryinformation></a>
+            </div>
+   			</div>
+   		</div>
+
+			<venda_tpcomment><!-- End: Items Table --></venda_tpcomment>
+            
+            	<venda_tpcomment><!-- Start: Order totals --></venda_tpcomment>
+
+        <div class="orscSummary grid_12 push_1 omega">
+				   <div>
+					   <table summary="<venda_text id=desktop.info.order_totals_summary>" title="<venda_text id=desktop.info.order_totals_title>" class="orderdetails" cellpadding="0" cellspacing="0">
+						   <tbody>
+							   <tr>
+   							   <th class="hdrSubTotal" scope="row"><div><venda_text id=desktop.info.subtotal>:</div></th>
+   								<td colspan="1" class="subtotal"><div><venda_currsym><venda_extsub></div></td>
+   							</tr>
+   							<venda_block label=10,totaldisc&gt;0.00,totaldisc!=null>
+   							<tr>
+   								<th class="hdrDiscount" scope="row"><div><venda_text id=desktop.info.discount>:</div></th>
+   								<td colspan="1" class="discount"><div><venda_currsym><venda_totaldisc></div></td>
+   							</tr>
+   							</venda_block label=10>
+   						</tbody>
+   					</table>
+   					<div class="orscTotal"><span><b><venda_text id=desktop.info.order_total>:</b></span> <span class="orscTotalFig"><venda_currsym><venda_esttotal></span></div>
+   				</div>
+        
+	  </div>
+
+	<venda_tpcomment><!-- End: Order totals --></venda_tpcomment>
+    
+     <venda_tpcomment><!-- Start: JS Buttons --></venda_tpcomment>
+			<div class="basketButtons">
+            <div style="margin-top: 44px;
+float: left;">
+			<a href="<venda_dispview page=home>" class="button buttonAlt2" style="float: left; clear: none;"><venda_text id=desktop.button.continue_shopping></a> 
+            </div>
+            		<div style="float: right;
+margin-top: 50px;
+clear: none;">		
+					<input type="submit" class="button buttonArrow right btCheckout submit" value="<venda_text id=desktop.button.checkout_securely>">	
+                    </div>		
+				</div>
+			<!--<venda_paymenttemplate template=paypal_express,templatetype=paytype/frontend,paymenttype=paypal> -->
+			<venda_tpcomment><!-- End: JS Buttons --></venda_tpcomment>
+
+			
+		</form>
+       <venda_tpcomment><!-- Start: Promotions --></venda_tpcomment>
+       <venda_tpcomment><!-- End: Promotions --></venda_tpcomment>
+ 
+
+<venda_tpcomment><!-- Used for html title --></venda_tpcomment>
+<venda_tpxt mode=set,name=title,value=<venda_text id=desktop.heading.shopping_cart>>
+<venda_inctemplate name=workflowSteps,type=tracking/shared>
+
+
