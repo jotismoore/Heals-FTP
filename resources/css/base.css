@@ -163,7 +163,7 @@ text-align: left; clear: both;
 display: block;
 height: 10px;}
 
-.fieldlabel input, #houseNum input, #stateDiv input, #grid_11.alpha input {margin-bottom:5px;width: 230px; margin-right:5px; height:24px; padding-left: 3px; border: 1px solid #666666;}
+.fieldlabel input, #houseNum input, #stateDiv input, #grid_11.alpha input {margin-bottom:5px;width: 230px; margin-right:5px; height:22px; padding-left: 3px; border: 1px solid #666666;}
 
 .checkout.deliveryaddressedit.grid_18.omega.pull_6.checkoutL {float:none;}
 
@@ -174,7 +174,7 @@ height: 10px;}
 .radioButtons span {text-align: left;
     vertical-align: top;}
 .radioButtons label {text-align: left;}
-.radioButtons input {margin:0 5px 0 10px; vertical-align: bottom; }
+.radioButtons input {margin:0 2px 0 20px; vertical-align: bottom; }
 .radioButtons input.deliveryaddressadd {width:170px;}
 .usebillingaddress 
 .usebillingaddress span {float:left;}
@@ -205,10 +205,10 @@ font-weight: bold;
 -webkit-padding-start: 0; padding-left: 5px;}
 .minicart_image {float:left;}
 
-.receiveMail input {float:left; clear:left; margin: 8px 10px 0 75px; ms-transform: scale(2);
--moz-transform: scale(2);
--webkit-transform: scale(2);
--o-transform: scale(2);}
+.receiveMail input {float:left; clear:left; margin: 8px 10px 0 75px; ms-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+-o-transform: scale(1.5);}
 
 #ustandc {text-align:center; left:auto; right:auto; width:100%;}
 #ustandc input {display:none;}
@@ -342,7 +342,7 @@ margin-bottom: 5px;
 .credit label{float:right; font-weight:bold; clear:none; margin-top: 5px;}
 .f-paypal {margin-top:10px; padding: 15px;}
 .f-paypal label{font-weight:bold; margin-right:5px; vertical-align: middle; width:110px;}
-.f-paypal img{vertical-align:middle; margin-left: 5px;}
+.f-paypal img{vertical-align:middle; margin-left: 4%;}
 .f-paypal input {
 margin: 3px 3px 0px 0px;
 vertical-align: middle;
