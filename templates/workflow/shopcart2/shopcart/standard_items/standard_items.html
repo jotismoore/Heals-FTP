@@ -10,7 +10,7 @@
 		<td class="thumb gcimage" style="width:20%;"><a href="<venda_codehttp>?ex=co_wizr-giftcertificates&bsref=<venda_bsref>" title="Buy another <venda_invtname>">
 		<!--<venda_block label=150a,med-<venda_setting type=ebiz,name=setshoppingbasketimagekey>=notnull><venda_media rec=invt,type=pict,key=<venda_setting type=ebiz,name=setshoppingbasketimagekey>></venda_block label=150a>-->
         		<venda_block label=150,med-small=notnull><venda_media rec=invt,type=movie-swf-pict,key=small,border=0></venda_block label=150>
-		<venda_block label=151,med-medium=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_medium.gif" alt="<venda_text id=desktop.info.no_product_image>"></venda_block label=151></a></td>
+		<venda_block label=151,med-small=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>"></venda_block label=151></a></td>
 		<td class="name"><a href="<venda_codehttp>?ex=co_wizr-giftcertificates&bsref=<venda_bsref>" title="Buy another <venda_invtname>"><venda_invtname></a>
 			<p class="gcdetails">
 				<span class="gcsentto"><venda_text id=desktop.info.giftcert_sent_to_shopcart></span><br>
@@ -68,7 +68,7 @@
 
 					<venda_block label=232,med-small=null>
 						<venda_tpcomment><!--use noimage graphic if 'medium' is null--></venda_tpcomment>
-						<td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_medium.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
+						<td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
 					</venda_block label=232>
 
 
@@ -76,7 +76,7 @@
             
             <!-- <a href="<venda_dispview invt=<venda_invtparef>>"> -->
             
-            <venda_block label=4562,invtatt1=null> <!-- <venda_invtname> --> </venda_block label=4562>
+            <venda_block label=4562,invtatt1=null> <venda_invtname> </venda_block label=4562>
             
             <!-- </a> <span class="sku"><venda_text id=desktop.info.sku>: <venda_invtref></span>-->
             
@@ -102,12 +102,13 @@
 				<venda_tpcomment><!--if not 'set' prefix - no alt. images functionality --></venda_tpcomment>
 				<td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><venda_media rec=invt,type=pict,key=small></a></td>
 			</venda_block label=31>
-			<venda_block label=32,med-medium=null>
+			<venda_block label=32,med-small=null>
 				<venda_tpcomment><!--without key=xsmall--></venda_tpcomment>
-				<td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_medium.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
+				<td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
 			</venda_block label=32>
 			<td class="name">
-            <!--<a href="<venda_dispview invt=<venda_invtref>>"><venda_invtname></a><venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><span class="sku"><venda_text id=desktop.info.sku>: <venda_invtref></span><p class="instock"><venda_text id=desktop.info.in_stock></p>-->
+            <a href="<venda_dispview invt=<venda_invtref>>"><venda_invtname></a><venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1>
+            <!-- <span class="sku"><venda_text id=desktop.info.sku>: <venda_invtref></span><p class="instock"><venda_text id=desktop.info.in_stock></p> -->
             
             <venda_block label=456,invtatt1=notnull> 
 		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl1>:</div> <div class="optionRight"><venda_invtatt1></div></div></venda_block label=456>
