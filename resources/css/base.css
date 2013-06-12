@@ -14,6 +14,7 @@ background-color: #fff;
 background-image: none;
 color: #333;
 }
+.skipToContent {margin-left: -1000px;}
 
 #pcilogo {float:right;}
 
