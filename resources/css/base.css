@@ -316,9 +316,10 @@ width: 38%;}
 margin-bottom: 5px;}
 .redeemgift input.textInput {padding: 3px; height: 24px; border: 1px solid #666666;}
 #ordersummary {float:right; width:97.5%; background:#999999; color:#FFF; padding:10px; font-weight:bold; font-size:+2; text-transform: uppercase;clear:both; margin-top: 15px;}
-#ordersummary div {float:left; clear:none; padding:10px 5px 0;}
-#ordersummary div.orderTotal {float:right; font-size: 16px;}
-#ordersummary div.subtotal, #ordersummary div.delivery, #ordersummary div.discount  {float:right; margin-right:5px;}
+#ordersummary div {float:left; clear:none; padding:10px 5px 0; width: 70%;}
+#ordersummary div.orderTotal, #ordersummary div.storeCredit {float:right; width: 20%; text-align: right;}
+#ordersummary div.orderTotal {font-size: 16px;}
+#ordersummary div.subtotal, #ordersummary div.delivery, #ordersummary div.discount  {float:right; margin-right:5px; text-align: right;}
 #ordersummary h2 {display:none;}
 .orderdetails {
 	padding: 10px;
@@ -329,7 +330,7 @@ width: 100%;
 margin-bottom: 5px;
 }
 .hdrSubTotal {float:left;}
-.hdrDelivery {float:left;}
+.hdrDelivery {float:left; width: 70%; text-align: left;}
 .orscTotal {float:left;}
 .orscTotalFig {float:right;}
 
