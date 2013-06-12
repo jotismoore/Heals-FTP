@@ -58,6 +58,7 @@ html > body #col-two-no-three { /* IE7 - Moz */
 #header {height:108px;}
 #content-norecord #col-one{display:none;}
 #content-norecord #col-two-three{float:left;padding:6px}
+.skipToContent {margin-left: -1000px; float: left;}
 
 /* 3. Fonts, styles and sizes if > 0px - Start styles_typography.css */
 /****************/
