@@ -39,17 +39,18 @@
 				<a id="update<venda_cartfield name=setqty>" href="#" onclick="if(Venda.Ebiz.validateQty()){document.<venda_curstep>form.wizard.value='<venda_workflow>';document.<venda_curstep>form.step.value='<venda_curstep>';document.<venda_curstep>form.submit()} return false;" title="<venda_text id=desktop.button.update> <venda_invtname>"><venda_text id=desktop.button.update></a>
 			</div>
 		</div></td>		
-		<td class="Availability"><!--<p class="instock"><venda_text id=desktop.info.in_stock></p>-->
-        <venda_block label=50,oiitype=3><venda_text id=desktop.info.in_stock></venda_block label=50>
-		<venda_block label=51,oiitype!=3>	
-		<!--<div id="invt<venda_oiivref>"></div>-->
-		<venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
-        <venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
-		<!-- Include Availability nonattribute from invt -->
-		<script type="text/javascript">
+		<td class="Availability"><div>
+			<venda_block label=50,oiitype=3>In Stock</venda_block label=50>
+			<venda_block label=51,oiitype!=3>
+			<div id="invt<venda_oiivref>"></div>
+			<venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
+			<!-- Include Availability nonattribute from invt -->
+			<script type="text/javascript">
 			$("#invt<venda_oiivref>").load("/bin/venda?ex=co_wizr-productgrid&bsref=<venda_bsref>&step=shopcartmulti&invt=<venda_oiivref>&ordercol=alphanu&layout=contentonly p#invt<venda_oiivref>");
-		</script>	
+			</script>
 		</venda_block label=51>
+
+		</div>
         </td>
 		<td class="totalprice"><venda_currsym><venda_oiextprice></td>
 	</tr>
@@ -138,25 +139,18 @@
 		<!--td class="priceeach"><venda_currsym><venda_invtsell></td-->
 
 		<td class="availability" valign="middle">
-        <p class="instock"><venda_text id=desktop.info.in_stock></p>
-		<!--<venda_block label=456,invtatt1=notnull> 
-		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl1>:</div> <div class="optionRight"><venda_invtatt1></div></div></venda_block label=456>
-		<venda_block label=457,invtatt2=notnull> 
-		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl2>:</div> <div class="optionRight"><venda_invtatt2></div></div></venda_block label=457>
-		<venda_block label=458,invtatt3=notnull> 
-		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl3>:</div> <div class="optionRight"><venda_invtatt3></div></div></venda_block label=458>
-		<venda_block label=459,invtatt4=notnull> 
-		<div class="optionBox"><div class="optionLeft"><venda_invtatrlbl4>:</div> <div class="optionRight"><venda_invtatt4></div></div></venda_block label=459>
-		<venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1>		
-		<div class="optionBox">
-			<div class="optionLeft"><label for="form<venda_cartfield name=setqty>"><venda_text id=desktop.info.qty></label></div> 
-			<div class="optionRight">
-	
-				
-	
+       <div>
+			<venda_block label=50,oiitype=3>In Stock</venda_block label=50>
+			<venda_block label=51,oiitype!=3>
+			<div id="invt<venda_oiivref>"></div>
+			<venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
+			<!-- Include Availability nonattribute from invt -->
+			<script type="text/javascript">
+			$("#invt<venda_oiivref>").load("/bin/venda?ex=co_wizr-productgrid&bsref=<venda_bsref>&step=shopcartmulti&invt=<venda_oiivref>&ordercol=alphanu&layout=contentonly p#invt<venda_oiivref>");
+			</script>
+		</venda_block label=51>
 
-			</div>
-		</div>-->
+		</div>
 		</td>
 		
 		<td class="totalprice" valign="middle"><venda_currsym><venda_oiextprice></td>
