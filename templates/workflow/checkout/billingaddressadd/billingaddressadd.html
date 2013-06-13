@@ -7,7 +7,12 @@
 
 <div class="<venda_workflow> <venda_curstep> grid_18 omega pull_6 checkoutL">
 	<div class="box basketAlt">
+    	<venda_block label=402,workflow!=register2>
 		<h3 class="header"><venda_text id=desktop.heading.add_billing_address></h3>
+        </venda_block label=402>
+        <venda_block label=4022,workflow=register2>
+		<h3 class="header">Create an Account</h3>
+        </venda_block label=4022>
 		<div class="boxContent">
 			<venda_block errors=notnull><h3 class="error"><venda_errors></h3></venda_block>
 		</div>
@@ -74,7 +79,7 @@
 			<div id="hideOrShowAddress">
     			<div class="fieldlabel">
     				<label for="company"><venda_text id=desktop.form.company></label>
-    				<input type="text" class="textInput" name="company" id="company" value="<venda_company>" placeholder="<venda_text id=desktop.form.company> optional" />
+    				<input type="text" class="textInput" name="company" id="company" value="<venda_company>" placeholder="<venda_text id=desktop.form.company> (optional)" />
     			</div>
 				<div class="formSeparator"></div>
     			<div id="houseNum">
@@ -100,7 +105,6 @@
     			<div id="stateDiv">
     				<label for="statetext" id="stateLabel"><venda_text id=desktop.form.state> <span class="hideScreenReaderSafe"><venda_text id=desktop.form.required></span></label>
     				<input type="text" class="textInput" name="state" id="statetext" value="<venda_state>" placeholder="<venda_text id=desktop.form.state> <venda_text id=desktop.form.required>" required="required" />
-    				<select name="state" id="statelist"/></select>
                     <div class="formSeparator"></div>
     			</div>
 
@@ -124,7 +128,7 @@
 			</div>
 
 			<venda_tpcomment><!-- Different Delivery Address - Step selection for checkout workflow --></venda_tpcomment>
-		<venda_block label=10,workflow!=register>
+		<venda_block label=10,workflow!=register2>
 
       <div class="radioButtons">
          <fieldset  id="fieldsetBox"><span class="title"><venda_text id=desktop.form.deliver_to></span>
@@ -164,9 +168,11 @@
 				<label for="uspswd2"><venda_text id=desktop.form.verify_password> <span class="hideScreenReaderSafe"><venda_text id=desktop.form.required></span></label>
 				<input type="password" class="textInput" name="uspswd2" id="uspswd2" value="<venda_uspswd2>" placeholder="<venda_text id=desktop.form.verify_password> <venda_text id=admn.ornew.dispitem.oixfields.optional>" maxlength="25" required="required" />
                 <div class="formSeparator"></div>
+                <venda_block label=102,workflow!=register2>
                 <div class="passwordinfo">
                 <venda_text id=desktop.form.password_info>
                 </div>
+                </venda_block label=102>
 			</div>
 		</fieldset>
 		</venda_block label=16>

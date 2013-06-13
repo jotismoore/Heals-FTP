@@ -1,2 +1,54 @@
 <venda_tpcomment><!-- included at the bottom of the order receipt template (wizr/wz_orfn-screen) --></venda_tpcomment>
 <venda_order ref=<venda_ohrfnbr>,shopcart=0,template=itemJSON>
+<!-- Start TagMan Order Confirmation Container JM -->
+<script>
+(function (w) {
+	w.tm2BootPosition = 0;
+	w.tm2BootAsync = true;
+	w.tmPageId = 6;
+	w.tmParam = {product_vat_rate : '[Enter product_vat_rate]',currency : "GBP",post_code : '<venda_ohzipc>',email : "<venda_ohemail>",payment_method : '<venda_ohpaytype>',product_code : "<venda_codesc>",shipping : '<venda_ohship>',cust_name : "<venda_ohfname> <venda_ohlname>",product_mfr_code_ : '<venda_tracking type=product,definition=productref,delimiter=pipe>',levrev : '<venda_ohtot>',totalorder_vat : '<venda_ohtaxinc>',product_subcat : "<venda_order shopcart=1,template=productSubCategory>",total_quantity : '[Enter total_quantity]',levordref : '<venda_ohordnum>',awin_parts : 'default:<venda_ohtot>',product_sale_price : '<venda_order shopcart=1,template=productSalePrice>',county : "<venda_ohcntry>",affiliation : 'null',phone_number : '<venda_ohphone>',city : "<venda_ohcity>",voucher_discount : '<venda_codisc>',currentpage_url : 'null',quantity : '<venda_tracking type=product,definition=quantity,delimiter=pipe>',search_term : 'null',client_id : "Heal's",product_category : "<venda_curcatref>",totalorder_shipping : '<venda_ohship>',basket_total : '<venda_order template=productTotalPrice,shopcart=1>',product_price : '<venda_order shopcart=1,template=productPrice>',order_total : '<venda_ohtot>',product_name : "<venda_tracking type=product,definition=productname,delimiter=pipe>",product_desc : 'notnull not needed',brand : "<venda_order shopcart=1,template=productBrand>",voucher_type : 'null',awin_basket : 'null',country : "<venda_ohcntry>",product_line_total : '<venda_tracking type=product,definition=priceexvat,delimiter=pipe>',voucher_code : "<venda_codesc>",tax : '<venda_ohtaxinc>',commission_groups : 'DEFAULT:<venda_ohtot>',page_name : 'Order Receipt Page',transaction_id : '<venda_ohrfnbr>',account_type : "<venda_ustype>"};
+	var conf = { host: 'pfa.levexis.com',
+		account: 'heals',
+		version: '3',
+		async: false,
+		cdn: (location.protocol === 'https:') ? 'sec.levexis.com' : 'res.levexis.com',
+		waitService: 'wt.tagman.com',
+		waitTest: false,
+		bootstrap: true,
+		param: w.tmParam || {} };
+	// do not change values below this line
+	function ap(sr , ol) {
+	     var e = document.createElement('script'); 
+	     e.src = sr;
+	     e.async = true;
+	     if (ol) {
+	    	e.onload = e.onerror = function() { if (!this.loaded) { ol(); this.loaded = true; } };
+		e.onreadystatechange = function() { if (this.readyState === 'complete' || this.readyState === 'loaded') { this.onload(); } };
+	     }
+	     var s = document.getElementsByTagName('script')[0];
+	     s.parentNode.insertBefore( e , s);
+	}	
+	w.TMAN = w.TMAN || {};	
+     	w.TMAN.startTime = +new Date();
+	w.TMAN.asyncLoader = function() {
+	      TMAN.addContainer( new TMAN.Container(conf.account, w.tmPageId, conf) );
+	};
+	var tm = '//' + conf.cdn + '/clientfiles/v' + conf.version + '/' + conf.account + '.js'; 
+	if (conf.waitService && conf.waitTest) ap ( '//' + conf.waitService + '/wait/0/' + Math.random() , function() { TMAN.waitLatency=new Date() - TMAN.startTime; } );
+	if (conf.async) {
+	     w.TMAN.position = {};
+	     w.TMAN.doTags = function(p) { TMAN.currentPosition = p; };
+	     w.TMAN.addParam = function(n,v) {
+		w.tmParam[n]=v;
+	     };
+             w.TMAN.addParams = function(c,p) {
+               for (var n in p) {
+                 w.tmParam[n] = p[n];
+               }
+             };
+	     ap(tm);	
+	} else {
+	     document.write('<script src="' + tm + '"><\/script>');
+	}
+})(window);</script>
+<!-- End TagMan Order Confirmation Container JM -->

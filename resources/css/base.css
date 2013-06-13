@@ -132,15 +132,14 @@ width: 36px;
     float: left;
     background: #eeeeee;
 	margin-top: 25px;
-	border-top: 10px solid #eee;
-	border-bottom: 10px solid #eee;
-	border-right: 10px solid #eee;}
+	border: 10px solid #eee;
+	-webkit-padding-start: 0;}
 #addressList {display:block; float:left; width: 100%;}
 #addressList form {float:left;}
 .addnewaddress {margin-top: 5px; margin-left: 0px;}
 .addressbookitems {width:100%; clear: both;}
 .bottomButtons.pull_1 {float:left;}
-.addressbox {float:left; border: 10px solid #EEE; list-style:none; height: 230px; width:auto; background:#fff;}
+.addressbox {float:left; border: 10px solid #EEE; list-style:none; height: 230px; width:30%; background:#fff;}
 #address_list{-webkit-padding-start: 0px;}
 #defaultFlag {font-weight:bold; line-height:24px;}
 input#lname.textInput.validateError, input#fname.textInput.validateError, input#phone.textInput.validateError, input#usemail.textInput.validateError, input#uspswd.textInput.validateError , input#uspswd2.textInput.validateError, input#usemail.validateError, input#zipc.textInput.validateError, input#email.textInput.validateError {color:#000;}
@@ -180,8 +179,8 @@ height: 10px;}
 .usebillingaddress 
 .usebillingaddress span {float:left;}
 
-.grid_6.omega.addresslookup input, .enterManually a, #lookupBtn, .grid_6.omega.addresslookup a{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0; font-size:12px;}
-.grid_6.omega.addresslookup input:hover, .enterManually a:hover, .lookupBtn:hover, .grid_6.omega.addresslookup a:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0;font-size:12px;}
+.grid_6.omega.addresslookup input, .enterManually a, #lookupBtn, .grid_6.omega.addresslookup a{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0; font-size:12px; -webkit-appearance: none; -moz-appearance: none; }
+.grid_6.omega.addresslookup input:hover, .enterManually a:hover, .lookupBtn:hover, .grid_6.omega.addresslookup a:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0;font-size:12px; -webkit-appearance: none; -moz-appearance: none; }
 
 /*#enterManually {clear:none; color:#333; background:none; border:none; text-transform:lowercase; font-weight:normal; padding:0; margin-left:15px;}*/
 
@@ -214,9 +213,9 @@ font-weight: bold;
 #ustandc {text-align:center; left:auto; right:auto; width:100%;}
 #ustandc input {display:none;}
 input.button.buttonArrow, input.button.buttonAlt {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; cursor:pointer; float:right; margin: 6px 0 35px;
-    padding: 8px 75px;}
+    padding: 8px 75px; -webkit-appearance: none; -moz-appearance: none; }
 input.button.buttonArrow:hover, input.button.buttonAlt:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; cursor:pointer; float:right; margin: 6px 0 35px;
-    padding: 8px 75px;}
+    padding: 8px 75px; -webkit-appearance: none; -moz-appearance: none; }
 
 .fieldlabel label, .tag-addressUrl, .tag-zccompany, .tag-zcnum, .tag-zcaddr1, .tag-zcaddr2, .tag-zccity, .tag-zcstate, .tag-zczipcLabel, .tag-zcnum, #houseNum label, #stateDiv label, .grid_11.alpha label, .uklist label {float:left; text-align:right; width:205px; clear:left;margin-right: 10px;  margin-top: 6px;}
 .fieldlabel select {float:left; text-align:left; clear:right; height: 28px !important;}
@@ -309,8 +308,8 @@ width: 38%;}
 .redeemPromotionCode {background:#eeeeee; padding:15px 15px 15px 20px; margin:5px;margin-left:0px; clear:left;}
 .redeemPromotionCode label{font-weight: bold; text-transform: uppercase; clear:both; display:block;}
 .redeemPromotionCode input.textInput{margin-top:5px; margin-bottom:5px; padding:3px;width: 180px; height: 24px; border: 1px solid #666666;}
-.redeemPromotionCode input.button{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; width: 180px;}
-.redeemPromotionCode input.button a:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; display: block; width: 180px;}
+.redeemPromotionCode input.button{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; width: 180px; -webkit-appearance: none; -moz-appearance: none; }
+.redeemPromotionCode input.button a:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; display: block; width: 180px; -webkit-appearance: none; -moz-appearance: none; }
 .redeemgift label {clear:both; font-weight:bold; text-transform:uppercase;display: block;margin-top: -12px;}
 .redeemgift input {clear:left;width: 185px;margin-top: 5px;
 margin-bottom: 5px;}
@@ -318,6 +317,7 @@ margin-bottom: 5px;}
 #ordersummary {float:right; width:97.5%; background:#999999; color:#FFF; padding:10px; font-weight:bold; font-size:+2; text-transform: uppercase;clear:both; margin-top: 15px;}
 #ordersummary div {float:left; clear:none; padding:10px 5px 0; width: 70%;}
 #ordersummary div.orderTotal, #ordersummary div.storeCredit {float:right; width: 20%; text-align: right;}
+#ordersummary div.storeCreditText, #ordersummary div.storeCredit {font-weight:normal;}
 #ordersummary div.orderTotal {font-size: 16px;}
 #ordersummary div.subtotal, #ordersummary div.delivery, #ordersummary div.discount  {float:right; margin-right:5px; text-align: right;}
 #ordersummary h2 {display:none;}
@@ -351,7 +351,7 @@ vertical-align: middle;
 }
 .switchsolo {padding: 15px 0;
 text-align: center;}
-input#creditcard, input#formpaypal, input#dontsavecc {border:none;}
+input#creditcard, input#formpaypal, input#dontsavecc {border:none; margin-left: 3%;}
 #creditcard, #dontsavecc, #formpaypal {margin-top:0; margin-right: 7px;}
 .credit input{clear:none; margin-left:0;float:left;}
 .credit img{clear:none; margin-right:15px;float:left;}
@@ -360,8 +360,8 @@ input#creditcard, input#formpaypal, input#dontsavecc {border:none;}
 .f-payment_details div {clear:both;}
 .redeemgift {background:#eeeeee;padding:15px 15px 15px 20px; display:block;width: 47%;float: right;margin-top: 5px;}
 .redeemgift form {paddiing-top:0;}
-.redeemgift input.button{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer;}
-.redeemgift input.button:hover, .redeemPromotionCode input.button:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer;}
+.redeemgift input.button{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer; -webkit-appearance: none; -moz-appearance: none; }
+.redeemgift input.button:hover, .redeemPromotionCode input.button:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer; -webkit-appearance: none; -moz-appearance: none; }
 
 #paymentdetails {background:#eeeeee; padding:10px;}
 #paymentdetails h2 {display:none;}
@@ -386,11 +386,11 @@ list-style: none outside none;
 #cardtype {width: 56%;  height: 28px;
     padding-top: 2px;}
 
-.bottomButtons {margin-top:10px; float: left; width: 100%;}
-input.right.submit.button.buttonAlt.buttonArrow, .continue.button.buttonAlt.buttonArrow {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px;}
-input.right.submit.button.buttonAlt.buttonArrow:hover, .continue.button.buttonAlt.buttonArrow:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px;}
-a.button.buttonAlt2 {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; float: left;}
-a.button.buttonAlt2:hover {background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer;}
+.bottomButtons {margin-top:10px; float: left; width: 100%; -webkit-appearance: none;-moz-appearance: none;}
+input.right.submit.button.buttonAlt.buttonArrow, .continue.button.buttonAlt.buttonArrow {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px; -webkit-appearance: none;-moz-appearance: none;}
+input.right.submit.button.buttonAlt.buttonArrow:hover, .continue.button.buttonAlt.buttonArrow:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px; -webkit-appearance: none;-moz-appearance: none;}
+a.button.buttonAlt2 {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; float: left; -webkit-appearance: none;-moz-appearance: none;}
+a.button.buttonAlt2:hover {background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; -webkit-appearance: none;-moz-appearance: none;}
 
 /* ---receipt--- */
 .receipt_deliveryaddress {border: 10px solid #EEE; width:44%;

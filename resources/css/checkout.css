@@ -549,6 +549,7 @@ padding: 8px 45px 8px 45px;
 margin-left: 5px;
 cursor: pointer;
 text-decoration: none;
+-webkit-appearance: none; -moz-appearance: none; 
 }
 
 .button.buttonAlt2 {
@@ -560,6 +561,7 @@ text-transform: uppercase;
 padding: 8px 45px 8px 45px;
 margin-left: 5px;
 cursor: pointer;
+ -webkit-appearance: none; -moz-appearance: none;
 }
 
 /*RT122255*/

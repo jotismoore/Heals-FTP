@@ -283,12 +283,12 @@ fieldset div {clear: both;}
 /* Communication option */
 .smsbox{display:none;}
 .thirdpartybox {}
-.button.buttonAlt2 {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer;}
-.button.buttonAlt2:hover {background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer; text-decoration:none;}
+.button.buttonAlt2 {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer;--webkit-appearance: none;-moz-appearance: none;}
+.button.buttonAlt2:hover {background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer; text-decoration:none;-webkit-appearance: none;-moz-appearance: none;}
 .CurrenctConverter {display:none;}
 #contentTab1 {display:none;}
-input.button.buttonArrow.right.btCheckout.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;font-size: 100%;margin-top: -30px;}
-input.button.buttonArrow.right.btCheckout.submit:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;font-size: 100%;margin-top: -30px;}
+input.button.buttonArrow.right.btCheckout.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;font-size: 100%;margin-top: -30px;-webkit-appearance: none;-moz-appearance: none;}
+input.button.buttonArrow.right.btCheckout.submit:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;font-size: 100%;margin-top: -30px;-webkit-appearance: none;-moz-appearance: none;}
 .coupon{height:auto;}
 .basketButtons {padding-top: 70px; width: 50%;
 float: right;}
