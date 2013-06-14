@@ -144,7 +144,8 @@ width: 36px;
 #defaultFlag {font-weight:bold; line-height:24px;}
 input#lname.textInput.validateError, input#fname.textInput.validateError, input#phone.textInput.validateError, input#usemail.textInput.validateError, input#uspswd.textInput.validateError , input#uspswd2.textInput.validateError, input#usemail.validateError, input#zipc.textInput.validateError, input#email.textInput.validateError {color:#000;}
 .checkout.billingaddressadd.grid_18.omega.pull_6.checkoutL {float:none;}
-.box.checkoutMinicart {float:right; width:20%; padding: 0 5px 15px; border:1px solid #666; clear:right; margin-left:5px;}
+.box.checkoutMinicart {float:right; width:20%; padding: 0 5px 15px; border: 1px solid #999999; clear:right; margin-left:5px; margin-bottom: 30px;}
+.minicartDetailContent {padding:10px 3px}
 .prodsList .image {
 float: left;
 margin-right: 10px;
@@ -153,7 +154,7 @@ position: relative;}
 text-align: left; clear: both;
 }
 .span.quantity {clear:right;}
-#checkoutMinicart_totals {border-top: 1px solid #333; border-bottom: 1px solid #333; padding:3px 0; margin: 5px 0;}
+#checkoutMinicart_totals {border-top: 1px solid #999999; border-bottom: 1px solid #999999; padding:3px 0; margin: 5px 0;}
 .box.basketAlt {float:left; width:77%; margin-bottom:10px;}
 .container.addcontactaddress.addressform, .container.deliveryaddressaddform.addressform, .container.editcontactaddress.addressform, .deliveryaddressaddform , .addressform, {float:left; display: block;}
 . checkout.billingaddressadd.grid_18.omega.pull_6 checkoutL fieldset, .container.addcontactaddress.addressform fieldset, .container.deliveryaddressaddform.addressform fieldset, .deliveryaddressaddform fieldset .container.editcontactaddress.addressform fieldset, .addressform fieldset, .container_24.clearfix fieldset, .content.grid_24 fieldset{background:#eeeeee; border:0px solid #333;width:100%;display: block;padding-top: 10px;}
