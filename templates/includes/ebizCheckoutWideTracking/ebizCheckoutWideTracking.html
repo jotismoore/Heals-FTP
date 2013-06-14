@@ -1,10 +1,12 @@
 <!-- TagMan Container -->
-<venda_block label=tagmanbasket,mode=value,<venda_workflow>=shopcart2,<venda_tpxt mode=get,name=track>!=ordersummary,<venda_tpxt mode=get,name=track>!=orderreceipt,<venda_tpxt mode=get,name=track>!=orzc-screen,<venda_tpxt mode=get,name=track>!=orbt-screen,<venda_tpxt mode=get,name=track>!=orad-editadd,<venda_tpxt mode=get,name=track>!=orad-screen,<venda_tpxt mode=get,name=track>!=orcp-screen,<venda_tpxt mode=get,name=track>!=gift-screen><venda_inctemplate name=tagManBasket,type=includes/tracking/tagMan>
+<venda_block label=tagmanbasket,mode=value,<venda_workflow>=shopcart2,<venda_workflow>!=checkout<venda_tpxt mode=get,name=track>!=ordersummary,<venda_tpxt mode=get,name=track>!=orderreceipt,<venda_tpxt mode=get,name=track>!=orzc-screen,<venda_tpxt mode=get,name=track>!=orbt-screen,<venda_tpxt mode=get,name=track>!=orad-editadd,<venda_tpxt mode=get,name=track>!=orad-screen,<venda_tpxt mode=get,name=track>!=orcp-screen,<venda_tpxt mode=get,name=track>!=gift-screen><venda_inctemplate name=tagManBasket,type=includes/tracking/tagMan>
 </venda_block label=tagmanbasket>
 
-<venda_block label=tagmancheckout,mode=value,<venda_workflow>=checkout,<venda_tpxt mode=get,name=trackingstep>!=orderreceipt><venda_inctemplate name=tagManCheckout,type=includes/tracking/tagMan></venda_block label=tagmancheckout>
-
-<venda_block label=tagmanorderreceipt,mode=value,<venda_workflow>=checkout,<venda_tpxt mode=get,name=trackreceipt>=orderreceipt><venda_tpxt mode=get,name=trackreceipt>!=ordersummary,<venda_tpxt mode=get,name=trackreceipt>!=addressbookadd,<venda_tpxt mode=get,name=trackreceipt>!=addressbookedit,<venda_tpxt mode=get,name=trackreceipt>!=deliveryaddressadd,<venda_tpxt mode=get,name=trackreceipt>!=deliveryaddressedit,<venda_tpxt mode=get,name=trackreceipt>!=billingaddressadd,<venda_tpxt mode=get,name=trackreceipt>!=billingaddressedit,><venda_inctemplate name=tagManOrderConf,type=includes/tracking/tagMan></venda_block label=tagmanorderreceipt>
+<venda_block label=checkout,workflow=checkout>
+<venda_block label=tagmancheckout,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
+<venda_inctemplate name=tagManCheckout,type=includes/tracking/tagMan>
+</venda_block label=tagmancheckout>
+</venda_block label=checkout>
 
 <venda_block label=signin,mode=value,<venda_tpxt mode=get,name=co_comn-login>=1><venda_block label=11251,errors=null><venda_inctemplate name=tagManGeneric,type=includes/tracking/tagMan></venda_block label=11251></venda_block label=signin>
 
