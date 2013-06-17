@@ -76,8 +76,11 @@ ul#topnav li span a:hover {color:#fff;}
 
 #boxmenu {height:130px;margin-bottom:20px;}
 #boxmenu_bath {height:110px;margin-bottom:10px;}
-#boxmenu_brands {height:auto;margin-bottom:10px;}
-#boxmenu_gifts {height:70px;margin-bottom:20px;margin-top:38px;}
+#boxmenu_brands {margin-bottom:20px;height: 25px;
+display: block; width:120px;}
+#boxmenu_gifts {margin-top:10px;height: 85px;
+margin-bottom: 20px;
+margin-top: 13px;}
 #menubase {width:100%;height:auto; background:#666666;display: block;
 clear: both; margin:0 0 10px; text-align:center !important; border-top:1px solid #666666; border-bottom:1px solid #666666; clear:both; color:#fff;}
 #menubase a{color:#fff!important;text-align:center!important;}
@@ -91,9 +94,9 @@ ul#topnav li div.furniture span{height:370px;left:0;color:#333333;top: 28px;padd
 border-left: 5px solid #ffffff;}
 #subcat_col_one_furn div {color:#333333;}
 #subcat_col_three_furn {width:156px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_five_furn {width:134px;height:310px;float:right;border-right:0px solid #999999;color:#333333; border-left: 5px solid #ffffff;;margin-top: 8px;}
+#subcat_col_five_furn {width:136px;height:310px;float:right;border-right:0px solid #999999;color:#333333; border-left: 5px solid #ffffff;;margin-top: 8px;}
 #subcat_col_two_furn {width:150px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_four_furn {width:148px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_furn {width:146px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_six_furn {width:147px;height:310px;float:right;background:#fff; font-size:12px; padding-right:8px;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Furniture END */
 
@@ -126,10 +129,10 @@ border-left: 5px solid #ffffff;}
 ul#topnav li div.gifts a {display:block; padding:6px 13px 6px 9px; color: #666666;}
 ul#topnav li div.gifts a:hover {display: block; background:#FFF;}
 ul#topnav li div.gifts span{height:362px;left:0;color:#333333;top: 28px; padding:6px 11px 6px 9px; width:98%;}
-#subcat_col_one_gift {width:145px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
-#subcat_col_two_gift {width:140px;height:auto;float:right; margin-left:0px;margin-bottom:10px; margin-top:0px; margin-right:0px;}
-#subcat_col_three_gift, #subcat_col_four_gift {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
-#subcat_col_five_gift {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
+#subcat_col_one_gift {width:145px;height:auto;float:right; margin-left:10px;margin-bottom:5px; margin-top:0px; margin-right:5px;}
+#subcat_col_two_gift {width:140px;height:auto;float:right; margin-left:0px;margin-bottom:5px; margin-top:0px; margin-right:0px;}
+#subcat_col_three_gift, #subcat_col_four_gift {width:140px;height:auto;float:right; margin-left:5px;margin-bottom:5px; margin-top:0px; margin-right:5px;}
+#subcat_col_five_gift {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:5px; margin-top:0px;margin-right:10px;}
 #subcat_col_six_gift {width:140px;height:auto;float:left; margin:0 0 0 10px;margin-bottom:10px;}
 /* Gifts END */
 
@@ -176,9 +179,9 @@ ul#topnav li div.bedroom span{height:370px;left:0;color:#333333;top: 28px;paddin
 #subcat_col_one_bed {width:156px;height:310px;float:right;border-right:0px solid #999999;color:#333333;margin-top: 8px;
 border-left: 5px solid #ffffff;}
 #subcat_col_three_bed{width:156px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_five_bed {width:140px;height:310px;float:right;border-right:0px solid #999999;color:#333333; border-left: 5px solid #ffffff;;margin-top: 8px;}
+#subcat_col_five_bed {width:142px;height:310px;float:right;border-right:0px solid #999999;color:#333333; border-left: 5px solid #ffffff;;margin-top: 8px;}
 #subcat_col_two_bed {width:148px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_four_bed {width:142px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_bed {width:140px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_six_bed {width:147px;height:310px;float:right;background:#fff; font-size:12px; padding-right:8px;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Bedroom END */
 
@@ -209,9 +212,9 @@ ul#topnav li div.kitchen span{height:370px;left:0;color:#333333;top: 28px;paddin
 #subcat_col_one_kitch {width:150px;height:310px;float:right;border-right:0px solid #999999;color:#333333;margin-top: 8px;
 border-left: 5px solid #ffffff;}
 #subcat_col_three_kitch{width:177px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_two_kitch {width:140px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_two_kitch {width:138px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_four_kitch {width:145px;height:310px;float:right;background:#fff;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_five_kitch {width:130px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_kitch {width:132px;height:310px;float:right;border-right:0px solid #999999;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_six_kitch {width:147px;height:310px;float:right;background:#fff; font-size:12px; padding-right:8px;color:#333333;border-left: 5px solid #ffffff;margin-top: 8px;;}
 /* Kitchen END */
 
@@ -234,6 +237,80 @@ ul#topnav li div.brands span{height:362px;left:0;color:#333333;top: 28px; paddin
 #subcat_col_three_brands, #subcat_col_four_brands {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
 #subcat_col_five_brands {width:134px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
 #subcat_col_six_brands {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
+.aqua_di_parma {background:url(../images/topnav/topnav-brands.png) 0 0;}
+.aldo_londi {background:url(../images/topnav/topnav-brands.png) -120px 0;}
+.alessi {background:url(../images/topnav/topnav-brands.png) -240px 0;}
+.alex_mccarthy {background:url(../images/topnav/topnav-brands.png) -360px 0;}
+.ali_tomlin {background:url(../images/topnav/topnav-brands.png) -480px 0;}
+.anglepoise {background:url(../images/topnav/topnav-brands.png) -600px 0;}
+.blu_dot {background:url(../images/topnav/topnav-brands.png) -720px 0;}
+.bodum {background:url(../images/topnav/topnav-brands.png) -0 -25px;}
+.brink_and_campman {background:url(../images/topnav/topnav-brands.png) -120px -25px;}
+.brinkhaus {background:url(../images/topnav/topnav-brands.png) -240px -25px;}
+.calligaris {background:url(../images/topnav/topnav-brands.png) -360px -25px;}
+.cantori {background:url(../images/topnav/topnav-brands.png) -480px -25px;}
+.chisel_and_mouse {background:url(../images/topnav/topnav-brands.png) -600px -25px;}
+.cire_trudon {background:url(../images/topnav/topnav-brands.png) -720px -25px;}
+.clarissa_hulse {background:url(../images/topnav/topnav-brands.png) 0 -50px;}
+.cole_and_son {background:url(../images/topnav/topnav-brands.png) -120px -50px;}
+.contempo {background:url(../images/topnav/topnav-brands.png) -240px -50px;}
+.cowshed {background:url(../images/topnav/topnav-brands.png) -360px -50px;}
+.culti {background:url(../images/topnav/topnav-brands.png) -480px -50px;}
+.cumbria_crystal {background:url(../images/topnav/topnav-brands.png) -600px -50px;}
+.deknudt_decora {background:url(../images/topnav/topnav-brands.png) -720px -50px;}
+.de_la_espada {background:url(../images/topnav/topnav-brands.png) 0 -75px;}
+.designers_guild {background:url(../images/topnav/topnav-brands.png) -120px -75px;}
+.dualit {background:url(../images/topnav/topnav-brands.png) -240px -75px;}
+.egizia {background:url(../images/topnav/topnav-brands.png) -360px -75px;}
+.eleanor_lakelin {background:url(../images/topnav/topnav-brands.png) -480px -75px;}
+.ercol {background:url(../images/topnav/topnav-brands.png) -600px -75px;}
+.esteban {background:url(../images/topnav/topnav-brands.png) -720px -75px;}
+.fissler {background:url(../images/topnav/topnav-brands.png) 0 -100px;}
+.gaggia {background:url(../images/topnav/topnav-brands.png) -120px -100px;}
+.georg_jensen {background:url(../images/topnav/topnav-brands.png) -240px -100px;}
+.gervasoni {background:url(../images/topnav/topnav-brands.png) -360px -100px;}
+.getty_images {background:url(../images/topnav/topnav-brands.png) -480px -100px;}
+.harlequin {background:url(../images/topnav/topnav-brands.png) -600px -100px;}
+.heals {background:url(../images/topnav/topnav-brands.png) -720px -100px;}
+.jonathan_adler {background:url(../images/topnav/topnav-brands.png) 0 -125px;}
+.kartell {background:url(../images/topnav/topnav-brands.png) -120px -125px;}
+.kathryn_roberts {background:url(../images/topnav/topnav-brands.png) -240px -125px;}
+.kay_and_stemmer {background:url(../images/topnav/topnav-brands.png) -360px -125px;}
+.kitchenaid {background:url(../images/topnav/topnav-brands.png) -480px -125px;}
+.le_creuset {background:url(../images/topnav/topnav-brands.png) -600px -125px;}
+.ligne_roset {background:url(../images/topnav/topnav-brands.png) -720px -125px;}
+.linari {background:url(../images/topnav/topnav-brands.png) 0 -150px;}
+.lobjet {background:url(../images/topnav/topnav-brands.png) -120px -150px;}
+.lsa {background:url(../images/topnav/topnav-brands.png) -240px -150px;}
+.marimekko {background:url(../images/topnav/topnav-brands.png) -360px -150px;}
+.mauviel {background:url(../images/topnav/topnav-brands.png) -480px -150px;}
+.michael_aram {background:url(../images/topnav/topnav-brands.png) -600px -150px;}
+.missoni {background:url(../images/topnav/topnav-brands.png) -720px -150px;}
+.missoni_home {background:url(../images/topnav/topnav-brands.png) 0 -175px;}
+.molton_brown {background:url(../images/topnav/topnav-brands.png) -120px -175px;}
+.neals_yard {background:url(../images/topnav/topnav-brands.png) -240px -175px;}
+.neom {background:url(../images/topnav/topnav-brands.png) -360px -175px;}
+.nespresso {background:url(../images/topnav/topnav-brands.png) -480px -175px;}
+.newgate {background:url(../images/topnav/topnav-brands.png) -600px -175px;}
+.normann_copenhagen {background:url(../images/topnav/topnav-brands.png) -720px -175px;}
+.original_btc {background:url(../images/topnav/topnav-brands.png) 0 -200px;}
+.orla_kiely {background:url(../images/topnav/topnav-brands.png) -120px -200px;}
+.ortigia {background:url(../images/topnav/topnav-brands.png) -240px -200px;}
+.osborne_and_little {background:url(../images/topnav/topnav-brands.png) -360px -200px;}
+.penhaligons {background:url(../images/topnav/topnav-brands.png) -480px -200px;}
+.poole_pottery {background:url(../images/topnav/topnav-brands.png) -600px -200px;}
+.sanderson {background:url(../images/topnav/topnav-brands.png) -720px -200px;}
+.scanpan {background:url(../images/topnav/topnav-brands.png) 0 -225px;}
+.scp {background:url(../images/topnav/topnav-brands.png) -120px -225px;}
+.seletti {background:url(../images/topnav/topnav-brands.png) -240px -225px;}
+.sophie_woodrow {background:url(../images/topnav/topnav-brands.png) -360px -225px;}
+.tempur {background:url(../images/topnav/topnav-brands.png) -480px -225px;}
+.this_works {background:url(../images/topnav/topnav-brands.png) -600px -225px;}
+.tom_dixon {background:url(../images/topnav/topnav-brands.png) 0 -225px;}
+.vitra {background:url(../images/topnav/topnav-brands.png) 0 -250px;}
+.wusthof {background:url(../images/topnav/topnav-brands.png) -120px -250px;}
+
+
 /* Brands END */
 
 /* Offers / Sale START */
@@ -258,8 +335,10 @@ ul#topnav li span div.boxhighlight a{display:block;width:auto;padding:7px 0 5px 
 margin-bottom: 5px;
 width: 90%;padding-bottom: 2px;}
 .boxhighlight_brands {background-color:#fff; font-size:12px; color:#333333; border-bottom: 0px solid #999999;
-margin-bottom: 5px;
-width: 90%;}
+margin-bottom: 20px;
+width: 90%;
+height: 20px;
+display: block;}
 .boxhighlight_gifts {background-color:#fff; font-size:12px; color:#333333; border-bottom: 0px solid #999999;
 margin-bottom: 5px;
 width: 90%;}
