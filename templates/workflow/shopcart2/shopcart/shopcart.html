@@ -96,7 +96,7 @@
 		<div class="basketHeader">
 		<h1><venda_text id=desktop.heading.shopping_cart> (<venda_oialltotal> <venda_block label=19,oialltotal=1><venda_text id=desktop.info.item></venda_block label=19><venda_block label=20,oialltotal!=1><venda_text id=desktop.info.items></venda_block label=20>)</h1>
 		</div>
-        <venda_block label=1,mode=value,<venda_errors mode=boolean>=notnull><h2 class="error"><venda_errors></h2></venda_block label=1>
+        <venda_block label=1,mode=value,<venda_errors mode=boolean>=notnull><h2 class="error"><venda_errors><a href="javascript: history.go(-1)">GO BACK</a></h2></venda_block label=1>
 
 			<venda_tpcomment><!-- Paypal Express --></venda_tpcomment>
 			<venda_paymenttemplate template=paypal_express,templatetype=paytype/frontend,paymenttype=paypal>
@@ -179,7 +179,7 @@
 			<div class="basketButtons">
             <div style="margin-top: 44px;
 float: left;">
-			<a href="<venda_dispview page=home>" class="button buttonAlt2" style="float: left; clear: none;"><venda_text id=desktop.button.continue_shopping></a> 
+			<a href="javascript: history.go(-1)" class="button buttonAlt2" style="float: left; clear: none;"><venda_text id=desktop.button.continue_shopping></a>
             </div>
             		<div style="float: right;
 margin-top: 50px;
