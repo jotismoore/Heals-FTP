@@ -44,36 +44,6 @@ function readReview(){
 }
 </script>
 </venda_block label=50>
-<!-- Avail Search Keyword Tracking -->
-<script type="text/javascript" src="http://service.avail.net/2009-02-13/dynamic/8f6b6820-5425-11de-92c7-12313b0039c1/emark.js"></script>
-<script type="text/javascript">
-	function availsetcookie(){
-var availsearchKeyWord = "<venda_htxt mode=get,name=availsrch>";
-var searchWordHtxt = Venda.Platform.getUrlParam(window.location.href,'htxt');
-if (availsearchKeyWord != "") {
-		var CJ_COOKIE_NAME="availsearchterm";
-		var CJ_COOKIE_NAME2="availinvtref";
-			var cj = new CookieJar({expires: 3600 * 24 * 21, path: '/'});  
-			cj.put(CJ_COOKIE_NAME, "<venda_htxt mode=get,name=availsrch>");    
-			cj.put(CJ_COOKIE_NAME2, "<venda_invtref>");   
-}
-}
-function vendaAvailSaveSearch(){
-<!--availSearch Term captured here-->
-var CJ_COOKIE_NAME = 'availsearchterm';
-var cj = new CookieJar({expires: 3600 * 24 * 21, path: '/'});  
-var searchKeyWord = cj.get(CJ_COOKIE_NAME);
-	if (searchKeyWord != "" && searchKeyWord != null) {
-			//saveSearch(searchKeyWord,'<venda_invtref>');
-			var emark = new Emark();
-			var saveSearch = emark.saveSearch(searchKeyWord,'<venda_invtref>');
-			emark.commit();
-			//alert(searchKeyWord+','+'<venda_invtref>');
-			cj.remove(CJ_COOKIE_NAME);
-		}
-}
-</script>
-<!-- End Avail Search Keyword Tracking -->
 <div itemscope itemtype="http://schema.org/Product">
 <div id="productdetail">
 <script type="text/javascript">
