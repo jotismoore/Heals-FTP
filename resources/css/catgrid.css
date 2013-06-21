@@ -27,9 +27,9 @@ h5.active {background-position: left bottom;}
 .acc_accordion_area .block_christmas p:hover, .shopbybrand_area .block_christmas p:hover {background-color:#d7bdc9;}
 .acc_accordion_area .block_dining p a, .acc_accordion_area .block_office p a, .shopbybrand_area .block_office p a, .acc_accordion_area .block_christmas p a, .shopbybrand_area .block_christmas p a, .shopbybrand_area .block_dining p a, .acc_accordion_area .block_furniture p a, .shopbybrand_area .block_furniture p a, .acc_accordion_area .block_accessories p a, .shopbybrand_area .block_accessories p a, .acc_accordion_area .block_lighting p a, .shopbybrand_area .block_lighting p a, .acc_accordion_area .block_gifts p a, .shopbybrand_area .block_gifts p a, .acc_accordion_area .block_toiletries p a, .shopbybrand_area .block_toiletries p a, .acc_accordion_area .block_garden p a, .shopbybrand_area .block_garden p a, .acc_accordion_area .block_bathroom p a, .shopbybrand_area .block_bathroom p a, .acc_accordion_area .block_bedroom p a, .shopbybrand_area .block_bedroom p a, .acc_accordion_area .block_sale p a, .shopbybrand_area .block_sale p a, .shopbybrand_area .block_gift_voucher p a {color:#666666;text-decoration:none;margin-left:15px;display:block;}
 .border-top {border-top:1px dotted #cccccc;}
-#category-main-content {width:740px;background-color:#f1f1f1;height:100%;margin-left:10px;float:left;}
+#category-main-content {width:100%; height:100%;float:left;}
 #categorylist {background-color: #ffffff;}
-#sub_categories {width:740px;height:auto;}
+#sub_categories {width:100%;height:auto; float: left;}
 .sub_category_grid {width:234px;height:276px;border:1px solid #cccccc;margin:8px 0 8px 8px;float:left;}
 .sub_category_image {width:234px;height:145px;border:0;}
 .sub_category_title {background:url(../images/gradient.gif);background-repeat-x: repeat;background-repeat-y: norepeat;background-position-x: 0px;background-position-y: 0px;width:234px;height:23px;border-top:1px solid #cccccc;border-bottom:1px solid #cccccc;padding-top:5px;}
@@ -51,10 +51,10 @@ h5.active {background-position: left bottom;}
 .sub_category_sub_headings_bathroom{background:#ddeee6;}
 .sub_category_sub_headings_bedroom{background:#d3dde7;}
 .sub_category_sub_headings_sale{background:#ecc3c0;}
-.sub_headings {margin-left:10px;width:234px;height:16px;}
-.sub_headings a {color:#444444;text-decoration:none;float:left;width:243px;}
+.sub_headings {margin-left: 10px;width: 90%;height: 16px;float: left;}
+.sub_headings a {color:#444444;text-decoration:none;float:left;}
 .sub_headings a:hover {color:#333333;text-decoration:underline;}
-.category-top-banner {width:724px;height:232px;background-color:#ffffff;margin:8px;z-index:50;}
+.category-top-banner {background-color: #ffffff;margin: 15px;z-index: 50;float: left;}
 .seotext-overlay {width:230px;height:111px;margin:56px 0 0 492px;z-index:100;position:absolute;}
 .seotext-overlay p {font-size:11px;color:#ffffff;}
 .slider_container {width:740px;height:283px;background-color:#f1f1f1;float:left;}
@@ -87,6 +87,8 @@ h2 {text-transform: uppercase;text-align: left;padding: 0px 4px 0px 4px;font-siz
 .shopbybrand_area .block_sbb p {border-bottom:1px dotted #cccccc;padding-top:5px;padding-bottom:5px;margin:0;}
 .shopbybrand_area .block_sbb p:hover {background-color:#e2e2e2;}
 .shopbybrand_area .block_sbb p a {color:#666666;text-decoration:none;margin-left:15px;display:block;}
-.sub_category_grid_sbb {width:234px;height:auto;border:1px solid #cccccc;margin:8px 0 8px 8px;float:left;padding-bottom: 10px;background-color: white;}
-.sub_category_sbb_letter {width:234px;height:70px;border:0;background-color:#ffffff;}
-.sub_category_sub_headings_sbb_row1, .sub_category_sub_headings_sbb_row2, .sub_category_sub_headings_sbb_row3, .sub_category_sub_headings_sbb_row4, .sub_category_sub_headings_sbb_row5, .sub_category_sub_headings_sbb_row6, .sub_category_sub_headings_sbb_row7, .sub_category_sub_headings_sbb_row8{width:234px;auto;padding-top:3px;background-color:#ffffff;}
+.sub_category_grid_sbb {width: 224px;height: auto;border-top: 1px solid #666666;margin: 8px 0 8px 0;float: left;padding-bottom: 15px;padding-left: 10px;;}
+.sub_category_sbb_letter {height:60px;border:0;}
+.sub_category_sbb_letter h1{color: #333333;font-size: 48px;padding-top: 8px;font-weight: normal;margin-left: 10px;}
+.sub_category_sub_headings_sbb_row1, .sub_category_sub_headings_sbb_row2, .sub_category_sub_headings_sbb_row3, .sub_category_sub_headings_sbb_row4, .sub_category_sub_headings_sbb_row5, .sub_category_sub_headings_sbb_row6, .sub_category_sub_headings_sbb_row7, .sub_category_sub_headings_sbb_row8{width:224px;padding-top:3px;background-color:#ffffff;}
+#sub_category_row {clear:both;}
