@@ -91,6 +91,17 @@ margin-left: 2px;
 		<br class="clear-all">
 	</div><!-- End of col-two-three -->
 	<div class="clear-all">&nbsp;</div>
+    
+    <script type="text/javascript" charset="utf-8">
+    $(".secondParagraph").css("display", "none");
+    $(".read_more").toggle(function(){
+      $(".secondParagraph").show(10);
+      $(".read_more").text("Hide This");
+    }, function(){
+      $(".secondParagraph").hide(10);
+      $(".read_more").text("Read More");
+    });
+</script>
 
 <script type="text/javascript">
 var imgTimeout = 0;
