@@ -9,14 +9,17 @@
 	<venda_tpcomment><!-- Shopcart empty --></venda_tpcomment>
 	<div class="grid_24 alpha omega basketR">
 
-	<div class="box basketAlt">
+	<div class="box basketAlt" style="width: 100%;
+margin-bottom: 20px;">
         <div class="shopcartheader">
 			<h1><venda_text id=desktop.heading.shopping_cart></h1>
         </div>
 			<venda_block label=1,mode=value,<venda_errors mode=boolean>=notnull><h2 class="error"><venda_errors></h2></venda_block label=1>
+        <div class="empty_basket">
 		<p><venda_text id=desktop.info.shopping_cart_empty></p>
+        </div>
 		<div id="buttons" class="bottomButtons">
-			<a href="<venda_dispview page=home>" class="button buttonAlt buttonArrow right"><venda_text id=desktop.button.continue_shopping></a>
+			<a href="<venda_dispview page=home>" class="button buttonAlt2" ><venda_text id=desktop.button.continue_shopping></a>
 		</div>
 	</div>
     </div>

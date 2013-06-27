@@ -840,6 +840,7 @@ font-size:11px;
 #productdetail .invtoption ul li {margin: 0; padding: 0 0 2px 0;}
 .box.basketAlt {float:left;}
 .box.basketAlt h1 {color:#333;}
+.empty_basket {width:60%; float:left; text-decoration: none; cursor: auto;margin-bottom: 10px;}
 .button.buttonAlt.buttonArrow.right {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;;margin-top:5px; cursor:pointer; float:right;}
 .bottomButtons {clear:both;}
 #productdetail .invtpricebasket {border-top:1px solid #999; border-bottom:1px solid #999; padding: 11px 23px 17px 6px; margin:20px 0 0 0;}

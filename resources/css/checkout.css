@@ -476,7 +476,10 @@ font-size:28px;
 	padding: 3px 20px;
 	margin: auto;
 	width: 30%;
-text-align: center;}
+text-align: center;
+text-decoration: none;
+cursor: auto;}
+.shopcartheader h1:hover {text-decoration: none;cursor: auto;}
 #yourbasket h1 {display:none;}
 /*RT122255*/
 #yourbasket {width:938px; margin:0 auto;}
