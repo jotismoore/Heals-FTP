@@ -195,19 +195,29 @@ oShipArray[nAddr] = new Array();
 					<venda_block label=50,oiitype=3>
 					<td class="thumb gcimage"><venda_block label=150,med-medium=notnull><venda_media rec=invt,type=pict,key=small></venda_block label=150>
 						<venda_block label=151,med-medium=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>"></venda_block label=151></td>
-						</venda_block label=50>
-						<venda_tpcomment><!-- normal product image --></venda_tpcomment>
-						<venda_block label=51,oiitype!=3>
-							<venda_block label=231,med-medium=notnull>
-								<venda_tpcomment><!--use key=medium--></venda_tpcomment>
-								<td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><venda_media rec=invt,type=movie-swf-pict,key=small,border=0,width=120,height=120></a></td>
-							</venda_block label=231>
-
-							<venda_block label=232,med-medium=null>
-								<venda_tpcomment><!--use noimage graphic if 'medium' is null--></venda_tpcomment>
-								<td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_medium.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
-							</venda_block label=232>
-						</venda_block label=51>
+					</venda_block label=50>
+					
+                    <venda_tpcomment><!-- normal product image --></venda_tpcomment>
+					<venda_block label=51,oiitype!=3>
+                    
+                    <venda_block label=1112,invtatt1=notnull>
+					<venda_tpcomment><!--product has attributes--></venda_tpcomment>
+					<venda_block label=231,med-medium=notnull><td class="thumb" style="-width:25%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_oiivref>_s.jpg" border="0" width="120px" height="120px" onError="noImage<venda_oiivref>(this);" /></a>
+					<script>function noImage<venda_oiivref>(changeImage){
+					changeImage.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_invtparef>_m.jpg';}
+					</script>
+        			</td>
+					</venda_block label=231>
+                    <venda_block label=5,med-medium=null><td class="thumb noimage"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_<venda_setting type=ebiz,name=setshoppingbasketimagekey>.gif" alt="<venda_text id=site.link.alt.no_image.invt>"></a></td>
+                    </venda_block label=5>
+                    </venda_block label=1112>
+                    
+                    <venda_block label=1132,invtatt1=null>
+					<venda_tpcomment><!-- non-attributes--></venda_tpcomment>
+					<venda_block label=14,med-medium=notnull><td class="thumb" style="-width:25%;"><a href="<venda_dispview invt=<venda_invtref>>"><venda_media rec=invt,type=movie-swf-pict,key=medium,border=0,width=120,height=120></a></td></venda_block label=14>
+					<venda_block label=15,med-medium=null><td class="thumb noimage"><a href="<venda_dispview invt=<venda_invtref>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_<venda_setting type=ebiz,name=setshoppingbasketimagekey>.gif" alt="<venda_text id=site.link.alt.no_image.invt>"></a></td></venda_block label=15>
+					</venda_block label=1132>
+					</venda_block label=51>
 
 					<td class="name">
 						<span class="productname">
@@ -228,21 +238,6 @@ oShipArray[nAddr] = new Array();
 					</td>
 
 					<venda_block label=52,oiitype!=3>
-						<!--<td class="giftwrapitem">
-							<venda_block label=16,mode=value,<venda_giftwrapavail>&gt;0,<venda_setting type=ebiz,name=giftmessageonly>=1,operator=or>
-							<venda_block label=193,mode=value,<venda_setting type=ebiz,name=addgwcombinedpage>!=1>
-								<a href="<venda_wizurl step=giftwrapping>"><span class="giftwrap"></span>
-								<venda_block label=222,oigwrefqty=notnull,oicmtmsgqty=notnull,operator=or><venda_text id=desktop.button.giftwrap_edit></venda_block label=222>
-								<venda_block label=223,oigwrefqty=null,oicmtmsgqty=null><venda_text id=desktop.button.giftwrap></venda_block label=223></a>
-								</venda_block label=193>
-								</venda_block label=16>
-						</td>
-
-						<td class="diffshipitem">
-							<venda_block label=93,mode=value,<venda_glxt mode=get,name=glxtusertype>!=p><venda_userinfo><venda_block label=65,sesallowmultideladdress=1>
-							<a href="<venda_wizurl step=multipledeliveryaddresses>"><span class="itemship"></span><venda_text id=desktop.button.multiple_delivery_address></a></venda_block label=65></venda_userinfo>
-							</venda_block label=93>
-						</td>-->
                         <td class="priceeach"><venda_ohcursym><venda_oisub></td>
 					</venda_block label=52>
 
