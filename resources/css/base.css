@@ -139,7 +139,7 @@ width: 36px;
 .addnewaddress {margin-top: 5px; margin-left: 0px;}
 .addressbookitems {width:100%; clear: both;}
 .bottomButtons.pull_1 {float:left;}
-.addressbox {float:left; border: 10px solid #EEE; list-style:none; height: 230px; width:30%; background:#fff;}
+.addressbox {float: left;border: 10px solid #EEE;list-style: none;height: 230px;width: 286px;background: #fff;}
 #address_list{-webkit-padding-start: 0px;}
 #defaultFlag {font-weight:bold; line-height:24px;}
 input#lname.textInput.validateError, input#fname.textInput.validateError, input#phone.textInput.validateError, input#usemail.textInput.validateError, input#uspswd.textInput.validateError , input#uspswd2.textInput.validateError, input#usemail.validateError, input#zipc.textInput.validateError, input#email.textInput.validateError {color:#000;}

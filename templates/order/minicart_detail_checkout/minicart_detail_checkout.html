@@ -9,22 +9,26 @@
     <div class="image">
     <venda_block label=20,invtatt1=notnull>
         <venda_tpcomment><!--product has attributes--></venda_tpcomment>
-                    <venda_block label=231,med-small=notnull>
+                    <venda_block label=231,med-medium=notnull>
                         <venda_tpcomment><!--use key=small--></venda_tpcomment>
-                        <td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><venda_media rec=invt,type=movie-swf-pict,key=small,border=0,width=120,height=120></a></td>
+                        <td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_oiivref>_s.jpg" border="0" width="120px" height="120px" onError="noImage<venda_oiivref>(this);" /></a>
+                        <script>function noImage<venda_oiivref>(changeImage){
+changeImage.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_invtparef>_m.jpg';}
+</script>
+                        </td>
                     </venda_block label=231>
 
-                    <venda_block label=232,med-small=null>
+                    <venda_block label=232,med-medium=null>
                         <venda_tpcomment><!--use noimage graphic if 'small' is null--></venda_tpcomment>
                         <td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtparef>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
                     </venda_block label=232>
     </venda_block label=20>
     <venda_block label=30,invtatt1=null>
-            <venda_block label=31,med-small=notnull>
+            <venda_block label=31,med-medium=notnull>
                 <venda_tpcomment><!--if not 'set' prefix - no alt. images functionality --></venda_tpcomment>
-                <td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><venda_media rec=invt,type=pict,key=small></a></td>
+                <td class="thumb" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><venda_media rec=invt,type=pict,key=medium,border=0,width=120,height=120></a></td>
             </venda_block label=31>
-            <venda_block label=32,med-small=null>
+            <venda_block label=32,med-medium=null>
                 <venda_tpcomment><!--without key=xsmall--></venda_tpcomment>
                 <td class="thumb noimage" valign="middle" style="width:20%;"><a href="<venda_dispview invt=<venda_invtref>>"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=desktop.info.no_product_image>"></a></td>
             </venda_block label=32>
