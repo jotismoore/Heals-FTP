@@ -7,7 +7,7 @@ function showproductdetailtabs(a){$(a).show();}
 function hideproductdetailtabs(a){$(a).hide();}
 </script>
 <style>
-.description-text, .details-text, .reviews-text {background-color:#fff;border:1px solid #b4b4b4;}
+.description-text, .details-text, .reviews-text {background-color:#fff;border:1px solid #b4b4b4; min-height:180px !important;}
 .tabdetail {margin:9px 0 0 0;}
 .g-plusone {margin-top:3px; margin-left:9px}
 </style>
@@ -58,7 +58,9 @@ function hideproductdetailtabs(a){$(a).hide();}
 <div class="maintab tabcontent">
 <venda_block label=12,invtdesc1=notnull><p class="invtdesc1"><span itemprop="description"><venda_invtdesc1></span></p></venda_block label=12>
 <div class="dimension left">
+<table width="100%" class="tbl-details" style="margin-top: 5px;">
 <venda_extflds template=pdxtlist,group=4,ref=<venda_invtref>,ivtype=<venda_invtivtype>>
+</table>
 </div>
 <div class="taboneleft left">
 </div>
