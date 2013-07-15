@@ -39,7 +39,12 @@
 	     w.TMAN.addParam = function(n,v) {
 		w.tmParam[n]=v;
 	     };
-	     ap(tm);	
+	     ap(tm);
+		 w.TMAN.addParams = function(c,p) {
+for (var n in p) {
+w.tmParam[n] = p[n];
+}
+};
 	} else {
 	     document.write('<script src="' + tm + '"><\/script>');
 	}
