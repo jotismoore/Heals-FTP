@@ -341,8 +341,10 @@ margin-bottom: 5px;
 .paymentdetail.boxContent.clearfix form {width:50%;background:#eeeeee; }
 #paymentdetailSection header {background:#fff;padding:10px; display:block; border-bottom:1px solid#333;}
 .f-payment_details, f-paypal {line-height:18px; padding: 15px;}
-.credit{clear:none; margin-right:15px;float:left; margin-bottom:5px; margin-top: 0;}
-.credit label{float:right; font-weight:bold; clear:none; margin-top: 5px;}
+.credit, .send {clear:none; margin-right:15px;float:left; margin-bottom:5px; margin-top: 0;}
+.send {width:100%;}
+.credit label, .send label{float:right; font-weight:bold; clear:none; margin-top: 5px;}
+.send label {width:89%;}
 .f-paypal {margin-top:10px; padding: 15px;}
 .f-paypal label{font-weight:bold; margin-right:5px; vertical-align: middle; width:110px;}
 .f-paypal img{vertical-align:middle; margin-left: 4%;}
@@ -353,7 +355,8 @@ vertical-align: middle;
 .switchsolo {padding: 15px 0;
 text-align: center;}
 input#creditcard, input#formpaypal, input#dontsavecc {border:none; margin-left: 3%;}
-#creditcard, #dontsavecc, #formpaypal {margin-top:0; margin-right: 7px;}
+input#sendinpayment {border:none; margin-left: 5%;margin-top: 2%;}
+#creditcard, #dontsavecc, #formpaypal, #sendinpayment {margin-top:0; margin-right: 7px;}
 .credit input{clear:none; margin-left:0;float:left;}
 .credit img{clear:none; margin-right:15px;float:left;}
 .f-payment_details select, .f-payment_details input {float:left; margin: 5px; margin-left: 0px; height: 24px; padding-left: 2px; border: 1px solid #666666;}
