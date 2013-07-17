@@ -7,12 +7,12 @@
 
 <div class="<venda_workflow> <venda_curstep> grid_18 omega pull_6 checkoutL">
 	<div class="box basketAlt">
-    	<venda_block label=402,workflow!=register2>
-		<h3 class="header"><venda_text id=desktop.heading.add_billing_address></h3>
-        </venda_block label=402>
-        <venda_block label=4022,workflow=register2>
-		<h3 class="header">Create an Account</h3>
-        </venda_block label=4022>
+    	<venda_block label=4011,workflow=checkout>
+        <h3 class="header"><venda_text id=desktop.heading.add_billing_address></h3>
+    </venda_block label=4011>
+    <venda_block label=40112,workflow=register2>
+        <h3 class="header"><venda_text id=desktop.heading.register></h3>
+    </venda_block label=40112>
 		<div class="boxContent">
 			<venda_block errors=notnull><h3 class="error"><venda_errors></h3></venda_block>
 		</div>
@@ -26,13 +26,20 @@
 		<input type="hidden" name="trrfnbr" value="<venda_userinfo><venda_sesid></venda_userinfo>" />
 		<input type="hidden" name="mode" value="process" />
 		<venda_block label=401,workflow=checkout><venda_block errors=null><input type="hidden" name="curlayout" value="checkout2" /></venda_block></venda_block label=401>
-		<venda_block label=402,workflow=register><venda_block errors=null><input type="hidden" name="curlayout" value="default" /></venda_block></venda_block label=402>
+		<venda_block label=402,workflow=register2><venda_block errors=null><input type="hidden" name="curlayout" value="default" /></venda_block></venda_block label=402>
 		<input type="hidden" name="exgroup" value="all" /><venda_tpcomment><!-- Required for user extended fields --></venda_tpcomment>
 		<input type="hidden" name="lang" value="<venda_sessionlanguage>"><venda_tpcomment><!-- Save the current language against the user --></venda_tpcomment>
 		<input type="hidden" name="log" value="2"><venda_tpcomment><!-- To register a new user --></venda_tpcomment>
-		<venda_tpcomment><!-- For express checkout the user is partially registered 'P', 'R' for full registration - the glxt is set in the login form --></venda_tpcomment>
+		<venda_block label=4012,workflow=checkout>
+        <venda_tpcomment><!-- For express checkout the user is partially registered 'P', 'R' for full registration - the glxt is set in the login form --></venda_tpcomment>
 	    <input type="hidden" name="ustype" value="P">
         <input type="hidden" name="glxt" value="<venda_glxt mode=make,glxtusertype=p>">
+        </venda_block label=4012>
+        <venda_block label=4013,workflow=register2>
+<venda_tpcomment><!-- For express checkout the user is partially registered 'P', 'R' for full registration - the glxt is set in the login form --></venda_tpcomment>
+            <venda_block label=18,mode=value,<venda_glxt mode=get,name=glxtusertype>!=p><input type="hidden" name="ustype" value="R"></venda_block label=18>
+            <venda_block label=19,mode=value,<venda_glxt mode=get,name=glxtusertype>=p><input type="hidden" name="ustype" value="P"></venda_block label=19>
+        </venda_block label=4013>
 
         <div id="userpartial" style="display:none"><venda_glxt mode=make,glxtusertype=p></div>
         <div id="userregistered" style="display:none"><venda_glxt mode=make,glxtusertype=></div>
@@ -79,7 +86,7 @@
 			<div id="hideOrShowAddress">
     			<div class="fieldlabel">
     				<label for="company"><venda_text id=desktop.form.company></label>
-    				<input type="text" class="textInput" name="company" id="company" value="<venda_company>" placeholder="<venda_text id=desktop.form.company> (optional)" />
+    				<input type="text" class="textInput" name="company" id="company" value="<venda_company>" placeholder="<venda_text id=desktop.form.company> <venda_text id=admn.ornew.dispitem.oixfields.optional>" />
     			</div>
 				<div class="formSeparator"></div>
     			<div id="houseNum">
@@ -155,7 +162,7 @@
 		</venda_block label=10>
 		</fieldset >
 
-
+		<venda_block label=163,workflow=checkout>
 		<venda_tpcomment><!-- Start: Choose Password - If full registration type 'R' --></venda_tpcomment>
 		<venda_block label=16,mode=value,<venda_glxt mode=get,name=glxtusertype>!=p>
 		<fieldset  id="fieldsetBox" style="margin-top:15px;">
@@ -176,6 +183,21 @@
 			</div>
 		</fieldset>
 		</venda_block label=16>
+                </venda_block label=163>
+        <venda_block label=162,workflow=register2>
+        <fieldset  id="fieldsetBox" style="margin-top:15px;">
+            <div class="fieldlabel">
+                <label for="uspswd"><venda_text id=desktop.form.password> <span class="hideScreenReaderSafe"><venda_text id=desktop.form.required></span></label>
+                <input type="password" class="textInput" name="uspswd" id="uspswd" value="<venda_uspswd>" placeholder="<venda_text id=desktop.form.password> <venda_text id=admn.ornew.dispitem.oixfields.required>" maxlength="25" required="required" />
+            </div>
+            <div class="formSeparator"></div>
+            <div class="fieldlabel">
+                <label for="uspswd2"><venda_text id=desktop.form.verify_password> <span class="hideScreenReaderSafe"><venda_text id=desktop.form.required></span></label>
+                <input type="password" class="textInput" name="uspswd2" id="uspswd2" value="<venda_uspswd2>" placeholder="<venda_text id=desktop.form.verify_password><venda_text id=admn.ornew.dispitem.oixfields.required>" maxlength="25" required="required" />
+                <div class="formSeparator"></div>
+            </div>
+        </fieldset>
+        </venda_block label=162>
 		<venda_tpcomment><!-- End: Choose Password --></venda_tpcomment>
 
 		<venda_inctemplate name=usxtSet,type=exfields/user>
@@ -185,6 +207,12 @@
 				<input type="checkbox" name="blkemail" id="blkemail" value="1" class="dontFloat checkboxNoLabel" <venda_block label=124,blkemail=1> checked</venda_block label=124>> <label for="blkemail" class="dontFloat"><div class="tickBox"><venda_text id=desktop.form.receive_email_updates></div></label>
 			</div>
 		</fieldset>
+        <fieldset id="fieldsetBox" style="margin-top:15px;">
+        <div class="blktrdcomm">
+        <input type="checkbox" name="blktrdcomm" id="blktrdcomm" value="1" class="dontFloat checkboxNoLabel" <venda_block label=1242,blktrdcomm=1> checked</venda_block label=1242>>
+        <label for="blkemail" class="dontFloat"><div class="tickBox"><venda_text id=desktop.form.receive_third_party></div></label>
+        </div>
+        </fieldset>
 
 		<venda_tpcomment><!-- Start: Terms and Conditions --></venda_tpcomment>
 		<fieldset id="fieldsetBox" style="margin-top:15px;">
@@ -194,7 +222,7 @@
 		</fieldset>
 		<venda_tpcomment><!-- End: Terms and Conditions --></venda_tpcomment>
 
-		<venda_block label=11,workflow=register>
+		<venda_block label=11,workflow=register2>
 		<venda_tpcomment><!-- Step selection for login workflow - Take user to myaccount is registering but not purchasing --></venda_tpcomment>
 			<input type="hidden" name="step" id="step" value="--page-myaccount" />
 		</venda_block label=11>
