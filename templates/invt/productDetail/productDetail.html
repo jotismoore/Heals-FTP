@@ -257,12 +257,6 @@ European: 2-5 Working Days &pound;8.95
 <input type="hidden" name="next" value="">
 <input type="hidden" name="bklist" value="<venda_bklist>">
 <input type="hidden" name="layout" value="default">
-<venda_block label=11211,mode=value,<venda_htxt mode=get,name=avail>!=true>
-<input type="hidden" id="availHTXT" name="htxt" value="<venda_htxt mode=make,addtobasket=<venda_invtref>>"><!-- Avail  HTXT without avail=true-->
-</venda_block label=11211>
-<venda_block label=11212,mode=value,<venda_htxt mode=get,name=avail>=true>	
-<input type="hidden" id="availHTXT" name="htxt" value="<venda_htxt mode=make,avail=true,addtobasket=<venda_invtref>,recadded=<venda_invtref>>">
-</venda_block label=11212>
 <venda_block label=250,invtavail&gt;0,etadyleft&gt;0,operator=or>
 <!-- start: button link image -->
 <venda_block label=700,chkatt=null>
