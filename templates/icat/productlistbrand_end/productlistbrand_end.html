@@ -1,0 +1,69 @@
+<style type="text/css">
+.searchresult {display: inline;float:left;margin: 0 10px 10px 0;clear: none;}
+.searchresult h2 {text-transform: uppercase;text-align: left;padding: 0px 4px 0px 4px;font-size:0.9em}
+.priceattr, .pricedetail {display: block;height: 20px;width: 100%;overflow: hidden;margin: 10px 0 0 0;;padding: 0;font-size: 0.9em;}
+.image {border: none;float: left;}
+.details {width: 220px;text-align: right;float: left;}
+</style>
+<venda_detblock>
+<venda_block label=78,invtref1!=giftcert>
+<!-- <script type="text/javascript" src="/resources/reviews/pwr/engine/js/full.js"></script> -->
+<form name="form<venda_invtref1>" action="<venda_codehttp>" method="get" id="addproduct<venda_invtref1>form">
+<venda_inventory ref=<venda_ref1>,temp=locaytainvta_z>
+</form>
+</venda_block label=78>
+
+</venda_detblock>
+
+
+<div id="brand_end_container" style="background:#ffffff;">
+	
+				<venda_media rec=icat,type=movie-swf-pict,key=banner>
+   
+
+	<div class="brand_end_description">
+				<venda_block label=116532,icatldesc=notnull>
+				<div class="a_zldesc">
+				<venda_icatldesc>
+				</div>
+				</venda_block label=116532>
+                
+                <h2>Sadly we no longer sell <venda_icatname>, products, but have some other recommendations for you below.</h2> 
+
+	</div>
+	
+    <!-- <div class="brand_end_productlist_big" style="background:#999; float:left; margin:10px 0;"></div> -->
+
+	<div id="brand_end_productlist" style="float:right; margin:10px 0;">
+			
+		<venda_inventory ref=<venda_icxtrecprod1>,temp=searchInvt>
+        <venda_inventory ref=<venda_icxtrecprod2>,temp=searchInvt>
+        <venda_inventory ref=<venda_icxtrecprod3>,temp=searchInvt>
+        <venda_inventory ref=<venda_icxtrecprod4>,temp=searchInvt>
+        <venda_inventory ref=<venda_icxtrecprod5>,temp=searchInvt>
+        <venda_inventory ref=<venda_icxtrecprod6>,temp=searchInvt>
+        <venda_inventory ref=<venda_icxtrecprod7>,temp=searchInvt>
+        <venda_inventory ref=<venda_icxtrecprod8>,temp=searchInvt>
+       
+	</div>
+		<!-- End of col-two -->
+
+	<div class="clear-all">&nbsp;</div>
+</div>
+
+
+
+<script type="text/javascript">
+var imgTimeout = 0;
+function swapImage(obj,target,event) {
+var e = window.event || event;
+function execute() { obj.src = target; };
+if(obj) {if (e.type == "mouseover") {
+imgTimeout = setTimeout(execute, 250);} else if (e.type == "mouseout") {clearTimeout(imgTimeout);execute()}}}
+</script>
+
+<venda_block label=48,mode=value,<venda_setting type=ebiz,name=powerreviews>=1,<venda_setting type=ebiz,name=powerreviewsprodlist>=1>
+<script type="text/javascript">
+<venda_inctemplate type=includes,name=powerreviewscripts>
+</script>
+</venda_block label=48>
