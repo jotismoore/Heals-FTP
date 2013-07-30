@@ -164,7 +164,7 @@ text-align: left; clear: both;
 display: block;
 height: 10px;}
 
-.fieldlabel input, #houseNum input, #stateDiv input, #grid_11.alpha input {margin-bottom:5px;width: 230px; margin-right:5px; height:22px; padding-left: 3px; border: 1px solid #666666;}
+.fieldlabel input, #houseNum input, #stateDiv input, #grid_11.alpha input {margin-bottom:5px;width: 230px; margin-right:5px; height:22px; padding-left: 3px; border: 1px solid #666666; font-size: 12px;}
 
 .checkout.deliveryaddressedit.grid_18.omega.pull_6.checkoutL {float:none;}
 
@@ -193,13 +193,8 @@ margin-right: 10px;
 color: #FF0000;
 }
 
-.tickBox, .passwordinfo {clear:none; 
-float:right; 
-text-align:left; 
-width: 520px;
-padding-right: 75px;
-font-weight: bold;
-}
+.tickBox {clear:none; float:right; text-align:left; width: 520px;padding-right: 75px;}
+.passwordinfo {clear:none; float:right; text-align:left; width: 520px;padding-right: 75px;font-weight: bold;}
 
 .box.checkoutMinicart header {margin-bottom:5px;}
 #minicart_products {list-style: none;-webkit-margin-before: 0;
