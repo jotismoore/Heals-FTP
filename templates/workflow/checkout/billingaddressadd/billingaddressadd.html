@@ -68,7 +68,8 @@
             <div class="formSeparator"></div>
             <div class="fieldlabel">
 				<label for="phone"><venda_text id=desktop.form.phone> <span class="hideScreenReaderSafe"><venda_text id=desktop.form.required></span></label>
-				<input type="tel" class="textInput" name="phone" id="phone" value="<venda_phone>" placeholder="<venda_text id=desktop.form.phone> <venda_text id=desktop.form.required>" required="required" />
+                <input id="area" type="text" name="area" value="" size="10" maxlength="5" placeholder="<venda_text id=adm_178> <venda_text id=desktop.form.required>" required="required" style="width:80px"/>
+				<input type="tel" class="textInput" name="phone" id="phone" value="<venda_phone>" placeholder="<venda_text id=desktop.form.phone> <venda_text id=desktop.form.required>" required="required" style="width:137px"/>
 			</div>
 <div class="formSeparator"></div>
             <div class="fieldlabel">
@@ -193,7 +194,7 @@
             <div class="formSeparator"></div>
             <div class="fieldlabel">
                 <label for="uspswd2"><venda_text id=desktop.form.verify_password> <span class="hideScreenReaderSafe"><venda_text id=desktop.form.required></span></label>
-                <input type="password" class="textInput" name="uspswd2" id="uspswd2" value="<venda_uspswd2>" placeholder="<venda_text id=desktop.form.verify_password><venda_text id=admn.ornew.dispitem.oixfields.required>" maxlength="25" required="required" />
+                <input type="password" class="textInput" name="uspswd2" id="uspswd2" value="<venda_uspswd2>" placeholder="<venda_text id=desktop.form.verify_password> <venda_text id=admn.ornew.dispitem.oixfields.required>" maxlength="25" required="required" />
                 <div class="formSeparator"></div>
             </div>
         </fieldset>
@@ -204,12 +205,13 @@
 		<!-- remains here for backwards compatibility -->
 		<fieldset id="fieldsetBox" style="margin-top:15px;">
 			<div class="receiveMail">
-				<input type="checkbox" name="blkemail" id="blkemail" value="1" class="dontFloat checkboxNoLabel" <venda_block label=124,blkemail=1> checked</venda_block label=124>> <label for="blkemail" class="dontFloat"><div class="tickBox"><venda_text id=desktop.form.receive_email_updates></div></label>
+				<input type="checkbox" name="blkemail" id="blkemail" value="1" class="dontFloat checkboxNoLabel" checked="checked">
+                <label for="blkemail" class="dontFloat"><div class="tickBox"><venda_text id=desktop.form.receive_email_updates></div></label>
 			</div>
 		</fieldset>
         <fieldset id="fieldsetBox" style="margin-top:15px;">
         <div class="blktrdcomm">
-        <input type="checkbox" name="blktrdcomm" id="blktrdcomm" value="1" class="dontFloat checkboxNoLabel" <venda_block label=1242,blktrdcomm=1> checked</venda_block label=1242>>
+        <input type="checkbox" name="blktrdcomm" id="blktrdcomm" value="1" class="dontFloat checkboxNoLabel" checked="checked">
         <label for="blkemail" class="dontFloat"><div class="tickBox"><venda_text id=desktop.form.receive_third_party></div></label>
         </div>
         </fieldset>
