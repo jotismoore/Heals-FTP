@@ -91,7 +91,7 @@ table.wizrtable td {font-size: 80%;}
 #productdetail ol,
 #package ol {font-size: 0.9em;}
 .prods ul h2,
-.prods ul p{font-size: 0.9em;}
+.prods ul p{font-size: 1.1em;font-weight: normal;} 
 
 input,
 select,
@@ -634,8 +634,16 @@ margin-top:5px;}
 .pselbtm, .searchpselbtm {margin-top: 0;}
 .nomarginright{margin-right: 0px !important;}
 
-.new {position: relative;width:224px;height:279px;background-color:#e6e6e6;}
-.title {float:left; height: 15px;vertical-align:text-top;padding:5px 0 0 0;}
+.new {position: relative;width:224px;height:295px;background-color:#ffffff;border: 1px solid #747679;}
+.title {
+float: left;
+height: 15px;
+vertical-align: text-top;
+padding: 5px 5px 0;
+border-top: 1px solid #747679;
+margin: 7px 5px 0;
+width: 204px;
+} 
 
 .share {
 	width:451px;
@@ -716,31 +724,31 @@ font-size:11px;
 #searchResults .prods ul {margin-top:5px;width:780px;overflow:hidden;padding:0 0 0 8px;}
 #availprodrecs .prods ul {margin-top:5px;overflow:hidden;padding:0;}
 #searchResults .prods ul li,
-#productlist ul.products li {float:left;width:224px;height:285px;margin:0 20px 15px 0;}
+#productlist ul.products li {float:left;width:224px;height:295px;margin:0 20px 15px 0;}
 #availprodrecs .prods ul li {float:left;width:224px;height:285px;margin:0 15px 15px 0;}
 #searchResults .prods ul li h2,
 #availprodrecs .prods ul li h2,
-#productlist ul.products li h2 {text-transform:uppercase;text-align:left;padding: 0px 4px 0px 4px;}
+#productlist ul.products li h2 {text-align:left;padding: 0px 4px 0px 4px;}
 #searchResults .prods ul .image,
 #productlist ul.products .image,
 #availprodrecs .prods ul .image {border:none;float:left;width:220px;height:220px;}
 
 .cornerorientation {width:116px;background:url(../images/gradient.gif) 0px 0px;border: 1px solid #EBE9EA;padding: 4px 2px 4px 2px;}
-.onlineonly {position: absolute; margin-top:207px; margin-left:2px;z-index:250;}
+.onlineonly {position: absolute; margin-top:207px; margin-left:5px;z-index:250;}
 
-.onlineonly2 {position: absolute; margin-top:207px; margin-left:2px;z-index:500;}
+.onlineonly2 {position: absolute; margin-top:207px; margin-left:5px;z-index:500;} 
 
-.discount50 {position: absolute; margin-top:2px; margin-left:2px;z-index:500;}
-.special_purchase {position: absolute; margin-top:2px; margin-left:2px;z-index:600;}
+.discount50 {position: absolute; margin-top:5px; margin-left:5px;z-index:500;}
+.special_purchase {position: absolute; margin-top:5px; margin-left:5px;z-index:600;} 
 
-.newproduct {position: absolute; margin-top:2px; margin-left:173px;z-index:500;}
-.heals_express {position: absolute; margin-top:2px; margin-left:173px;z-index:600;}
+.newproduct {position: absolute; margin-top:5px; margin-left:150px;z-index:500;}
+.heals_express {position: absolute; margin-top:5px; margin-left:150px;z-index:600;}
 
 #availprodrecs .exh2 {background-color:#bbb7b1;color:#fff;font-size:1em;font-weight:bold;margin:0;padding:2px 10px;text-align:left;text-transform:uppercase;width:940px;}
 
 #searchResults .prods ul li .details,
 #availprodrecs .prods ul li .details,
-#productlist ul.products li .details {width:220px;text-align:left;float:left;}
+#productlist ul.products li .details {width:210px;text-align:left;float:left; padding:5px;} 
 #searchResults .prods ul li .details .moreinfo,
 #availprodrecs .prods ul li .details .moreinfo,
 #productlist ul.products li .details .moreinfo {text-transform:lowercase;float:right;color:#aeaeae;margin-top:0;}
@@ -761,7 +769,7 @@ font-size:11px;
 
 #searchResults .prods ul li .was,
 #productlist ul.products li .was,
-#availprodrecs .prods li .was {color:#6d6d6d;display:block;height:0px;text-decoration:none;margin:0;padding:20px 0 0 4px;}
+#availprodrecs .prods li .was {color:#747679;display:block;height:0px;text-decoration:none;margin:0;padding:20px 0 0 4px; font-size: 1em;} 
 #productlist ul.products li .was {font-size:0.9em;}
 #searchResults .prods ul li .was span,
 #productlist ul.products li .was span,
@@ -769,7 +777,7 @@ font-size:11px;
 
 #searchResults .prods ul li .nowprice,
 #productlist ul.products li .nowprice,
-#availprodrecs .prods ul li .nowprice {display:block;height:25px;font-weight:normal;margin:0;padding:0;float:right;}
+#availprodrecs .prods ul li .nowprice {display:block;height:25px;font-weight:normal;margin:0;padding:0;float:right;font-size: 1em;}
 #productlist ul.products li .nowprice {font-size:0.9em;}
 #searchResults .prods ul li .nowprice span,
 #productlist ul.products li .nowprice span,
@@ -826,8 +834,8 @@ font-size:11px;
 #collate ul, #term p {padding:0 10px 0 10px;}
 #collate h3, #collate .termtext, #collate .viewall {margin-left:22px;padding:0;}
 #term, #collate {margin:4px 0 5px 0; width:100%; text-transform: uppercase;}
-#term div.exh2, #collate div.exh2 {font-size: 0.9em; color: #333333; margin-left: 5px;font-weight:bold; padding:5px 0 5px 4px;}
-#term h3, #collate h3 {color: #333333; background: url(../images/Search/sprite.png) -1px -521px no-repeat; padding-left: 13px; margin-left: 10px; font-size: 0.9em;}
+#term div.exh2, #collate div.exh2 {font-size: 0.9em; margin-left: 5px;font-weight:bold; padding:5px 0 5px 4px;}
+#term h3, #collate h3 {background: url(../images/Search/sprite.png) -1px -521px no-repeat;padding-left: 13px;margin-left: 10px;font-size: 1.2em;text-transform: none;margin-bottom: 5px;}
 #term .refine-text {display:none;}
 #term .refine-remove {text-transform:lowercase;}
 #collate .termtext{margin-left: 16px;}
