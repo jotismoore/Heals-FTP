@@ -79,7 +79,7 @@ function LoadVideo(){$("#VideoPlayer")[0].src='http://<venda_pdxtvideo>';$(".pdx
 </div>
 <div id="detailzone">
 <div class="product-detailATabs">
-<venda_block label=32,mode=value,<venda_addedmsg msg=<venda_text id=site.addedmsg>>=notnull><div id="tag-addedmsgref" style="text-align:center;border:1px solid #B4B4B4;padding:5px;background-color:#F1F1F1;"><venda_addedmsg msg=You have added addedqty x addedname to your basket></div></venda_block label=32>
+<venda_block label=32,mode=value,<venda_addedmsg msg=<venda_text id=site.addedmsg>>=notnull><div id="tag-addedmsgref" style="text-align:center;border:1px solid #747679;padding:5px;background-color:#F1F1F1;"><venda_addedmsg msg=You have added addedqty x addedname to your basket></div></venda_block label=32>
 <venda_block errors=notnull><h2 class="error"><venda_errors></h2></venda_block>
 <!--Avail--><venda_block label=332,mode=value,<venda_addedmsg msg=<venda_text id=site.addedmsg>>=notnull><script type="text/javascript">vendaAvailSaveSearch()</script></venda_block label=332>
 <div id="productdetail-info">
@@ -134,17 +134,6 @@ function LoadVideo(){$("#VideoPlayer")[0].src='http://<venda_pdxtvideo>';$(".pdx
 
 <div class="avail-wallpaper">
 <div class="prod-availability">
-<venda_block label=madein,pdxtmadein=1>
-<div class="availability-badge">
-<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/made-in-britain.gif" style="margin:0 0 8px 0;">
-</div>
-</venda_block label=madein>
-<venda_block label=designedin,pdxtdesignedin=1>
-<div class="availability-badge">
-<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/product-detail/designed-in-britain.gif" style="margin:0 0 8px 0;">
-</div>
-</venda_block label=designedin>
-</div>
 <div class="wallpaper-calculator">
 <venda_block label=wallpaper,pdxtbrowse=Wallpaper,pdxtbrowse=Kid's Wallpaper,operator=or>
 <div class="wallpaper-calculator-badge">
@@ -297,7 +286,7 @@ $(window).load(function() {
 	Venda.Attributes.StoreJSON(<venda_atts>,<venda_data>);
 </script>
 <venda_mediagrid template=alternateviewGrid>
-<div id="prodMulti" class="prodMulti prodMulti<venda_atrsku>" data-atr1="<venda_atr1>" data-atr2="<venda_atr2>"  data-atr3="<venda_atr3>"  data-atr4="<venda_atr4>" style="width:435px;border:1px solid #B4B4B4;margin:5px 10px;padding:5px;background-color:#EAE4E7;height:140px;float:left;">
+<div id="prodMulti" class="prodMulti prodMulti<venda_atrsku>" data-atr1="<venda_atr1>" data-atr2="<venda_atr2>"  data-atr3="<venda_atr3>"  data-atr4="<venda_atr4>">
 <div class="attribute-list-details">
 <div class="attribute-list-title">
 <venda_atr1>
@@ -389,7 +378,7 @@ document.write("<input type=\"hidden\" name=\"itemlist\" class=\"itemlist\" valu
 </script>
 </div>
 </div>
-<div style="width:120px;height:120px;padding:9px 7px;background-color:#fff;border: 1px solid #B4B4B4;position:relative;">
+<div class="attribute-list-image-holder">
 <div id="attribute-list-image" class="attribute-list-image" style="background:url(<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtref>/<venda_invtref>_m.jpg) no-repeat;background-size:120px 120px;background-color:#fff;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtref>/<venda_invtref>_m.jpg',sizingMethod='scale');-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtref>/<venda_invtref>_m.jpg',sizingMethod='scale')";">
 <script>
 document.write("<img src=\"<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtref>/<venda_atrsku>_s.jpg\" onError=\"noImageAbsolute(this);\" class=\"small_<venda_atr1>\" alt=\"<venda_invtname> - <venda_atr1>\" style=\"width:120px;height:120px;\" />");
