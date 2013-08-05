@@ -64,12 +64,12 @@ html > body #col-two-no-three { /* IE7 - Moz */
 /****************/
 /* GLOBAL FONTS */
 /****************/
-body {font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 76%; font-style: normal; font-weight: normal;}
+body {font-family: Arial, Helvetica, sans-serif; font-size: 76%; font-style: normal; font-weight: normal;}
 
 /*************/
 /* FONT SIZE */
 /*************/
-h1 {font-size: 1.5em;}
+h1 {font-size: 1.5em; font-family:"Times New Roman", Times, serif;}
 /*
 h2 {font-size: 1.3em;}
 h3, h4, #home p.intro2 {font-size: 1.1em;}*/
@@ -79,7 +79,7 @@ h3, h4, #home p.intro2 {font-size: 1.1em;}*/
 p,
 #categorylist .featprods .moreinfo,
 #categorylist ul.categories h2,
-#collate h3 {font-size: 1em;}
+#collate h3 {font-size: 1em; font-family:"Times New Roman", Times, serif;}
 
 /* IE IE 5 - 6 - see "html > body table.wizrtable th" below */
 table.wizrtable th {font-size: 90%;}
@@ -173,7 +173,7 @@ table.wizrtable th {text-align: left;}
 /* TEXT */
 /********/
 body,
-a:hover {color:#333;}
+a:hover {color:#747679;}
 h1,
 #admin,
 #admin a,
@@ -232,8 +232,8 @@ body {margin:0; padding:0;color:#747679;}
 h2, h3 {margin:0;padding:5px 0 5px 4px;}
 p {margin:.5em 0; padding:0;}
 img {border:none;}
-a:active,a:link,a:visited{color:#666; outline:0;}
-a:hover{color:#666}
+a:active,a:link,a:visited{color:#747679; outline:0;}
+a:hover{color:#747679} 
 
 /***********/
 /*  LISTS  */
@@ -1822,40 +1822,50 @@ li.checkout-button a {display:block; font-size: 14px; font-weight: bold;}
 /* New Footer */
 /* ************/
 
-#footerLinks {background:#FFF;float:left;width:940px;margin-top:2px;font-size:12px;color:#777;padding-bottom:5px; border-top:1px solid #B4B4B4}
-#footerLinks .name {padding-bottom: 0;font-size:12px;color:#333333;font-weight:bold;}
-#footerLinks #bullet li {background:#ffffff;margin:3px 0;}
+#footerLinks {background:#FFF;float:left;width:940px;margin-top:1%;font-size:12px;padding:1% 0; border-top:1px solid #747679}
+#footerLinks .name {font-size: 1.2em;font-family: times new roman, serif;font-style: italic;font-weight: bold;}
+#footerLinks #bullet li {background:#ffffff;margin:2% 0; text-transform: uppercase; font-size: 0.9em;}
+li.contactnumber {padding: 2%;border: 1px solid #999;width: 120px;height: 17px;margin: 4px;vertical-align: middle;font-family: times new roman, serif;font-size: 1.2em !important;} 
 .footer-grey-line {background:none;padding:0;border-bottom:1px solid #ccc;margin:0;height:1px;line-height:1px;font-size:0;}
 .footerLinksCols {margin:10px 0 15px 30px;width: 195px;}
 .footerNewsletterSignup {float:left;height:23px;width:185px;}
 .footerNewsletterSignup legend {display:none;}
-.footerNewsletterSignup fieldset {margin:0;border:0;padding:0;}
+.footerNewsletterSignup fieldset {margin:0;border:1px solid #747679;padding:0;background: #ffffff;}
 .footerNewsletterSignup label {display: block;width:0;line-height:26px;}
-.footerNewsletterSignup #EMAIL_FIELD {float:left;border: 1px solid #7c7c7c;width: 147px;color: #666;font-size: 12px;*height: 21px;*line-height:18px;height: 21px;line-height:19px;padding:0 0 0 3px;}
-#contactnumber {background:#FFF;float:left;width:140px;margin-top:4px;font-size:12px;color:#777;padding:4px; border:1px solid #B4B4B4}
+.footerNewsletterSignup #EMAIL_FIELD {float:left;border:none; width: 82%;color: #747679;font-size: 12px;*height: 21px;*line-height:18px;height: 21px;line-height:19px;padding:0 0 0 3px;}
+#footerNewsletterGo:hover {opacity:0.6;}
+#footerNewsletterGo {background:#747679; color:#ffffff;width: 10%;padding: 3%;padding: 1.6% 2%;font-size: 1.1em;border: 1px solid #747679;margin: 0;cursor:pointer;float: right;}
+#contactnumber {background:#FFF;float:left;width:140px;margin-top:4px;font-size:12px;color:#777;padding:4px; border:1px solid #747679}
+.footerExtra {text-align: left;margin: 0 1% 1% 1%;line-height: 19px;border-top: 1px solid #747679;padding: 1% 0 0 0;float: left;width: 98%;font-size: 0.8em;text-transform: uppercase;} 
 #footerEssentials {width:940px;padding:10px 0;clear:both;}
 #footerLogos {padding:10px 0 0 0;clear:both;height: 30px;}
-#socnetlinks{position:relative;margin:9px 0 35px 2px}
+#socnetlinks{position:relative;margin:0 0 10px 2px;float: left;width: 100%;}
 #socnetlinks li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
 #socnetlinks li, #socnetlinks a{height:22px;display:block;}
 
 #socnetfacebook{left:0px;width:22px;}
-#socnetfacebook{background:url(../images/footer/soc-net-links.png) 0 0;}
+#socnetfacebook{background:url(../images/footer/soc-net-links.png) 0 0; float: left;
+margin: 2% 2% 2% 0;}
 
 #socnettwitter{left:26px;width:22px;}
-#socnettwitter{background:url(../images/footer/soc-net-links.png) -26px 0;}
+#socnettwitter{background:url(../images/footer/soc-net-links.png) -26px 0; float: left;
+margin: 2% 2%;}
 
 #socnetflickr{left:52px;width:22px;}
-#socnetflickr{background:url(../images/footer/soc-net-links.png) -52px 0;}
+#socnetflickr{background:url(../images/footer/soc-net-links.png) -52px 0; float: left;
+margin: 2% 2%;}
 
 #socnetgoogleplus{left:78px;width:22px;}
-#socnetgoogleplus{background:url(../images/footer/soc-net-links.png) -78px 0;}
+#socnetgoogleplus{background:url(../images/footer/soc-net-links.png) -78px 0; float: left;
+margin: 2% 2%;}
 
 #socnetpinterest{left:104px;width:22px;}
-#socnetpinterest{background:url(../images/footer/soc-net-links.png) -105px 0;}
+#socnetpinterest{background:url(../images/footer/soc-net-links.png) -105px 0;float: left;
+margin: 2% 2%;}
 
 #socnetinstagram{left:130px;width:22px;}
-#socnetinstagram{background:url(../images/footer/soc-net-links.png) -133px 0;}
+#socnetinstagram{background:url(../images/footer/soc-net-links.png) -133px 0;float: left;
+margin: 2% 2%;}
 
 #footericons{position:relative;margin:6px 0 35px 2px}
 #footericons li{margin:0;padding:0;list-style:none;position:absolute;top:0;}
