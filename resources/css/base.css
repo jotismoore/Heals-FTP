@@ -4,10 +4,26 @@
 /*  ---header---   */
 
 .wrapper {height:100%;}
-body {font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 76%; font-style: normal; font-weight: normal;margin: 0 auto;}
-a {color:#333; text-decoration:none; text-decoration:none; font-weight:bold;}
+body {font-family: Arial, Helvetica, Verdana, sans-serif; font-size: 76%; font-style: normal; font-weight: normal;margin: 0 auto; color:#747679;}
+a {color:#747679; text-decoration:none; text-decoration:none; font-weight:bold;}
+h2, h3 {
+    font-family: "Times New Roman",Times,serif;
+    font-style: italic;
+    margin: 0;
+    padding: 5px 0 5px 4px;
+}
 #checkout {width:940px; align}
-.header, #register_header {background:#fff;padding-top:0px;padding-bottom:10px; display:block; border-bottom:1px solid #666666; border-left:0px solid #fff; text-transform: uppercase; border-right:0px solid #fff; margin-bottom:5px; color: #333;}
+.header, #register_header     {background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #747679;
+    border-left: 0 solid #FFFFFF;
+    border-right: 0 solid #FFFFFF;
+    color: #747679;
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
 .box mainAlt h1 {font-size:-2;}
 #input:-webkit-autofill {
 background-color: #fff;
@@ -19,15 +35,15 @@ color: #333;
 #pcilogo {float:right;}
 
 #pcilogo h3 {clear: right;
-margin: 0; text-align:right; line-height: 10px;}
+margin: 0; text-align:right; line-height: 10px; font-family:"Times New Roman", Times, serif; font-style:italic;}
 
 .formSeparator{clear:both; width:100%; display:block; height:10px;}
 
 .mm_ul{clear:both; display:none;}
 
-.checkoutStepIndicators{clear:both; list-style:none; list-style-type: none; padding:3px 0;float: left;width: 940px;list-style: none;position: relative;z-index:1000; border-top: 1px solid #555; border-bottom: 1px solid #555; font-size:14px; color:#333; font-weight:normal; background-color:#fff;}
-.checkoutStepIndicators li{float: left;padding:0 25px 0 15px;border-right: 0px solid #555; text-align:center;text-transform: uppercase; color:#666;}
-.checkoutStepIndicators .onStep{ font-weight:bold;float: left;padding:0 25px 0 15px;border-right: 0px solid #555; text-align:center;text-transform: uppercase; color:#333 }
+.checkoutStepIndicators{clear:both; list-style:none; list-style-type: none; padding:3px 0;float: left;width: 940px;list-style: none;position: relative;z-index:1000; border-top: 1px solid #747679; border-bottom: 1px solid #747679; font-size:14px;font-weight:normal; background-color:#fff;margin-bottom: 3%;}
+.checkoutStepIndicators li{float: left;padding:0 25px 0 15px;text-align:center; font-family:"Times New Roman", Times, serif; font-style:italic; opacity:0.6;}
+.checkoutStepIndicators .onStep{ font-weight:bold;float: left;padding:0 25px 0 15px; text-align:center;font-family:"Times New Roman", Times, serif; font-style:italic; opacity:1.0;}
 
 .grid_5 a{
     background: url("/content/ebiz/heals/resources/images/checkout-header.gif") repeat scroll 0 0 transparent;display: block;
@@ -60,14 +76,17 @@ background-color: #FFFFFF;}
 
 .validateError {color:#F00;margin-left: 5px;
 float: left;}
-input.validateError {color:#666666; margin-bottom: 18px; margin-left: 0;}
-select.validateError {color:#333333;}
+input.validateError {color:#747679; margin-bottom: 18px; margin-left: 0;}
+select.validateError {color:#747679;}
 .error {color:#F00;margin-left: 2px;}
 
 
 /*  ---register page---   */
 
-select#title ,#fname.textInput , #lname.textInput, #phone.textInput, #zipc.textInput, #company.textInput, #num.textInput, #addr1.textInput, #addr2.textInput, #city.textInput, #statetext.textInput {margin-left:0px; height: 24px; padding-left: 3px; border: 1px solid #666666; padding-top: 2px;}
+select#title {width:50px;}
+#zipc.textInput {width:110px;}
+
+select#title ,#fname.textInput , #lname.textInput, #phone.textInput, #zipc.textInput, #company.textInput, #num.textInput, #addr1.textInput, #addr2.textInput, #city.textInput, #statetext.textInput {margin-left:0px; height: 24px; padding-left: 3px; border: 1px solid #747679; padding-top: 2px;}
 
 .box.mainAlt p {font-weight:bold;}
 .newcustbox {float:right; width:50%; margin-bottom:15px;}
@@ -76,22 +95,33 @@ select#title ,#fname.textInput , #lname.textInput, #phone.textInput, #zipc.textI
 .hideScreenReaderSafe {display:none;}
 
 .textInput.text {margin-left:2px;}
-.dontFloat.f-loginiam.notregister{float:right; width:95%; background:#eee; margin:10px 0;border:0px solid #333;padding:15px 12px;
+.dontFloat.f-loginiam.notregister{float:right; width:95%; margin:10px 0;border:0px solid #747679;padding:15px 10px;
 height: 45px;}
-.dontFloat.f-loginiam.registered {float:left; width:95%; background:#eee; margin:10px 0; border:0px solid #333; padding-left: 15px;}
+.dontFloat.f-loginiam.registered {float:left; width:95%; margin:10px 0; border:0px solid #747679;}
 .customer {}
-.checkoutLoginAlR input.button.buttonAlt.submit:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;clear: both;}
-.checkoutLoginAlR input.button.buttonAlt.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;clear: both;}
+.checkoutLoginAlR input.button.buttonAlt.submit:hover {opacity:0.6;}
+.checkoutLoginAlR input.button.buttonAlt.submit {
+    background: none repeat scroll 0 0 #F47920;
+    border: 1px solid #FFFFFF;
+    clear: both;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-family: "Times New Roman",Times,serif;
+    font-weight: bold;
+    text-transform: uppercase;
+	padding: 5px 65px;
+}
 input.button.buttonAlt.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;}
 .registertxt {display:none;}
 .checkoutLoginEqH {width: 94%;}
 .checkoutLoginEqH label{clear:both; float:left; margin-top: 10px;}
 .checkoutLoginEqH input{clear:both;float: left; margin-top: 5px;
 margin-bottom: 5px;background-color: #FFFFFF;width: 250px;height: 24px;
-padding-left: 3px; border: 1px solid #666666;}
+padding-left: 3px; border: 1px solid #747679;}
 .checkoutLoginEqH.input:-webkit-autofill {
 background-color: #FFFFFF;}
-.forgottenpassword {clear: both;float: left;padding-top: 10px;padding-bottom: 10px;line-height: 10px !important;}
+.forgottenpassword {clear: both;float: left; font-family: "Times New Roman",Times,serif;font-style: italic;line-height: 10px !important;padding-bottom: 10px;padding-top: 10px;}
 .box.expresscheckout {display:none;}
 #reminderform fieldset {background:#eee; margin-bottom:15px;; display:block; border:0px solid #333;padding: 10px 15px;}
 
@@ -112,10 +142,10 @@ width: 36px;
 #fname {margin-left:2px;}
 .updatebutton {padding-top:10px;}
 .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {float:right;}
-.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.deliveryDialog {background:#eeeeee; padding: 20px;box-shadow:1px 5px 15px 1px #999;-moz-box-shadow: 1px 5px 15px 1px #999;
--webkit-box-shadow: 1px 5px 15px 1px #999; border:1px solid #333;}
-#dialogContent {width:90%; height:auto !important; background:#eeeeee; padding:15px;-moz-box-shadow: 1px 5px 15px 1px #999;
--webkit-box-shadow: 1px 5px 15px 1px #999; border:1px solid #333;}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.deliveryDialog {background:#efe9e5; padding: 20px;box-shadow:1px 5px 15px 1px #747679;-moz-box-shadow: 1px 5px 15px 1px #747679;
+-webkit-box-shadow: 1px 5px 15px 1px #747679; border:1px solid #747679;}
+#dialogContent {width:90%; height:auto !important; background:efe9e5; padding:15px;-moz-box-shadow: 1px 5px 15px 1px #747679;
+-webkit-box-shadow: 1px 5px 15px 1px #747679; border:1px solid #747679;}
 #dialogContent p, #dialogContent a, .ui-icon.ui-icon-closethick {padding:15px;}
 #dialogContent img {padding: 5px 15px;}
 .grid_6.push_18.alpha.checkoutR {clear: right;}
@@ -123,28 +153,26 @@ width: 36px;
     float: left;
     margin-top: 10px;
     width: 100%;}
-#uklist select {height: 28px;margin: 5px 0;}
+#uklist select {height: 28px;margin: 5px 0;width: 305px;border: 1px solid #747679;}
 .container.addcontactaddress.addressform, .deliveryaddressaddform, .deliveryaddress.addressform, .editcontactaddressform {width:77%;}
 #addressForm {width:77%;}
 .addressbookform {}
 .grid_6.alpha.box {float:left; border-bottom: 10px solid #EEE}
 #addressBookList {
     float: left;
-    background: #eeeeee;
 	margin-top: 25px;
-	border: 10px solid #eee;
 	-webkit-padding-start: 0;}
 #addressList {display:block; float:left; width: 100%;}
 #addressList form {float:left;}
 .addnewaddress {margin-top: 5px; margin-left: 0px;}
 .addressbookitems {width:100%; clear: both;}
 .bottomButtons.pull_1 {float:left;}
-.addressbox {float: left;border: 10px solid #EEE;list-style: none;height: 230px;width: 286px;background: #fff;}
+.addressbox {float: left;border: 1px solid #747679;list-style: none;height: 230px;width: 286px;background: #fff;margin:0 1%;}
 #address_list{-webkit-padding-start: 0px;}
 #defaultFlag {font-weight:bold; line-height:24px;}
-input#lname.textInput.validateError, input#fname.textInput.validateError, input#phone.textInput.validateError, input#usemail.textInput.validateError, input#uspswd.textInput.validateError , input#uspswd2.textInput.validateError, input#usemail.validateError, input#zipc.textInput.validateError, input#email.textInput.validateError {color:#000;}
+input#lname.textInput.validateError, input#fname.textInput.validateError, input#phone.textInput.validateError, input#usemail.textInput.validateError, input#uspswd.textInput.validateError , input#uspswd2.textInput.validateError, input#usemail.validateError, input#zipc.textInput.validateError, input#email.textInput.validateError {color:#747679;}
 .checkout.billingaddressadd.grid_18.omega.pull_6.checkoutL {float:none;}
-.box.checkoutMinicart {float:right; width:20%; padding: 0 5px 15px; border: 1px solid #999999; clear:right; margin-left:5px; margin-bottom: 30px;}
+.box.checkoutMinicart {float:right; width:20%; padding: 10px 5px 15px; border: 1px solid #747679; clear:right; margin-left:5px; margin-bottom: 30px;}
 .minicartDetailContent {padding:10px 3px}
 .prodsList .image {
 float: left;
@@ -154,17 +182,17 @@ position: relative;}
 text-align: left; clear: both;
 }
 .span.quantity {clear:right;}
-#checkoutMinicart_totals {border-top: 1px solid #999999; border-bottom: 1px solid #999999; padding:3px 0; margin: 5px 0;}
+#checkoutMinicart_totals {border-top: 1px solid #747679; border-bottom: 1px solid #747679; padding:3px 0; margin: 5px 0;}
+.checkoutMinicartButton {font-family:Georgia, "Times New Roman", Times, serif;font-style:italic;}
 .box.basketAlt {float:left; width:77%; margin-bottom:10px;}
 .container.addcontactaddress.addressform, .container.deliveryaddressaddform.addressform, .container.editcontactaddress.addressform, .deliveryaddressaddform , .addressform, {float:left; display: block;}
-. checkout.billingaddressadd.grid_18.omega.pull_6 checkoutL fieldset, .container.addcontactaddress.addressform fieldset, .container.deliveryaddressaddform.addressform fieldset, .deliveryaddressaddform fieldset .container.editcontactaddress.addressform fieldset, .addressform fieldset, .container_24.clearfix fieldset, .content.grid_24 fieldset{background:#eeeeee; border:0px solid #333;width:100%;display: block;padding-top: 10px;}
-#fieldsetBox {background:#eeeeee; border:0px solid #333; display: block;padding-top: 12px; padding-bottom:10px;-webkit-padding-start: 0;
--webkit-padding-end: 0; width: 98%;float: left;}
-.fieldset_break {width: 100%;
-display: block;
-height: 10px;}
+. checkout.billingaddressadd.grid_18.omega.pull_6 checkoutL fieldset, .container.addcontactaddress.addressform fieldset, .container.deliveryaddressaddform.addressform fieldset, .deliveryaddressaddform fieldset .container.editcontactaddress.addressform fieldset, .addressform fieldset, .container_24.clearfix fieldset, .content.grid_24 fieldset{width:100%;display: block;padding-top: 10px;}
+#fieldsetBox {display: block;padding-top: 12px; padding-bottom:10px;-webkit-padding-start: 0;-webkit-padding-end: 0; width: 98%;float: left;border: 0 none;}
+.fieldset_break {width: 100%; display: block; height: 10px;}
 
-.fieldlabel input, #houseNum input, #stateDiv input, #grid_11.alpha input {margin-bottom:5px;width: 230px; margin-right:5px; height:22px; padding-left: 3px; border: 1px solid #666666; font-size: 12px;}
+.grid_11 alpha {margin-bottom:10px;}
+
+.fieldlabel input, #houseNum input, #stateDiv input, #grid_11.alpha input {margin-bottom:5px;width: 300px; margin-right:5px; height:24px; padding-left: 3px; border: 1px solid #747679; font-size: 12px;}
 
 .checkout.deliveryaddressedit.grid_18.omega.pull_6.checkoutL {float:none;}
 
@@ -180,8 +208,8 @@ height: 10px;}
 .usebillingaddress 
 .usebillingaddress span {float:left;}
 
-.grid_6.omega.addresslookup input, .enterManually a, #lookupBtn, .grid_6.omega.addresslookup a{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0; font-size:12px; -webkit-appearance: none; -moz-appearance: none; }
-.grid_6.omega.addresslookup input:hover, .enterManually a:hover, .lookupBtn:hover, .grid_6.omega.addresslookup a:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0;font-size:12px; -webkit-appearance: none; -moz-appearance: none; }
+.grid_6.omega.addresslookup input, .enterManually a, #lookupBtn, .grid_6.omega.addresslookup a{background:#747679; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0; font-size:1em; -webkit-appearance: none; -moz-appearance: none; font-family:"Times New Roman", Times, serif;}
+.grid_6.omega.addresslookup input:hover, .enterManually a:hover, .lookupBtn:hover, .grid_6.omega.addresslookup a:hover{opacity:0.6; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 25px 8px 25px;;margin-left:5px; cursor:pointer; margin-bottom:0;font-size:12px; -webkit-appearance: none; -moz-appearance: none; font-family:"Times New Roman", Times, serif;}
 
 /*#enterManually {clear:none; color:#333; background:none; border:none; text-transform:lowercase; font-weight:normal; padding:0; margin-left:15px;}*/
 
@@ -193,7 +221,7 @@ margin-right: 10px;
 color: #FF0000;
 }
 
-.tickBox {clear:none; float:right; text-align:left; width: 520px;padding-right: 75px;}
+.tickBox {clear:none; float:right; text-align:left; width: 500px;padding-right: 75px;}
 .passwordinfo {clear:none; float:right; text-align:left; width: 520px;padding-right: 75px;font-weight: bold;}
 
 .box.checkoutMinicart header {margin-bottom:5px;}
@@ -201,17 +229,17 @@ color: #FF0000;
 -webkit-padding-start: 0; padding-left: 5px;}
 .minicart_image {float:left;}
 
-.receiveMail input, .blktrdcomm input {float:left; clear:left; margin: 8px 10px 0 75px; ms-transform: scale(1.5);
+.receiveMail input, .blktrdcomm input {float:left; clear:left; margin: 8px 10px 0 95px; ms-transform: scale(1.5);
 -moz-transform: scale(1.5);
 -webkit-transform: scale(1.5);
 -o-transform: scale(1.5);}
 
 #ustandc {text-align:center; left:auto; right:auto; width:100%;}
 #ustandc input {display:none;}
-input.button.buttonArrow, input.button.buttonAlt {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; cursor:pointer; float:right; margin: 6px 0 35px;
-    padding: 8px 75px; -webkit-appearance: none; -moz-appearance: none; }
-input.button.buttonArrow:hover, input.button.buttonAlt:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; cursor:pointer; float:right; margin: 6px 0 35px;
-    padding: 8px 75px; -webkit-appearance: none; -moz-appearance: none; }
+input.button.buttonArrow, input.button.buttonAlt {background:#f47920; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; cursor:pointer; float:right; margin: 6px 0 35px;
+    padding: 8px 75px; -webkit-appearance: none; -moz-appearance: none; font-family:"Times New Roman", Times, serif; }
+input.button.buttonArrow:hover, input.button.buttonAlt:hover {opacity:0.6; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; cursor:pointer; float:right; margin: 6px 0 35px;
+    padding: 8px 75px; -webkit-appearance: none; -moz-appearance: none; font-family:"Times New Roman", Times, serif;}
 
 .fieldlabel label, .tag-addressUrl, .tag-zccompany, .tag-zcnum, .tag-zcaddr1, .tag-zcaddr2, .tag-zccity, .tag-zcstate, .tag-zczipcLabel, .tag-zcnum, #houseNum label, #stateDiv label, .grid_11.alpha label, .uklist label {float:left; text-align:right; width:205px; clear:left;margin-right: 10px;  margin-top: 6px;}
 .fieldlabel select {float:left; text-align:left; clear:right; height: 28px !important;}
@@ -225,11 +253,11 @@ input.button.buttonArrow:hover, input.button.buttonAlt:hover {background:#804040
 #cntrylist option {float:left;}
 */
 
-#cntrylist {width:235px; height: 28px; border: 1px solid #666666; padding-top: 2px;}
+#cntrylist {width:305px; height: 28px; border: 1px solid #747679; padding-top: 2px;}
 .box.grid_6 fieldset{border:0px solid #fff; list-style:none;}
 .addressbookinfo {clear:both;}
-.bottomButtons.pull_1 a, .button.buttonAlt{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer;}
-.button.buttonAlt:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer; }
+.bottomButtons.pull_1 a, .button.buttonAlt{background:#747679; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;margin-left:5px; cursor:pointer; font-family:"Times New Roman", Times, serif;}
+.button.buttonAlt:hover{opacity:0.6; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px;margin-left:5px; cursor:pointer; }
 
 .multipleaddressbox {float:left; clear:both;}
 
@@ -238,10 +266,10 @@ input.button.buttonArrow:hover, input.button.buttonAlt:hover {background:#804040
 #topitems {background:#eeeeee; clear:both; height:100%;}
 .checkoutorcf h1 {display:none;}
 .confirmTop.clearfix {background:#eeeeee; padding:0; clear:both;}
-.grid_6.alpha.confirmLeft {float:left; margin-right:5px; width: 100%;background: none repeat scroll 0 0 #EEEEEE; margin-top: 10px;}
-.box.deliveryaddress, .box.grid_6, .deliverymethod {background:#fff;padding:0 10px; display:block; border:10px solid #EEE; margin-bottom:0px; float:left;border-bottom: 5px solid #EEE; list-style: none outside none;}
-.box.deliveryaddress {border-bottom: 10px solid #EEE; padding-bottom:10px; width:46%}
-.box.deliverymethod {border-bottom: 10px solid #EEE; padding-bottom:10px; width:45%}
+.grid_6.alpha.confirmLeft {float:left; width: 99%;margin: 10px; border:0px solid #747679;}
+.box.deliveryaddress, .box.grid_6, .deliverymethod {background:#fff;padding:0 10px; display:block; border:10px solid #ffffff; margin-bottom:0px; float:left;border-bottom: 5px solid #ffffff; list-style: none outside none;}
+.box.deliveryaddress {border-bottom: 10px solid #ffffff; padding-bottom:10px; width:46%}
+.box.deliverymethod {border-bottom: 10px solid #ffffff; padding-bottom:10px; width:45%}
 .deliverymethod ul {left: 0;
     list-style: none outside none;
     position: relative;
@@ -282,7 +310,7 @@ margin-bottom: 10px;
 .summaryupdate {padding: 10px 0; float:left;}
 
 #orderitems {}
-.orderDetblocksTable {float:right; background:#fff;padding:10px; width: 100%; border:10px solid #EEE; margin-left:0;padding-bottom: 20px; margin-bottom: 15px;}
+.orderDetblocksTable {float:right; background:#fff;padding:10px; width: 100%; border: 1px solid #747679; margin-left:0;padding-bottom: 20px; margin-bottom: 15px;}
 .giftwrapitem {display:none;}
 .orderDetblocksTable img {width:80%; float:left; margin: 5px;}
 .orderDetblocksTable td.thumb{width:15%;}
@@ -298,19 +326,19 @@ width: 38%;}
 .orderDetblocksTable td.removeitem{width:9%;padding-top:10px; text-align:center;}
 .orderDetblocksTable thead {text-align:left; border-bottom:1px solid #666666; padding-bottom:3px;margin-bottom:5px;}
 .orderDetblocksTable thead tr {text-align:left; border-bottom:1px solid #666666; padding-bottom:3px;margin-bottom:5px; width:100%;}
-.orderDetblocksTable thead th {text-align:left; border-bottom:1px solid #666666; padding: 12px 5px;margin-bottom:5px;padding-right: 10px;}
+.orderDetblocksTable thead th {border-bottom: 1px solid #747679;font-family:"Times New Roman", Times, serif; font-size: 1.1em;font-style: italic;margin-bottom: 5px;padding: 12px 10px 12px 5px;text-align: left;}
 
 #additionalservices {float:left;width:43%; padding-bottom: 20px;}
-.redeemPromotionCode {background:#eeeeee; padding:15px 15px 15px 20px; margin:5px;margin-left:0px; clear:left;}
-.redeemPromotionCode label{font-weight: bold; text-transform: uppercase; clear:both; display:block;}
+.redeemPromotionCode {padding:15px 15px 15px 20px; margin:5px;margin-left:0px; clear:left;}
+.redeemPromotionCode label{font-weight: bold;font-size: 1.1em; clear:both; display:block;font-family: "Times New Roman", Times, serif; font-style:italic;}
 .redeemPromotionCode input.textInput{margin-top:5px; margin-bottom:5px; padding:3px;width: 180px; height: 24px; border: 1px solid #666666;}
-.redeemPromotionCode input.button{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; width: 180px; -webkit-appearance: none; -moz-appearance: none; }
-.redeemPromotionCode input.button a:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; display: block; width: 180px; -webkit-appearance: none; -moz-appearance: none; }
-.redeemgift label {clear:both; font-weight:bold; text-transform:uppercase;display: block;margin-top: -12px;}
+.redeemPromotionCode input.button{background:#747679; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; width: 180px; -webkit-appearance: none; -moz-appearance: none;font-family: "Times New Roman", Times, serif; }
+.redeemPromotionCode input.button a:hover{opacity:0.6; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; display: block; width: 180px; -webkit-appearance: none; -moz-appearance: none;font-family: "Times New Roman", Times, serif; }
+.redeemgift label {clear:both; font-weight:bold; font-size: 1.1em; display: block;margin-top: -12px;font-family: "Times New Roman", Times, serif; font-style:italic;}
 .redeemgift input {clear:left;width: 185px;margin-top: 5px;
 margin-bottom: 5px;}
 .redeemgift input.textInput {padding: 3px; height: 24px; border: 1px solid #666666;}
-#ordersummary {float:right; width:97.5%; background:#999999; color:#FFF; padding:10px; font-weight:bold; font-size:+2; text-transform: uppercase;clear:both; margin-top: 15px;}
+#ordersummary {float:right; width:97.5%; color:#747679; padding:10px; font-weight:bold; text-transform: uppercase;clear:both; margin: 15px 0 20px; font-family:"Times New Roman", Times, serif; border:1px solid #747679;}
 #ordersummary div {float:left; clear:none; padding:10px 5px 0; width: 70%;}
 #ordersummary div.orderTotal, #ordersummary div.storeCredit {float:right; width: 20%; text-align: right;}
 #ordersummary div.storeCreditText, #ordersummary div.storeCredit {font-weight:normal;}
@@ -320,10 +348,10 @@ margin-bottom: 5px;}
 .orderdetails {
 	padding: 10px;
 font-weight: normal;
-color: #333;
-background: white;
+background: #efe9e5;
 width: 100%;
 margin-bottom: 5px;
+font-family:"Times New Roman", Times, serif
 }
 .hdrSubTotal {float:left;}
 .hdrDelivery {float:left; width: 70%; text-align: left;}
@@ -332,15 +360,16 @@ margin-bottom: 5px;
 
 .billing.address {background:#fff;padding:0 10px; display:block; width:40%; border:10px solid #EEE; margin-bottom:0px; float:right;border-bottom: 5px solid #EEE; list-style: none outside none;  border: 1px solid #666666;}
 
-.paymentdetail.boxContent.clearfix {padding:10px;margin: 15px 0 5px 0;background:#eeeeee; }
-.paymentdetail.boxContent.clearfix form {width:50%;background:#eeeeee; }
+.paymentdetail.boxContent.clearfix {padding:10px;margin: 15px 0 5px 0; }
+.paymentdetail.boxContent.clearfix form {width:50%; }
 #paymentdetailSection header {background:#fff;padding:10px; display:block; border-bottom:1px solid#333;}
-.f-payment_details, f-paypal {line-height:18px; padding: 15px;}
+.f-payment_details, f-paypal {line-height:18px; padding: 15px; border:none;}
+.f-payment_details {border-bottom:1px solid #747679; padding-bottom: 25px;}
 .credit, .send {clear:none; margin-right:15px;float:left; margin-bottom:5px; margin-top: 0;}
 .send {width:100%;}
 .credit label, .send label{float:right; font-weight:bold; clear:none; margin-top: 5px;}
 .send label {width:89%;}
-.f-paypal {margin-top:10px; padding: 15px;}
+.f-paypal {margin-top:10px; padding: 15px;border: medium none;}
 .f-paypal label{font-weight:bold; margin-right:5px; vertical-align: middle; width:110px;}
 .f-paypal img{vertical-align:middle; margin-left: 4%;}
 .f-paypal input {
@@ -357,12 +386,12 @@ input#sendinpayment {border:none; margin-left: 5%;margin-top: 2%;}
 .f-payment_details select, .f-payment_details input {float:left; margin: 5px; margin-left: 0px; height: 24px; padding-left: 2px; border: 1px solid #666666;}
 .f-payment_details label{float:left; text-align:right;margin-right: 5px; width: 110px; margin-top: 2px;}
 .f-payment_details div {clear:both;}
-.redeemgift {background:#eeeeee;padding:15px 15px 15px 20px; display:block;width: 47%;float: right;margin-top: 5px;}
+.redeemgift {padding:15px 15px 15px 20px; display:block;width: 47%;float: right;margin-top: 5px;}
 .redeemgift form {paddiing-top:0;}
-.redeemgift input.button{background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer; -webkit-appearance: none; -moz-appearance: none; }
-.redeemgift input.button:hover, .redeemPromotionCode input.button:hover{background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer; -webkit-appearance: none; -moz-appearance: none; }
+.redeemgift input.button{background:#747679; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer; -webkit-appearance: none; -moz-appearance: none; font-family: "Times New Roman", Times, serif;}
+.redeemgift input.button:hover, .redeemPromotionCode input.button:hover{opacity:0.6; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;;margin-left:5px; cursor:pointer; -webkit-appearance: none; -moz-appearance: none; font-family: "Times New Roman", Times, serif;}
 
-#paymentdetails {background:#eeeeee; padding:10px;}
+#paymentdetails {padding:10px;}
 #paymentdetails h2 {display:none;}
 #paymentdetails table {background:#fff; padding: 16px 10px; width: 100%;}
 #paymentdetails th {text-align:left;}
@@ -372,10 +401,10 @@ background: white;
 padding: 0 10px;
 display: block;
 width: 45%;
-border: 10px solid #EEE;
+border: 10px solid #ffffff;
 margin-top: 5px;
 float: right;
-border-bottom: 5px solid #EEE;
+border-bottom: 5px solid #ffffff;
 list-style: none outside none;
 }
 #paymentdetailsArea {padding: 0 5px; display:block;}
@@ -386,25 +415,25 @@ list-style: none outside none;
     padding-top: 2px;}
 
 .bottomButtons {margin-top:10px; float: left; width: 100%; -webkit-appearance: none;-moz-appearance: none;}
-input.right.submit.button.buttonAlt.buttonArrow, .continue.button.buttonAlt.buttonArrow {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px; -webkit-appearance: none;-moz-appearance: none;}
-input.right.submit.button.buttonAlt.buttonArrow:hover, .continue.button.buttonAlt.buttonArrow:hover {background:#804040; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px; -webkit-appearance: none;-moz-appearance: none;}
-a.button.buttonAlt2 {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; float: left; -webkit-appearance: none;-moz-appearance: none;}
-a.button.buttonAlt2:hover {background:#333; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; -webkit-appearance: none;-moz-appearance: none;}
+input.right.submit.button.buttonAlt.buttonArrow, .continue.button.buttonAlt.buttonArrow {background:#f47920; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px; -webkit-appearance: none;-moz-appearance: none;}
+input.right.submit.button.buttonAlt.buttonArrow:hover, .continue.button.buttonAlt.buttonArrow:hover {opacity:0.6; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:20px 80px 20px 80px; cursor:pointer; float:right;margin-top: -5px; -webkit-appearance: none;-moz-appearance: none;}
+a.button.buttonAlt2 {background:#747679; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; float: left; -webkit-appearance: none;-moz-appearance: none; font-family:"Times New Roman", Times, serif;}
+a.button.buttonAlt2:hover {opacity:0.6; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:8px 45px 8px 45px;margin-left:5px; cursor:pointer; -webkit-appearance: none;-moz-appearance: none;}
 
 /* ---receipt--- */
-.receipt_deliveryaddress {border: 10px solid #EEE; width:44%;
+.receipt_deliveryaddress {border: 10px solid #ffffff; width:44%;
 padding: 0px 10px 5px;;
-background: #fff;float: left;}
+background: #fff;float: left;border-left: none;}
 .receiptconfirm {float:left; width:99%; padding: 0 5px 10px 5px;}
-.deliveryrate.receipt {padding:0px 10px 5px; border:10px solid #eeeeee; display: block;list-style: none outside none; background:#fff; clear:both; }
-.billingreceipt {padding:0px 10px 5px; border:10px solid #eeeeee; width: 47%; display: block;list-style: none outside none;float: right;background:#fff;}
+.deliveryrate.receipt {padding:0px 10px 5px; border:10px solid #ffffff; display: block;list-style: none outside none; background:#fff; clear:both;border-left: none; }
+.billingreceipt {padding:0px 10px 5px; border:10px solid #ffffff; width: 47%; display: block;list-style: none outside none;float: right;background:#fff;}
 .boxContent.deliveryoptions {padding-bottom:10px;}
 .receiptbuttonsbind {float:right; margin-top: 5px; text-align:center; width:40%;}
 .receiptbuttons {float:right; text-align:center;margin-top: 12px;}
 .receiptbuttons a {float:right; clear:both; text-align:center;}
 .receipttext {float:left; width:40%;margin-left: 5px;}
 .box.deliveryaddressreceipt {border-bottom: 10px solid #eeeeee}
-#ordersummaryreceipt {float:right; width:50%; background:#999999; color:#FFF; padding: 10px;margin-top: 10px;margin-bottom: 55px;}
+#ordersummaryreceipt {float:right; width:50%; background:#ffffff; color:#747679; padding: 10px;margin-top: 10px;margin-bottom: 55px; border:1px solid #747679;}
 #ordersummaryreceipt h2 {display:none;}
 #ordersummaryreceipt div.orderTotal {float:right; font-size:16px; font-weight:bold; margin:5px; margin-right: 0; margin-top: 0;}
 #ordersummaryreceipt div.subtotal, #ordersummaryreceipt div.delivery, #ordersummaryreceipt div.discount  {float:right;  margin-right: 5px;}
@@ -413,12 +442,15 @@ background: #fff;float: left;}
     float: left;
     padding-top: 5px;
 	font-weight:bold;
+	font-family: times;
+text-transform: uppercase;
 }
 #paymentdetailreceipt {float:left; margin-top: 10px;
     width: 46%;}
 #paymentdetailreceipt h2 {display:none;}
 #paymentdetails
 #paydetailsbox{float:left; width:47%;}
+.printPageIcon {font-family:"Times New Roman", Times, serif;font-style:italic;font-size: 1.1em;}
 
 
 /*  ---footer---   */
