@@ -28,36 +28,19 @@ display:none;
 #checkout .checkoutR {float:left; padding:0 0 10px 1px; margin:0;}
 /*RT122255*/
 #checkout .checkoutR .helpinfo {background:#F1F1F1; width:221px; float:left; min-height:156px; height:156px; padding:19px 0 0 10px; margin:0; border:none;}
-.helpinfo {list-style:none; margin-bottom:30px; border: 1px solid #999;
-    height: 25px; padding-bottom: 0; line-height: 25px; width: 99%; margin-left: 3px;}
+.helpinfo {list-style:none; margin-bottom:30px; border: 1px solid #747679;height: 25px; padding-bottom: 0; line-height: 25px; width: 99%; margin-left: 3px; font-family:"Times New Roman", Times, serif; font-style:italic; font-weight:bold;}
 .helpinfo ul li {list-style:none;}
-.helpinfo ul li {list-style:none;float: left; padding: 0 27px;border-left: 0px solid #333;margin-bottom: 20px;}
-.helpinfo ul li>:first-child {list-style:none;float: left; padding-right:10px;border-left: 0px solid #fff}
+.helpinfo ul li {list-style:none;float: left; padding: 0 3.4%;margin-bottom: 20px;}
+.helpinfo ul li>:first-child {list-style:none;float: left; padding-right:10px;}
 #checkout .checkoutR .helpinfo h2 {font-size:0.9em; color:#333; text-transform:uppercase; padding:0 0 3px 0; margin:0;}
 #checkout .checkoutR .helpinfo ul li {text-transform:uppercase; padding:0; margin:0; color:#333;}
 #checkout .checkoutR .helpinfo ul li a {font-size:0.9em; color:#666666;}
 #checkout .checkoutR img {float:left;}
 
-.loadingImg {
-background: #eeeeee url(../images/loading.gif) no-repeat 50% 50%;
-display: block;
-height: 56px;
-margin: 0 auto;
-width: 36px;
-box-shadow:1px 5px 15px 1px #999;-moz-box-shadow: 1px 5px 15px 1px #999;
--webkit-box-shadow: 1px 5px 15px 1px #999; border:1px solid #333; text-align:center; vertical-align:central; padding:10px; height:30px !important; }
+.loadingImg {background: #efe9e5 url(../images/loading.gif) no-repeat 50% 50%;display: block;height: 56px;margin: 0 auto;width: 36px;box-shadow:1px 5px 15px 1px #747679;-moz-box-shadow: 1px 5px 15px 1px #999;-webkit-box-shadow: 1px 5px 15px 1px #747679; border:1px solid #747679; text-align:center; vertical-align:central; padding:10px; height:30px !important; }
 
-.orscTotal {
-background: #999999;
-color: #FFF;
-padding: 10px;
-font-weight: bold;
-font-size: 14px;
-text-transform: uppercase;
-font-weight: normal;
-text-decoration: none;
-padding-bottom: 0;
-}
+.orscSummary.grid_12.push_1.omega table {background: #efe9e5;color: #747679;padding: 10px;width: 100%;text-transform: uppercase;font-weight: bold;font-family: "Times New Roman", Times, serif;}
+.orscTotal {background: #ffffff;color: #747679;padding: 10px;font-weight: bold;font-size: 14px;text-transform: uppercase;font-weight: bold;text-decoration: none;padding-bottom: 0; font-family: "Times New Roman", Times, serif;}
 
 #contact_detail2{float:right;}
 
@@ -441,12 +424,13 @@ text-decoration:underline;
 /* BASKET */
 /**********/
 .shopcartheader {
-	width:100%;
-	height:40px;
-vertical-align:text-middle;
-margin:40px 0 30px 0;
-background:url(../images/header-stripe.gif)repeat-x;
+width: 100%;
+margin: 5% 0 4%;
+vertical-align: text-middle;
+background: url(http://www.heals.co.uk/content/ebiz/heals/resources/images/header-stripe.gif)repeat-x center top;
+display: block;
 }
+
 
 .phonenumberheader {
 	padding-bottom: 10px;
@@ -462,54 +446,48 @@ vertical-align:text-middle;
 	text-align: center;
 	width: 16%;
 	margin: auto;
+	font-style:normal;
+	text-transform:uppercase;
 }
 
 .shopcartheader h1 {
-	background:#ffffff; 
-text-transform:uppercase;
-font-size:28px;
-	color:#666666;
-	font-family:Arial, Helvetica, sans-serif;
-	margin:0 0 14px 0;
-    font-weight:normal;
-	border:1px solid #777777;
-	padding: 3px 20px;
-	margin: auto;
-	width: 30%;
+background: #ffffff;
+text-transform: uppercase;
+font-size: 2em;
+color: #747679;
+font-family:"Times New Roman", Times, serif;
+font-weight: normal;
+border: 1px solid #747679;
+padding: 0.5% 5%;
+margin: auto;
+width: 33%;
 text-align: center;
-text-decoration: none;
-cursor: auto;}
+}
 .shopcartheader h1:hover {text-decoration: none;cursor: auto;}
 #yourbasket h1 {display:none;}
 /*RT122255*/
 #yourbasket {width:938px; margin:0 auto;}
-#yourbasket div.ordertable {padding:10px; margin-bottom: 20px; float:left; clear:both; border: 10px solid #eeeeee;}
+#yourbasket div.ordertable {padding:10px; margin-bottom: 20px; float:left; clear:both; border: 1px solid #747679;}
 #yourbasket div.ordertable thead {width:100%; border-bottom: 0;}
 #yourbasket div.ordertable tbody {padding:10px; border-top: 0px solid #eeeeee;}
 #yourbasket .wizrtable {width:100%;}
 #yourbasket .wizrtable tr.updatebasketbutton td{border-top:0px solid black !important;}
 /*RT122255*/
-#yourbasket .wizrtable tr th { padding: 10px 0 14px 24px; font-size:1.0em; color:#333333;
-text-align: left;
-border-bottom: 1px solid #cccccc;
-padding-bottom: 7px;
-margin-bottom: 5px;
-padding-right: 2px;
-}
-#yourbasket .wizrtable tr th.thumb {text-align:left; padding:10px 0 14px 24px; width:205px;}
-#yourbasket .wizrtable tr th.name {width:141px;} 
+#yourbasket .wizrtable tr th { padding: 10px 0 14px 24px; font-size:1.1em; text-align: left;border-bottom:1px solid #747679;padding-bottom: 7px;margin-bottom: 5px;padding-right: 2px;}
+#yourbasket .wizrtable tr th.thumb {text-align:left; padding:10px 0 14px 24px; width:205px; font-family:"Times New Roman", Times, serif; font-style:italic;}
+#yourbasket .wizrtable tr th.name {width:141px;font-family:"Times New Roman", Times, serif; font-style:italic;} 
 #yourbasket .wizrtable tr th.priceeach,
-#yourbasket .wizrtable tr th.totalprice {width:145px;}
-#yourbasket .wizrtable tr th.quantity {width:91px;}
-#yourbasket .wizrtable tr th.availability {width:114px;}
-#yourbasket .wizrtable tr th.remove {width:103px;}
-#yourbasket .wizrtable tr td {text-align:center; background:#fff; vertical-align:middle; font-size:1em; padding:12px 0 14px 0; color:#333;}
-.removeItem {font-size:14px; text-decoration:none; colour:#666666;}
+#yourbasket .wizrtable tr th.totalprice {width:145px;font-family:"Times New Roman", Times, serif; font-style:italic;}
+#yourbasket .wizrtable tr th.quantity {width:91px;font-family:"Times New Roman", Times, serif; font-style:italic;}
+#yourbasket .wizrtable tr th.availability {width:114px;font-family:"Times New Roman", Times, serif; font-style:italic;}
+#yourbasket .wizrtable tr th.remove {width:103px;font-family:"Times New Roman", Times, serif; font-style:italic;}
+#yourbasket .wizrtable tr td {text-align:center; background:#fff; vertical-align:middle; font-size:1em; padding:12px 0 14px 0; color:#747679;}
+.removeItem {font-size:14px; text-decoration:none; colour:#747679;}
 /*#yourbasket .wizrtable tr td.thumb {background:url(../images/bg_thumbbasket.gif) repeat-y left top; padding:12px 0 14px 0; text-align:center; width: 20%;}*/
 #yourbasket .wizrtable tr td.thumb {padding:12px 0 14px 0; text-align:center;}
 .thumb img {width:70%;}
 #yourbasket .wizrtable tr td.name {text-align:left; padding-left:12px; width: 30%; vertical-align: middle;}
-#yourbasket .wizrtable tr td.name a {color:#333;}
+#yourbasket .wizrtable tr td.name a {}
 #yourbasket .wizrtable tr td.priceeach {text-align:center;}
 /*#yourbasket .wizrtable tr td.totalprice {text-align:right; padding:12px 48px 14px 0;}*/
 #yourbasket .wizrtable tr td input {text-align:right; }
@@ -524,16 +502,8 @@ padding-right: 2px;
 /*RT122255*/
 #yourbasket .wizrtable td.basketTot {text-align:left; background:url(../images/bg_subtotalbasket.gif) no-repeat right top; padding:8px 0 8px 45px; color:#fff; font-weight:bold; font-size:1.2em; border:none;}
 #yourbasket .buttonstopbasket {display:none;}
-.updatebutton {float:right;margin-top: 20px; margin-bottom: 10px;}
 
-.orscSummary.grid_12.push_1.omega {
-background: #ffffff;
-margin: 12px 5px 20px;
-width: 97%;
-float: right;
-font-weight: bold;
-border: 10px solid #999999;
-padding:0;}
+.orscSummary.grid_12.push_1.omega {background: #ffffff;margin: 12px 0 20px;width: 98%;float: right;font-weight: normal;border: 1px solid #747679;padding: 1%;}
 
 .basketButtons {
 float: right;
@@ -543,7 +513,7 @@ width: 50%;
 padding-top: 13px;}
 
 .button.buttonAlt2:hover {
-background: #333;
+opacity:0.6;
 color: #fff;
 font-weight: bold;
 border: 1px solid #fff;
@@ -556,7 +526,7 @@ text-decoration: none;
 }
 
 .button.buttonAlt2 {
-background: #666;
+background: #747679;
 color: #fff;
 font-weight: bold;
 border: 1px solid #fff;
@@ -565,6 +535,8 @@ padding: 8px 45px 8px 45px;
 margin-left: 5px;
 cursor: pointer;
  -webkit-appearance: none; -moz-appearance: none;
+ font-family:"Times New Roman", Times, serif;
+ float: right;
 }
 
 /*RT122255*/
@@ -1097,7 +1069,7 @@ display:block; overflow:hidden;}
 
 #orderdetail .bottomdashcover table tbody tr td.giftmessage {border-left:11px solid #E5E5E5;}
 
-td.quantity input {width:30px; height: 24px; font-size: 14px; text-align: center !important;} /*All browser*/ 
+td.quantity input {width:30px; height: 24px; font-size: 14px; text-align: center !important; border: 1px solid #747679;} /*All browser*/ 
 /*\*/ 
 html* td.quantity input {width:30px;} { 
 width:30px;    /*Safari for Macintosh only (v1-3), IE7,IE6*/ 
