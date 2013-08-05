@@ -1,4 +1,4 @@
-$(document).ready(function(){$("ul#topnav li").hover(function(){$(this).find("span").show()},function(){$(this).find("span").hide()});
+$(document).ready(function(){$("ul#topnav li").hover(function(){$(this).find("span").slideDown('fast')},function(){$(this).find("span").hide()});
 
  $("ul#topnav li").hover(function(){
     $("#topnavbg").addClass("shadow");
