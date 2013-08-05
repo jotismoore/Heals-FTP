@@ -274,7 +274,6 @@ float:left;
 
 .notregister{
 float:right;
-background:#E6E6E6;
 width:425px;
 height:190px;
 margin:30px 0;
@@ -322,10 +321,10 @@ width:380px;    /*Safari for Macintosh only (v1-3), IE7,IE6*/
 .signin #buttons2 {margin:auto;padding:55px 0 0px 0;width:400px;}
 
 .f-loginemail label {margin:0 30px;width:auto;}
-.f-loginemail #email {width:200px;border:1px solid #999;}
-.f-loginiam label {font-weight:bold;color:#333;}
+.f-loginemail #email {width:200px;border:1px solid #747679;}
+.f-loginiam label {}
 .f-loginiam label:hover, .checkoutLoginAlR input.button.buttonAlt.submit:hover {text-decoration:none;}
-.f-loginiam label#lLoginPassword {font-weight:normal;color:#666666;margin-left:30px;margin-right:20px;width:auto;-margin-right:22px;}
+.f-loginiam label#lLoginPassword {font-weight:normal;margin-left:30px;margin-right:20px;width:auto;-margin-right:22px;}
 /*.f-loginiam #password {width:200px;border:1px solid #999;}*/
 /*RT122255*/
 .expresscheckout {margin:auto;padding:0 0 20px 0;width:463px;}

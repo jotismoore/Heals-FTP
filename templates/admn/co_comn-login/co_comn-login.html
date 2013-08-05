@@ -1,10 +1,10 @@
 	<style type="text/css">
 	.Lcattree {display:none;}
 	.topbreak {height:50px; display:block;}
-	#footer {border-top: 0px solid #666666; margin-top:15px;}
+	#footer {border-top: 0px solid #747679; margin-top:15px;}
 	.footerLinksCols.left {display:none;}
-	.mainFooter.container_24.clearfix, #footerLinks {border-top: 1px solid #666666;}
-	h3:hover, fieldset:hover {text-decoration:none;}
+	h3:hover, fieldset:hover {text-decoration:none !important;}
+	.footerExtra {border-top: 0px solid #747679;}
 	</style>
 <venda_tpcomment><!--
 Form param notes:
@@ -91,7 +91,7 @@ Known issues:
                         <label for="email" id="lLoginEmail" style="width:80%;"><venda_text id=desktop.form.email>:</label>
                         <input type="text" class="textInput" name="email" id="email" value="<venda_block label=pwrm,param2=passwordsent,param2=passwordcancel,operator=or><venda_param1></venda_block label=pwrm><venda_block label=notpwrm,param2=null,ustype=R><venda_userinfo><venda_sesusemail></venda_userinfo></venda_block label=notpwrm>" size="20" maxlength="150" style="font-size:12px;">
                         <label for="password" id="lLoginRegisterPassword" style="width:80%;"><venda_text id=desktop.form.password>:</label> <input type="password" class="textInput" name="password" id="password" size="20" maxlength="150" style="font-size:12px;">
-                        <div class="forgottenpassword" style="line-height:0; width: 300px; color: #333; font-size: 12px;"><a id="passwordreminder" href="<venda_codehttps>?ex=co_wizr-<venda_workflow>&workflowid=<venda_workflowid>&bsref=<venda_bsref>&step=passwordreminder" style="width: 300px;"><b><venda_text id=desktop.button.forgotten_password></b></a></div>
+                        <div class="forgottenpassword" style="line-height:0; width: 300px; color: #747679; font-size: 12px;"><a id="passwordreminder" href="<venda_codehttps>?ex=co_wizr-<venda_workflow>&workflowid=<venda_workflowid>&bsref=<venda_bsref>&step=passwordreminder" style="width: 300px;"><b><venda_text id=desktop.button.forgotten_password></b></a></div>
                         <div class="formSeparator"></div>
                 <div class="checkoutLoginAlR"><input type="submit"<venda_block label=692,workflow=checkout> data-trackEvent="Checkout"</venda_block label=692> value="<venda_text id=desktop.button.log_in>" class="button buttonAlt submit" style="padding-bottom:20px; font-size: 12px;"></div>
                 </div>
