@@ -69,7 +69,7 @@ body {font-family: Arial, Helvetica, sans-serif; font-size: 76%; font-style: nor
 /*************/
 /* FONT SIZE */
 /*************/
-h1 {font-size: 1.5em; font-family:"Times New Roman", Times, serif;}
+h1 {font-family:"Times New Roman", Times, serif;}
 /*
 h2 {font-size: 1.3em;}
 h3, h4, #home p.intro2 {font-size: 1.1em;}*/
@@ -79,7 +79,7 @@ h3, h4, #home p.intro2 {font-size: 1.1em;}*/
 p,
 #categorylist .featprods .moreinfo,
 #categorylist ul.categories h2,
-#collate h3 {font-size: 1em; font-family:"Times New Roman", Times, serif;}
+#collate h3 {font-size: 1em;}
 
 /* IE IE 5 - 6 - see "html > body table.wizrtable th" below */
 table.wizrtable th {font-size: 90%;}
@@ -229,7 +229,7 @@ table.wizrtable th {border-color:#FFF;}
 
 /* 5. This sets the default html elements -- Start styles_color.css */
 body {margin:0; padding:0;color:#747679;}
-h2, h3 {margin:0;padding:5px 0 5px 4px;}
+h2, h3 {margin:0;padding:5px 0 5px 4px; font-family:"Times New Roman", Times, serif; font-style:italic;} 
 p {margin:.5em 0; padding:0;}
 img {border:none;}
 a:active,a:link,a:visited{color:#747679; outline:0;}
@@ -239,6 +239,32 @@ a:hover{color:#747679}
 /*  LISTS  */
 /***********/
 ul {margin: 0; padding: 0; list-style: none;}
+
+/*************/
+/*  HEADERS  */
+/*************/
+.mainheader {
+width: 100%;
+margin: 3% 0 3%;
+vertical-align: text-middle;
+background: url(http://www.heals.co.uk/content/ebiz/heals/resources/images/header-stripe.gif)repeat-x center top;
+display: block;
+}
+
+.mainheader h1{
+background: #ffffff;
+text-transform: uppercase;
+font-size: 2em;
+color: #747679;
+font-family:"Times New Roman", Times, serif;
+font-weight: normal;
+border: 1px solid #747679;
+padding: 1% 5%;
+margin: auto;
+width: 33%;
+text-align: center;
+}
+ 
 
 /***********/
 /*  FORMS  */
@@ -428,12 +454,17 @@ html > body .featcats ul li { /* IE7 - Moz */
 /* CATEGORY LANDING PAGES */
 /*****************/
 
+.store-details {overflow: auto;clear: both;}
+.category_links {width: 100%;position: relative;margin-bottom: 10px;}
+.subheader{width: 100%;vertical-align: text-middle;margin: 2% 0;background: url(http://www.heals.co.uk/content/ebiz/heals/resources/images/header-stripe.gif)repeat-x center top;display: block;}
+.subheader h1 {background: #ffffff;text-transform: uppercase;color: #747679;font-family: "Times New Roman", Times, serif;font-weight: normal;padding: 0.5% 1%;margin: auto;width: 33%;text-align: center;} 
 .category_links {width:100%; position: relative; margin-bottom:10px;}
-.toptab {margin: 0;z-index: 30; color:#666666;}
-.toptab:hover, .toptab a:hover {cursor:pointer; color:#000000;}
-.toptab a {display:block; padding:4px 0;text-align:center; text-decoration:none; font-size:14px;}
+.toptab {margin: 0;z-index: 30; color:#747679;}
+.toptab:hover, .toptab a:hover {cursor:pointer; color:#747679;}
+.toptab a {display: block;padding: 2% 0;text-align: center;text-decoration: none;font-family:"Times New Roman", Times, serif;} 
 .browse_option1, .browse_option2, .browse_option3, .browse_option4, .browse_option5, .browse_option6 {float:left; width: 100%; padding-top:10px; overflow: hidden; text-align:center; margin-bottom: 10px;}
-.browse_by {float:right; background:#ffffff; width:270px; margin:30px 20px 30px 650px; position: absolute; height: 230px; text-align:center;}
+.browse_by {float: right;background: #ffffff;width: 30%;margin: 3% 4% 4% 68%;position: absolute;height: 235px;text-align: center;clear: both;}
+.browse_by_header {font-size:2em; text-align:center; padding-top:4%; font-family:"Times New Roman", Times, serif;} 
 .feature_left {width:48%; display:block; float:left; padding:10px 0;}
 .feature_left_text {width:55%; float:left}
 .feature_left_text h2, .feature_left_text p, .feature_right_text h2, .feature_right_text p {margin-left:5px}
@@ -442,19 +473,19 @@ margin-bottom: 10px;}
 .feature_right {width:48%; display:block; float:right; padding:10px 0;}
 .feature_right_text {width:55%; float:left}
 .feature_right img {float:right}
-.feature_cta {padding:6px 10px; background:#666666; margin-top:15px; color:#fff; font-size:14px; text-align:center;clear: both;}
+.feature_cta {padding:6px 10px; background:#747679; margin-top:15px; color:#fff; font-size:14px; text-align:center;clear: both;} 
 .feature_cta:hover {background:#333333;}
 .feature_ads {clear:both; padding-top: 10px;}
 .feature_ads img {margin:10px;}
-.brand_header {background:#999999; padding:15px 0; text-align:center;}
+.brand_header {background:#747679; padding:15px 0; text-align:center;}
 .brand_header h1 {color:#ffffff; padding:0; font-weight:normal;
 margin: 0; padding-right: 20px;padding-top: 5px; border-right: 2px solid #fff; margin-right: 20px; height: 25px;}
 .brand_header p {color:#ffffff; padding:0; font-weight:normal;
 margin: 0; text-align: left;}
 .brand_range {width:100%; float:left; margin-top:20px;}
-.paraText {padding: 10px; border-top:1px solid #777777; margin: 15px 0;}
-.paraText h1 {color: #666666; font-weight:normal; margin:15px 0;}
-.paraText p {color: #666666; line-height:18px;}
+.paraText {padding: 10px; border-top:1px solid #747679; margin: 15px 0;}
+.paraText h1 {color: #747679; font-weight:normal; margin:15px 0;}
+.paraText p {color: #747679; line-height:18px;} 
 
 #boxmenu_brands a:hover {
 	display:block
@@ -1410,7 +1441,7 @@ padding:5px;
 /******************* */
 /* COLOR THEME DEFAULT */
 /******************* */
-#content-default_nocoltwothree {background: url(../images/bg_lefthand.gif) 0 0 repeat-y;}
+#content-default_nocoltwothree {background:#ffffff;}
 #content-default_nocoltwothree #noscriptInfo {background-color:#ffffff;}
 #noscriptInfo {border: 1px solid #cccccc; margin: 10px 0; padding: 10px;}
 #noscriptInfo h3 {padding: 5px 0;}
@@ -1815,7 +1846,7 @@ li.checkout-button a {display:block; font-size: 14px; font-weight: bold;}
 .searchbox div.exh2 {display:none;}
 .searchbox fieldset {margin: 0;border: 1px solid #747679;padding: 0;background: #ffffff;float: right;height: 24px;font-size: 12px;width: 100%;} 
 .searchbox label, .searchbox legend {display:none;}
-.searchbox #searchsubmit {border: none; background:#747679;color: #fff;text-align: center;float: right;cursor: pointer;height: 90%; font-family: "Times New Roman", Times, serif;}
+.searchbox #searchsubmit {border: none; background:#747679;color: #fff;text-align: center;float: right;cursor: pointer;height: 98%; font-family: "Times New Roman", Times, serif; border-right:5px solid #fff;}
 .searchbox #searchsubmit:hover {opacity:0.6;} 
 
 /**************/
