@@ -55,7 +55,7 @@ h5.active {background-position: left bottom;}
 .sub_headings a {color:#747679;text-decoration:none;float:left;}
 .sub_headings a:hover {color:#747679;text-decoration:underline;}
 .category-top-banner {background-color: #ffffff !important;margin: 15px;z-index: 50;float: left;}
-.seotext-overlay {width:230px;height:111px;margin:56px 0 0 492px;z-index:100;position:absolute;}
+.seotext-overlay {width:230px;height:111px;margin:56px 10px 0 482px;z-index:100;position:absolute;}
 .seotext-overlay p {font-size:11px;color:#ffffff;margin-top: 50px;}
 .slider_container {width:740px;height:295px;background-color:#ffffff;float:left;}
 .slider_inner {width:724px;height:275px;margin:8px;}
