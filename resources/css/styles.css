@@ -572,6 +572,41 @@ margin: 0; text-align: left;}
 
 /* Brands END */
 
+
+/*************************
+ SOFA STYLES LANDING PAGES 
+ ************************/
+#sofa-cats {text-transform: uppercase;display: inline;text-align: center;padding: 0 15px 0 0!important;line-height: 14px;margin-right: 15px;border-right: 1px solid #747679; font-family:"Times New Roman", Times, serif;}
+.sofa-styles-holder {display: block;list-style: none;overflow: hidden;margin: 0;padding: 0;zoom: 1;clear: both;}
+#tabs div {background: #fff;clear: both;}
+#tabs ul.menu {display: block;width: 100%;height: 32px;margin: 0;margin-bottom: 13px;padding: 0;line-height: 20px;text-align: center;}
+.sofa-container {width: 100%;background: #FFF;overflow: hidden;}
+.sofa-styles-holder li {float: left;margin: 0.5% 0.1%;display: block;width: 231px;border: 1px solid #747679;}
+.sofa-styles-holder li a {display: block;text-align: center;}
+.sofa-styles-holder img {width: auto;height: auto;vertical-align: -3px;}
+.sofa-decrip_dsr {display: block;height: 45px;position: relative;background-color: #ffffff;}
+.sofa-decrip {display: block;height: 35px;position: relative;background-color: #ffffff;}
+.sofa-decrip h2, .sofa-decrip_dsr h2 {font-weight:normal;}
+.percent {position:absolute;z-index:200;width:53px;height:53px;border:none;margin-left:1px;margin-top:1px;}
+.sofa-decrip h2 {position:none;top:9px;left:8px;}
+.sofa-decrip span {position:absolute;right:9px;bottom:5px;display:block;font-weight:bold;text-align:right;}
+.sofaholder {float:left;display:block;width:231px;height:147px;border: none !important;}
+.sofa-styles-holder-offers {display:block;list-style:none;overflow:hidden;margin:0;padding:0;clear:both;}
+.sofa-styles-holder-offers li {float:left;display:block;width:290px;height:270px;border-bottom:1px solid #747679;border-top:1px solid #747679;vertical-align:text-middle;background:#fff;list-style: none outside none;margin:5px 0 10px 17px;text-align:center;}
+.sofa-styles-holder-offers img {width:auto;height:auto;vertical-align: -3px;margin-top:15px;}
+.sofa-styles-holder-offers li a {display:block;clear:both;font-weight: normal;}
+a.offers:hover, a.offers:active, a.offers:visited {float:left;display:block;width:290px;height:270px;border-bottom:1px solid #747679;vertical-align:text-middle;list-style: none outside none;text-align:center;background:#efe9e5;clear:both;}
+.sofa-styles-holder-brands {display:block;list-style:none;overflow:none;margin:0;padding:0;clear:both;}
+.sofa-styles-holder-brands li {float:left;display:block;width:290px;height:154px;border-bottom:1px solid #747679;border-top:1px solid #747679;vertical-align:text-middle;background:#fff;list-style: none outside none;margin:5px 0 10px 17px;text-align:center;}
+.sofa-styles-holder-brands img {width:auto;height:124px;vertical-align: -3px;margin-top:15px;}
+.sofa-styles-holder-brands li a {display:block;clear:both;}
+a.sofa-brands:hover, a.sofa-brands:active, a.sofa-brands:visited {float:left;display:block;width:290px;height:154px;border-bottom:1px solid #747679;vertical-align:text-middle;list-style: none outside none;text-align:center;background:#efe9e5;}
+.brandsholder {float:left;display:block;width:290px;height:154px;border-bottom:1px solid #ffffff;border-top:1px solid #ffffff;vertical-align:text-middle;background:#fff;list-style: none outside none;text-align:center;}
+.brandsholder:hover, .brandsholder:active, .brandsholder:visited {float:left;display:block;width:290px;height:154px;border-bottom:1px solid #ffffff;border-top:1px solid #ffffff;vertical-align:text-middle;background:#fff;list-style: none outside none;text-align:center;}
+ 
+.selectionbox{clear:both; border-top:2px solid #747679; border-bottom:2px solid #747679; text-align: center;padding: 5px 0;margin: 5px 0;font-size: 14px;text-transform: uppercase;}
+
+
 /*****************/
 /* PRODUCT LISTS */
 /*****************/
@@ -933,14 +968,6 @@ font-size:11px;
 .search-similar ul li#similarbrowse {}
 
 #productdetail_bottom { font-size: 0.9em; background-color: #FFFFFF; padding-top: 0px; margin-bottom: 2px;}
-
-
-/* PRODUCT SOFA STYLES */
-.selectionbox{clear:both; border-top:2px solid #B4B4B4; border-bottom:2px solid #B4B4B4; text-align: center;
-padding: 5px 0;
-margin: 5px 0;
-font-size: 14px;
-text-transform: uppercase;}
 
 
 /******************/
