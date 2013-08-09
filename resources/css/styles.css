@@ -2156,9 +2156,9 @@ select#title ,#fname.textInput , #lname.textInput, #phone.textInput, #zipc.textI
 .dontFloat.f-loginiam.registered {float:left; width:95%; margin:10px 0;}
 .customer {}
 .checkoutLoginAlR input.button.buttonAlt.submit:hover {opacity:0.6; color: #fff;font-weight: bold;border: 1px solid #fff;text-transform: uppercase;padding: padding: 8px 75px;;cursor: pointer;float: left;clear: both;}
-input#passwordsent.button.buttonArrow.right:hover {opacity:0.6; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; clear: both; margin-top:0; font-family:"Times New Roman", Times, serif;}
+input#passwordsent.button.buttonArrow.right:hover {opacity:0.6;}
 .checkoutLoginAlR input.button.buttonAlt.submit {background: #f47920;color: #fff;font-weight: bold;border: 1px solid #fff;text-transform: uppercase;padding: padding: 8px 75px;;cursor: pointer;float: left;clear: both; font-family:"Times New Roman", Times, serif;}
-input#passwordsent.button.buttonArrow.right {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; clear: both; margin-top:0;}
+input#passwordsent.button.buttonArrow.right {background:#f47920; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; clear: both; margin-top:0; font-family:"Times New Roman", Times, serif;padding: 8px 65px 8px 65px;}
 input.button.buttonAlt.submit {background:#7a1636; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:5px 65px 5px 65px; cursor:pointer; float:left;clear: both;}
 .registertxt {display:none;}
 .checkoutLoginEqH {}
@@ -2170,7 +2170,7 @@ input.button.buttonAlt.submit {background:#7a1636; color:#fff; font-weight:bold;
 .checkoutLoginAlR {margin-bottom:10px;}
 .formSeparator{clear:both; width:100%; display:block; height:10px;}
 .box.expresscheckout {display:none;}
-#reminderform fieldset {background:#eee; margin:15px 5px ; display:block; border:0px solid #333;padding: 10px 15px; width:96%; color:#333; font-weight:bold:}
+#reminderform fieldset {background:#fff; margin:15px 5px ; display:block; border:0px solid #333;padding: 15px 15px 20px; width:96%; color:#333; font-weight:bold; border:1px solid #747679;}
 input#phone.textInput.validateError, input#usemail.textInput.validateError, input#uspswd.textInput.validateError , input#uspswd2.textInput.validateError, input#usemail.validateError, input#zipc.textInput.validateError, input#email.textInput.validateError {color:#000;}
 .validateError {color:#F00;margin-right: 5px;float: left; margin-bottom: 10px;}
 .error {color:#F00;margin-left: 2px;}
