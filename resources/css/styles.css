@@ -1407,7 +1407,7 @@ padding:5px;
 #mainlayout-static h4 {padding:0;margin:0;}
 #mainlayout-static h5 {padding:0;margin:0;}
 #mainlayout-static #content-default {background:url(../images/bg_lefthand.gif) repeat-y 0 50%;float:left;}
-#mainlayout-static #content-default  #col-two a {color:#000;}
+#mainlayout-static #content-default  #col-two a {color:#747679;}
 #mainlayout-static #col-two {float:right;margin:0;padding:0 0 10px;background:#FFFFFF;}
 *html #mainlayout-static #col-two {float:right;margin:0 0 10px 0;padding:0;background:#FFFFFF;}
 *:first-child + html #mainlayout-static #col-two {float:right;margin:0 0 10px 0;padding:0;background:#FFFFFF;}
@@ -1737,12 +1737,13 @@ margin-left: 10px;
 display: inline;
 font-size: 11px;
 text-align: center;
-padding: 0px 18px;
-border-right: 1px solid #666666;
+padding: 0.5% 1.8%;
+border-right: 1px solid #747679;
 text-transform: uppercase;
 font-size: 11px;
 margin: 5px 0 20px;
 float: left;
+font-family:"Times New Roman", Times, serif;
 }
 
 #pcat_leftnav ul ul#ulour_stores li a {
@@ -1752,8 +1753,9 @@ display: inline;
 .store-address {
 font-size: 16px;
 text-align: center;
-border-bottom: 1px solid #cccccc;
+border-bottom: 1px solid #747679;
 margin-bottom:10px;
+font-family:"Times New Roman", Times, serif
 }
 
 .store-text {
@@ -1793,7 +1795,7 @@ padding-left: 0;
 
 .store-social {
 float: left;
-border-top: 1px solid #cccccc;
+border-top: 1px solid #747679;
 margin: 5px 0;
 padding: 15px 10px 0;
 width: 90%;
