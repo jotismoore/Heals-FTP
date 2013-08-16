@@ -603,8 +603,18 @@ a.offers:hover, a.offers:active, a.offers:visited {float:left;display:block;widt
 a.sofa-brands:hover, a.sofa-brands:active, a.sofa-brands:visited {float:left;display:block;width:290px;height:154px;border-bottom:1px solid #747679;vertical-align:text-middle;list-style: none outside none;text-align:center;background:#efe9e5;}
 .brandsholder {float:left;display:block;width:290px;height:154px;border-bottom:1px solid #ffffff;border-top:1px solid #ffffff;vertical-align:text-middle;background:#fff;list-style: none outside none;text-align:center;}
 .brandsholder:hover, .brandsholder:active, .brandsholder:visited {float:left;display:block;width:290px;height:154px;border-bottom:1px solid #ffffff;border-top:1px solid #ffffff;vertical-align:text-middle;background:#fff;list-style: none outside none;text-align:center;}
- 
 .selectionbox{clear:both; border-top:2px solid #747679; border-bottom:2px solid #747679; text-align: center;padding: 5px 0;margin: 5px 0;font-size: 14px;text-transform: uppercase;}
+.right-side h2 {margin:0;padding-bottom: 8px;color:#FF0000;font-size:1.2em;margin:0 5px 8px 0;font-weight:bold;width:250px;float:right; text-align:right;}
+.logo {margin:0;padding-bottom: 8px;margin:0 0 8px 0;font-weight:bold;text-align:left;float:left;}
+.right-side .hero-lifestyle img {border:1px solid #747679;}
+.right-side p {clear:both;}
+.right-side span {font-weight:bold;color:#747679;font-size:14px;}
+.right-side {width:440px;float:left;margin: -38px 0 0 15px;}
+.sofa-desc {margin: 0;padding: 43px 0 0;}
+.hero-lifestyle {margin:0 0 24px 0;}
+.outer-section {width:940px;overflow:hidden;background:#FFF;margin:10px 0 0 0;}
+.left-side {width:470px;float:right;margin:5px 0 26px 0;}
+.left-side span {font-weight: bold;}
 
 /*****************/
 /* PRODUCT LISTS */
