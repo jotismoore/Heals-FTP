@@ -235,14 +235,17 @@ ul#topnav li div.brands span{height:362px;left:0;top: 28px; padding:1%; width:98
 #subcat_col_three_brands, #subcat_col_four_brands {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
 #subcat_col_five_brands {width:134px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
 #subcat_col_six_brands {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:10px;}
+.another_country {background:url(../images/topnav/topnav-brands.png) -360px -300px;}
 .aqua_di_parma {background:url(../images/topnav/topnav-brands.png) 0 0;}
 .aldo_londi {background:url(../images/topnav/topnav-brands.png) -120px 0;}
 .alessi {background:url(../images/topnav/topnav-brands.png) -240px 0;}
 .alex_mccarthy {background:url(../images/topnav/topnav-brands.png) -360px 0;}
 .ali_tomlin {background:url(../images/topnav/topnav-brands.png) -480px 0;}
 .anglepoise {background:url(../images/topnav/topnav-brands.png) -600px 0;}
+.blend_collective {background:url(../images/topnav/topnav-brands.png) -480px -275px;}
 .blu_dot {background:url(../images/topnav/topnav-brands.png) -720px 0;}
 .bodum {background:url(../images/topnav/topnav-brands.png) -0 -25px;}
+.bramley {background:url(../images/topnav/topnav-brands.png) -120px -300px;}
 .brink_and_campman {background:url(../images/topnav/topnav-brands.png) -120px -25px;}
 .brinkhaus {background:url(../images/topnav/topnav-brands.png) -240px -25px;}
 .calligaris {background:url(../images/topnav/topnav-brands.png) -360px -25px;}
@@ -259,6 +262,7 @@ ul#topnav li div.brands span{height:362px;left:0;top: 28px; padding:1%; width:98
 .deknudt_decora {background:url(../images/topnav/topnav-brands.png) -720px -50px;}
 .de_la_espada {background:url(../images/topnav/topnav-brands.png) 0 -75px;}
 .designers_guild {background:url(../images/topnav/topnav-brands.png) -120px -75px;}
+.discipline {background:url(../images/topnav/topnav-brands.png) -720px -275px;}
 .dualit {background:url(../images/topnav/topnav-brands.png) -240px -75px;}
 .egizia {background:url(../images/topnav/topnav-brands.png) -360px -75px;}
 .eleanor_lakelin {background:url(../images/topnav/topnav-brands.png) -480px -75px;}
@@ -272,11 +276,14 @@ ul#topnav li div.brands span{height:362px;left:0;top: 28px; padding:1%; width:98
 .getty_images {background:url(../images/topnav/topnav-brands.png) -480px -100px;}
 .harlequin {background:url(../images/topnav/topnav-brands.png) -600px -100px;}
 .heals {background:url(../images/topnav/topnav-brands.png) -720px -100px;}
+.iittala {background:url(../images/topnav/topnav-brands.png) -120px -300px;}
+.imperfect_design {background:url(../images/topnav/topnav-brands.png) -240px -300px;}
 .jonathan_adler {background:url(../images/topnav/topnav-brands.png) 0 -125px;}
 .kartell {background:url(../images/topnav/topnav-brands.png) -120px -125px;}
 .kathryn_roberts {background:url(../images/topnav/topnav-brands.png) -240px -125px;}
 .kay_and_stemmer {background:url(../images/topnav/topnav-brands.png) -360px -125px;}
 .kitchenaid {background:url(../images/topnav/topnav-brands.png) -480px -125px;}
+.lokum {background:url(../images/topnav/topnav-brands.png) -600px -275px;}
 .le_creuset {background:url(../images/topnav/topnav-brands.png) -600px -125px;}
 .le_jacquard_francais {background:url(../images/topnav/topnav-brands.png) -240px -250px;}
 .ligne_roset {background:url(../images/topnav/topnav-brands.png) -720px -125px;}
@@ -293,6 +300,7 @@ ul#topnav li div.brands span{height:362px;left:0;top: 28px; padding:1%; width:98
 .neom {background:url(../images/topnav/topnav-brands.png) -360px -175px;}
 .nespresso {background:url(../images/topnav/topnav-brands.png) -480px -175px;}
 .newgate {background:url(../images/topnav/topnav-brands.png) -600px -175px;}
+.noble_isle {background:url(../images/topnav/topnav-brands.png) -240px -275px;}
 .normann_copenhagen {background:url(../images/topnav/topnav-brands.png) -720px -175px;}
 .original_btc {background:url(../images/topnav/topnav-brands.png) 0 -200px;}
 .orla_kiely {background:url(../images/topnav/topnav-brands.png) -120px -200px;}
@@ -301,6 +309,7 @@ ul#topnav li div.brands span{height:362px;left:0;top: 28px; padding:1%; width:98
 .penhaligons {background:url(../images/topnav/topnav-brands.png) -480px -200px;}
 .pols_potten {background:url(../images/topnav/topnav-brands.png) 0 -275px;}
 .poole_pottery {background:url(../images/topnav/topnav-brands.png) -600px -200px;}
+.race {background:url(../images/topnav/topnav-brands.png) -480px -300px;}
 .sabina_savage {background:url(../images/topnav/topnav-brands.png) -720px  -250px;}
 .sanderson {background:url(../images/topnav/topnav-brands.png) -720px -200px;}
 .scanpan {background:url(../images/topnav/topnav-brands.png) 0 -225px;}
@@ -312,6 +321,8 @@ ul#topnav li div.brands span{height:362px;left:0;top: 28px; padding:1%; width:98
 .tom_dixon {background:url(../images/topnav/topnav-brands.png) -720px -225px;}
 .vitra {background:url(../images/topnav/topnav-brands.png) 0 -250px;}
 .vi_spring {background:url(../images/topnav/topnav-brands.png) -360px -250px;}
+.waterford_crystals {background:url(../images/topnav/topnav-brands.png) 0 -300px;}
+.wireworks {background:url(../images/topnav/topnav-brands.png) -360px -275px;}
 .wusthof {background:url(../images/topnav/topnav-brands.png) -120px -250px;}
 
 
