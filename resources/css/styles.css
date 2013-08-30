@@ -454,12 +454,12 @@ html > body .featcats ul li { /* IE7 - Moz */
 /* CATEGORY LANDING PAGES */
 /*****************/
 
-.store-details {overflow: auto;clear: both;}
+.store-details {clear: both;}
 .category_links {width: 100%;position: relative;margin-bottom: 10px;}
 .subheader{width: 100%;vertical-align: text-middle;margin: 2% 0;background: url(http://www.heals.co.uk/content/ebiz/heals/resources/images/header-stripe.gif)repeat-x center top;display: block;}
 .subheader h1 {background: #ffffff;text-transform: uppercase;color: #747679;font-family: "Times New Roman", Times, serif;font-weight: normal;padding: 0.5% 1%;margin: auto;width: 33%;text-align: center;} 
 .category_links {width:100%; position: relative; margin-bottom:10px;}
-.toptab {margin: 0;z-index: 30; color:#747679;}
+.toptab {margin: 0;z-index: 30; color:#747679; line-height:1em;}
 .toptab:hover, .toptab a:hover {cursor:pointer; color:#747679;}
 .toptab a {display: block;padding: 2% 0;text-align: center;text-decoration: none;font-family:"Times New Roman", Times, serif;} 
 .browse_option1, .browse_option2, .browse_option3, .browse_option4, .browse_option5, .browse_option6 {float:left; width: 100%; padding-top:10px; overflow: hidden; text-align:center; margin-bottom: 10px;}
