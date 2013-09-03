@@ -117,7 +117,7 @@ jQuery(function() {
                 required: true
             },
             num : {
-                required: true
+                required: false
             },
             addr1   : {
                 required: true
@@ -134,6 +134,11 @@ jQuery(function() {
             },
             zcdropdown : {
                 required: true
+            },
+			area   : {
+                required: false,
+                number: true,
+				maxlength: 10
             },
             phone   : {
                 required: true,
@@ -186,6 +191,9 @@ jQuery(function() {
             zcdropdown    : {
                     required: Venda.Validate.msg.postcode_dropdown
             },
+			area   : {
+                    required: Venda.Validate.msg.area
+            },
             phone   : {
                     required: Venda.Validate.msg.phone
             },
@@ -221,7 +229,7 @@ jQuery(function() {
                 required: true
             },
             num : {
-                required: true
+                required: false
             },
             addr1   : {
                 required: true
@@ -238,6 +246,11 @@ jQuery(function() {
             },
             zcdropdown : {
                 required: true
+            },
+			area   : {
+                required: false,
+                number: true,
+                maxlength: 10
             },
             phone   : {
                 required: true,
@@ -291,6 +304,9 @@ jQuery(function() {
             },
             zcdropdown    : {
                     required: Venda.Validate.msg.postcode_dropdown
+            },
+			area   : {
+                    required: Venda.Validate.msg.area
             },
             phone   : {
                     required: Venda.Validate.msg.phone
