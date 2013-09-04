@@ -73,10 +73,10 @@ ul#topnav li:hover span {display: block; line-height:14px;}
 ul#topnav li span a {display:inline;}
 ul#topnav li span a:hover {color:#fff;}
 
-.box a {font-size:11px; text-align:left; text-transform:none; font-weight: normal; line-height: 18px;!important}
+.box a, .box_bath a {font-size:11px; text-align:left; text-transform:none; font-weight: normal; line-height: 18px;!important}
 
 #boxmenu {min-height:130px;margin-bottom:20px;}
-#boxmenu_bath {height:110px;margin-bottom:10px;}
+#boxmenu_bath {height: 110px; margin-bottom: 10px;float: left;}
 #boxmenu_brands {margin-bottom:20px;height: 25px;
 display: block; width:120px;}
 #boxmenu_gifts {margin-top:10px;height: 85px;
@@ -152,11 +152,12 @@ ul#topnav li div.garden span{height:370px;left:0;top: 28px;padding-right: 1px;}
 ul#topnav li div.bathroom a {display:block; padding:6px 13px 6px 9px;}
 ul#topnav li div.bathroom a:hover {display: block; background:#FFF;}
 ul#topnav li div.bathroom span{height:362px;left:0;top: 28px; padding: 0 1% 1%;; width:98%;}
-#subcat_col_one_bath {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px; margin-right:10px;}
-#subcat_col_two_bath {width:140px;height:auto;float:right; margin-left:0px;margin-bottom:10px; margin-top:0px; margin-right:0px;}
-#subcat_col_three_bath, #subcat_col_four_bath {width:140px;height:auto;float:right; margin-left:5px;margin-bottom:10px; margin-top:0px; margin-right:5px;}
-#subcat_col_five_bath {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:5px;}
-#subcat_col_six_bath {width:155px;height:auto;float:right; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:0;}
+#subcat_col_one_bath {width:140px;height:auto;float:left; margin-left:15px;margin-bottom:10px; margin-top:0px; margin-right:10px;}
+#subcat_col_two_bath {width:140px;height:auto;float:left; margin-left:0px;margin-bottom:10px; margin-top:0px; margin-right:0px;}
+#subcat_col_three_bath {width:150px;height:auto;float:left; margin-left:5px;margin-bottom:10px; margin-top:0px; margin-right:0;}
+#subcat_col_four_bath {width:140px;height:auto;float:left; margin-left:-5px;margin-bottom:10px; margin-top:14px; margin-right:5px;}
+#subcat_col_five_bath {width:140px;height:auto;float:left; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:5px;}
+#subcat_col_six_bath {width:155px;height:auto;float:left; margin-left:10px;margin-bottom:10px; margin-top:0px;margin-right:0;}
 .box_bath {display:block; margin-bottom:10px;}
 .box_bath_base {display:block; margin-bottom:5px; margin-left:5px; margin-right:5px;}
 /* Spa END */
@@ -348,7 +349,7 @@ ul#topnav li span div.newitems a{display:block;width:100%;margin:5px 0 0 0;paddi
 ul#topnav li span div.newitems a:hover {text-decoration:underline;}
 ul#topnav li span div.boxhighlight a{display:block;width:auto;padding:7px 0 5px 2px;text-align:left;margin:0; font-weight:bold;border-bottom:}
 .boxhighlight {background-color:#fff;border-bottom: 1px solid #747679;margin-bottom: 5px;width: 90%;padding-bottom: 2px;}
-.boxhighlight_special {background-color:#fff;border-bottom: 1px solid #747679;margin-bottom: 5px;width: 90%;padding-bottom: 2px;}
+.boxhighlight_special {background-color:#fff;border-bottom: 1px solid #747679;margin-bottom: 5px;padding-bottom: 2px;padding-right: 15px;}
 .boxhighlight_brands {background-color:#fff;border-bottom: 0px solid #747679;margin-bottom: 20px;width: 90%;height: 20px;display: block;}
 .boxhighlight_gifts {background-color:#fff; border-bottom: 0px solid #747679;margin-bottom: 5px;width: 90%;}
 .boxhighlight a{}
