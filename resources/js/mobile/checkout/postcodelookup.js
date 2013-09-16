@@ -368,6 +368,14 @@ function showShippingMethodNew(objSelector, shipid, shipmethod, shipname, shipch
     jQuery(objSelector).append(sHTML1);
 }
 
+function showShippingMethodMobile(objSelector, shipid, shipmethod, shipname, shipcheck) {
+	var sHTML1 = '';
+
+	sHTML1 += '<input type="radio" name="shipmethod_' + shipid + '" value="' + shipmethod + '" id="' + shipmethod + shipid + '" ' + shipcheck + '> <label for="' + shipmethod + shipid + '">' + shipname.replace("_",".") + '</label>';
+
+    jQuery(objSelector).append(sHTML1);
+}
+
 function getFurnitureDeliveryRate(nrate) {
 	var sFur = '';
 	switch (nrate) {

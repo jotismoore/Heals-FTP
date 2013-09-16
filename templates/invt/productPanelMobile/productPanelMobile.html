@@ -1,9 +1,80 @@
 <li>
 <a href="<venda_dispview invt=<venda_invtref>>" data-ajax="false">
+<div id="prod_image">
 	<venda_block label=10,med-small=notnull><venda_media rec=invt,type=movie-swf-pict,key=multi,dyn=yes,default=small></venda_block label=10>
 	<venda_block label=11,med-small=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=mobile.info.no_product_image>"></venda_block label=11>
+</div>
+<!-- start:additonal product tags on top --->
+<div class="product_info_ears_mobile">
+<div class="newproduct_mobile">
+	<venda_block label=8011,pdxtstatus=6>
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/new.png">
+	</venda_block label=8011>
+</div>
+<div class="heals_express_mobile">
+	<venda_block label=8012,pdxtexpress=1>
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/heals-express-square.png">
+	</venda_block label=8012>
+</div>
+<div class="special_purchase_mobile">
+    <venda_block label=8013,pdxtspecial=1>
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/special.png">
+	</venda_block label=8013>
+</div>
+<div class="discount50_mobile">
+	<div class="discountWasPrice" style="display:none;"><venda_invtwas></div>
+	<div class="discountSellPrice" style="display:none;"><venda_invtsell></div>
+	<div class="discountLive" style="display:none;"><venda_serveradd>/</div>
+	<div class="discountSkuInvt" style="display:none;">invt/<venda_invtref></div>
+</div>
+</div>
+<!-- end:additonal product tags on top --->   
+       
 	<h3><venda_invtname></h3>
 	<venda_inctemplate type=includes,name=priceFormatMobile>
 	<p class="swatch"><venda_mediagrid template=swatchMobile></p>
+    
+<!-- start:additonal product tags on base --->
+<venda_block label=900102,invtivtype=range,invtivtype=furniturerange,invtivtype=gardenfurniturerange,operator=or>
+<div class="onlineonly_mobile2">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/more-options.gif">
+</div>
+</venda_block label=900102>
+
+<venda_block label=801,pdxtstoreavail=1>
+<div class="onlineonly_mobile">
+<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/online_only.gif">
+</div>
+</venda_block label=801>
+<!-- end:additonal product tags on base --->
+    
 </a>
 </li>
+
+<!--script for discount label. NOTE might need to be relovated to searchresults template -->
+
+<script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/jquery.history.js'></script>
+
+<script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/jquery.viewport.mini.js'></script>
+<script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/jsuri-1.1.1.min.js'></script>
+<script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/Search.js'></script>
+<script>
+jQuery(Venda.Search.start);
+</script>
+
+<script>
+$("#content-search").bind("search-loading-end",function(a){$(".discount50_mobile").each(function(c){var b="";$(this).find(".discountWasPrice").each(function(f){b=$(this).text()});var e="";$(this).find(".discountSellPrice").each(function(f){e=$(this).text()});var h="";$(this).find(".discountSkuInvt").each(function(f){h=$(this).text()});var g="";$(this).find(".discountLive").each(function(f){g=$(this).text()});var d=1-(e/b);percent=(d*100).toFixed(2);
+if((percent>4.99)&&(percent<10)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/5percent.png"></a>')}
+if((percent>9.99)&&(percent<15)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/10percent.png"></a>')}
+if((percent>14.99)&&(percent<20)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/15percent.png"></a>')}
+if((percent>19.99)&&(percent<25)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/20percent.png"></a>')}
+if((percent>24.99)&&(percent<30)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/25percent.png"></a>')}
+if((percent>29.99)&&(percent<35)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/30percent.png"></a>')}
+if((percent>34.99)&&(percent<40)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/35percent.png"></a>')}
+if((percent>39.99)&&(percent<45)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/40percent.png"></a>')}
+if((percent>44.99)&&(percent<50)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/45percent.png"></a>')}
+if((percent>49.99)&&(percent<60)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/50percent.png"></a>')}
+if((percent>59.99)&&(percent<70)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/60percent.png"></a>')}
+if((percent>69.99)&&(percent<75)){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/70percent.png"></a>')}
+if(percent>74.99){$(this).html('<a href="'+g+h+'" class="availlink"><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/mobile/product-detail/70percentplus.png"></a>')}})});
+</script>

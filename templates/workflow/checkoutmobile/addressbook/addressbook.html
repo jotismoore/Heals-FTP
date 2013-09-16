@@ -45,7 +45,13 @@
 						</venda_block label=9991>
 
 						<venda_cntry1>
+                        <br/>
+                        <venda_block label=100,mode=value,<venda_setting type=ebiz,name=hidearea>!=1>
+                        <venda_block label=43,area1=notnull,phone1=notnull,operator=or>
+                        <venda_block label=121,area1=notnull><venda_area1></venda_block label=121> 
+                        </venda_block label=100>
 						<venda_block label=12,phone1=notnull><venda_phone1></venda_block label=12>
+                       </venda_block label=43>
 					</p>
 
 					<venda_tpcomment><!-- if it's a delivery address --></venda_tpcomment>
@@ -79,12 +85,12 @@
 	<div class="submitButton">
 		<venda_block workflow=checkoutmobile>
 			<venda_tpcomment><!-- Checkout workflow --></venda_tpcomment>
-			<a href='<venda_wizurl step=ordersummary>' data-role="button" data-ajax="false"><venda_text id=mobile.button.back_to_order_summary></a>
+			<a href='<venda_wizurl step=ordersummary>' id="checkoutbackbutton" data-role="button" data-ajax="false"><venda_text id=mobile.button.back_to_order_summary></a>
 		</venda_block>
 
 		<venda_block workflow=myaccountmobile>
 			<venda_tpcomment><!-- My Account workflow --></venda_tpcomment>
-			<a href="<venda_dispview page=myaccountmobile>" data-role="button" data-ajax="false"><venda_text id=mobile.button.my_account></a>
+			<a href="<venda_dispview page=myaccountmobile>" id="addressbookbackbutton" data-role="button" data-ajax="false"><venda_text id=mobile.button.my_account></a>
 		</venda_block>
 	</div>
 	</form>

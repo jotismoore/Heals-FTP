@@ -53,7 +53,7 @@
 					<span class="pagnNext"><a href="<venda_pgn_baseurl><venda_block label=1132,mode=value,<venda_pgn_isviewall>=1>&isviewall=1</venda_block label=1132>&perpage=<venda_pgn_perpage>&setpagenum=<venda_pgn_nextpage>" title="<venda_text id=mobile.button.pagn.next>"><venda_text id=mobile.button.pagn.next><span class="nextIcon"></span></a></span>
 				</venda_block label=1116>
 				<venda_block label=11161,mode=value,<venda_pgn_currentpage>=<venda_pgn_totalpages>>
-					<span class="pagnNext-off"><venda_text id=mobile.button.pagn.next></span><span class="nextIcon"></span>
+					<span class="pagnNext-off"><venda_text id=mobile.button.pagn.next></span><span class="nextIcon" style="display:none;"></span>
 				</venda_block label=11161>
 		
 				<venda_block label=999,mode=value,<venda_pgn_isviewall>!=1>
@@ -69,15 +69,23 @@
 								</venda_block label=1124>
 							</venda_block label=1125>	
 						</span>
+                        
+                        <venda_block label=111612,mode=value,<venda_pgn_currentpage>=<venda_pgn_totalpages>>
+<style type="text/css"> .pagnViewAll {float:right;margin-right: 5%;}</style>
+                        </venda_block label=111612>
+                        
 					</venda_block label=1122>
 				</venda_block label=999>
 			</venda_block label=4>
-		</div>
-	</div>
-	<venda_block label=1120,mode=value,<venda_pgn_isviewall>=1>
+            
+         <venda_block label=1120,mode=value,<venda_pgn_isviewall>=1>
 			<!-- show paged view -->
 			<span class="pagnShowViewByPaged<venda_block label=1136,mode=value,<venda_pgn_totalpages>=1> setMarginPagedView</venda_block label=1136>"><a href="/bin/venda?ex=co_wizr-locayta&<venda_pgn_baseurl>&setpagenum=1&perpage=<venda_setting type=ebiz,name=setsearchviewbypagevalue>" title="<venda_text id=mobile.button.viewbypage>"><venda_text id=mobile.button.viewbypage></a></span>
 		</venda_block label=1120>
+            
+		</div>
+	</div>
+
 	<venda_block label=1119,mode=value,<venda_pgn_isviewall>!=1>
 		<venda_tpcomment><!-- perpage dropdown disabled by default-->
 		<div class="pagnPerpage" data-role="fieldcontain">

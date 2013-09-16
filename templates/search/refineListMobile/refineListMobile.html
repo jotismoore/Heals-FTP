@@ -6,18 +6,20 @@
 </venda_detblock_facet_result>
 
 <venda_detblock_facets>
+<venda_block label=100 mode=value,<venda_tpxt mode=get,name=id>!=pdxtstatus>
 	<venda_block label=resultsnotcatref,totalcount!=0,field!=categories,field!=dailysalesrank,field!=usersalesrank>
 		<div data-role="fieldcontain" class="ui-hide-label">
-		<label for="<venda_field>"><venda_dispfield></label>
+		<label for="<venda_field>" style="display:none;"><venda_dispfield></label>
 		<select id="<venda_field>" class="refineselect"><option id="<venda_field>" class="collateheading" data-role="list-divider"><venda_dispfield></option>
 		<venda_detail_facet_result numericsort=price></select></div>
 	</venda_block label=resultsnotcatref>
+</venda_block label=100>
 </venda_detblock_facets>
 
 <venda_tpcomment><!-- remove refinement --></venda_tpcomment>
 <venda_detblock_searched_fields>
 	<venda_block label=331,facetref!=*,field!=categories,field!=dailysalesrank,field!=usersalesrank><div id="<venda_field><venda_facetref>" class="refine-list boxContent<venda_block label=333,facetref=*><venda_block label=012,mode=value,<venda_tpxt mode=get,name=parentCatRef>!=> star</venda_block label=012></venda_block label=333>">
-		<div class="refine-left"> <span class="refine-text"><venda_dispfield>: </span><a href="<venda_searchurlremove>" rel="<venda_field>=<venda_facetref>" id="remove<venda_field><venda_facetref>" class="refine-link removesearch"><venda_block label=332,field=price><venda_currsym></venda_block label=332><venda_block label=265,facetname=null><venda_facetref></venda_block label=265><venda_block label=266,facetname=notnull><venda_facetname></venda_block label=266></a>
+		<div class="refine-left"> <span class="refine-text"><venda_dispfield>: </span><a href="<venda_searchurlremove>" rel="<venda_field>=<venda_facetref>" id="remove<venda_field><venda_facetref>" class="refine-link removesearch" style="background: #fff;font-style: normal;font-weight: normal;text-transform:none;color: #747679;"><venda_block label=332,field=price><venda_currsym></venda_block label=332><venda_block label=265,facetname=null><venda_facetref></venda_block label=265><venda_block label=266,facetname=notnull><venda_facetname></venda_block label=266></a>
 		<a href="<venda_searchurlremove>" rel="<venda_field>=<venda_facetref>" id="remove<venda_field><venda_facetref>" class="refine-link removeicon" data-ajax="false"><span class="ui-icon ui-icon-delete ui-icon-shadow ui-btn-inline"></span></a>
 		</div><venda_tpxt mode=set,name=term,value=<venda_facetref>>
 	</div></venda_block label=331>
@@ -37,6 +39,6 @@
 			<venda_detail_searched_fields>
 		</div>
 	<venda_block label=345,totalresults!=0>
-	<div id="collate" class="collate"><h2><venda_text id=mobile.info.refineby>...</h2><venda_detail_facets></div>
+	<div id="collate" class="collate"><h2><venda_text id=mobile.info.refineby></h2><venda_detail_facets></div>
 	</venda_block label=345>
 </div>

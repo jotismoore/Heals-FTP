@@ -1,3 +1,24 @@
+<script type="text/javascript" id="postcodelist"></script>
+<script type="text/javascript">numberAddresses=0;</script>
+<venda_detail_minify_js> 
+<venda_detblock_minify_js> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post2chars_all.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post3chars_1.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post3chars_2.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post3chars_3.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post3chars_4.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post3chars_5.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post3chars_6.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post4chars_1.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post4chars_2.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post4chars_3.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post4chars_4.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post4chars_5.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post4chars_6.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post4chars_7.js'></script> 
+       <script type='text/javascript' src='<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/mobile/postcodelist/post4chars_8.js'></script> 
+</venda_detblock_minify_js>
+
 <div class="<venda_workflow> ordersummary"><venda_tpcomment><!-- harded code as venda_curstep is null --></venda_tpcomment>
 	<div class="checkoutmobile-wrapper">
 		<div class="checkoutmobile-content">
@@ -9,9 +30,31 @@
 
 			<venda_tpcomment><!-- start: Delivery Packages (detblock1) --></venda_tpcomment>
 			<venda_detblock1>
+            
+<script type="text/javascript">
+numberAddresses = numberAddresses+1;
+nAddr = numberAddresses - 1;
+allShipMethod = -1;
+oShipArray[nAddr] = new Array();
+</script>
+
 				<div class="orderInfo">
 				<venda_block label=471,pkshipreq!=1><p class="seperatetext"><venda_text id=mobile.info.order_details_services_and_gift_certificates></p></venda_block label=471>
 				<venda_block label=47,pkshipreq=1>
+                
+                <script type="text/javascript">
+				<venda_tpcomment>
+				// Get User's Postcode Stem here.
+				// Postcode stem = All characters before the last 3 characters
+				// Ex. Postcode = CR8 2EL then Postcode Stem = CR8
+				// There are 6 different formats for Valid Postcode Stem that allow furniture items to be delivered
+				// XXXX , XXX0, XX00 , XX0 , X00 , X0
+				// where X = Alphabetic , 0 = digit
+				</venda_tpcomment>
+				var allUserInfo = getFinalUserPostStem('<venda_pkzipc>');
+				userPostCodeStem[nAddr] = new UserPostRec(allUserInfo.userpostcode, allUserInfo.uservalidtype, allUserInfo.userispostvalid);
+				</script>
+                
 				<div class="deliverto borderBt bgDark">
 				<span class="start"><venda_text id=mobile.info.deliver_to> "</span><span class="addr1"><venda_pkaddr1>.......</span><span class="end">"<span></div>
 				<div data-role="collapsible" data-collapsed="true" class="borderBt">
@@ -49,7 +92,7 @@
 							</div><venda_tpcomment><!-- Fully registered user - address book --></venda_tpcomment>
 						</div><venda_tpcomment><!-- /address --></venda_tpcomment>
 					</div><venda_tpcomment><!-- End: Delivery Address (deliverto) --></venda_tpcomment>
-
+					<div class="deliveryrate">
 					<div data-role="collapsible" data-collapsed="true" class="shipmethod borderBt">
 						<h2><span class="collapsibleLabel"><venda_text id=mobile.heading.delivery_method></span></h2>
 						<fieldset data-role="controlgroup" data-mini="true" class="selectgroup">
@@ -67,10 +110,19 @@
 								<input type="hidden" name="exgroup" value="all" />
 								<input type="hidden" name="param1" value="0" /> <venda_tpcomment><!-- allows change of delivery option --></venda_tpcomment>
 								<input type="hidden" name="param2" value="changerate" /> <venda_tpcomment><!-- allows change of delivery option --></venda_tpcomment>
+                                
 
 								<venda_tpcomment><!-- can't use a html select tag due to odd behaviour of the app to put loads of hidden fields in  --></venda_tpcomment>
 								<venda_detblock3><venda_tpcomment><!-- start: detblock3 - Delivery Options --></venda_tpcomment>
-									<input type="radio" name="shipmethod_<venda_pkrfnbr>" value="<venda_shipmethod>" id="<venda_shipmethod>"<venda_block label=100,shipcheck=1> checked="checked"</venda_block label=100>> <label for="<venda_shipmethod>"><venda_shipname></label>
+                                
+                    <venda_tpcomment><!-- Shipping Options - values loop --></venda_tpcomment>
+						<script type="text/javascript">
+							allShipMethod++;
+							oShipArray[nAddr][allShipMethod] = new ShipMethodRec('<venda_pkrfnbr>', '<venda_shipmethod>', '<venda_shipcheck>', '<venda_shipname>');
+						</script>
+                        <!-- li class="<venda_shipmethod>"><input type="radio" name="shipmethod_<venda_pkrfnbr>" data-trackEvent="Shipping Option" value="<venda_shipmethod>" id="<venda_shipmethod>" <venda_block shipcheck=1>checked</venda_block>> <label for="<venda_shipmethod>"><venda_shipname></label></li -->
+                                
+									<!-- input type="radio" name="shipmethod_<venda_pkrfnbr>" value="<venda_shipmethod>" id="<venda_shipmethod>"<venda_block label=100,shipcheck=1> checked="checked"</venda_block label=100>> <label for="<venda_shipmethod>"><venda_shipname></label -->
 								</venda_detblock3><venda_tpcomment><!-- End: detblock3 - Delivery Options --></venda_tpcomment>
 
 								<venda_detail3>
@@ -78,6 +130,7 @@
 						 </fieldset>
 						<noscript><input type="submit" data-role="button" value="Update" data-ajax="false"></noscript>
 					</div>
+                    </div>
 				</venda_block label=47>
 
 				<div data-role="collapsible" data-collapsed="false">
@@ -91,47 +144,66 @@
 			</venda_detblock1><venda_tpcomment><!-- End: detblock1 - Delivery Packages --></venda_tpcomment>
 
 			<venda_detblock2><venda_tpcomment><!-- start: detblock2 - Product Information --></venda_tpcomment>
+            
+            	<script type="text/javascript">
+				<venda_tpcomment>
+				// hard code checking the product type of each item in the basket
+				// If an item is one of these product types then this order is a furniture order.
+				</venda_tpcomment>
+
+				<venda_block label=5556,invtivtype!=giftcertificate>
+				var invttype = "<venda_invtivtype>";
+				// alert("<venda_invtivtype>");
+				if ( (invttype =="furniture") || (invttype =="furniturerange") ){
+				hasFuritem[nAddr] = 'yes';
+				}
+				if ( (invttype !="furniture") && (invttype !="furniturerange") ){
+				hasNormitem[nAddr] = 'yes';
+				}
+				ohPackageSub[nAddr] += <venda_oiextsub>;
+				</venda_block label=5556>
+
+				</script>
+            
 			<li>
 				<div class="ui-grid-a">
-					<div class="ui-block-a">
 					<div class="image">
 						<venda_tpcomment><!-- giftcertificate image --></venda_tpcomment>
 						<venda_block label=50,oiitype=3>
-							<venda_block label=150,med-xsmall=notnull><venda_media rec=invt,type=movie-swf-pict,key=xsmall></venda_block label=150>
-							<venda_block label=151,med-xsmall=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_<venda_setting type=ebiz,name=setordersummaryimagekey>.gif" alt="<venda_text id=mobile.info.no_product_image>"></venda_block label=151>
+							<venda_block label=150,med-small=notnull><venda_media rec=invt,type=movie-swf-pict,key=small></venda_block label=150>
+							<venda_block label=151,med-small=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_<venda_setting type=ebiz,name=setordersummaryimagekey>.gif" alt="<venda_text id=mobile.info.no_product_image>"></venda_block label=151>
 						</venda_block label=50>
 						<venda_tpcomment><!-- <!-- normal product image --></venda_tpcomment>
 						<venda_block label=51,oiitype!=3,oiitype!=5,operator=and>
-							<venda_block label=21,med-setxsmall=notnull>
-								<venda_block label=22,mode=value,<venda_media rec=invt,type=movie-swf-pict,key=setxsmall,img=no,medatr=yes>=notnull>
+							<venda_block label=21,med-small=notnull>
+								<venda_block label=22,mode=value,<venda_media rec=invt,type=movie-swf-pict,key=small,img=no,medatr=yes>=notnull>
 									<venda_tpcomment><!--if 'set' prefix with att association value--></venda_tpcomment>
 									<venda_media rec=invt,type=movie-swf-pict,key=setxsmall,medatr=yes>
 								</venda_block label=22>
 								<venda_block label=23,mode=value,<venda_media rec=invt,type=movie-swf-pict,key=setxsmall,img=no,medatr=yes>=null>
-									<venda_block label=231,med-xsmall=notnull>
+									<venda_block label=231,med-small=notnull>
 										<venda_tpcomment><!--use key=xsmall--></venda_tpcomment>
-										<venda_media rec=invt,type=movie-swf-pict,key=xsmall>
+										<venda_media rec=invt,type=movie-swf-pict,key=small>
 									</venda_block label=231>
-									<venda_block label=232,med-xsmall=null>
+									<venda_block label=232,med-small=null>
 										<venda_tpcomment><!--use noimage graphic if 'xsmall' is null--></venda_tpcomment>
-										<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_xsmall.gif" alt="<venda_text id=mobile.info.no_product_image>">
+										<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=mobile.info.no_product_image>">
 									</venda_block label=232>
 								</venda_block label=23>
 							</venda_block label=21>
-							<venda_block label=24,med-setxsmall=null>
+							<venda_block label=24,med-small=null>
 								<venda_tpcomment><!--if not 'set' prefix - no alt. images functionality--></venda_tpcomment>
-								<venda_block label=25,med-xsmall=notnull>
+								<venda_block label=25,med-small=notnull>
 									<venda_tpcomment><!--use key=xsmall--></venda_tpcomment>
-									<venda_media rec=invt,type=movie-swf-pict,key=xsmall>
+									<venda_media rec=invt,type=movie-swf-pict,key=small>
 								 </venda_block label=25>
 								 <venda_block label=26,med-xsmall=null>
-									<venda_tpcomment><!--use noimage graphic if 'xsmall' is null--></venda_tpcomment>
-									<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_xsmall.gif" alt="<venda_text id=mobile.info.no_product_image>">
+									<venda_tpcomment><!--use noimage graphic if 'small' is null--></venda_tpcomment>
+									<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=mobile.info.no_product_image>">
 								</venda_block label=26>
 							</venda_block label=24>
 						</venda_block label=51>
 					</div>
-					</div><!-- /ui-block-a -->
 
 					<div class="ui-block-b">
 					<div class="prodInfo">
@@ -163,8 +235,212 @@
 			</li>
 			</venda_detblock2><venda_tpcomment><!-- End: detblock2 - Product Information --></venda_tpcomment>
 
-			<venda_detail1>
 
+                <script type="text/javascript">
+				// hasFuritem - Yes = there is any furniture items, No = there is NO furniture items
+				// hasNormitem - Yes = there is any normal items, No = there is NO normal items
+				// validIndex - Keep the index of postcode list array. -1 = Not found means user's postcode stem is invalid.
+				// validGTrate - Keep the delivery rate for order >= 1000
+				// validLTrate - Keep the delivery rate for order < 1000
+				hasFuritem[nAddr] = 'no';
+				hasNormitem[nAddr] = 'no';
+				validIndex[nAddr] = -1;
+				validGTrate[nAddr] = '';
+				validLTrate[nAddr] = '';
+				ohPackageSub[nAddr] = 0.00;
+				</script>
+                
+                <script type="text/javascript">
+				if (hasFuritem[nAddr] == 'yes') {
+					if (userPostCodeStem[nAddr].isPostValid) {
+						<venda_tpcomment>
+						// The postcode list is splited out into several pages to reduct its size.
+						// Using the first user's postcode stem character and the length to check what page of postcode list should be pulled out.
+						// Ex. Postcode = CR8 , First character = C then pull out the page "post3chars_1".
+						// See getPrefPostList function in general.js for how to map the first character with the page ref.
+						</venda_tpcomment>
+
+						<venda_tpcomment>
+						// comment this part because some times the postcode list can't finished loading before JS started calling the value.
+						
+						/* prefPostList[nAddr] = getPrefPostList(userPostCodeStem[nAddr].postCode);
+
+						if (document.getElementById('postcodelist').src == '') {
+							document.getElementById('postcodelist').src = '<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/postcodelist/' + prefPostList[nAddr] + '.js';
+						} */
+						</venda_tpcomment>
+					}
+				}
+				</script>
+                
+
+			<venda_detail1>
+            
+            
+             <script type="text/javascript">
+var sMet = new Array();
+var sId = new Array();
+var objSelector = new Array();
+
+var showPostCode = function() {
+	<venda_tpcomment>//		Checking to show the delivery options </venda_tpcomment>
+	for (m = 0; m <= nAddr; m++) {
+		nShippingRate = '0';
+		sFurnitureDelivery = '';
+		detblock3_HTML = '';
+		thisShippingName[m] = '';
+		
+		<venda_tpcomment>//   Mapping user's postcode stem with the postcode list	</venda_tpcomment>
+		if (hasFuritem[m] == 'yes') {
+			if (userPostCodeStem[m].isPostValid) {
+				validIndex[m] = searchLinear(userPostCodeStem[m].postCode, oPostArray);
+				if (validIndex[m] != -1) {
+					validGTrate[m] = oPostArray[validIndex[m]].GTrate;
+					validLTrate[m] = oPostArray[validIndex[m]].LTrate;
+				}
+			}
+		}
+
+		<venda_tpcomment>
+		//		canOrderBoth - keep 2 returned value.
+		//		canOrderGTDeliverFurItem - true means order >= 1000  can be delivered, false means order >= 100 CANNOT be delivered
+		//		canOrderLTDeliverFurItem - true means order < 1000  can be delivered, false means order < 100 CANNOT be delivered	
+		</venda_tpcomment>
+		
+		showDeliveryType[m] = checkItemInCart(hasFuritem[m], hasNormitem[m]);
+		sOrderType[m] = checkFurOrder(hasFuritem[m], hasNormitem[m]);
+	
+		if ( (sOrderType[m] == 'furonly') || (sOrderType[m] == 'mixorder') ) {
+			isFurnitureOrder = true;
+		}
+		if (showDeliveryType[m] == 'furniture') {
+	
+			canOrderBoth = checkCanOrder(validIndex[m], validGTrate[m], validLTrate[m]);		
+			canOrderGTDeliverFurItem = canOrderBoth.canGT;
+			canOrderLTDeliverFurItem = canOrderBoth.canLT;
+	
+			if ( (ohPackageSub[m] >= 1000) && (canOrderGTDeliverFurItem) ) {
+				nShippingRate = validGTrate[m];
+			}
+			else if ( (ohPackageSub[m] >= 1000) && !(canOrderGTDeliverFurItem) ) {
+				showDeliveryType[m] = 'normal';
+			}
+			else if ( (ohPackageSub[m] < 1000) && (canOrderLTDeliverFurItem) ) {
+				nShippingRate = validLTrate[m];
+			}
+			else if ( (ohPackageSub[m] < 1000) && !(canOrderLTDeliverFurItem) ) {
+				showDeliveryType[m] = 'normal';
+			}
+		}
+		
+		if (showDeliveryType[m] == 'furniture') {
+			sFurnitureDelivery = getFurnitureDeliveryRate(nShippingRate);
+		}
+	
+		<venda_tpcomment>
+		//		if allShipMethod = -1 means -  the product is a gift certificate. It's no need to ship anything.
+		</venda_tpcomment>
+		if (allShipMethod != -1) {
+			for (n = 0; n <= allShipMethod; n++) {
+				sShipID = oShipArray[m][n].shipid;
+				sShipMethod = oShipArray[m][n].shipmethod;
+				sShipName = oShipArray[m][n].shipname;
+		
+				if (oShipArray[m][n].shipcheck == 1) { sShipCheck = 'checked'; }
+				else { sShipCheck = ''; }
+				
+				thisShippingName[m] = 'shipmethod_' + sShipID;
+				
+				if (showDeliveryType[m] == 'furniture') {
+					if (sShipMethod == sFurnitureDelivery) {
+
+						showShippingMethodMobile('.deliveryrate form:eq('+m+')', sShipID, sShipMethod, sShipName, sShipCheck);
+                        sMet[m]=sShipMethod;
+                        sId[m]=sShipID;
+
+					}
+				}
+				else {
+					if ( (sShipMethod != 'freedelivery') && +
+						(sShipMethod != 'healsdeliveryservicegbp50')) {
+						
+						showShippingMethodMobile('.deliveryrate form:eq('+m+')', sShipID, sShipMethod, sShipName, sShipCheck);
+					}
+				}
+			}
+		
+			<venda_tpcomment>//   getElementByName in case of there are 2 elements use the same id 	</venda_tpcomment>
+			objShipping = document.getElementsByName(thisShippingName[m]);
+			
+			if (objShipping) {
+				hasDefaultShipping[m] = false;
+				resubmitShipID = '';
+				for (x = 0; x < objShipping.length; x++) {
+					if (objShipping[x].checked) {
+						hasDefaultShipping[m] = true;
+					}
+				}
+			}
+			
+		}
+	}
+};
+
+var showWarning = function() {
+	//		Alert warning message on page load.
+	if (hasOnloadEvent == false) {
+		if (isFurnitureOrder == true){
+			for (a = 0; a <= nAddr; a++) {
+				if ( (showDeliveryType[a] == 'normal') && (sOrderType[a] == 'furonly') ) {
+					alert('Unfortunately our delivery team are not currently able to deliver items of furniture to this postcode area. \nPlease contact us on 08700 240 780 option 2 to discuss alternative delivery options.');
+				}
+				else if ( (showDeliveryType[a] == 'normal') && (sOrderType[a] == 'mixorder') ) {
+					alert('Unfortunately our delivery team are not currently able to deliver items of furniture to this postcode area. \nPlease contact us on 08700 240 780 option 2 to discuss alternative delivery options. \n\nTo continue with your order of non furniture items only, please remove any furniture items and update.');
+				}
+			}
+		}
+	}
+};
+
+jQuery(document).ready(function() {
+	showPostCode();
+	showWarning();
+	jQuery('input[name*="shipmethod_"]').click(
+		function(){Venda.Checkout.updateShipmethod('#'+(this).form.id);}
+	);
+
+	jQuery('.submitButton a').click(function() {
+		if(sMet.length != 0){
+	    	for(var i=0;i<sMet.length;i++){
+		        if(sMet[i] != undefined){
+		        	var methodId = sMet[i]+sId[i];
+		        	if(!document.getElementById(methodId).checked){
+		            	alert("Please select the delivery option");
+		            	document.getElementById(methodId).focus();
+		            	return false;
+		        	}
+	        	}
+	    	}
+		}
+
+		if (isFurnitureOrder == true){
+			for (a = 0; a <= nAddr; a++) {
+				if ( (showDeliveryType[a] == 'normal') && (sOrderType[a] == 'furonly') ) {
+					alert('Unfortunately our delivery team are not currently able to deliver items of furniture to this postcode area. \nPlease contact us on 08700 240 780 option 2 to discuss alternative delivery options.');
+					return false;
+				}
+				else if ( (showDeliveryType[a] == 'normal') && (sOrderType[a] == 'mixorder') ) {
+					alert('Unfortunately our delivery team are not currently able to deliver items of furniture to this postcode area. \nPlease contact us on 08700 240 780 option 2 to discuss alternative delivery options. \n\nTo continue with your order of non furniture items only, please remove any furniture items and update.');
+					return false;
+				}
+			}
+		}
+
+	});
+});
+</script>
+            
+<hr>
 			<venda_tpcomment><!-- Start: Promotions --></venda_tpcomment>
 			<div id="additionalservices" class="promotion">
 				<div id="ajax-error"></div>
@@ -195,7 +471,7 @@
 			<hr>
 
 			<venda_tpcomment><!-- Start: Additional Services --></venda_tpcomment>
-			<div data-role="controlgroup" class="additional-opt">
+			<!-- <div data-role="controlgroup" class="additional-opt">
 				<venda_block label=75,workflow=checkoutmobile,curstep=ordersummary>
 					<venda_block label=16,mode=value,<venda_giftwrapavail>&gt;0,<venda_setting type=ebiz,name=giftmessageonly>=1,operator=or>
 						<venda_block label=193,mode=value,<venda_setting type=ebiz,name=addgwcombinedpage>!=1>
@@ -210,8 +486,8 @@
 						</venda_block label=93>
 					</venda_block label=194>
 				</venda_block label=76>
-			</div><venda_tpcomment><!-- End: Additional Services --></venda_tpcomment>
-			<hr>
+			</div> <hr>--><venda_tpcomment><!-- End: Additional Services --></venda_tpcomment>
+			
 
 			<venda_tpcomment><!-- Start: Billing Address --></venda_tpcomment>
 			<div data-role="collapsible" data-collapsed="true" class="billing">
@@ -272,13 +548,6 @@
 				<div class="value"><span><venda_ohcursym><venda_ohgwtot></span></div>
 				</venda_block label=68>
 
-				<div class="orderTotalSum">
-					<div class="labeltext"><span><venda_text id=mobile.info.order_total>:</span></div>
-					<div class="value"><span><venda_ohcursym><venda_ohtot></span></div>
-					<venda_block label=191,ohtaxinc!=0.00,ohtaxinc=notnull>
-						<div class="value value-vatInc"><span class="label-vatInc"><venda_text id=mobile.info.including_vat></span></div>
-					</venda_block label=191>
-				</div>
 
 				<venda_taxbreakdown ohrfnbr=<venda_ohrfnbr>,template=shipTaxBreakDown>
 				<venda_block label=65,showaccount=1,storecreditused&gt;0.00,creditused&gt;0.00,operator=or>
@@ -314,6 +583,15 @@
 						<div class="freeorder"><venda_text id=mobile.info.free_order></div>
 					</venda_block label=661>
 				</venda_block label=66>
+                
+                	<div class="orderTotalSum">
+					   <div class="labeltext"><span><venda_text id=mobile.info.order_total>:</span></div>
+					   <div class="value"><span><venda_ohcursym><venda_ohtot></span></div>
+					<venda_block label=191,ohtaxinc!=0.00,ohtaxinc=notnull>
+					<div class="value value-vatInc"><span class="label-vatInc"><venda_text id=mobile.info.including_vat></span></div>
+					</venda_block label=191>
+				</div>
+                
 			</div><venda_tpcomment><!-- End: Order Totals --></venda_tpcomment>
 		</div><!--end checkoutmobile-content -->
 	</div><!--end checkoutmobile-wrapper -->

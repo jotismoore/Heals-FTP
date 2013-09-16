@@ -48,7 +48,7 @@
 
 			<div data-role="fieldcontain" class="ui-hide-label greyDropdown">
 				<label for="cntrylist"><venda_text id=mobile.form.country></label>
-				<venda_cntry field=combo,id=cntrylist>
+				<venda_cntry field=combo,id=cntrylist,ship=1>
 			</div>
 
 			<div data-role="fieldcontain" id="zipcDiv" class="ui-hide-label">
@@ -105,10 +105,11 @@
 					<select name="state" id="statelist" required /></select>
 				</div>
 			</div>
-			<div data-role="fieldcontain" class="ui-hide-label">
+<div data-role="fieldcontain" class="ui-hide-label" id="phone_block">
 				<label for="phone"><venda_text id=mobile.form.phone></label>
+                <input id="area" type="text" name="area" value="" placeholder="Area (required)" required/>
 				<input type="tel" name="phone" id="phone" value="<venda_phone>" placeholder="<venda_text id=mobile.form.phone> <venda_text id=mobile.form.required>" required />
-			</div>
+</div>
 		</div><!--end checkoutmobile-content -->
 	</div><!--end checkoutmobile-wrapper -->
 	<div class="submitButton">

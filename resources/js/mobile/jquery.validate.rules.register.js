@@ -136,11 +136,11 @@ jQuery(document).bind("mobileinit", function(){
             zcdropdown : {
                 required: true
             },
-            phone   : {
+            area   : {
                 required: true,
                 number: true
             },
-			area   : {
+			phone   : {
                 required: true,
                 number: true
             },
@@ -149,12 +149,14 @@ jQuery(document).bind("mobileinit", function(){
                 email: true
             },
             uspswd  : {
+				guestcheckout: false,
                 required: true,
                 minlength: 5,
                 maxlength: 10
             },
             uspswd2 : {
-                required: true,
+                guestcheckout: false,
+				required: true,
                 minlength: 5,
                 maxlength: 10,
                 equalTo: "#uspswd"

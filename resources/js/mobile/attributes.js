@@ -75,14 +75,14 @@ Venda.Attributes.Initialize = function() {
 */
 Venda.Attributes.Declare = function() {
 	Venda.Attributes.Settings = {
-		lowStockThreshold:			20,
-		emailWhenOutOfStock:		false,
+		lowStockThreshold:			0,
+		emailWhenOutOfStock:		true,
 		sourceFromAPI:				false,
 		priceRangeFormat:			"range",  // "range" = from - to; "from" = from only; "to" = to only;
-		preOrderParent:				false,
+		preOrderParent:				true,
 		gridSwap:					false,
 		useSelectedArrow:			true,
-		useToolTip:					true,
+		useToolTip:					false,
 		sort: 						true
 	};
 };
@@ -178,11 +178,11 @@ Venda.Attributes.StockStatus = function(stockAmount,theIndex) {
 	var HasEtaDate = Venda.Attributes.HasEtaDate(theIndex);
 	var HasReleaseDate = Venda.Attributes.HasReleaseDate(theIndex);
 
-	if(stockAmount > Venda.Attributes.Settings.lowStockThreshold && !HasReleaseDate) return "In stock";
-	if(stockAmount > Venda.Attributes.Settings.lowStockThreshold && HasReleaseDate) return "Pre-order";
+	if(stockAmount > Venda.Attributes.Settings.lowStockThreshold && !HasEtaDate) return "In stock";
+	if(stockAmount > Venda.Attributes.Settings.lowStockThreshold && HasEtaDate) return "Special Order ";
  	if(stockAmount <= Venda.Attributes.Settings.lowStockThreshold && stockAmount > jQuery("#OutOfStockThreshold").text()) return "Stock is low";
 	if(stockAmount <= jQuery("#OutOfStockThreshold").text() && (jQuery("#DoNotBackorder").text() == 1) || (jQuery("#DoNotBackorder").text() != 1 && !HasEtaDate) ) return "Out of stock";
-	if(stockAmount <= jQuery("#OutOfStockThreshold").text() && (jQuery("#DoNotBackorder").text() != 1 && HasEtaDate)) return "Backorder";
+	if(stockAmount <= jQuery("#OutOfStockThreshold").text() && (jQuery("#DoNotBackorder").text() != 1 && HasEtaDate)) return "Special Order";
 
 };
 
@@ -334,6 +334,13 @@ Venda.Attributes.TimeTillRelease = function(dd, mm, yy, what) {
 				if(timeLeft == 0) timeLeft = 1;
 			} else { timeLeft = ""; }
 		break;
+		        case "weeksplus":
+            var exactTime = (secondDate.getTime() - firstDate.getTime())/(oneWeek);
+            if(exactTime>=0) {
+                var timeLeft = Math.round((secondDate.getTime() - firstDate.getTime())/(oneWeek)) + 2;
+                if(timeLeft == 2) timeLeft = 3;
+            } else { timeLeft = ""; }
+        break;
 		case "exact":
 			var timeLeft = (secondDate.getTime() - firstDate.getTime())/(oneWeek);
 		break;
@@ -393,10 +400,10 @@ Venda.Attributes.drawOutputs = function(index, uID) {
 
 		break;
 
-		case "Pre-order":
+		case "Pre-orders":
 			stockFeedbackBox.addClass("In_stock_box Pre-order_box");
 			addproductID.addClass("Re-paint");
-			addproductID.val("Pre-order");
+			addproductID.val("Pre-orders");
 
 			var stockFeedback = jQuery('#attributes-preorder').text() + Venda.Attributes.attsArray[index].atrreleasedy + "/" + Venda.Attributes.attsArray[index].atrreleasemn + "/" + Venda.Attributes.attsArray[index].atrreleaseyr;
 
@@ -433,19 +440,30 @@ Venda.Attributes.drawOutputs = function(index, uID) {
 
 		break;
 
-		case "Backorder":
-
-			stockFeedbackBox.addClass("In_stock_box Backorder_box");
-			addproductID.addClass("Re-paint");
-			addproductID.val("Backorder");
-
-			var stockFeedback = jQuery('#attributes-backorder').text() + Venda.Attributes.attsArray[index].atretady + "/" + Venda.Attributes.attsArray[index].atretamn + "/" + Venda.Attributes.attsArray[index].atretayr;
-
-		break;
+        case "Special Order":
+        
+            stockFeedbackBox.addClass("In_stock_box Backorder_box");
+            addproductID.addClass("Re-paint");
+            addproductID.val("Special Order");
+            
+            var stockFeedback = jQuery('#attributes-order').text() + "\n" + jQuery('#attributes-order2').text() + "\n" + Venda.Attributes.TimeTillRelease(Venda.Attributes.attsArray[index].atretady, "0" + parseInt(Venda.Attributes.attsArray[index].atretamn - 1), Venda.Attributes.attsArray[index].atretayr, "weeks") + "\n" + "-" + "\n" + Venda.Attributes.TimeTillRelease(Venda.Attributes.attsArray[index].atretady, "0" + parseInt(Venda.Attributes.attsArray[index].atretamn - 1), Venda.Attributes.attsArray[index].atretayr, "weeksplus") + "\n" + "weeks";
+        
+        break;
+ 
+        case "Special Order ":
+        
+            stockFeedbackBox.addClass("In_stock_box Pre-order_box");
+            addproductID.addClass("Re-paint");
+            addproductID.val("Special Order ");
+            
+            var stockFeedback = jQuery('#attributes-backorder').text() + "\n" + jQuery('#attributes-backorder2').text() + "\n" + Venda.Attributes.TimeTillRelease(Venda.Attributes.attsArray[index].atretady, "0" + parseInt(Venda.Attributes.attsArray[index].atretamn - 1), Venda.Attributes.attsArray[index].atretayr, "weeks") + "\n" + "-" + "\n" + Venda.Attributes.TimeTillRelease(Venda.Attributes.attsArray[index].atretady, "0" + parseInt(Venda.Attributes.attsArray[index].atretamn - 1), Venda.Attributes.attsArray[index].atretayr, "weeksplus") + "\n" + "weeks";
+        
+        break;
 
 
 		default:
 			// Not Available
+			
 			addproductID.addClass("Re-paint");
 			addToBasketLinks.attr('disabled', 'disabled').css("opacity","0.5");
 			addToBasketLinks.button('refresh'); //for mobile

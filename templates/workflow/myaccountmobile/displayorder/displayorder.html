@@ -2,11 +2,9 @@
 	<div class="checkoutmobile-wrapper">
 		<div class="checkoutmobile-content ordersummary">
 			<div class="checkoutmobile-header">
-				<h1><venda_text id=mobile.button.order_history></h1>
+				<h1><venda_text id=mobile.info.order_number>: <venda_ohordnum><venda_block label=307,ohordnum=null><venda_ohrfnbr></venda_block label=307></h1>
 				<venda_block label=1,errors=notnull><h2 class="error"><venda_errors></h2></venda_block label=1>
 			</div>
-
-			<h2 class="hdr-order borderBt bgDark"><venda_text id=mobile.info.order_number>: <venda_ohordnum><venda_block label=307,ohordnum=null><venda_ohrfnbr></venda_block label=307></h2>
 
 			<div class="bgLight">
 				<div class="orderdetailInfo borderBt">
@@ -82,7 +80,7 @@
 				<venda_detblock2>
 				<li>
 					<div class="ui-grid-a">
-						<div class="ui-block-a">
+
 							<div class="image">
 							<venda_tpcomment><!-- giftcertificate image --></venda_tpcomment>
 							<venda_block label=50,oiitype=3>
@@ -120,7 +118,7 @@
 								</venda_block label=24>
 							</venda_block label=51>
 							</div>
-						</div>
+
 						<div class="ui-block-b">
 							<div class="prodInfo">
 								<p><strong><venda_oiivname><venda_block label=111,invtatt1=notnull> (<venda_invtatt1><venda_block label=112,invtatt2=notnull>, <venda_invtatt2></venda_block label=112><venda_block label=113,invtatt3=notnull>, <venda_invtatt3></venda_block label=113><venda_block label=114,invtatt4=notnull>, <venda_invtatt4></venda_block label=114>)</venda_block label=111><venda_block label=151,oiitype!=3></venda_block label=151></strong></p>
@@ -200,8 +198,10 @@
 				<div class="labeltext"><span><venda_text id=mobile.info.order_total>:</span></div>
 				<div class="value">
 					<span><venda_ohcursym><venda_ohtot></span>
-					<venda_block label=191,ohtaxinc!=0.00,ohtaxinc=notnull><span class="label-vatInc"><venda_text id=mobile.info.including_vat></span></venda_block label=191>
 				</div>
+                <div class="vat">
+     			<venda_block label=191,ohtaxinc!=0.00,ohtaxinc=notnull><span class="label-vatInc"><venda_text id=mobile.info.including_vat></span></venda_block label=191>
+     			</div>
 				</div>
 
 				<venda_taxbreakdown ohrfnbr=<venda_ohrfnbr>,template=shipTaxBreakDown>
