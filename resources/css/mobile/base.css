@@ -2152,12 +2152,17 @@ clear: both;
 	margin: 0;
 	padding: 0;
 }
+
+.myaccountmobile .ui-collapsible {
+}
+
 .checkoutmobile .ui-collapsible-heading a,
 .registermobile .ui-collapsible-heading a {
 	text-decoration:none;
 	border: none;
 	background: #747679;
 	font-family:"Times New Roman", Times, serif;
+	border-radius: 0.8em;
 }
 
 .checkoutmobile .ui-collapsible-heading a {font-size:1em;}
@@ -2171,7 +2176,7 @@ clear: both;
 .registermobile .ui-collapsible-heading .ui-icon,
 .myaccountmobile .ui-collapsible-heading .ui-icon,
 .checkoutmobile .ui-collapsible-heading .ui-icon {
-	right: 10px;
+	right: 0;
 	left: auto;
 }
 .checkoutStepIndicators {
@@ -2516,7 +2521,7 @@ opacity:0.6;
 	overflow: hidden;
 }
 
-.edit {font-style:italic; margin: 4% 2%;}
+.edit {font-style:italic; margin: 4% 2%;border-radius: 0.8em; font-size:1em;}
 
 .addressbook .addrList .addrButton .edit {
 	float: left;border: none;font-style: italic; font-family:"Times New Roman", Times, serif; margin:0;
@@ -2571,7 +2576,6 @@ float: left;
 }
 .orderList .ui-listview {
 	margin: 0;
-	border-bottom: solid 1px #747679;
 	float: left;
 width: 100%;
 padding: 5% 0;
@@ -2621,6 +2625,8 @@ height: auto;
 line-height: 1.5em;
 width: 80%;
 }
+
+.ui-li-desc
 .orderList .status span {
 	font-weight: bold;
 	text-transform: uppercase;
@@ -2712,6 +2718,9 @@ text-align:center;
 	margin: 0;
 	line-height: 1.7em;
 }
+
+.orderdetailItem li .ui-li-desc {font-family:Georgia, "Times New Roman", Times, serif;font-style:italic;font-weight:normal;}
+
 .orderdetailItem .prodInfo,
 .orderdetailItem .status {
 color: #747679;
@@ -2842,6 +2851,8 @@ border-radius: 0.8em;
 	box-shadow: none;
 	background: #747679;
 	font-family:"Times New Roman", Times, serif;
+	border-radius: 0.8em;
+font-size: 1em;
 }
 .promotion .ui-btn-hover-a,
 .giftcert .ui-btn-hover-a {
