@@ -3089,7 +3089,7 @@ font-size: 1em;
 }
 input#searchsubmit {font-size:1.2em;}
 .searchResults .prods li h3.ui-li-heading {
-	margin-top: 0;color: #747679;font-weight: normal;margin-top: 23px;height: 50px;}
+	margin-top: 0;color: #747679;font-weight: normal;margin-top: 23px;height: 70px;}
 .searchResults:hover .prods li:hover {border: 1px solid #747679;
 width: 99%;
 padding: 2% 0;
