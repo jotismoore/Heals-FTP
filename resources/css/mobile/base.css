@@ -356,7 +356,7 @@ div.validateError {
 .heals_express_mobile {position:absolute; z-index:3;top: 0;}
 .special_purchase_mobile {position:absolute; z-index:2;top: 0;}
 .newproduct_mobile {position:absolute; z-index:1;top: 0;}
-.product_info_ears_mobile {height:14px; float:right; width:146px;}
+.product_info_ears_mobile {height:14px; float:right; width: 149px;}
 
 .instructions {
 	padding: 1em 3% 0;
@@ -2066,9 +2066,7 @@ clear: both;
 .myaccountmobilelayout .ui-btn .ui-btn-text img {
 	vertical-align: middle;
 }
-.registermobile, 
-.checkoutmobile-wrapper,
-.static-wrapper {
+.registermobile, .checkoutmobile-wrapper,.static-wrapper,.myaccountmobile {
 	clear: left;
 	width: 100%;
 	margin: 0 auto;
@@ -2232,6 +2230,7 @@ clear: both;
 .myaccountmobile .submitButton .ui-btn, .emailSignup .submitButton, #signuplink_button {
 	font-style:italic;
 	background: #747679;
+	text-transform: none;
 }
 
 .submitButton a .ui-btn-inner,
@@ -2271,6 +2270,7 @@ clear: both;
 	padding-left: 15px;
 	background:#747679;
 	font-family:"Times New Roman", Times, serif;
+	font-size: 0.9em;
 }
 	.loginForm .ui-collapsible-content {
 		margin: 0;
