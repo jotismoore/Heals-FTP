@@ -1793,6 +1793,11 @@ color: #747679;
 		float: left;
 		color:#747679;
 	}
+	#emailmeback {margin:2%}
+	#emailmeback span {font-family:"Times New Roman", Times, serif; font-style:italic; font-weight:bold; font-size:1.5em;}
+	
+	#emailinstockthankyou
+	{color:#747679;margin: 2%;}
 	
 	.cancel:hover {opacity:0.6;}
 	
