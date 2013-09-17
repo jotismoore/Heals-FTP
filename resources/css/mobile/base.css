@@ -2346,6 +2346,7 @@ moz-border-radius: .8em;border-radius: .8em; font-family:"Times New Roman", Time
 	font-style:italic;
 	font-family:"Times New Roman", Times, serif;
 }
+.ui-btn-up-a {webkit-border-radius:0;moz-border-radius:0;border-radius:0;}
 .loginButtonDiv .ui-btn-up-a {
 	background: #747679;
 	box-shadow: none;
