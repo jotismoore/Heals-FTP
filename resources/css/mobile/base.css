@@ -2197,7 +2197,7 @@ clear: both;
 }
 
 .checkoutmobilelayout .submitButton {padding:2% !important;}
-.checkoutmobilelayout .submitButton .ui-btn, .checkoutmobilelayout .submitButton .ui-btn{background:#f47920; text-transform:uppercase;}
+.checkoutmobilelayout .submitButton .ui-btn, .checkoutmobilelayout .submitButton .ui-btn{background:#f47920; text-transform:uppercase;border-radius: 0.8em; -moz-border-radius:0.8em; -webkit-border-radius:0.8em;}
 
 .checkoutmobilelayout .submitButton span {font-family:"Times New Roman", Times, serif;border: none;}
 .checkoutmobilelayout .submitButton,
