@@ -350,8 +350,8 @@ div.validateError {
 	}
 	.prods li .ui-icon-arrow-r {background: url("../../images/mobile/sprite_icon.png")  no-repeat scroll -247px 0 transparent;background-size: 739px 45px;height: 23px;width: 23px;margin-top: 7px;box-shadow: none;border: none;display: none;}
 	#prod_image {float:left;clear:left;margin-right: 10px;width: 130px; margin-bottom:15px;}
-	.onlineonly_mobile2{clear: both;background: #747679;display: block;margin-right: 10px;width: 100%;text-align: center;z-index:100;position: absolute;margin-top: 20px;bottom: -20px;}
-.onlineonly_mobile {clear: both;background: #efe9e5;display: block;margin-right: 10px;width: 100%;text-align: center;position: absolute;margin-top: 20px;bottom: -20px;}
+	.onlineonly_mobile2{clear: both;background: #747679;display: block;margin-right: 10px;width: 100%;text-align: center;z-index:100;position: absolute;margin-top: 20px;bottom: -8px;;}
+.onlineonly_mobile {clear: both;background: #efe9e5;display: block;margin-right: 10px;width: 100%;text-align: center;position: absolute;margin-top: 20px;bottom: -8px;;}
 .discount50_mobile{position:absolute; z-index:4;top: 0;}
 .heals_express_mobile {position:absolute; z-index:3;top: 0;}
 .special_purchase_mobile {position:absolute; z-index:2;top: 0;}
@@ -3115,7 +3115,6 @@ margin: 3% 0;}
 	font-size: 13px;
 	padding-left: 0;
 	padding-top: 5px;
-	height: 42px;
 	font-family:Arial, Helvetica, sans-serif;
 }
 .searchResults .prodsGrid {
