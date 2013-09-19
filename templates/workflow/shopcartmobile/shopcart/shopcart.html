@@ -46,7 +46,10 @@
 				<input type="hidden" name="<venda_cartfield name=setqty>" id="form<venda_cartfield name=setqty>" value="<venda_oiqty>">
 				<!-- if product is gift certificate -->
 				<a class="productimage" href="<venda_codehttp>?ex=co_wizr-giftcertificatesmobile&bsref=<venda_bsref>" title="<venda_invtname>">
-				<venda_block label=150,med-small=notnull><venda_media rec=invt,type=movie-swf-pict,key=small></venda_block label=150>
+				<venda_block label=150,med-small=notnull><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_oiivref>_s.jpg" border="0" width="120px" height="120px" onError="noImage<venda_oiivref>(this);" /></venda_block label=150>
+				<script type="text/javascript">function noImage<venda_oiivref>(changeImage){
+changeImage.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_invtparef>_m.jpg';}
+</script>
 				<venda_block label=151,med-small=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=mobile.info.no_product_image>"></venda_block label=151>
 				</a>
 			</div>
@@ -62,10 +65,8 @@
 				</p>
 				<p class="priceeach"><venda_currsym><venda_oiextprice></p>
                 
-            <!-- start: added availability logic here --->
-<div class="availability-logic">
-<b>Availability:</b> <venda_inventory ref=<venda_invtref>,temp=availability>
-</div>
+
+
 			<!-- Include Availability nonattribute from invt -->
 			<script type="text/javascript">
 			$("#invt<venda_oiivref>").load("/bin/venda?ex=co_wizr-productgrid&bsref=<venda_bsref>&step=shopcartmulti&invt=<venda_oiivref>&ordercol=alphanu&layout=contentonly p#invt<venda_oiivref>");
@@ -95,6 +96,21 @@
 				<div class="info">
 					<venda_tpcomment><!-- INFO --></venda_tpcomment>
 					<p class="productname"><venda_invtname> (<venda_invtatt1><venda_block label=7,invtatt2=notnull>, <venda_invtatt2></venda_block label=7><venda_block label=8,invtatt3=notnull>, <venda_invtatt3></venda_block label=8><venda_block label=9,invtatt4=notnull>, <venda_invtatt4></venda_block label=9>)<venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1></p>
+                    
+                    <!-- start: added availability logic here --->
+             <div class="product_availability">
+            <p><b>Availability</b></p>
+            <venda_block label=50,oiitype=3>In Stock</venda_block label=50>
+			<venda_block label=51,oiitype!=3>
+			<div id="invt<venda_oiivref>"></div>
+			<venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
+			<!-- Include Availability nonattribute from invt -->
+			<script type="text/javascript">
+			$("#invt<venda_oiivref>").load("/bin/venda?ex=co_wizr-productgrid&bsref=<venda_bsref>&step=shopcartmulti&invt=<venda_oiivref>&ordercol=alphanu&layout=contentonly p#invt<venda_oiivref>");
+			</script>
+			</venda_block label=51>
+            </div>
+                    
 					<p class="priceeach"><venda_currsym><venda_oiextprice></p>
 
 					<venda_tpcomment><!-- +/- version
