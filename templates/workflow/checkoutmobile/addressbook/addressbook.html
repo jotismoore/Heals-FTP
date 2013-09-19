@@ -9,7 +9,13 @@
 			</div>
 		</div><!--/checkout-content-->
 	</div><!--/checkout-wrapper-->
-	<div class="submitButton"><a id="addressbookaddbutton" href='<venda_wizurl step=addressbookadd,param1=null>' data-role="button" data-ajax="false"><venda_text id=mobile.heading.add_address></a></div>
+		<div class="submitButton">
+    <a id="addressbookaddbutton" href='<venda_wizurl step=addressbookadd,param1=null>' data-role="button" data-ajax="false"><venda_text id=mobile.heading.add_address></a>
+    <venda_block workflow=checkoutmobile>
+	<venda_tpcomment><!-- Checkout workflow --></venda_tpcomment>
+	<a href='<venda_wizurl step=ordersummary>' id="checkoutbackbutton" data-role="button" data-ajax="false"><venda_text id=mobile.button.back_to_order_summary></a>
+	</venda_block>
+    </div>
 
 	<venda_detblock>
 		<li id="Addr<venda_abrfnbr1>" class="<venda_block adtype1=1>billing</venda_block><venda_block adtype1=0>delivery</venda_block><venda_block default1=1> default</venda_block>">
