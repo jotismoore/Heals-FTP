@@ -53,7 +53,7 @@
 
 			<div data-role="fieldcontain" class="addresslookup">
 				<div class="ui-grid-a">
-					<div class="block-a">
+					<div class="block-a" id="postcode_lookup">
 						<input type="button" id="lookupBtn" data-theme="b" data-inline="true" value="<venda_text id=mobile.button.lookup>" /><span class="loading" style="display:none"></span>
 					</div>
 					<div class="block-b">
@@ -75,7 +75,7 @@
 				</div>
 
 				<div data-role="fieldcontain" id="houseNum" class="ui-hide-label">
-					<label for="num"><venda_text id=mobile.form.house_num></label>
+					<label for="num"><venda_text id=mobile.form.house_number></label>
 					<input type="text" name="num" id="num" value="<venda_num>" placeholder="<venda_text id=mobile.form.house_num>" />
 				</div>
 
@@ -103,7 +103,7 @@
 
 			<hr>
 <div data-role="fieldcontain" class="ui-hide-label" id="phone_block">
-				<label for="phone"><venda_text id=mobile.form.phone></label>
+				<label for="phone"><venda_text id=mobile.form.phone.number></label>
                 <input id="area" type="text" name="area" value="" placeholder="Area (required)" required/>
 				<input type="tel" name="phone" id="phone" value="<venda_phone>" placeholder="<venda_text id=mobile.form.phone> <venda_text id=mobile.form.required>" required />
 </div>
