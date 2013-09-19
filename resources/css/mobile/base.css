@@ -372,14 +372,8 @@ div.validateError {
 .emptyBox {
 	padding: 20px;
 	margin: 0;
-	background: #E6E6E6;
+	background: #fff;
 	color: #747474;
-	background-image: -webkit-gradient(linear, left top, left bottom, from( #F9F9F9 50% ), to( #E6E6E6));
-	background-image: -webkit-linear-gradient(#F9F9F9 50%, #E6E6E6);
-	background-image: -moz-linear-gradient(#F9F9F9 50%, #E6E6E6 );
-	background-image: -ms-linear-gradient(#F9F9F9 50%, #E6E6E6);
-	background-image: -o-linear-gradient(#F9F9F9 50%, #E6E6E6);
-	background-image: linear-gradient(#F9F9F9 50%, #E6E6E6);
 }
 .addToHomeIphone {
 	z-index: 9999;
@@ -1300,7 +1294,7 @@ span#atrWas.price {color:#747679 !important;}
 	margin: 0 0 15px;
 }
 #rangeProducts h3 {color:#747679;}
-.attribute-list-title {margin-top:2%;}
+.attribute-list-title {margin-top:2%;font-family: times;font-style: italic;font-size: 1.2em;}
 .attribute-list-price-container {margin:3% 0;}
 #attribute-list-grid {padding-bottom: 3%;border-bottom: 1px solid #747679;margin-bottom: 4%;}
 .enlarge {
@@ -2004,6 +1998,7 @@ margin-left: 2%;
 	border-radius: 1em;
 	height: 18px;
 	width: 18px;
+	background:#fff;
 }
 .shopcart .remove .ui-btn-inner {
 	padding: 0;
@@ -2024,6 +2019,10 @@ width: 96%;
 border-radius: 0.8em;
 font-family:"Times New Roman", Times, serif;
 }
+
+.product_availability {margin:1% 0; font-weight:normal;}
+.product_availability p {font-family:Arial, Helvetica, sans-serif;}
+p.price.ui-li-desc, p.qty.ui-li-desc {font-family:Arial, Helvetica, sans-serif;}
 
 .shopcart .discount,
 .shopcart .total {
@@ -2446,7 +2445,7 @@ background:#747679;
 #enterManually {font-weight:normal; font-size:1.2em;}
 #phone_block {clear:both; height:40px;}
 #area {width:40%; float:left;margin-right: 1%;margin-bottom: 10%;}
-#phone {width:47%; float:left; margin-left: 2%;margin-bottom: 10%;}
+#phone {width:47.1%; float:left; margin-left: 2%;margin-bottom: 10%;}
 .addresslookup .loading {
 width: 20px;
 margin: 0 auto;
@@ -2469,6 +2468,7 @@ opacity:0.6;
 
 /* REQUIRED FOR ADDRESS BOOK */
 #addressbookaddbutton, #addressbookbackbutton, #checkoutbackbutton {background: #747679;wborder-radius: 0.8em; font-family:"Times New Roman", Times, serif; font-style:italic;font-size: 1.2em;margin:2%;}
+#checkoutbackbutton {text-transform:none;}
 
 #addressbookaddbutton {text-transform:none;}
 
@@ -2534,14 +2534,16 @@ opacity:0.6;
 	overflow: hidden;
 }
 
-.edit {font-style:italic; margin: 4% 2%;border-radius: 0.8em; font-size:1em;}
+.edit {font-style:italic; margin: 4% 2%;border-radius: 0.8em; font-size:1em;width: 10%;}
+.default {border-radius:0.8em;-moz-border-radius:0.8em;-webkit-border-radius:0.8em;}
 
 .addressbook .addrList .addrButton .edit {
-	float: left;border: none;font-style: italic; font-family:"Times New Roman", Times, serif; margin:0;
+	float: left;border: none;font-style: italic; font-family:"Times New Roman", Times, serif; margin:0 0 2%;
 }
 .addressbook .addrList .addrButton .default {
-	float: right;border: none;font-style: italic; font-family:"Times New Roman", Times, serif;
+	float: left;border: none;font-style: italic; font-family:"Times New Roman", Times, serif; width: 40%;
 }
+
 
 .addressbook .addrList .addrButton .default span,
 .addressbook .addrList .addrButton .edit span{padding:0;}
@@ -2759,6 +2761,8 @@ margin-right: 5%;
 	font-family:"Times New Roman", Times, serif;
 	background: #efe9e5;
 color: #747679;
+width: 98%;
+margin: 0 auto 2% auto;
 }
 .orderTotals.orderHistory {
 	margin-top: 1em;
@@ -2865,7 +2869,6 @@ border-radius: 0.8em;
 	background: #747679;
 	font-family:"Times New Roman", Times, serif;
 	border-radius: 0.8em;
-font-size: 1em;
 }
 .promotion .ui-btn-hover-a,
 .giftcert .ui-btn-hover-a {

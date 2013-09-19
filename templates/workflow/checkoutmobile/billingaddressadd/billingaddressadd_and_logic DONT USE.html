@@ -10,10 +10,20 @@
 <input type="hidden" name="exgroup" value="all" /><venda_tpcomment><!-- Required for user extended fields --></venda_tpcomment>
 <input type="hidden" name="lang" value="<venda_sessionlanguage>"><venda_tpcomment><!-- Save the current language against the user --></venda_tpcomment>
 <input type="hidden" name="log" value="2"><venda_tpcomment><!-- To register a new user --></venda_tpcomment>
+		<venda_block label=4012,workflow=checkoutmobile>
         <venda_tpcomment><!-- For express checkout the user is partially registered 'P', 'R' for full registration - the glxt is set in the login form --></venda_tpcomment>
+	    <input type="hidden" name="ustype" value="P">
+        <input type="hidden" name="glxt" value="<venda_glxt mode=make,glxtusertype=p>">
+        </venda_block label=4012>
+        <venda_block label=4013,workflow=registermobile>
+<venda_tpcomment><!-- For express checkout the user is partially registered 'P', 'R' for full registration - the glxt is set in the login form --></venda_tpcomment>
             <venda_block label=18,mode=value,<venda_glxt mode=get,name=glxtusertype>!=p><input type="hidden" name="ustype" value="R"></venda_block label=18>
             <venda_block label=19,mode=value,<venda_glxt mode=get,name=glxtusertype>=p><input type="hidden" name="ustype" value="P"></venda_block label=19>
-       
+        </venda_block label=4013>
+
+        <div id="userpartial" style="display:none"><venda_glxt mode=make,glxtusertype=p></div>
+        <div id="userregistered" style="display:none"><venda_glxt mode=make,glxtusertype=></div>
+
 	<div class="checkoutmobile-wrapper">
 		<div class="checkoutmobile-content">
 			<div class="checkoutmobile-header">
@@ -41,28 +51,22 @@
 				<label for="lname"><venda_text id=mobile.form.lname></label>
 				<input type="text" name="lname" id="lname" value="<venda_lname>" placeholder="<venda_text id=mobile.form.lname> <venda_text id=mobile.form.required>" required />
 			</div>
-
+			<hr>
+            			<div data-role="fieldcontain" class="ui-hide-label" id="phone_block">
+				<label for="phone"><venda_text id=mobile.form.phone></label>
+                <input id="area" type="text" name="area" value="" placeholder="Area (required)" required/>
+				<input type="tel" name="phone" id="phone" value="<venda_phone>" placeholder="<venda_text id=mobile.form.phone> <venda_text id=mobile.form.required>" required />
+			</div>
+			<hr>
+			<div data-role="fieldcontain" class="ui-hide-label">
+				<label for="usemail"><venda_text id=mobile.form.email></label>
+				<input type="email" name="usemail" id="usemail" value="<venda_usemail>" placeholder="<venda_text id=mobile.form.email> <venda_text id=mobile.form.required>" required />
+			</div>
 			<hr>
 
 			<div data-role="fieldcontain" class="ui-hide-label">
 				<label for="cntrylist"><venda_text id=mobile.form.country></label>
 				<venda_cntry field=combo,id=cntrylist,ship=1>
-			</div>
-            
-             <div data-role="fieldcontain" id="zipcDiv" class="ui-hide-label">
-				<label for="zipc" id="zipcLabel"><venda_text id=mobile.form.zipc></label>
-				<input type="text" name="zipc" id="zipc" value="<venda_zipc>" placeholder="<venda_text id=mobile.form.zipc>" />
-			</div>
-            
-            <div data-role="fieldcontain" class="addresslookup">
-				<div class="ui-grid-a">
-					<div class="block-a" id="postcode_lookup">
-						<input type="button" id="lookupBtn" data-theme="b" data-inline="true" value="<venda_text id=mobile.button.lookup>"/><span class="loading" style="display:none"></span>
-					</div>
-					<div class="block-b">
-						<a href="#" id="enterManually"><venda_text id=mobile.button.enter_address_manually></a>
-					</div>
-				</div>
 			</div>
 
 			<div class="addresslookup" id="addresslookup">
@@ -103,38 +107,22 @@
 					<select name="state" id="statelist" required /></select>
 				</div>            
 			</div>
-            <hr>
-			<div data-role="fieldcontain" class="ui-hide-label" id="phone_block">
-				<label for="phone"><venda_text id=mobile.form.phone></label>
-                <input id="area" type="tel" name="area" value="<venda_area>" placeholder="Area (required)" required/>
-				<input type="tel" name="phone" id="phone" value="<venda_phone>" placeholder="<venda_text id=mobile.form.phone> <venda_text id=mobile.form.required>" required />
-			</div>
-			<hr>
-
-			<div data-role="fieldcontain" class="ui-hide-label">
-				<label for="usemail"><venda_text id=mobile.form.email></label>
-				<input type="email" name="usemail" id="usemail" value="<venda_usemail>" placeholder="<venda_text id=mobile.form.email> <venda_text id=mobile.form.required>" required />
-			</div>
-            <hr>
-            <div data-role="fieldcontain">
-                <input type="checkbox" name="blkemail" id="blkemail" value="1" data-theme="f"<venda_block label=124,blkemail=1> checked="checked"</venda_block label=124>> <label for="blkemail"><venda_text id=mobile.form.receive_email_updates></label>
-                <input type="checkbox" name="blktrdcomm" id="blktrdcomm" value="1" data-theme="f"<venda_block label=124,blkemail=1> checked="checked"</venda_block label=124>> <label for="blktrdcomm"><venda_text id=mobile.form.receive_third_comms></label>
-            </div>
-            <hr>
-            <venda_tpcomment><!-- Start: Choose Password - If full registration type 'R' --></venda_tpcomment>
-            <venda_block label=16,mode=value,<venda_glxt mode=get,name=glxtusertype>!=p>
-            <!--h2>Password</h2-->
-                <div data-role="fieldcontain" class="ui-hide-label">
-                    <label for="uspswd"><venda_text id=mobile.form.password></label>
-                    <input type="password" name="uspswd" id="uspswd" value="<venda_uspswd>" placeholder="<venda_text id=mobile.form.password> <venda_text id=mobile.form.required>" maxlength="25" required />
-                </div>
-                <div data-role="fieldcontain" class="ui-hide-label">
-                    <label for="uspswd2"><venda_text id=mobile.form.verify_password></label>
-                    <input type="password" name="uspswd2" id="uspswd2" value="<venda_uspswd2>" placeholder="<venda_text id=mobile.form.verify_password> <venda_text id=mobile.form.required>" maxlength="25" required />
-                </div>
-                </venda_block label=16>
-            <venda_tpcomment><!-- End: Choose Password --></venda_tpcomment>
             
+            <div data-role="fieldcontain" id="zipcDiv" class="ui-hide-label">
+				<label for="zipc" id="zipcLabel"><venda_text id=mobile.form.zipc></label>
+				<input type="text" name="zipc" id="zipc" value="<venda_zipc>" placeholder="<venda_text id=mobile.form.zipc>" />
+			</div>
+            
+            <div data-role="fieldcontain" class="addresslookup">
+				<div class="ui-grid-a">
+					<div id="postcode_lookup">
+						<input type="button" id="lookupBtn" data-theme="b" data-inline="true" value="<venda_text id=mobile.button.lookup>"/><span class="loading" style="display:none"></span>
+					</div>
+					<div class="block-b">
+						<a href="#" id="enterManually"><venda_text id=mobile.button.enter_address_manually></a>
+					</div>
+				</div>
+			</div>
             
             <venda_tpcomment><!-- Different Delivery Address - Step selection for checkout workflow --></venda_tpcomment>
 			<venda_block label=10,workflow!=registermobile>
@@ -150,11 +138,47 @@
 				</fieldset>
 			</div>
 			</venda_block label=10>
+			<hr>
+			<venda_tpcomment><!-- Start: Choose Password - If full registration type 'R' --></venda_tpcomment>
+            <venda_block label=162,workflow=checkoutmobile>
+			<venda_block label=16,mode=value,<venda_glxt mode=get,name=glxtusertype>!=p>
+			<!--h2>Password</h2-->
+				<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="uspswd"><venda_text id=mobile.form.password></label>
+					<input type="password" name="uspswd" id="uspswd" value="<venda_uspswd>" placeholder="<venda_text id=mobile.form.password> <venda_text id=mobile.form.optional>" maxlength="25" required />
+				</div>
+				<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="uspswd2"><venda_text id=mobile.form.verify_password></label>
+					<input type="password" name="uspswd2" id="uspswd2" value="<venda_uspswd2>" placeholder="<venda_text id=mobile.form.verify_password> <venda_text id=mobile.form.optional>" maxlength="25" required />
+				</div>
+				</venda_block label=16>
+                </venda_block label=162>
+			<venda_tpcomment><!-- End: Choose Password --></venda_tpcomment>
             
-            <venda_block label=11,workflow=registermobile>
-            <venda_tpcomment><!-- Step selection for login workflow - Take user to myaccount is registering but not purchasing --></venda_tpcomment>
-                <input type="hidden" name="step" id="step" value="--page-myaccountmobile" />
-            </venda_block label=11>
+            <venda_tpcomment><!-- Start: Choose Password - If in register workflow --></venda_tpcomment>
+			<venda_block label=163,workflow=registermobile>
+			<!--h2>Password</h2-->
+				<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="uspswd"><venda_text id=mobile.form.password></label>
+					<input type="password" name="uspswd" id="uspswd" value="<venda_uspswd>" placeholder="<venda_text id=mobile.form.password> <venda_text id=mobile.form.required>" maxlength="25" required />
+				</div>
+				<div data-role="fieldcontain" class="ui-hide-label">
+					<label for="uspswd2"><venda_text id=mobile.form.verify_password></label>
+					<input type="password" name="uspswd2" id="uspswd2" value="<venda_uspswd2>" placeholder="<venda_text id=mobile.form.verify_password> <venda_text id=mobile.form.required>" maxlength="25" required />
+				</div>
+				</venda_block label=163>
+			<venda_tpcomment><!-- End: Choose Password --></venda_tpcomment>
+
+			<venda_block label=11,workflow=registermobile>
+			<venda_tpcomment><!-- Step selection for login workflow - Take user to myaccount is registering but not purchasing --></venda_tpcomment>
+				<input type="hidden" name="step" id="step" value="--page-myaccountmobile" />
+			</venda_block label=11>
+            <hr>
+            <div data-role="fieldcontain">
+				<input type="checkbox" name="blkemail" id="blkemail" value="1" data-theme="f"<venda_block label=124,blkemail=1> checked="checked"</venda_block label=124>> <label for="blkemail"><venda_text id=mobile.form.receive_email_updates></label>
+                <input type="checkbox" name="blktrdcomm" id="blktrdcomm" value="1" data-theme="f"<venda_block label=124,blkemail=1> checked="checked"</venda_block label=124>> <label for="blktrdcomm"><venda_text id=mobile.form.receive_email_updates></label>
+			</div>
+			<hr>
             
 		</div><!--end checkoutmobile-content -->
 	</div><!--end checkoutmobile-wrapper -->
