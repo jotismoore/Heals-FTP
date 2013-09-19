@@ -174,44 +174,31 @@ oShipArray[nAddr] = new Array();
 							<venda_block label=151,med-small=null><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_<venda_setting type=ebiz,name=setordersummaryimagekey>.gif" alt="<venda_text id=mobile.info.no_product_image>"></venda_block label=151>
 						</venda_block label=50>
 						<venda_tpcomment><!-- <!-- normal product image --></venda_tpcomment>
-						<venda_block label=51,oiitype!=3,oiitype!=5,operator=and>
-							<venda_block label=21,med-small=notnull>
-								<venda_block label=22,mode=value,<venda_media rec=invt,type=movie-swf-pict,key=small,img=no,medatr=yes>=notnull>
-									<venda_tpcomment><!--if 'set' prefix with att association value--></venda_tpcomment>
-									<venda_media rec=invt,type=movie-swf-pict,key=setxsmall,medatr=yes>
-								</venda_block label=22>
-								<venda_block label=23,mode=value,<venda_media rec=invt,type=movie-swf-pict,key=setxsmall,img=no,medatr=yes>=null>
-									<venda_block label=231,med-small=notnull>
-										<venda_tpcomment><!--use key=xsmall--></venda_tpcomment>
-										<venda_media rec=invt,type=movie-swf-pict,key=small>
-									</venda_block label=231>
-									<venda_block label=232,med-small=null>
-										<venda_tpcomment><!--use noimage graphic if 'xsmall' is null--></venda_tpcomment>
-										<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=mobile.info.no_product_image>">
-									</venda_block label=232>
-								</venda_block label=23>
-							</venda_block label=21>
-							<venda_block label=24,med-small=null>
-								<venda_tpcomment><!--if not 'set' prefix - no alt. images functionality--></venda_tpcomment>
-								<venda_block label=25,med-small=notnull>
-									<venda_tpcomment><!--use key=xsmall--></venda_tpcomment>
-									<venda_media rec=invt,type=movie-swf-pict,key=small>
-								 </venda_block label=25>
-								 <venda_block label=26,med-xsmall=null>
-									<venda_tpcomment><!--use noimage graphic if 'small' is null--></venda_tpcomment>
-									<img src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/images/no_image_small.gif" alt="<venda_text id=mobile.info.no_product_image>">
-								</venda_block label=26>
-							</venda_block label=24>
-						</venda_block label=51>
+				<venda_block label=150,med-small=notnull><img src="<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_oiivref>_s.jpg" border="0" width="120px" height="120px" onError="noImage<venda_oiivref>(this);" /></venda_block label=150>
+				<script type="text/javascript">function noImage<venda_oiivref>(changeImage){
+changeImage.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>/<venda_invtparef>_m.jpg';}
+				</script>
 					</div>
 
 					<div class="ui-block-b">
 					<div class="prodInfo">
 						<p class="prodName"><venda_oiivname><venda_block label=111,invtatt1=notnull> (<venda_invtatt1><venda_block label=112,invtatt2=notnull>, <venda_invtatt2></venda_block label=112><venda_block label=113,invtatt3=notnull>, <venda_invtatt3></venda_block label=113><venda_block label=114,invtatt4=notnull>, <venda_invtatt4></venda_block label=114>)</venda_block label=111><venda_block label=151,oiitype!=3></venda_block label=151></p>
-						<venda_block label=151,oiitype!=3>
+						<!-- venda_block label=151,oiitype!=3>
 							<p class="sku"><venda_text id=mobile.info.sku>: <venda_invtref></p>
-						</venda_block label=151>
-
+						</venda_block label=151 -->
+                    <!-- start: added availability logic here --->
+             				<div class="product_availability">
+            				<p><b>Availability</b></p>
+            				<venda_block label=50,oiitype=3>In Stock</venda_block label=50>
+							<venda_block label=51,oiitype!=3>
+							<div id="invt<venda_oiivref>"></div>
+							<venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
+							<!-- Include Availability nonattribute from invt -->
+							<script type="text/javascript">
+							$("#invt<venda_oiivref>").load("/bin/venda?ex=co_wizr-productgrid&bsref=<venda_bsref>&step=shopcartmulti&invt=<venda_oiivref>&ordercol=alphanu&layout=contentonly p#invt<venda_oiivref>");
+							</script>
+							</venda_block label=51>
+            				</div>
 						<p class="price"><venda_ohcursym><venda_oiextsub></strong></p>
 						<p class="qty"><venda_text id=mobile.info.qty>: <venda_oiqty></p>
 
