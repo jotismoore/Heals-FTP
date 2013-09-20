@@ -38,6 +38,8 @@
 				<label for="sortby" style="margin-bottom:4%;"><venda_text id=mobile.info.sortby></label>
 				<select name="sortby" id="sortby" onchange="window.location = document.sortformTop.sortby.options[document.sortformTop.sortby.selectedIndex].value;">
 					<venda_tpcomment><!-- Known issue: venda_searchurl is not translating as required for 'Most Relevant' option. New tag needed like venda_baseurl without params &sort &order --></venda_tpcomment>
+                    <option value="<venda_searchurl sort=release:name,order=desc:asc,setpagenum=1>">Most Recent First<!-- venda_text id=site.search_results.option.mobile.release_desc --></option>
+					<option value="<venda_searchurl sort=release:name,order=asc:asc,setpagenum=1>">Most Recent Last<!-- venda_text id=site.search_results.option.mobile.release_asc --></option>
 					<venda_block label=12,mode=value,<venda_setting type=ebiz,name=sortrelevantfirst>=1><option value="<venda_searchurl sort=,setpagenum=1>"><venda_text id=mobile.form.most_relevant></option></venda_block label=12>
 					<venda_detail_sortedby options=price~desc:asc;name~asc:desc>
 				</select>

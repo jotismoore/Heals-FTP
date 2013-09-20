@@ -50,12 +50,11 @@ var availDoubleCheck = "";
 			<label for="sortby"><venda_text id=site.search_results.label.sort_by></label>
 			<select name="sortby" id="sortby">
 				<venda_tpcomment><!-- Known issue: venda_searchurl is not translating as required for 'Most Relevant' option. New tag needed like venda_baseurl without params &sort &order --></venda_tpcomment>	
+                <option value="<venda_searchurl sort=release:name,order=desc:asc,setpagenum=1>"><venda_text id=site.search_results.option.release_date_recent_first></option>
+				<option value="<venda_searchurl sort=release:name,order=asc:asc,setpagenum=1>"><venda_text id=site.search_results.option.release_date_recent_last></option>
 				<venda_block label=12,mode=value,<venda_setting type=ebiz,name=sortrelevantfirst>=1><option value="<venda_searchurl sort=,setpagenum=1>">Bestsellers</option></venda_block label=12>
 				<venda_detail_sortedby options=price~desc:asc;name~asc:desc>
-				<option value="<venda_searchurl sort=release:name,order=desc:asc,setpagenum=1>"><venda_text id=site.search_results.option.release_date_recent_first></option>
-				<option value="<venda_searchurl sort=release:name,order=asc:asc,setpagenum=1>"><venda_text id=site.search_results.option.release_date_recent_last></option>
 			</select>
-
 			</form>
 		</div>
 	</div>
