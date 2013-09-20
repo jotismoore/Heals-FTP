@@ -355,13 +355,13 @@ div.validateError {
 	}
 	.prods li .ui-icon-arrow-r {background: url("../../images/mobile/sprite_icon.png")  no-repeat scroll -247px 0 transparent;background-size: 739px 45px;height: 23px;width: 23px;margin-top: 7px;box-shadow: none;border: none;display: none;}
 	#prod_image {float:left;clear:left;margin-right: 10px;width: 130px; margin-bottom:15px;}
-	.onlineonly_mobile2{clear: both;background: #747679;display: block;margin-right: 10px;width: 100%;text-align: center;z-index:100;position: absolute;margin-top: 20px;bottom: -8px;;}
-.onlineonly_mobile {clear: both;background: #efe9e5;display: block;margin-right: 10px;width: 100%;text-align: center;position: absolute;margin-top: 20px;bottom: -8px;;}
+	.onlineonly_mobile2{clear: both;background: #747679;display: block;width: 100%;text-align: center;z-index:100;}
+.onlineonly_mobile {clear: both;background: #efe9e5;display: block;width: 100%;text-align: center;}
 .discount50_mobile{position:absolute; z-index:4;top: 0;text-align: center;background: #c00;}
 .heals_express_mobile {position:absolute; z-index:3;top: 0;text-align: center;background: #efe9e5;}
 .special_purchase_mobile {position:absolute; z-index:2;top: 0;text-align: center;background: #efe9e5;}
 .newproduct_mobile {position:absolute; z-index:1;top: 0;text-align: center;background: #747679;}
-.product_info_ears_mobile {height:14px; float:right; width: 50%;}
+.product_info_ears_mobile {height:14px; float:left; width: 50%;}
 
 .instructions {
 	padding: 1em 3% 0;
@@ -1026,7 +1026,9 @@ float: right;
 		width: auto;
 		border-radius: 0;
 	}
-.refine {}
+.refine {
+width: 96%;
+margin: 1% auto;}
 	.refine .searchIcon {
 		background-image:url("../../images/mobile/sprite_icon.png");
 		background-position: -479px 0;
@@ -1163,9 +1165,9 @@ height: 40px;
 }
 .searchResults .prods li {
 border: 1px solid #747679;
-width: 99%;
+width: 96%;
 padding: 2% 0;
-margin: 3% 0;
+margin: 3% auto;
 background: #fff;
 border-radius: 0;
 }
@@ -1195,7 +1197,7 @@ border-radius: 0;
 	font-family:"Times New Roman", Times, serif;
 	font-style:italic;
 	width: 96%;
-margin-left: 3%;
+margin: 1% auto;
 }
 .productdetail .addedmessage .ui-link {color: #fff;
 font-size: 1.2em;
@@ -1234,10 +1236,7 @@ opacity:0.6;
 .productdetail .addedmessage .ui-block-a {
 	color: #747679;
 	width:100%;
-	font-style:normal;
 	font-size: 1.2em;
-font-weight: normal;
-text-transform: uppercase;
 }
 .prodImages {
 	text-align: center;
@@ -1917,7 +1916,7 @@ text-transform: uppercase;
 	background: #fff;
 	color: #747679;
 	width: 96%;
-margin-left: 2%;
+margin: 2% auto;
 }
 .shopcart .itemlist {
 	overflow: hidden;
@@ -2020,7 +2019,7 @@ border-radius: 0.8em;
 font-family:"Times New Roman", Times, serif;
 }
 
-.product_availability {margin:1% 0; font-weight:normal;}
+.product_availability {margin:10% 0; font-weight:normal;}
 .product_availability p {font-family:Arial, Helvetica, sans-serif;}
 p.price.ui-li-desc, p.qty.ui-li-desc {font-family:Arial, Helvetica, sans-serif;}
 
@@ -2243,6 +2242,8 @@ border-bottom: 1px solid #747679;
 	border-radius:0.8em;
 	text-transform:uppercase;
 }
+
+.myaccountmobile .submitButton {text-transform:none;}
 
 .myaccountmobile .submitButton .ui-btn, .emailSignup .submitButton, #signuplink_button {
 	font-style:italic;
@@ -2753,9 +2754,6 @@ margin-right: 5%;
 .orderTotals {
 	font-size: 92%;
 	margin-bottom: 1em;
-	border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family:"Times New Roman", Times, serif;
@@ -2810,12 +2808,6 @@ margin-bottom: 3%;}
 	font-weight: bold;
 	overflow: hidden;
 	font-family:"Times New Roman", Times, serif;
-	-moz-border-radius-bottomleft: 0.6em;
-	-webkit-border-bottom-left-radius: 0.6em;
-	border-bottom-left-radius: 0.6em;
-	-moz-border-radius-bottomright: 0.6em;
-	-webkit-border-bottom-right-radius: 0.6em;
-	border-bottom-right-radius: 0.6em;
 }
 .orderTotalSum .labeltext {
 	text-transform: uppercase;
@@ -2919,6 +2911,10 @@ border-radius: 0.8em;
 	-moz-border-radius: 0;
 	-webkit-border-radius: 0;
 	border-bottom: 1px solid #747679;
+	float: left;
+height: auto;
+width: 100%;
+padding-bottom: 3%;
 }
 .paymentdetailSection .hdr-payment {
 	padding: 0.85em;
@@ -3123,9 +3119,9 @@ input#searchsubmit {font-size:1.2em;}
 .searchResults .prods li h3.ui-li-heading {
 	margin-top: 0;color: #747679;font-weight: normal;margin-top: 23px;height: 70px;}
 .searchResults:hover .prods li:hover {border: 1px solid #747679;
-width: 99%;
+width: 96%;
 padding: 2% 0;
-margin: 3% 0;}
+margin: 3% auto;}
 .searchResults .prods .priceField {
 	font-size: 13px;
 	padding-left: 0;
