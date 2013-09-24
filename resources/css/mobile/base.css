@@ -1435,16 +1435,12 @@ padding: 3% 0;
 	width: 100%;
 }
 .productdetail .socialButtons {
-	float: left;
-	height: 28px;
-	line-height: 28px;
-	padding: 4px 0;
-	text-transform: uppercase;
-	width: 51%;
 	font-size: 0.9em;
 	width: 100%;
 }
-}
+
+.email-link, .print-link, .twitter-link, .facebook-link, .pinterest-link, .google-plus-link {float:left; margin:1%;}
+
 .socialButtons {width:99%;}
 .productdetail .socialButtons span {
 	padding: 0 0 0 3px;
@@ -1482,8 +1478,11 @@ padding: 3% 0;
 	height: 27px;
 	width: 30px;
 }
-.productdetail .addproductbox,
-.productdetail .emwbisLink {
+
+.productdetail .emwbisLink
+{width:96%; float:left; margin:2%;font-size: 1.2em;font-family: times;text-transform: uppercase;font-weight: normal;border-radius: 0.8em}
+
+.productdetail .addproductbox {
 	float: right;
 	font-size: 1.2em;
 	margin: 0 0 6%;
@@ -2348,6 +2347,9 @@ moz-border-radius: .8em;border-radius: .8em; font-family:"Times New Roman", Time
 .guestCheckout .ui-btn {
 	font-size: 1.1em;
 }
+
+ui-btn.ui-btn-up-a.ui-shadow.ui-btn-corner-all.ui-mini.ui-submit {border-radius:0.8em;}
+
 .loginForm .cancelButtonDiv .ui-btn-up-a {border:none;	
 	box-shadow: none;
 	font-weight: bold;
