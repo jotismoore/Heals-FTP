@@ -121,7 +121,7 @@ ul#topnav li div.lighting span{height:425px;left:0;top: 28px;padding-right: 1px;
 #subcat_col_three_light {width:150px;height:310px;float:right;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;} 
 #subcat_col_two_light {width:144px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_four_light {width:147px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_five_light {width:300px;height:310px;float:right;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;} 
+#subcat_col_five_light {width:300px;height:310px;float:right;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;margin-right: 10px;} 
 #subcat_col_six_light {width:147px;height:310px;float:right;background:#fff;padding-right:8px;color:#747679;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Lighting END */
 

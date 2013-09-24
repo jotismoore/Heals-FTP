@@ -81,7 +81,8 @@ input.ui-input-text, textarea.ui-input-text {
 
 /* dropdown */
 .ui-select .ui-btn-text {
-	overflow: visible;
+	overflow: hidden;
+    width: 100%;
 }
 span.ui-icon_ui-icon-arrow-d_ui-icon-shadow {top:0; border:none;}
 .ui-select .ui-btn-corner-all {
