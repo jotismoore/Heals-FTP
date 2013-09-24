@@ -1226,6 +1226,8 @@ font-weight: normal;
 
 .productdetail .addedmessage .ui-block-c {
 	background:#f47920;
+	font-style: normal;
+	text-transform: uppercase;
 }
 
 .productdetail .addedmessage .ui-block-b:hover,
@@ -1479,6 +1481,29 @@ padding: 3% 0;
 	height: 27px;
 	width: 30px;
 }
+
+.productdetail .socialIcons .socnetflickr {background: url("../../images/mobile/sprite_icon_social.png") no-repeat -140px 0 transparent;
+	float: left;
+	height: 27px;
+	width: 30px;}
+	
+.socnetflickr a, .socnetgoogleplus a, .socnetpinterest a, .socnetinstagram a {
+	float: left;
+	height: 27px;
+	width: 30px;}
+	
+.productdetail .socialIcons .socnetgoogleplus {background: url("../../images/mobile/sprite_icon_social.png") no-repeat -180px 0 transparent;
+	float: left;
+	height: 27px;
+	width: 30px;}
+.productdetail .socialIcons .socnetpinterest {background: url("../../images/mobile/sprite_icon_social.png") no-repeat -220px 0 transparent;
+	float: left;
+	height: 27px;
+	width: 30px;}
+.productdetail .socialIcons .socnetinstagram {background: url("../../images/mobile/sprite_icon_social.png") no-repeat -260px 0 transparent;
+	float: left;
+	height: 27px;
+	width: 30px;}
 
 .productdetail .emwbisLink
 {width:96%; float:left; margin:2%;font-size: 1.2em;font-family: times;text-transform: uppercase;font-weight: normal;border-radius: 0.8em}
