@@ -65,7 +65,8 @@ h5.active {background-position: left bottom;}
 .slider_tab a.active{background: #ffffff;color:#747679;border:1px solid #747679;font-family: times new roman;font-style: italic;font-weight: bold;}
 .slider_body {width:724px;height:237px;background-color:#ffffff;float:left;position: relative;}
 .slider_product {width:171px;height:auto;background-color:#ffffff;position:relative;z-index:500;margin:8px 0 0 8px;float:left;border:1px solid #747679;padding: 0 1%;}
-.title_slider {float: left;vertical-align: text-top;padding:0;margin:0;height:30px;width:167px;overflow:hidden;border-top: 1px solid #747679;padding-top: 5px;}
+.slider_product_sale {width:169px; height:240px;background-color:#ffffff;position:relative;z-index:500;margin:5px 2px;float:left;border:1px solid #747679;padding:0 3px;}
+.title_slider {float: left;vertical-align: text-top;padding:0;margin:0;height:30px;width:167px;overflow:hidden;border-top: 1px solid #747679;padding-top: 3px;}
 h2 {text-transform: uppercase;text-align: left;padding: 0px 4px 0px 4px;font-size:10px;color:#747679;margin:0;}
 .slider_carousel {position: absolute;top: 0;left: 0;}
 .window {height:250px;width:724px;overflow: hidden;position: relative;}
