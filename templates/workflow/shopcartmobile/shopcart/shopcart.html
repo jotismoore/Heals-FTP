@@ -97,8 +97,8 @@ changeImage.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>
 					<venda_tpcomment><!-- INFO --></venda_tpcomment>
 					<p class="productname"><venda_invtname> (<venda_invtatt1><venda_block label=7,invtatt2=notnull>, <venda_invtatt2></venda_block label=7><venda_block label=8,invtatt3=notnull>, <venda_invtatt3></venda_block label=8><venda_block label=9,invtatt4=notnull>, <venda_invtatt4></venda_block label=9>)<venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1></p>
                     
-                    <!-- start: added availability logic here --->
-             <div class="product_availability">
+            <!-- start: added availability logic here --->
+            <div class="product_availability">
             <p><b>Availability</b></p>
             <venda_block label=50,oiitype=3>In Stock</venda_block label=50>
 			<venda_block label=51,oiitype!=3>
@@ -171,6 +171,21 @@ changeImage.src = '<venda_entmediaadd>/ebiz/<venda_bsref>/invt/<venda_invtparef>
 				<div class="info">
 					<venda_tpcomment><!-- INFO --></venda_tpcomment>
 					<p class="productname"><venda_invtname> <venda_extflds exfldtype=orderitem,group=1,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1><venda_extflds exfldtype=orderitem,group=2,template=oixtDisplay,type=exfields/orderItem,ref=<venda_invtref>,displayonly=1></p>
+					
+					            <!-- start: added availability logic here --->
+            <div class="product_availability">
+            <p><b>Availability</b></p>
+            <venda_block label=50,oiitype=3>In Stock</venda_block label=50>
+		<venda_block label=51,oiitype!=3>
+		<div id="invt<venda_oiivref>"></div>
+		<venda_block label=1222,invtparef=null><venda_inventory ref=<venda_invtref>,temp=availability></venda_block label=1222>
+		<!-- Include Availability nonattribute from invt -->
+		<script type="text/javascript">
+		$("#invt<venda_oiivref>").load("/bin/venda?ex=co_wizr-productgrid&bsref=<venda_bsref>&step=shopcartmulti&invt=<venda_oiivref>&ordercol=alphanu&layout=contentonly p#invt<venda_oiivref>");
+		</script>
+		</venda_block label=51>
+            </div>
+					
 					<p class="priceeach"><venda_currsym><venda_oiextprice></p>
 
 					<venda_tpcomment><!-- +/- version
