@@ -2044,7 +2044,7 @@ border-radius: 0.8em;
 font-family:"Times New Roman", Times, serif;
 }
 
-.product_availability {margin:10% 0; font-weight:normal;}
+.product_availability {margin:10% 0 0; font-weight:normal;}
 .product_availability p {font-family:Arial, Helvetica, sans-serif;}
 p.price.ui-li-desc, p.qty.ui-li-desc {font-family:Arial, Helvetica, sans-serif;}
 
