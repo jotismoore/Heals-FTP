@@ -246,3 +246,13 @@
 <div id="user_details_label_non_us_postcode" style="display: none;"><venda_text id=desktop.form.zipc></div>
 <div id="user_details_label_non_us_uk_region" style="display: none;"><venda_text id=desktop.form.region></div>
 <div id="please_select_multi_dot" style="display: none;"><venda_text id=desktop.form.please_select_multi_dot></div>
+
+<venda_block label=401,workflow=checkout>
+<venda_tpcomment><!-- validation for checkout workflow --></venda_tpcomment>
+<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Validate/jquery.validate.rules.checkout.js"></script>
+</venda_block label=401>
+
+<venda_block label=402,workflow=register2>
+<venda_tpcomment><!-- validation for register workflow --></venda_tpcomment>
+<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Validate/jquery.validate.rules.register2.js"></script>
+</venda_block label=402>
