@@ -2070,6 +2070,8 @@ a.cloud-zoom {padding:70px 0 0 92px;}
 -webkit-box-shadow: 5px 5px 20px 0px #999;filter:progid:DXImageTransform.Microsoft.Shadow(color='#999999', Direction=180, Strength=5);border:1px solid #cccccc;}
 .pdxtVideoPlayer img {float:right;padding:10px 10px 0 0;}
 .pdxtVideoPlayer a {cursor:pointer;}
+.pdxtRecContainer {width: 100%;margin: 5% 0 0;border-top: 1px solid #747679;padding: 3% 0;}
+.pdxtRecContainer_text {float:right;width: 80%;}
 
 /***************************************/
 /* Venda Attribute css */
