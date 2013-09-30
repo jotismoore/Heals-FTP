@@ -91,12 +91,12 @@ clear: both; margin:0 0 10px; text-align:center !important; border-top:1px solid
 ul#topnav li div.furniture a {display:block; padding:6px 13px 6px 9px; color: #747679;}
 ul#topnav li div.furniture a:hover {display: block; background:#FFF;}
 ul#topnav li div.furniture span{height:370px;left:0;top: 28px;padding-right: 1px;}
-#subcat_col_one_furn {width:154px;height:310px;float:right;border-right:0px solid #747679;margin-top: 8px;
+#subcat_col_one_furn {width:144px;height:310px;float:right;border-right:0px solid #747679;margin-top: 8px;
 border-left: 5px solid #ffffff;}
 #subcat_col_one_furn div {}
 #subcat_col_three_furn {width:156px;height:310px;float:right;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_five_furn {width:136px;height:310px;float:right;border-right:0px solid #747679; border-left: 5px solid #ffffff;;margin-top: 8px;}
-#subcat_col_two_furn {width:150px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_furn {width:156px;height:310px;float:right;border-right:0px solid #747679; border-left: 5px solid #ffffff;;margin-top: 8px;}
+#subcat_col_two_furn {width:140px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_four_furn {width:146px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_six_furn {width:147px;height:310px;float:right;background:#fff;padding-right:8px;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Furniture END */
@@ -178,10 +178,10 @@ ul#topnav li div.bedroom a:hover {display: block; background:#FFF;}
 ul#topnav li div.bedroom a:hover {display: block; background:#FFF;}
 ul#topnav li div.bedroom span{height:370px;left:0;top: 28px;padding-right: 1px;}
 #subcat_col_one_bed {width:156px;height:310px;float:right;border-right:0px solid #747679;margin-top: 8px;border-left: 5px solid #ffffff;}
-#subcat_col_three_bed{width:156px;height:310px;float:right;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_five_bed {width:142px;height:310px;float:right;border-right:0px solid #747679; border-left: 5px solid #ffffff;;margin-top: 8px;}
+#subcat_col_three_bed{width:146px;height:310px;float:right;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_bed {width:157px;height:310px;float:right;border-right:0px solid #747679; border-left: 5px solid #ffffff;;margin-top: 8px;}
 #subcat_col_two_bed {width:148px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_four_bed {width:140px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_bed {width:135px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_six_bed {width:147px;height:310px;float:right;background:#fff; padding-right:8px;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Bedroom END */
 
