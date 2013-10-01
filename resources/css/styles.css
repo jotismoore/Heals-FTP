@@ -331,7 +331,7 @@ float: right; font-weight: bold;}
 .orscSummary.grid_12.push_1.omega table td {float:right;}
 
 /* Public Style */
-.red{color: #CC0000 !important;}
+.red{color: #b64710 !important;}
 #catlandingcover {background-color: #FFFFFF;}
 /*************/
 /* HOME PAGE */
@@ -851,7 +851,7 @@ font-size:11px;
 
 #searchResults .prods ul li .priceattr .fromsaleprice,
 #productlist ul.products li .priceattr .fromsaleprice,
-#availprodrecs .prods ul li .priceattr .fromsaleprice {display:block;height:15px;text-transform:uppercase;color:#c00;font-size:0.9em;margin:0;padding:20px 0 0 0;float:right;}
+#availprodrecs .prods ul li .priceattr .fromsaleprice {display:block;height:15px;text-transform:uppercase;color:#b64710;font-size:0.9em;margin:0;padding:20px 0 0 0;float:right;}
 #searchResults .prods ul li .priceattr .fromsaleprice span,
 #productlist ul.products li .priceattr .fromsaleprice span,
 #availprodrecs .prods ul li .priceattr .fromsaleprice span {font-weight: bold;font-size:1.09em;margin:0;padding:0;}
