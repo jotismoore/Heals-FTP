@@ -78,11 +78,11 @@ h2 {text-transform: uppercase;text-align: left;padding: 0px 4px 0px 4px;font-siz
 .normalprice {display: block;padding: 5px 5px 0 0;font-weight: bold;font-size: 12px;margin: 0;float: right;}
 .fromprice {display: block;padding: 5px 5px 0 4px;font-weight: normal;font-size: 11px;margin: 0;float: right;text-transform:uppercase;}
 .fromprice span {font-weight: bold;font-size: 12px;margin: 0;padding: 0;}
-.fromsaleprice {display: block;text-transform: uppercase;color: #C00;font-size: 11px;margin: 0;padding: 5px 5px 0 0;float: right;}
+.fromsaleprice {display: block;text-transform: uppercase;color: #b64710;font-size: 11px;margin: 0;padding: 5px 5px 0 0;float: right;}
 .fromsaleprice span {font-weight: bold;font-size: 12px;margin: 0;padding: 0;}
 .wasprice {color: #747679;display: block;text-decoration: none;margin: 0;padding: 5px 0 0 4px;font-size:11px;height:0;float:left;}
 .wasprice span {text-decoration:line-through;font-weight: bold;font-size:12px;}
-.nowprice {display: block;font-weight: normal;margin:0;padding: 5px 4px 0 0;float: right;color: #C00 !important;font-size:11px}
+.nowprice {display: block;font-weight: normal;margin:0;padding: 5px 4px 0 0;float: right;color: #b64710 !important;font-size:11px}
 .nowprice span {font-weight: bold;font-size:12px;}
 .shopbybrand_area .block_sbb{margin:0 5px 0 5px;padding:0;}
 .shopbybrand_area .block_sbb:hover {cursor:pointer;}
