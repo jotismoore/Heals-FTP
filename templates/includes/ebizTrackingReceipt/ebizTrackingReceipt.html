@@ -1,5 +1,7 @@
 <venda_inctemplate name=deliverytext,type=includes>
 <!-- TagMan Container -->
-<venda_block label=tagmanorderconf,mode=value,<venda_tpxt mode=get,name=track>=orderreceipt><venda_inctemplate name=tagManOrderConf,type=includes/tracking/tagMan></venda_block label=tagmanorderconf>
+<venda_block label=tagmanorderconf,mode=value,<venda_tpxt mode=get,name=track>=orderreceipt>
+<venda_inctemplate name=orderreceipt,type=includes/tracking/gtm>
+</venda_block label=tagmanorderconf>
 <!-- End TagMan Container -->
 <venda_inctemplate name=availOrderTracking,type=includes/tracking>
