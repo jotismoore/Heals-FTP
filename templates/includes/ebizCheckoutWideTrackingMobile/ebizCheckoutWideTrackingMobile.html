@@ -1,0 +1,30 @@
+<venda_block label=gtmbasket,workflow=shopcartmobile>
+<venda_inctemplate name=basketmobile,type=includes/tracking/gtm>
+</venda_block label=gtmbasket>
+
+<venda_block label=gtmnotbasket,workflow!=shopcartmobile>
+<venda_block label=checkoutmobile,workflow=checkoutmobile>
+
+<venda_block mode=value,<venda_tpxt mode=get,name=curstep>=step1>
+<venda_inctemplate name=step1mobile,type=includes/tracking/gtm>
+</venda_block>
+
+<venda_block mode=value,<venda_tpxt mode=get,name=curstep>=step2>
+<venda_inctemplate name=step2mobile,type=includes/tracking/gtm>
+</venda_block>
+
+<venda_block mode=value,<venda_tpxt mode=get,name=curstep>=step3>
+<venda_inctemplate name=step3mobile,type=includes/tracking/gtm>
+</venda_block>
+
+<venda_block mode=value,<venda_tpxt mode=get,name=curstep>=step4>
+<venda_inctemplate name=step4mobile,type=includes/tracking/gtm>
+</venda_block>
+
+<venda_block mode=value,<venda_tpxt mode=get,name=curstep>=step5>
+<venda_inctemplate name=orderreceiptmobile,type=includes/tracking/gtm>
+</venda_block>
+
+</venda_block label=checkoutmobile>
+</venda_block label=gtmnotbasket>
+
