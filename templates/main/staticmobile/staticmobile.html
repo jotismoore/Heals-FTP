@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="<venda_block label=40,mode=value,<venda_sessionlanguage>=ae>en-US</venda_block label=40><venda_block label=41,mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block label=41>">
+<venda_inctemplate name=SiteWideTrackingMobile,type=includes>
 <head>
 	<venda_inctemplate name=titleMobile,type=mainIncludes>
 	<venda_inctemplate name=metatagsMobile,type=mainIncludes>
@@ -8,6 +9,7 @@
 </head>
 
 <body>
+	<venda_inctemplate name=bodyTopMobile,type=tracking/shared>
 	<venda_inctemplate name=regionLanguageSwitchMobile,type=widgets>
 
 	<div id="mobile" data-role="page" data-theme="a">
@@ -34,6 +36,6 @@
 	<venda_tpcomment><!-- validation defs --></venda_tpcomment>
 	<venda_inctemplate name=validationMobile,type=includes>
 	<venda_inctemplate name=jsMobile,type=mainIncludes>
-	<venda_inctemplate name=bodyBottom,type=tracking/mobile/shared>
+	<venda_inctemplate name=bodyBottomMobile,type=tracking/shared>
 </body>
 </html>
