@@ -1,8 +1,9 @@
+<!--orderReceipt file here-->
 <venda_tpcomment><!-- included at the bottom of the order receipt template (wizr/wz_orfn-screen) --></venda_tpcomment>
 <venda_order ref=<venda_ohrfnbr>,shopcart=0,template=itemJSON>
 
 <!--new script added here-->
-<script>
+<script type="text/javascript">
 var param_list_prod_sku = '<venda_tracking type=product,definition=productref,delimiter=pipe>' // SKU/code - REQ
 var param_list_prod_name = "<venda_tracking type=product,definition=productname,delimiter=pipe>" // product name - OPT
 var param_list_prod_cat = "<venda_curcatref>" // category or variation - OPT
