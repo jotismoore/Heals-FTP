@@ -1,0 +1,85 @@
+<venda_tpcomment><!-- included at the bottom of the order receipt template (wizr/wz_orfn-screen) --></venda_tpcomment>
+<venda_order ref=<venda_ohrfnbr>,shopcart=0,template=itemJSON>
+
+<!--new script added here-->
+<script>
+var param_list_prod_sku = '<venda_tracking type=product,definition=productref,delimiter=pipe>' // SKU/code - REQ
+var param_list_prod_name = "<venda_tracking type=product,definition=productname,delimiter=pipe>" // product name - OPT
+var param_list_prod_cat = "<venda_curcatref>" // category or variation - OPT
+var param_list_prod_price = '<venda_tracking type=product,definition=price,delimiter=pipe>' // unit price - REQ
+var param_list_prod_qty = '<venda_tracking type=product,definition=quantity,delimiter=pipe>' // quantity - REQ
+
+param_list_prod_sku = (typeof param_list_prod_sku!=='undefined'?param_list_prod_sku.split('|'): []); // SKU/code - REQ
+param_list_prod_name = (typeof param_list_prod_name!=='undefined'?param_list_prod_name.split('|'): []); // product name - OPT
+param_list_prod_cat = (typeof param_list_prod_cat!=='undefined'?param_list_prod_cat.split('|'): []); // category or variation - OPT
+param_list_prod_price = (typeof param_list_prod_price!=='undefined'?param_list_prod_price.split('|'): []); // unit price - REQ
+param_list_prod_qty = (typeof param_list_prod_qty!=='undefined'?param_list_prod_qty.split('|'): []); // quantity - REQ
+
+var param_list_array = [];
+
+for (var i = 0; i < param_list_prod_sku.length; i++) {
+	
+	var p_l_a, p_l_b , p_l_c , p_l_d, p_l_e;
+	
+		param_list_prod_sku[i] !==undefined ? p_l_a = param_list_prod_sku[i] : p_l_a = '';       // SKU/code - required
+		param_list_prod_name[i] !==undefined ? p_l_b = param_list_prod_name[i] : p_l_b = '';      // product name - optional
+		param_list_prod_cat[i] !==undefined ? p_l_c = param_list_prod_cat[i] : p_l_c = '';       // category or variation - optional
+		param_list_prod_price[i] !==undefined ? p_l_d = param_list_prod_price[i] : p_l_d = '';     // unit price - required
+		param_list_prod_qty[i] !==undefined ? p_l_e = param_list_prod_qty[i] : p_l_e = '';       // quantity - required   
+				
+		param_list_array.push({
+			'sku' : p_l_a,
+			'name': p_l_b,
+			'category' : p_l_c,
+			'price' : p_l_d,
+		    'quantity' : p_l_e
+		});
+		
+}
+
+</script>
+<script>dataLayer.push({
+'account_type' : "<venda_ustype>",
+'affiliation' : 'null',
+'awin_basket' : 'null',
+'awin_parts' : 'default:<venda_ohtot>',
+'basket_total' : '<venda_order template=productTotalPrice,shopcart=1>',
+'brand' : "<venda_order shopcart=1,template=productBrand>",
+'city' : "<venda_ohcity>",
+'transactionAffiliation' : "Heal's",
+'commission_groups' : 'DEFAULT:<venda_ohtot>',
+'country' : "<venda_ohcntry>",
+'county' : "<venda_ohcntry>",
+'currency' : "GBP",
+'post_code' : '<venda_ohzipc>',
+'cust_name' : "<venda_ohfname> <venda_ohlname>",
+'email' : "<venda_ohemail>",
+'transactionId' : '<venda_ohordnum>',
+'transactionTotal' : '<venda_ohtot>',
+'order_total' : '<venda_ohtot>',
+'payment_method' : '<venda_ohpaytype>',
+'phone_number' : '<venda_ohphone>',
+'product_category' : "<venda_curcatref>",
+'product_code' : '<venda_tracking type=product,definition=productref,delimiter=pipe>',
+'product_desc' : 'notnull not needed',
+'product_line_total' : '<venda_tracking type=product,definition=priceexvat,delimiter=pipe>',
+'product_mfr_code_' : '<venda_tracking type=product,definition=productref,delimiter=pipe>',
+'product_name' : "<venda_tracking type=product,definition=productname,delimiter=pipe>",
+'product_price' : '<venda_tracking type=product,definition=price,delimiter=pipe>',
+'product_sale_price' : '<venda_order shopcart=1,template=productSalePrice>',
+'product_subcat' : "<venda_order shopcart=1,template=productSubCategory>",
+'product_vat_rate' : '[Enter product_vat_rate]',
+'quantity' : '<venda_tracking type=product,definition=quantity,delimiter=pipe>',
+'transactionShipping' : '<venda_ohship>',
+'transactiontTax' : '<venda_ohtaxinc>',
+'total_quantity' : '[Enter total_quantity]',
+'totalorder_shipping' : '<venda_ohship>',
+'totalorder_vat' : '<venda_ohtaxinc>',
+'transaction_id' : '<venda_ohrfnbr>',
+'voucher_code' : "<venda_codesc>",
+'voucher_discount' : '<venda_codisc>',
+'voucher_type' : 'null',
+'transactionProducts' : param_list_array,
+'event' : 'transaction'
+});
+</script>
