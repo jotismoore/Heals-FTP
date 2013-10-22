@@ -1,14 +1,35 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="<venda_block mode=value,<venda_sessionlanguage>=ae>en-US</venda_block><venda_block mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block>">
 <venda_inctemplate name=SiteWideTracking,type=includes>
+
+<script> 
+TMAN.doTags(TMAN.position.PRE_HEAD); 
+</script>
+
 <head>
+
+<script> 
+TMAN.doTags(TMAN.position.TOP_HEAD); 
+</script>
+
 <venda_menu template=title>
 <venda_menu template=metatags>
 <venda_menu template=css>
 <venda_menu template=js>
+
+<script> 
+TMAN.doTags(TMAN.position.BOTTOM_HEAD); 
+</script>
+
 <venda_inctemplate name=jsAmplience,type=mainIncludes>
 </head>
 <body id="mainlayout-static">
+
+<div id="TMAN_TOP_BODY"></div>
+<script> 
+TMAN.doTags(TMAN.position.TOP_BODY); 
+</script>
+
 <venda_inctemplate name=bodyTop,type=tracking/shared>
 <venda_inctemplate name=admin,type=mainIncludes>
 <venda_inctemplate name=nojavascript,type=mainIncludes>
@@ -146,6 +167,12 @@ document.write('<scr' + 'ipt src="' + document.location.protocol + '//fby.s3.ama
 <script type="text/javascript">
 FBY.showTab({id: '1166', position: 'right', color: '#000000'});
 </script>
+
+<div id="TMAN_BOTTOM_BODY"></div>
+<script>
+TMAN.doTags(TMAN.position.BOTTOM_BODY); 
+</script>
+
 <venda_inctemplate name=validation,type=mainIncludes>
 <venda_inctemplate name=tagsForJs,type=mainIncludes>
 <venda_inctemplate name=js,type=mainIncludes>
