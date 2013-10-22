@@ -975,7 +975,7 @@ font-size:11px;
 .search-similar ul li a { text-transform: capitalize;}
 /*.search-similar ul li#similarrange {margin: 0 5px;}*/
 .search-similar ul li#similarbrowse {}
-
+.product-extra {min-height: 0;width: 100%;float: left;clear: both;margin-bottom: 40px;}
 #productdetail_bottom { font-size: 0.9em; background-color: #FFFFFF; padding-top: 0px; margin-bottom: 2px;}
 
 
