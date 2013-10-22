@@ -66,7 +66,7 @@ ul#topnav li a{display: block;color: #747679;text-decoration: none;text-align:le
 ul#topnav li a:hover{display: block;color: #747679;text-decoration: none;}
 ul#topnav li a:visited {display: block;color: #747679;text-decoration: none;}
 .topnav-ad {float:left; padding:1%;}
-ul#topnav li div.furniture span, ul#topnav li div.accessories span, ul#topnav li div.lighting span, ul#topnav li div.gifts span, ul#topnav li div.garden span, ul#topnav li div.bathroom span, ul#topnav li div.bedroom span, ul#topnav li div.dining span, ul#topnav li div.living span, ul#topnav li div.kitchen span, ul#topnav li div.office span, ul#topnav li div.brands span, ul#topnav li div.toiletries span, ul#topnav li div.offers span {float: left;padding: 2px 0;position: absolute;left: 0;top:19px;display: none;width: 100%;background: #fff;line-height:14px;margin:0;z-index:1000; border:0px solid #747679;}
+ul#topnav li div.xmas span, ul#topnav li div.furniture span, ul#topnav li div.accessories span, ul#topnav li div.lighting span, ul#topnav li div.gifts span, ul#topnav li div.garden span, ul#topnav li div.bathroom span, ul#topnav li div.bedroom span, ul#topnav li div.dining span, ul#topnav li div.living span, ul#topnav li div.kitchen span, ul#topnav li div.office span, ul#topnav li div.brands span, ul#topnav li div.toiletries span, ul#topnav li div.offers span {float: left;padding: 2px 0;position: absolute;left: 0;top:19px;display: none;width: 100%;background: #fff;line-height:14px;margin:0;z-index:1000; border:0px solid #747679;}
 
 ul#topnav li:hover span {display: block; line-height:14px;}
 
@@ -125,16 +125,43 @@ ul#topnav li div.lighting span{height:425px;left:0;top: 28px;padding-right: 1px;
 #subcat_col_six_light {width:147px;height:310px;float:right;background:#fff;padding-right:8px;color:#747679;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Lighting END */
 
+/* Kitchen START */
+ul#topnav li div.kitchen a {display:block; padding:6px 13px 6px 9px;}
+ul#topnav li div.kitchen a:hover {display: block; background:#FFF;}
+ul#topnav li div.kitchen span{height:390px;left:0;top: 28px;padding-right: 1px;}
+#subcat_col_one_kitch {width:140px;height:310px;float:left;border-right:0px solid #747679;margin-top: 8px;
+border-left: 5px solid #ffffff;margin-left: 2%;}
+#subcat_col_three_kitch{width:177px;height:310px;float:left;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_two_kitch {width:138px;height:310px;float:left;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_kitch {width:145px;height:310px;float:left;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_kitch {height:310px;float:left;border-left:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_six_kitch {width:147px;height:310px;float:left;background:#fff; font-size:12px; padding-right:8px;border-left: 5px solid #ffffff;margin-top: 8px;;}
+/* Kitchen END */
+
 /* Gifts START */
 ul#topnav li div.gifts a {display:block; padding:6px 13px 6px 9px;}
 ul#topnav li div.gifts a:hover {display: block; background:#FFF;}
-ul#topnav li div.gifts span{height:362px;left:0;top: 28px; padding:0 1% 1%; width:98%;}
-#subcat_col_one_gift {width:145px;height:auto;float:right; margin-left:10px;margin-bottom:5px; margin-top:0px; margin-right:5px;}
-#subcat_col_two_gift {width:140px;height:auto;float:right; margin-left:0px;margin-bottom:5px; margin-top:0px; margin-right:0px;}
-#subcat_col_three_gift, #subcat_col_four_gift {width:140px;height:auto;float:right; margin-left:5px;margin-bottom:5px; margin-top:0px; margin-right:5px;}
-#subcat_col_five_gift {width:140px;height:auto;float:right; margin-left:10px;margin-bottom:5px; margin-top:0px;margin-right:10px;}
-#subcat_col_six_gift {width:140px;height:auto;float:left; margin:0 0 0 10px;margin-bottom:10px;}
+ul#topnav li div.gifts span{height:390px;left:0;top: 28px;padding-right: 1px;}
+#subcat_col_one_gift {width:160px;height:310px;float:left;border-right:0px solid #747679;margin-top: 8px;
+border-left: 5px solid #ffffff;margin-left: 2%;}
+#subcat_col_two_gift {width:160px;height:310px;float:left;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_three_gift{width:135px;height:310px;float:left;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_gift {width:145px;height:310px;float:left;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_gift {height:310px;width:280px;float:left;border-left:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_six_gift {width:147px;height:310px;float:left;background:#fff; font-size:12px; padding-right:8px;border-left: 5px solid #ffffff;margin-top: 8px;;}
 /* Gifts END */
+
+/* Xmas START */
+ul#topnav li div.xmas a {display:block; padding:6px 13px 6px 9px;}
+ul#topnav li div.xmas a:hover {display: block; background:#FFF;}
+ul#topnav li div.xmas span{height:390px;left:0;top: 28px;padding-right: 1px;}
+#subcat_col_one_xmas {width:165px;height:310px;float:left;border-right:0px solid #747679;margin-top: 8px;
+border-left: 5px solid #ffffff;margin-left: 2%;}
+#subcat_col_two_xmas {width:155px;height:310px;float:left;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_three_xmas {width:177px;height:310px;float:left;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_xmas {height:310px;width: 365px;float:left;border-left:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_five_xmas {height:310px;float:left;border-left:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+/* Xmas END */
 
 /* Garden START */
 ul#topnav li div.garden a {display:block; padding:6px 13px 6px 9px;}
@@ -179,9 +206,9 @@ ul#topnav li div.bedroom a:hover {display: block; background:#FFF;}
 ul#topnav li div.bedroom span{height:370px;left:0;top: 28px;padding-right: 1px;}
 #subcat_col_one_bed {width:156px;height:310px;float:right;border-right:0px solid #747679;margin-top: 8px;border-left: 5px solid #ffffff;}
 #subcat_col_three_bed{width:146px;height:310px;float:right;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_five_bed {width:157px;height:310px;float:right;border-right:0px solid #747679; border-left: 5px solid #ffffff;;margin-top: 8px;}
+#subcat_col_five_bed {width:127px;height:310px;float:right;border-right:0px solid #747679; border-left: 5px solid #ffffff;;margin-top: 8px;}
 #subcat_col_two_bed {width:148px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_four_bed {width:135px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
+#subcat_col_four_bed {width:165px;height:310px;float:right;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
 #subcat_col_six_bed {width:147px;height:310px;float:right;background:#fff; padding-right:8px;border-left: 5px solid #ffffff;margin-top: 8px;}
 /* Bedroom END */
 
@@ -204,19 +231,6 @@ ul#topnav li div.living span{height:370px;left:0;top: 28px;padding-right: 1px;}
 #subcat_col_two_living, #subcat_col_four_living {width:156px;height:142px;float:left;background:#fff;border-right:1px solid #747679;}
 #subcat_col_six_living {width:155px;height:142px;float:right;background:#fff;}
 /* Living Room END */
-
-/* Kitchen START */
-ul#topnav li div.kitchen a {display:block; padding:6px 13px 6px 9px;}
-ul#topnav li div.kitchen a:hover {display: block; background:#FFF;}
-ul#topnav li div.kitchen span{height:390px;left:0;top: 28px;padding-right: 1px;}
-#subcat_col_one_kitch {width:140px;height:310px;float:left;border-right:0px solid #747679;margin-top: 8px;
-border-left: 5px solid #ffffff;margin-left: 2%;}
-#subcat_col_three_kitch{width:177px;height:310px;float:left;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_two_kitch {width:138px;height:310px;float:left;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_four_kitch {width:145px;height:310px;float:left;background:#fff;border-right:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_five_kitch {height:310px;float:left;border-left:0px solid #747679;border-left: 5px solid #ffffff;margin-top: 8px;}
-#subcat_col_six_kitch {width:147px;height:310px;float:left;background:#fff; font-size:12px; padding-right:8px;border-left: 5px solid #ffffff;margin-top: 8px;;}
-/* Kitchen END */
 
 /* Office START */
 ul#topnav li div.office a {display:block; padding:6px 13px 6px 9px;}
