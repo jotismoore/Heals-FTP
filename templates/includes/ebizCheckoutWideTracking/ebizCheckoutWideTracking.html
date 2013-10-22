@@ -15,8 +15,13 @@
 <venda_block label=enterpromovoucher,mode=value,<venda_tpxt mode=get,name=track>=orcp-screen><venda_inctemplate name=tagManGeneric,type=includes/tracking/tagMan></venda_block label=enterpromovoucher><venda_block label=entergiftcert,mode=value,<venda_tpxt mode=get,name=track>=gift-screen><venda_inctemplate name=tagManGeneric,type=includes/tracking/tagMan></venda_block label=entergiftcert>
 <!-- End TagMan Container -->
 
+<venda_block label=notcheckout,workflow!=checkout>
 
+<venda_block label=gtmbasket,workflow=shopcart2>
+<venda_inctemplate name=basket,type=includes/tracking/gtm>
+</venda_block label=gtmbasket>
 
+</venda_block label=notcheckout>
 
 
 <venda_block label=checkout,workflow=checkout>
@@ -42,4 +47,6 @@
 </venda_block>
 
 </venda_block label=checkout>
+
+
 
