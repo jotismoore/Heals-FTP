@@ -1,13 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="<venda_block mode=value,<venda_sessionlanguage>=ae>en-US</venda_block><venda_block mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block>">
 <venda_inctemplate name=SiteWideTracking,type=includes>
-<script> 
-TMAN.doTags(TMAN.position.PRE_HEAD); 
-</script>
 <head>
-<script> 
-TMAN.doTags(TMAN.position.TOP_HEAD); 
-</script>
 <title><venda_text id=site.title.page_not_found></title>
 <venda_menu template=css>
 <venda_menu template=js>
@@ -17,15 +11,8 @@ function move() {
 window.location = '<venda_ebizurl>';
 }
 </script>
-<script> 
-TMAN.doTags(TMAN.position.BOTTOM_HEAD); 
-</script>
 </head>
 <body id="mainlayout-norecord">
-<div id="TMAN_TOP_BODY"></div>
-<script> 
-TMAN.doTags(TMAN.position.TOP_BODY); 
-</script>
 <venda_inctemplate name=bodyTop,type=tracking/shared>
 <venda_inctemplate name=admin,type=mainIncludes>
 <venda_inctemplate name=nojavascript,type=mainIncludes>
@@ -67,10 +54,6 @@ TMAN.doTags(TMAN.position.TOP_BODY);
 <venda_tpxt mode=set,name=titlenorec,value=<venda_text id=desktop.heading.not_found>>
 <venda_inctemplate name=bodyBottom,type=tracking/shared>
 <script language="JavaScript">addEvent(window, 'load', function() { timer=setTimeout('move()',2000) }, false);</script>
-<div id="TMAN_BOTTOM_BODY"></div>
-<script>
-TMAN.doTags(TMAN.position.BOTTOM_BODY); 
-</script>
 <script type="text/javascript" src="//heals.peerius.com/tracker/peerius.page" charset="UTF-8"></script>
 </body>
 </html>
