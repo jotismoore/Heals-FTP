@@ -2,10 +2,11 @@
 <html lang="<venda_block mode=value,<venda_sessionlanguage>=ae>en-US</venda_block><venda_block mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block>">
 <venda_inctemplate name=SiteWideTracking,type=includes>
 <head>
-<venda_menu template=title>
-<venda_menu template=metatags>
-<venda_menu template=css>
-<venda_menu template=js>
+<venda_inctemplate name=metatags,type=menu>
+<venda_inctemplate name=title,type=menu>
+<venda_inctemplate name=jsHead,type=mainIncludes>
+<venda_inctemplate name=css,type=menu>
+<venda_inctemplate name=head,type=tracking/shared>
 <venda_inctemplate name=jsAmplience,type=mainIncludes>
 </head>
 <body id="mainlayout-static">
