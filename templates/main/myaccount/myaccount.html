@@ -58,13 +58,14 @@ width:197px;clear:both;float:left;"></div>
 <script type="text/javascript">
 (function ($) {
 	/* Track jQuery AJAX requests. See www.alfajango.com/blog/track-jquery-ajax-requests-in-google-analytics*/
-    $(document).ajaxSend(function(event, xhr, settings){
-            dataLayer.push({
-                'event': 'pageURL',
-                'pageURL': settings.url
-            });
-    });
-})(jQuery);
-</script>
-<script type="text/javascript" src="//heals.peerius.com/tracker/peerius.page" charset="UTF-8"></script>
+		    $(document).ajaxSend(function(event, xhr, settings){
+	            dataLayer.push({
+	                'event': 'pageURL',
+	                'pageURL': settings.url
+	            });
+	    });
+	})(jQuery);
+	</script>
+	<script type="text/javascript" src="//heals.peerius.com/tracker/peerius.page" charset="UTF-8"></script>
 </body>
+</html>
