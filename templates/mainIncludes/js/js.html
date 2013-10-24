@@ -1,3 +1,31 @@
+<!-- added from js Head -->
+<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/external/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda.js"></script>
+
+<venda_tpcomment><!-- attributes.js --></venda_tpcomment>
+<venda_block label=1,mode=value,<venda_tpxt mode=get,name=activekeyword>=notnull>
+	<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Attributes/attributes.js"></script>
+</venda_block label=1>
+<venda_block label=2,rtype=invt,rtype=notnull,workflow=quickshop,operator=or>
+    <script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Attributes/attributes.js"></script>
+</venda_block label=2>
+
+<venda_tpcomment><!-- countrySelect.js and Tracking.js --></venda_tpcomment>
+<venda_block label=3,workflow=checkout,workflow=register,workflow=myaccount,workflow=addresslookup,workflow=shopcart,operator=or>
+	<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Widget/countrySelect.js"></script>
+	<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Widget/Tracking.js"></script>
+</venda_block label=3>
+<venda_block label=4,mode=value,<venda_tpxt mode=get,name=trackingstep>=myaccount/user-myform>
+	<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Widget/countrySelect.js"></script>
+	<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Widget/Tracking.js"></script>
+</venda_block label=4>
+
+<venda_tpcomment><!-- delivery rate by postcode lookup  --></venda_tpcomment>
+<venda_block label=5,workflow=checkout,workflow=checkout2,operator=or>
+	<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/postcodelookup.js"></script>
+</venda_block label=5>
+
+
 <venda_detblock_minify_js>
 
 <venda_tpcomment><!-- required --></venda_tpcomment>
@@ -26,16 +54,10 @@
 <script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/Venda/Validate/jquery.validate.rules.checkout.js"></script>
 <script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/checkout/checkout.js"></script>
 </venda_block label=3>
-
 </venda_detblock_minify_js>
 
 <venda_detail_minify_js>
 <script type="text/javascript">document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');</script>
-
-<venda_tpcomment><!-- Homepage slider --></venda_tpcomment>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/homeslider/jquery.rs.slideshow.js"></script>
-<script type="text/javascript" src="<venda_entmediaadd>/ebiz/<venda_bsref>/resources/js/homeslider/dynamic-controls-bootstrap.js"></script>
 
 
 
