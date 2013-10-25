@@ -2,11 +2,10 @@
 <html lang="<venda_block mode=value,<venda_sessionlanguage>=ae>en-US</venda_block><venda_block mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block>">
 <venda_inctemplate name=CheckoutWideTracking,type=includes>
 <head>
-<venda_inctemplate name=metatags,type=mainIncludes>
-<venda_inctemplate name=title,type=mainIncludes>
-<venda_inctemplate name=jsHead,type=mainIncludes>
-<venda_inctemplate name=css,type=mainIncludes>
-<venda_inctemplate name=head,type=tracking/shared>
+<venda_menu template=title>
+<venda_menu template=metatags>
+<venda_menu template=css_co>
+<venda_menu template=js_co>
 </head>
 <body<venda_block label=110,mode=value,<venda_setting type=ebiz,name=tracktaggoogleanalytics>=1,<venda_islive>=1,<venda_tpxt mode=get,name=track>=orderreceipt> onLoad="__utmSetTrans();"</venda_block label=110> id="mainlayout-checkout">
 <venda_inctemplate name=bodyTop,type=tracking/shared>
