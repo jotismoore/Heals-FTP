@@ -1,37 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="<venda_block mode=value,<venda_sessionlanguage>=ae>en-US</venda_block><venda_block mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block>">
 <venda_inctemplate name=CheckoutWideTracking,type=includes>
-<venda_block label=tagmanorderconf1,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
-<script> 
-TMAN.doTags(TMAN.position.PRE_HEAD); 
-</script>
-</venda_block label=tagmanorderconf1> 
 <head>
-<venda_block label=tagmanorderconf2,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
-<script> 
-TMAN.doTags(TMAN.position.TOP_HEAD); 
-</script>
-</venda_block label=tagmanorderconf2>
-<venda_menu template=title>
-<venda_menu template=metatags>
-<venda_menu template=css_co>
-<venda_menu template=js_co>
-<venda_block label=tagmanorderconf3,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
-<script> 
-TMAN.doTags(TMAN.position.BOTTOM_HEAD); 
-</script>
-</venda_block label=tagmanorderconf3>
+<venda_inctemplate name=metatags,type=mainIncludes>
+<venda_inctemplate name=title,type=mainIncludes>
+<venda_inctemplate name=jsHead,type=mainIncludes>
+<venda_inctemplate name=css,type=mainIncludes>
+<venda_inctemplate name=head,type=tracking/shared>
 </head>
 <body<venda_block label=110,mode=value,<venda_setting type=ebiz,name=tracktaggoogleanalytics>=1,<venda_islive>=1,<venda_tpxt mode=get,name=track>=orderreceipt> onLoad="__utmSetTrans();"</venda_block label=110> id="mainlayout-checkout">
-<venda_block label=tagmanorderconf4,mode=value,<venda_tpxt mode=get,name=track>!=orderreceipt>
-<div id="TMAN_TOP_BODY"></div>
-<script> 
-TMAN.doTags(TMAN.position.TOP_BODY); 
-</script>
-</venda_block label=tagmanorderconf4>
-<venda_menu template=admin>
-<venda_menu template=demo>
-<venda_menu template=nojavascript>
+<venda_inctemplate name=bodyTop,type=tracking/shared>
+<venda_inctemplate name=admin,type=mainIncludes>
+<venda_inctemplate name=nojavascript,type=mainIncludes>
+<venda_inctemplate name=demo,type=mainIncludes>
 
 <p class="re-waiHide"><a href="#content"><venda_text id=site.skip_to_content></a></p>
 
@@ -55,9 +36,10 @@ TMAN.doTags(TMAN.position.TOP_BODY);
 <div id="footer"><venda_inctemplate name=footerLinks,type=menu/footer></div>
 </div>
 <!-- end wrapper -->
-<div id="TMAN_BOTTOM_BODY"></div>
-<script>
-TMAN.doTags(TMAN.position.BOTTOM_BODY); 
-</script>
+<venda_inctemplate name=validation,type=mainIncludes>
+<venda_inctemplate name=tagsForJs,type=mainIncludes>
+<venda_inctemplate name=jsCheckout,type=mainIncludes>
+<venda_inctemplate name=bodyBottom,type=tracking/shared>
+<script type="text/javascript" src="//heals.peerius.com/tracker/peerius.page" charset="UTF-8"></script>
 </body>
 </html>
