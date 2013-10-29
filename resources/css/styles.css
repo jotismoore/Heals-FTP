@@ -923,8 +923,25 @@ font-size:11px;
 #productdetail .invtoption {width: 126px !important; width: 127px; float: right; padding: 35px 0 0 0 !important; padding: 36px 0 0 0;  font-size: 0.9em; font-weight: bolder;}
 #productdetail .invtoption ul {list-style-type: disc; list-style-position: inside;}
 #productdetail .invtoption ul li {margin: 0; padding: 0 0 2px 0;}
-.box.basketAlt {float:left;}
-.box.basketAlt h1 {color:#333;}
+div.container.addcontactaddress.addressform{width: 90%;padding-left: 10%;border-bottom: 1px solid #747679;float: right;}
+.box.basketAlt {float:left;margin-bottom: 10px;width: 100%;}
+.box.basketAlt h1 {color:#747679;}
+.box.basketAlt h3 {border-bottom: 1px solid #747679;border-left: 0 solid #FFFFFF;border-right: 0 solid #FFFFFF;color: #747679;display: block;font-size: 1.2em;margin-bottom: 5px;padding-bottom: 10px;padding-top: 0;}
+.box.basketAlt:hover {text-transform:none; text-decoration:none;}
+input#addr1.textInput {width:300px;}
+.fieldlabel, #houseNum, #stateDiv, .grid_11.alpha {width:100%;}
+#fieldsetBox {display: block;padding-top: 12px;padding-bottom: 10px;-webkit-padding-start: 0;-webkit-padding-end: 0;width: 98%;float: left;border: 0 none;}
+.fieldlabel label, .tag-addressUrl, .tag-zccompany, .tag-zcnum, .tag-zcaddr1, .tag-zcaddr2, .tag-zccity, .tag-zcstate, .tag-zczipcLabel, .tag-zcnum, #houseNum label, #stateDiv label, .grid_11.alpha label, .uklist label {float: left;text-align: right;width: 205px;clear: left;margin-right: 10px;margin-top: 6px;}
+select#title, #fname.textInput, #lname.textInput, #phone.textInput, #zipc.textInput, #company.textInput, #num.textInput, #addr1.textInput, #addr2.textInput, #city.textInput, #statetext.textInput {margin-left: 0px;height: 24px;padding-left: 3px;border: 1px solid #747679;padding-top: 2px;}
+input#area, input#usemail.textInput, input#company.textInput, input#num.textInput, input#addr1.textInput, input#addr2.textInput, input#city.textInput, input#statetext.textInput, input#zipc.textInput, input#uspswd.textInput, input#uspswd2.textInput  {margin-bottom: 5px;width: 300px;margin-right: 5px;height: 24px;padding-left: 3px;border: 1px solid #747679;font-size: 12px;}
+.grid_6.omega.addresslookup {margin-top: 8px;margin-left: 210px;clear: both;display: none;}
+.grid_6.omega.addresslookup input, .enterManually a, #lookupBtn, .grid_6.omega.addresslookup a {background: #747679;color: #fff;font-weight: bold;border: 1px solid #fff;text-transform: uppercase;padding: 8px 25px 8px 25px;margin-left: 5px;cursor: pointer;margin-bottom: 0;font-size: 1em;-webkit-appearance: none;-moz-appearance: none;font-family: "Times New Roman", Times, serif;}
+.receiveMail input, .blktrdcomm input {float: left;clear: left;margin: 8px 10px 0 95px;ms-transform: scale(1.5);-moz-transform: scale(1.5);-webkit-transform: scale(1.5);-o-transform: scale(1.5);}
+.tickBox {clear: none;float: left;text-align: left;width: 500px;padding-right: 75px;margin-left: 2%;}
+.bottomButtons {-webkit-appearance: none;-moz-appearance: none;}
+#cntrylist {width: 305px;height: 28px;border: 1px solid #747679;padding-top: 2px;}
+input.button.buttonArrow, input.button.buttonAlt {background: #f47920;color: #fff;font-weight: bold;border: 1px solid #fff;text-transform: uppercase;cursor: pointer;float: right;margin: 6px 0 35px;padding: 8px 75px;-webkit-appearance: none;-moz-appearance: none;font-family: "Times New Roman", Times, serif;}
+input.button.buttonArrow:hover {opacity:0.6;}
 .empty_basket {width:60%; float:left; text-decoration: none; cursor: auto;margin-bottom: 10px;}
 .button.buttonAlt.buttonArrow.right {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;;margin-top:5px; cursor:pointer; float:right;}
 .bottomButtons {clear:both;}
