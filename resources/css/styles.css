@@ -940,7 +940,7 @@ input#area, input#usemail.textInput, input#company.textInput, input#num.textInpu
 .tickBox {clear: none;float: left;text-align: left;width: 500px;padding-right: 75px;margin-left: 2%;}
 .bottomButtons {-webkit-appearance: none;-moz-appearance: none;}
 #cntrylist {width: 305px;height: 28px;border: 1px solid #747679;padding-top: 2px;}
-input.button.buttonArrow, input.button.buttonAlt {background: #f47920;color: #fff;font-weight: bold;border: 1px solid #fff;text-transform: uppercase;cursor: pointer;float: right;margin: 6px 0 35px;padding: 8px 75px;-webkit-appearance: none;-moz-appearance: none;font-family: "Times New Roman", Times, serif;}
+input.button.buttonArrow, input.button.buttonAlt {background: #f47920;color: #fff;font-weight: bold;border: none;text-transform: uppercase;cursor: pointer;float: right;margin: 0;padding: 0;-webkit-appearance: none;-moz-appearance: none;font-family: "Times New Roman", Times, serif;}
 input.button.buttonArrow:hover {opacity:0.6;}
 .empty_basket {width:60%; float:left; text-decoration: none; cursor: auto;margin-bottom: 10px;}
 .button.buttonAlt.buttonArrow.right {background:#666; color:#fff; font-weight:bold; border:1px solid #fff; text-transform: uppercase; padding:3px 45px 3px 45px;;margin-top:5px; cursor:pointer; float:right;}
