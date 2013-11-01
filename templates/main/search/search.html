@@ -2,10 +2,10 @@
 <html lang="<venda_block mode=value,<venda_sessionlanguage>=ae>en-US</venda_block><venda_block mode=value,<venda_sessionlanguage>!=ae><venda_sessionlanguage></venda_block>">
 <venda_inctemplate name=SiteWideTracking,type=includes>
 <head>
-<venda_menu template=title>
-<venda_menu template=metatags>
-<venda_menu template=css>
-<venda_menu template=js>
+<venda_inctemplate name=metatags,type=menu>
+<venda_inctemplate name=title,type=menu>
+<venda_inctemplate name=jsHead,type=mainIncludes>
+<venda_inctemplate name=css,type=menu>
 <venda_inctemplate name=head,type=tracking/shared>
 <venda_inctemplate name=jsAmplience,type=mainIncludes>
 </head>
@@ -37,7 +37,6 @@ FBY.showTab({id: '1166', position: 'right', color: '#000000'});
 <venda_inctemplate name=tagsForJs,type=mainIncludes>
 <venda_inctemplate name=js,type=mainIncludes>
 <venda_inctemplate name=bodyBottom,type=tracking/shared>
-<script language="JavaScript">addEvent(window, 'load', function() { timer=setTimeout('move()',2000) }, false);</script>
 <script type="text/javascript" src="//heals.peerius.com/tracker/peerius.page" charset="UTF-8"></script>
 </body>
 </html>
