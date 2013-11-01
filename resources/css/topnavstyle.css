@@ -3,7 +3,7 @@
 .scrollernav {
 height:auto;
 width: 940px;
-z-index:4000;
+z-index:10001;
 }
 
 
@@ -39,7 +39,7 @@ z-index:4000;
     -moz-opacity: 0.3;
     -khtml-opacity: 0.3;
     opacity: 0.3;
-    z-index: 2;
+    z-index: 10000;
 }
 
 #topnavbg {
@@ -54,8 +54,8 @@ z-index:-1;
 
 .menu_close {width:100%; text-align:right; display:block}
 
-ul#topnav {margin:0 0 5px; padding:0;float: left;width: 100%;list-style: none;position: relative;z-index:990; border-top: 1px solid #747679; border-bottom: 0px solid #747679; font-weight:bold; background-color:#fff;}
-ul#firstnav {margin:0 0; padding:5px 0;float: left;width: 100%;list-style: none;position: relative;z-index:1000; border-top: 0px solid #747679; border-bottom: 0px solid #747679; font-size:1.4em; font-weight:normal; background:#ffffff; display:block; font-family:"Times New Roman", Times, serif;}
+ul#topnav {margin:0 0 5px; padding:0;float: left;width: 100%;list-style: none;position: relative;z-index:10001; border-top: 1px solid #747679; border-bottom: 0px solid #747679; font-weight:bold; background-color:#fff;}
+ul#firstnav {margin:0 0; padding:5px 0;float: left;width: 100%;list-style: none;position: relative;z-index:10001; border-top: 0px solid #747679; border-bottom: 0px solid #747679; font-size:1.4em; font-weight:normal; background:#ffffff; display:block; font-family:"Times New Roman", Times, serif;}
 ul#topnav li{float: left;padding: 0;border-right: 0px solid #747679; text-align:center;font-style: italic; font-family:"Times New Roman", Times, serif;font-size: 1.4em;}
 ul#firstnav li{float: left;padding: 0 ;border-right: 0px solid #747679; text-align:center; padding: 0 15px 0 10px;font-size: 1em;}
 ul#firstnav li a:hover{text-decoration:none; opacity:0.6;}
@@ -66,7 +66,7 @@ ul#topnav li a{display: block;color: #747679;text-decoration: none;text-align:le
 ul#topnav li a:hover{display: block;color: #747679;text-decoration: none;}
 ul#topnav li a:visited {display: block;color: #747679;text-decoration: none;}
 .topnav-ad {float:left; padding:1%;}
-ul#topnav li div.xmas span, ul#topnav li div.furniture span, ul#topnav li div.accessories span, ul#topnav li div.lighting span, ul#topnav li div.gifts span, ul#topnav li div.garden span, ul#topnav li div.bathroom span, ul#topnav li div.bedroom span, ul#topnav li div.dining span, ul#topnav li div.living span, ul#topnav li div.kitchen span, ul#topnav li div.office span, ul#topnav li div.brands span, ul#topnav li div.toiletries span, ul#topnav li div.offers span {float: left;padding: 2px 0;position: absolute;left: 0;top:19px;display: none;width: 100%;background: #fff;line-height:14px;margin:0;z-index:1000; border:0px solid #747679;}
+ul#topnav li div.xmas span, ul#topnav li div.furniture span, ul#topnav li div.accessories span, ul#topnav li div.lighting span, ul#topnav li div.gifts span, ul#topnav li div.garden span, ul#topnav li div.bathroom span, ul#topnav li div.bedroom span, ul#topnav li div.dining span, ul#topnav li div.living span, ul#topnav li div.kitchen span, ul#topnav li div.office span, ul#topnav li div.brands span, ul#topnav li div.toiletries span, ul#topnav li div.offers span {float: left;padding: 2px 0;position: absolute;left: 0;top:19px;display: none;width: 100%;background: #fff;line-height:14px;margin:0;z-index:10001; border:0px solid #747679;}
 
 ul#topnav li:hover span {display: block; line-height:14px;}
 
