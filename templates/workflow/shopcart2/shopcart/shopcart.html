@@ -128,22 +128,7 @@ margin-bottom: 20px;">
 						<venda_detail11><venda_tpcomment><!-- bundle products --></venda_tpcomment>
 					</tbody>
 				</table>
-                <div class="shopcartdeliveryinfo">
-                <venda_block label=1000,mode=value,<venda_shopcart mode=getqty,ivtype=furniture>&gt;0,<venda_shopcart mode=getqty,ivtype=furniturerange>&gt;0,operator=or>	
-			<!-- Furniture and other types-->
-			<venda_block label=10010,mode=value,<venda_shopcart mode=getqty,ivtype=normal>&gt;0,<venda_shopcart mode=getqty,ivtype=range>&gt;0,<venda_shopcart mode=getqty,ivtype=gardenfurniture>&gt;0,<venda_shopcart mode=getqty,ivtype=gardenfurniturerange>&gt;0,operator=or>
-						<p><a href="<venda_dispview page=furnituredelivery>&layout=popups" rel="popup console 620 560" class="blacklink" title="Standard Delivery - opens in a new window">Standard Delivery <venda_currsym>50</a></p>
-			</venda_block label=10010>
-			<!-- Furniture Only-->
-			<venda_block label=10020,mode=value,<venda_shopcart mode=getqty,ivtype=normal>=0,<venda_shopcart mode=getqty,ivtype=range>=0,<venda_shopcart mode=getqty,ivtype=gardenfurniture>=0,<venda_shopcart mode=getqty,ivtype=gardenfurniturerange>=0>
-						<p><a href="<venda_dispview page=furnituredelivery>&layout=popups" rel="popup console 620 560" class="blacklink" title="Standard Furniture - opens in a new window">Standard Furniture Delivery from <venda_currsym>50</a></p>
-				</venda_block label=10020>
-			</venda_block label=1000>
-			
-			<venda_block label=1001,mode=value,<venda_shopcart mode=getqty,ivtype=furniture>=0,<venda_shopcart mode=getqty,ivtype=furniturerange>=0>
-					<p><a href="<venda_dispview page=deliveryinformation>&layout=popups" rel="popup console 620 560" alt="<venda_text id=site.link.title.delivery_charge_from>">Standard Delivery <venda_currsym>4.95</a></p>
-			</venda_block label=1001>
-</div>
+                <venda_inctemplate name=shopcartdeliveryinfo,type=includes>
                 <div class="updatebutton"><a id="update<venda_cartfield name=setqty>" href="#" class="button buttonAlt2" onclick="if(Venda.Ebiz.validateQty()){document.<venda_curstep>form.wizard.value='<venda_workflow>';document.<venda_curstep>form.step.value='<venda_curstep>';document.<venda_curstep>form.submit()} return false;" title="<venda_text id=desktop.button.update> <venda_invtname>"><venda_text id=desktop.button.update></a></div>
             <div class="grid_11 alpha">
                <a href="http://www.heals.co.uk/delivery/furniture-delivery/page/furnituredelivery/&layout=popups"><venda_page page=basketdeliveryinformation></a>
