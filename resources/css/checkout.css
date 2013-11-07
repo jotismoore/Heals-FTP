@@ -61,9 +61,7 @@ table.wizrtable th {border-width: 0; padding: 5px 0 5px 0; border-style: none;}
 #ordersummary table.wizrtable th,.Linternalimage,.deliveryrate ul {padding:5px 0 0 6px;}
 /*this will overwrite the global.css set in the core code, to hide sku remove the line below  */
 #yourbasket .sku, #orderconfirmation .sku, #orderreceipt .sku, #orderhistory .sku, #orderdetail .sku {display: none !important;}
-.shopcartdeliveryinfo {float:left; width: 50%;
-padding-top: 12px;
-padding-left: 3px;}
+.shopcartdeliveryinfo {float:left; width: 50%;padding-top: 12px;padding-left: 3px;display:none;}
 /*********************************************/
 /* MY ACCOUNT */
 /*********************************************/
